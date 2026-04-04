@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+old/
+investigation/
+kiro-notes/
+.kiro-shadow/
+decks/
+data/matthew/
+data/lxx-lemmas/
+*.apkg
