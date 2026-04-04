@@ -1,0 +1,170 @@
+"""Lesson data for lessons 1-5. Each lesson is a dict consumed by pimsleur_engine.build()"""
+M = "el-GR-Chirp3-HD-Charon"
+F = "el-GR-Chirp3-HD-Kore"
+
+L1 = {
+    "num": 1, "intro_es": "Μάθημα ἕν. Lección uno de griego koiné. Imagina que caminas por un sendero polvoriento hacia Jerusalén. Es el siglo primero. Te encuentras con dos personas que se saludan. Escucha.",
+    "dialogue": [(M,"Χαῖρε!"),(F,"Εἰρήνη σοι."),(M,"Εἰρήνη σοι. Πόθεν εἶ;"),(F,"ἐγώ εἰμι ἀπὸ Γαλιλαίας.")],
+    "context_es": "No te preocupes si no entendiste todo. Al final de esta lección podrás saludar y responder en griego koiné.",
+    "vocab": [
+        {"gr":"χαῖρε","es":"hola, alégrate","note_es":"El hombre dijo χαῖρε. Significa alégrate, o simplemente, hola. Es el saludo más común del Nuevo Testamento. Aparece en Mateo veintiocho nueve. Escucha y repite."},
+        {"gr":"εἰρήνη","es":"paz","note_es":"La mujer respondió con la palabra εἰρήνη. Significa paz. Aparece noventa y dos veces en el Nuevo Testamento. Escucha."},
+        {"gr":"σοι","es":"a ti","note_es":"σοι significa a ti. Es la forma dativa de tú. Εἰρήνη σοι. Paz a ti. Escucha la frase completa."},
+        {"gr":"ναί","es":"sí","note_es":"Aprende a decir sí. En griego koiné, sí se dice ναί. Aparece en Mateo cinco treinta y siete. Escucha."},
+        {"gr":"οὐ","es":"no","note_es":"No se dice οὐ. Antes de una vocal se dice οὐκ. Escucha."},
+        {"gr":"ἐγώ","es":"yo","note_es":"ἐγώ significa yo. Escucha."},
+        {"gr":"εἰμί","es":"soy, estoy","note_es":"εἰμί significa soy o estoy. ἐγώ εἰμι juntos significan yo soy. Es una de las frases más importantes del evangelio de Juan. Escucha."},
+        {"gr":"σύ","es":"tú","note_es":"σύ significa tú. Para decir tú eres, se dice σὺ εἶ. εἶ es la forma de εἰμί para tú. Escucha."},
+    ],
+    "phrases": [
+        {"gr":"Εἰρήνη σοι","es":"paz a ti","prompt_es":"Ahora di la frase completa. Paz a ti."},
+        {"gr":"ἐγώ εἰμι","es":"yo soy","prompt_es":"¿Cómo dirías yo soy?"},
+        {"gr":"σὺ εἶ","es":"tú eres","prompt_es":"¿Cómo dirías tú eres?"},
+        {"gr":"ναί","es":"sí","prompt_es":"¿Cómo dirías sí?"},
+        {"gr":"οὐ","es":"no","prompt_es":"¿Cómo dirías no?"},
+        {"gr":"Χαῖρε","es":"hola","prompt_es":"¿Cómo saludarías a alguien?"},
+        {"gr":"ἐγώ εἰμι","es":"yo soy","prompt_es":"Alguien te pregunta quién eres. Di yo soy."},
+        {"gr":"Εἰρήνη σοι","es":"paz a ti","prompt_es":"Despídete con paz a ti."},
+    ],
+    "recon": [
+        {"other_gr":"Χαῖρε!","other_voice":M,"prompt_es":"Alguien te saluda. Respóndele con paz a ti.","answer_gr":"Εἰρήνη σοι.","answer_voice":F},
+        {"prompt_es":"Ahora salúdalo tú.","answer_gr":"Χαῖρε!","answer_voice":F},
+        {"other_gr":"Σὺ τίς εἶ;","other_voice":M,"prompt_es":"Te pregunta quién eres. Di yo soy y tu nombre.","answer_gr":"ἐγώ εἰμι Μαρία.","answer_voice":F},
+        {"prompt_es":"Dile paz a ti como despedida.","answer_gr":"Εἰρήνη σοι.","answer_voice":F},
+    ],
+    "verse": {"gr":"Εἰρήνη ὑμῖν.","voice":M,"ref_es":"Escucha este versículo. En el evangelio de Lucas, capítulo veinticuatro, versículo treinta y seis, Jesús se apareció a sus discípulos y les dijo:","explain_es":"Paz a ustedes. Ya conoces εἰρήνη, paz. ὑμῖν significa a ustedes. σοι es a ti, ὑμῖν es a ustedes."},
+    "closing_es": "Excelente. Aprendiste ocho palabras en griego koiné: χαῖρε, εἰρήνη, σοι, ναί, οὐ, ἐγώ, εἰμί, y σύ. En la siguiente lección aprenderás a preguntar y decir tu nombre. Εἰρήνη σοι.",
+}
+
+L2 = {
+    "num": 2, "intro_es": "Μάθημα δύο. Lección dos. Sigues caminando hacia Jerusalén. Un hombre te pregunta tu nombre. Escucha.",
+    "dialogue": [(M,"Χαῖρε! Τί ὄνομά σοι;"),(F,"Τὸ ὄνομά μου Μαρία. Καὶ σοί;"),(M,"Σίμων.")],
+    "context_es": "El hombre preguntó el nombre de la mujer. Ella respondió y le preguntó el suyo. Aprenderás a hacer lo mismo.",
+    "vocab": [
+        {"gr":"τί","es":"qué, cuál","note_es":"τί significa qué o cuál. Es una palabra interrogativa. Escucha."},
+        {"gr":"ὄνομα","es":"nombre","note_es":"ὄνομα significa nombre. Es una palabra neutra. Escucha."},
+        {"gr":"μου","es":"mi, de mí","note_es":"μου significa mi o de mí. Es el genitivo de ἐγώ. Escucha."},
+        {"gr":"σου","es":"tu, de ti","note_es":"σου significa tu o de ti. Es diferente de σοι. σοι con iota es a ti. σου con ípsilon es de ti. Escucha las dos."},
+        {"gr":"καί","es":"y, también","note_es":"καί significa y o también. Es la palabra más frecuente del Nuevo Testamento. Aparece casi nueve mil veces. Escucha."},
+        {"gr":"αὐτός","es":"él, ella, ello","note_es":"αὐτός significa él. αὐτή significa ella. αὐτό significa ello. Escucha la forma masculina."},
+    ],
+    "phrases": [
+        {"gr":"Τί ὄνομά σοι;","es":"¿cuál es tu nombre?","prompt_es":"Pregunta cuál es tu nombre. En koiné se dice literalmente qué nombre a ti. Escucha."},
+        {"gr":"Τὸ ὄνομά μου Σίμων","es":"mi nombre es Simón","prompt_es":"Responde. Mi nombre es Simón."},
+        {"gr":"Καὶ σοί;","es":"¿y a ti? ¿y tú?","prompt_es":"Pregunta y tú. Se dice καὶ σοί."},
+        {"gr":"Τί ὄνομά σοι;","es":"¿cuál es tu nombre?","prompt_es":"Pregúntale su nombre otra vez."},
+        {"gr":"Τὸ ὄνομά μου Μαρία","es":"mi nombre es María","prompt_es":"Di mi nombre es María."},
+        {"gr":"αὐτός ἐστιν Σίμων","es":"él es Simón","prompt_es":"Di él es Simón."},
+        {"gr":"αὐτή ἐστιν Μαρία","es":"ella es María","prompt_es":"Di ella es María."},
+    ],
+    "recon": [
+        {"other_gr":"Χαῖρε! Τί ὄνομά σοι;","other_voice":M,"prompt_es":"Te preguntan tu nombre. Responde y pregunta el suyo.","answer_gr":"Τὸ ὄνομά μου Μαρία. Καὶ σοί;","answer_voice":F},
+        {"other_gr":"Σίμων.","other_voice":M,"prompt_es":"Dile paz a ti.","answer_gr":"Εἰρήνη σοι.","answer_voice":F},
+        {"prompt_es":"Pregúntale de nuevo su nombre.","answer_gr":"Τί ὄνομά σοι;","answer_voice":F},
+    ],
+    "verse": {"gr":"Τί ὄνομά σοι; Λεγιὼν ὄνομά μοι, ὅτι πολλοί ἐσμεν.","voice":M,"ref_es":"En el evangelio de Marcos, capítulo cinco, versículo nueve, Jesús le preguntó al endemoniado:","explain_es":"¿Cuál es tu nombre? Legión es mi nombre, porque somos muchos. Reconoces τί ὄνομά σοι, la pregunta. Y ὄνομά μοι, mi nombre. μοι es otra forma de decir a mí."},
+    "closing_es": "Aprendiste a preguntar y decir tu nombre. Τί ὄνομά σοι. Τὸ ὄνομά μου. Y la palabra más frecuente del Nuevo Testamento: καί, y. En la siguiente lección aprenderás a decir de dónde eres. Εἰρήνη σοι.",
+}
+
+L3 = {
+    "num": 3, "intro_es": "Μάθημα τρία. Lección tres. Hoy aprenderás a decir de dónde eres y a preguntar a otros. Escucha esta conversación.",
+    "dialogue": [(M,"Χαῖρε! Πόθεν εἶ σύ;"),(F,"ἐγώ εἰμι ἀπὸ Γαλιλαίας. Καὶ σύ;"),(M,"ἀπὸ Ἰερουσαλήμ.")],
+    "context_es": "El hombre preguntó de dónde es la mujer. Ella respondió que es de Galilea y le preguntó a él. Él es de Jerusalén.",
+    "vocab": [
+        {"gr":"πόθεν","es":"de dónde","note_es":"πόθεν significa de dónde. Esta misma pregunta aparece en el evangelio de Juan cuando Pilato le pregunta a Jesús. Escucha."},
+        {"gr":"εἶ","es":"eres","note_es":"εἶ significa eres. Es la forma de εἰμί para tú. Ya la conoces de σὺ εἶ. Escucha."},
+        {"gr":"ἀπό","es":"de, desde","note_es":"ἀπό significa de o desde. Se usa para decir de dónde eres geográficamente. ἀπὸ Γαλιλαίας, de Galilea. Escucha."},
+        {"gr":"ἐστιν","es":"es","note_es":"ἐστιν significa es. Es la tercera persona de εἰμί. εἰμί yo soy, εἶ tú eres, ἐστιν él o ella es. Escucha."},
+        {"gr":"ἐκ","es":"de, fuera de","note_es":"ἐκ también significa de, pero se usa para grupos o familias. ἀπό es para lugares, ἐκ es para grupos. Por ejemplo, ἐκ τοῦ οὐρανοῦ, del cielo. Escucha."},
+        {"gr":"αὐτή","es":"ella","note_es":"αὐτή significa ella. Ya conoces αὐτός, él. αὐτή ἐστιν, ella es. Escucha."},
+    ],
+    "phrases": [
+        {"gr":"Πόθεν εἶ;","es":"¿de dónde eres?","prompt_es":"Pregunta de dónde eres."},
+        {"gr":"ἀπὸ Γαλιλαίας","es":"de Galilea","prompt_es":"Di de Galilea."},
+        {"gr":"ἀπὸ Ἰερουσαλήμ","es":"de Jerusalén","prompt_es":"Di de Jerusalén."},
+        {"gr":"ἐγώ εἰμι ἀπὸ Γαλιλαίας","es":"yo soy de Galilea","prompt_es":"Di yo soy de Galilea."},
+        {"gr":"αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ","es":"él es de Jerusalén","prompt_es":"Di él es de Jerusalén."},
+        {"gr":"αὐτή ἐστιν ἀπὸ Γαλιλαίας","es":"ella es de Galilea","prompt_es":"Di ella es de Galilea."},
+        {"gr":"Πόθεν εἶ σύ;","es":"¿de dónde eres tú?","prompt_es":"Pregunta de dónde eres tú, con énfasis."},
+        {"gr":"Καὶ σύ;","es":"¿y tú?","prompt_es":"Pregunta y tú."},
+    ],
+    "recon": [
+        {"other_gr":"Χαῖρε! Πόθεν εἶ;","other_voice":M,"prompt_es":"Te preguntan de dónde eres. Di que eres de Galilea.","answer_gr":"ἐγώ εἰμι ἀπὸ Γαλιλαίας.","answer_voice":F},
+        {"prompt_es":"Pregúntale de dónde es él.","answer_gr":"Καὶ σύ; Πόθεν εἶ;","answer_voice":F},
+        {"other_gr":"ἀπὸ Ἰερουσαλήμ.","other_voice":M,"prompt_es":"Pregúntale su nombre.","answer_gr":"Τί ὄνομά σοι;","answer_voice":F},
+        {"other_gr":"Σίμων. Καὶ σοί;","other_voice":M,"prompt_es":"Di tu nombre.","answer_gr":"Τὸ ὄνομά μου Μαρία.","answer_voice":F},
+        {"prompt_es":"Despídete.","answer_gr":"Εἰρήνη σοι.","answer_voice":F},
+    ],
+    "verse": {"gr":"Πόθεν εἶ σύ;","voice":M,"ref_es":"En el evangelio de Juan, capítulo diecinueve, versículo nueve, Pilato le pregunta a Jesús:","explain_es":"¿De dónde eres tú? Jesús no le respondió. Ya conoces cada palabra de esta pregunta."},
+    "closing_es": "Aprendiste a preguntar y decir de dónde eres. πόθεν εἶ, de dónde eres. ἀπό, de. Y las tres personas de εἰμί: εἰμί yo soy, εἶ tú eres, ἐστιν él es. En la siguiente lección aprenderás a decir que entiendes o no entiendes. Εἰρήνη σοι.",
+}
+
+L4 = {
+    "num": 4, "intro_es": "Μάθημα τέσσαρα. Lección cuatro. Hoy aprenderás a decir que entiendes, que no entiendes, y a pedir que alguien repita. Escucha.",
+    "dialogue": [(F,"Γινώσκεις ἑλληνιστί;"),(M,"ναί, γινώσκω ὀλίγον."),(F,"Λέγω σοι ὅτι..."),(M,"Οὐκ ἀκούω. Λέγε πάλιν.")],
+    "context_es": "La mujer preguntó si el hombre sabe griego. Él dijo que sabe un poco. Ella empezó a decirle algo, pero él no oyó y le pidió que repitiera.",
+    "vocab": [
+        {"gr":"γινώσκω","es":"saber, conocer","note_es":"γινώσκω significa saber o conocer. Aparece doscientas veintidós veces en el Nuevo Testamento. γινώσκεις es la forma para tú: ¿sabes? Escucha."},
+        {"gr":"ἀκούω","es":"oír, escuchar","note_es":"ἀκούω significa oír o escuchar. Aparece cuatrocientas veintisiete veces. Escucha."},
+        {"gr":"λέγω","es":"decir","note_es":"λέγω significa decir o hablar. Es una de las palabras más frecuentes del Nuevo Testamento, más de dos mil veces. λέγω σοι significa te digo. Jesús usa esta frase constantemente. Escucha."},
+        {"gr":"λόγος","es":"palabra","note_es":"λόγος significa palabra. Es una de las palabras más importantes del Nuevo Testamento. En el principio era el λόγος. Escucha."},
+        {"gr":"πάλιν","es":"otra vez, de nuevo","note_es":"πάλιν significa otra vez o de nuevo. λέγε πάλιν significa di otra vez. λέγε es la orden de decir. Escucha."},
+        {"gr":"δέ","es":"pero, y (postpositiva)","note_es":"δέ significa pero o y. Es especial porque nunca va al principio de la frase. Siempre va en segundo lugar. Por ejemplo, ἐγὼ δέ significa pero yo. Escucha."},
+        {"gr":"ἀλλά","es":"pero, sino","note_es":"ἀλλά también significa pero, pero es más fuerte, como sino. A diferencia de δέ, ἀλλά sí va al principio. Escucha."},
+        {"gr":"ὅτι","es":"que, porque","note_es":"ὅτι significa que o porque. Aparece más de mil veces en el Nuevo Testamento. λέγω σοι ὅτι significa te digo que. Escucha."},
+    ],
+    "phrases": [
+        {"gr":"γινώσκω","es":"yo sé","prompt_es":"Di yo sé."},
+        {"gr":"οὐ γινώσκω","es":"no sé","prompt_es":"Di no sé."},
+        {"gr":"ἀκούω","es":"oigo","prompt_es":"Di oigo."},
+        {"gr":"οὐκ ἀκούω","es":"no oigo","prompt_es":"Di no oigo. Recuerda, οὐ se convierte en οὐκ antes de vocal."},
+        {"gr":"λέγω σοι","es":"te digo","prompt_es":"Di te digo."},
+        {"gr":"λέγε πάλιν","es":"di otra vez","prompt_es":"Pide que repitan. Di otra vez."},
+        {"gr":"λέγω σοι ὅτι","es":"te digo que","prompt_es":"Di te digo que."},
+        {"gr":"γινώσκω ὅτι","es":"sé que","prompt_es":"Di sé que."},
+        {"gr":"ἐγὼ δὲ λέγω ὑμῖν","es":"pero yo les digo","prompt_es":"Jesús dice muchas veces: pero yo les digo. ὑμῖν es a ustedes. Escucha."},
+    ],
+    "recon": [
+        {"other_gr":"Γινώσκεις ἑλληνιστί;","other_voice":F,"prompt_es":"Te preguntan si sabes griego. Di que sí, sabes un poco. ὀλίγον significa un poco.","answer_gr":"ναί, γινώσκω ὀλίγον.","answer_voice":M},
+        {"other_gr":"Λέγω σοι ὅτι ὁ κύριος ἔρχεται.","other_voice":F,"prompt_es":"No oíste bien. Dile que no oyes y que repita.","answer_gr":"Οὐκ ἀκούω. Λέγε πάλιν.","answer_voice":M},
+        {"other_gr":"Ὁ κύριος ἔρχεται!","other_voice":F,"prompt_es":"Ahora entendiste. Di sé que.","answer_gr":"ναί, γινώσκω.","answer_voice":M},
+    ],
+    "verse": {"gr":"Ἔστω δὲ ὁ λόγος ὑμῶν ναὶ ναί, οὐ οὔ.","voice":M,"ref_es":"En el evangelio de Mateo, capítulo cinco, versículo treinta y siete, Jesús dice:","explain_es":"Que su palabra sea sí sí, no no. Reconoces δέ, la partícula postpositiva. λόγος, palabra. ὑμῶν, de ustedes. ναί, sí. οὐ, no."},
+    "closing_es": "Aprendiste ocho palabras nuevas: γινώσκω saber, ἀκούω oír, λέγω decir, λόγος palabra, πάλιν otra vez, δέ pero, ἀλλά sino, y ὅτι que. En la siguiente lección aprenderás el artículo y a señalar personas. Εἰρήνη σοι.",
+}
+
+L5 = {
+    "num": 5, "intro_es": "Μάθημα πέντε. Lección cinco. Hoy aprenderás a decir el, la, lo, y a señalar personas y cosas. Escucha.",
+    "dialogue": [(F,"Βλέπεις τὸν ἄνθρωπον ἐκεῖνον;"),(M,"ναί. Τίς ἐστιν;"),(F,"Οὗτός ἐστιν ὁ διδάσκαλος.")],
+    "context_es": "La mujer preguntó si ves a aquel hombre. El hombre preguntó quién es. Ella dijo que es el maestro.",
+    "vocab": [
+        {"gr":"ὁ","es":"el (masculino)","note_es":"En griego, el artículo cambia según el género. ὁ es el, para masculino. Escucha."},
+        {"gr":"ἡ","es":"la (femenino)","note_es":"ἡ es la, para femenino. Escucha."},
+        {"gr":"τό","es":"lo (neutro)","note_es":"τό es lo, para neutro. Escucha."},
+        {"gr":"ἄνθρωπος","es":"persona, hombre","note_es":"ἄνθρωπος significa persona o hombre. Aparece quinientas cincuenta veces. ὁ ἄνθρωπος, el hombre. Escucha."},
+        {"gr":"γυνή","es":"mujer","note_es":"γυνή significa mujer. ἡ γυνή, la mujer. Escucha."},
+        {"gr":"τέκνον","es":"hijo, niño","note_es":"τέκνον significa hijo o niño. Es neutro: τὸ τέκνον, el niño. Escucha."},
+        {"gr":"οὗτος","es":"este","note_es":"οὗτος significa este. οὗτος ὁ ἄνθρωπος, este hombre. Escucha."},
+        {"gr":"ἐκεῖνος","es":"aquel","note_es":"ἐκεῖνος significa aquel. ἐκεῖνος ὁ ἄνθρωπος, aquel hombre. Escucha."},
+        {"gr":"ἰδού","es":"¡mira! ¡he aquí!","note_es":"ἰδού significa mira o he aquí. Aparece doscientas veces en el Nuevo Testamento. Pilato dijo ἰδοὺ ὁ ἄνθρωπος, he aquí el hombre. Escucha."},
+        {"gr":"οὖν","es":"entonces (postpositiva)","note_es":"οὖν significa entonces o por lo tanto. Como δέ, nunca va al principio. Siempre en segundo lugar. Escucha."},
+    ],
+    "phrases": [
+        {"gr":"ὁ ἄνθρωπος","es":"el hombre","prompt_es":"Di el hombre."},
+        {"gr":"ἡ γυνή","es":"la mujer","prompt_es":"Di la mujer."},
+        {"gr":"τὸ τέκνον","es":"el niño","prompt_es":"Di el niño."},
+        {"gr":"οὗτος ὁ ἄνθρωπος","es":"este hombre","prompt_es":"Di este hombre."},
+        {"gr":"ἐκεῖνος ὁ ἄνθρωπος","es":"aquel hombre","prompt_es":"Di aquel hombre."},
+        {"gr":"ἰδοὺ ὁ ἄνθρωπος","es":"he aquí el hombre","prompt_es":"Di he aquí el hombre. Pilato dijo esto señalando a Jesús."},
+        {"gr":"γινώσκω ὅτι","es":"sé que","prompt_es":"Di sé que."},
+        {"gr":"λέγω σοι ὅτι","es":"te digo que","prompt_es":"Di te digo que."},
+    ],
+    "recon": [
+        {"other_gr":"Βλέπεις τὸν ἄνθρωπον ἐκεῖνον;","other_voice":F,"prompt_es":"Te preguntan si ves a aquel hombre. Di que sí.","answer_gr":"ναί, βλέπω αὐτόν.","answer_voice":M},
+        {"prompt_es":"Pregunta quién es.","answer_gr":"Τίς ἐστιν;","answer_voice":M},
+        {"other_gr":"Οὗτός ἐστιν ὁ διδάσκαλος.","other_voice":F,"prompt_es":"Ella dice que es el maestro. Di que lo conoces.","answer_gr":"γινώσκω αὐτόν.","answer_voice":M},
+        {"prompt_es":"Di he aquí el hombre.","answer_gr":"ἰδοὺ ὁ ἄνθρωπος.","answer_voice":M},
+    ],
+    "verse": {"gr":"Ἰδοὺ ὁ ἄνθρωπος.","voice":M,"ref_es":"En el evangelio de Juan, capítulo diecinueve, versículo cinco, Pilato presentó a Jesús ante la multitud y dijo:","explain_es":"He aquí el hombre. Tres palabras que ya conoces perfectamente. ἰδού, he aquí. ὁ, el. ἄνθρωπος, hombre."},
+    "closing_es": "Aprendiste el artículo ὁ ἡ τό, los demostrativos οὗτος y ἐκεῖνος, y la expresión ἰδού. En la siguiente lección haremos un repaso completo con un diálogo largo. Εἰρήνη σοι.",
+}

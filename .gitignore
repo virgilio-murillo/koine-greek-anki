@@ -6,6 +6,9 @@ investigation/
 kiro-notes/
 .kiro-shadow/
 decks/
-data/matthew/
-data/lxx-lemmas/
+audio/**/*.mp3
+/tmp/
 *.apkg
+cert.pem
+key.pem
+serve_audio.py

@@ -1,66 +1,69 @@
-# Koine Greek Compound Words — Anki Deck Project
+# Koine Greek — Anki Decks + Pimsleur Audio Course
 
-## What This Is
-Anki decks that teach Koine Greek compound words by decomposing them into their parts (prefix + root + suffix) with full etymological context, Strong's references, and mnemonics in Spanish.
+Two complementary tools for learning Koine Greek (the language of the New Testament):
 
-## Current Status
-- ✅ **Matthew**: 290 compound words → `decks/matthew_compounds.apkg`
-- ⬜ Mark through Revelation: ready to generate (pipeline exists)
-- ⬜ Septuagint (LXX): data source identified, not yet processed
+1. **Anki Deck**: 290 compound word flashcards with etymological decomposition, Strong's references, and mnemonics in Spanish
+2. **Pimsleur Audio Course**: 90 lessons (16.7 hours) teaching ~600 words covering ~90% of the NT text
 
-## User Profile
-- Native Spanish speaker, also speaks English
-- Learning Koine Greek as a beginner
-- Card explanations in **Spanish**
-- Does NOT know formal grammar terminology — explain simply
-- Wants cards to be **100% self-contained** — no need to look anything up elsewhere
+## Anki Deck — Compound Words
 
-## Quick Start: Generate a New Book
+Flashcards that teach Greek compound words by breaking them into parts:
+- Front: the compound word (e.g., ἀποκαλύπτω)
+- Back: components (ἀπό "away" + καλύπτω "cover" = "uncover, reveal"), Strong's etymology, suffix explanation, mnemonic in Spanish
+
 ```bash
+# Generate the deck
 source venv/bin/activate
-# 1. Extract compounds from a book (1=Matthew, 2=Mark, ..., 27=Revelation)
-python src/extract_compounds.py --book 2 --output data/mark/compounds_raw.json
-
-# 2. [MANUAL STEP] Decompose compounds — requires LLM analysis
-#    See notes/compounds-pipeline.md for the full process
-
-# 3. Enrich with Strong's + suffixes
-python src/enrich_compounds.py
-
-# 4. Generate deck
 python src/generate_deck.py
 ```
 
-## Folder Structure
-```
-├── src/                    # Pipeline scripts (reproducible)
-│   ├── extract_compounds.py    # Extract compound candidates from MorphGNT
-│   ├── enrich_compounds.py     # Add suffix explanations + root-change notes
-│   ├── fetch_strongs.py        # Fetch Strong's etymology for words + components
-│   ├── improve_mnemonics.py    # Improve short/unhelpful mnemonics
-│   └── generate_deck.py        # Generate .apkg with genanki
-├── data/
-│   ├── strongs_greek.xml       # Strong's Greek dictionary (5516 entries)
-│   ├── compounds_registry.json # Anti-duplicate registry (tracks processed words)
-│   ├── morphology_reference.md # Greek suffix/prefix/ablaut reference
-│   ├── morphology_context.md   # Detailed morphology analysis
-│   └── matthew/                # Per-book data
-│       ├── compounds_raw.json      # Raw candidates from extraction
-│       └── compounds_enriched.json # Final enriched data (290 entries)
-├── decks/                  # Output .apkg files
-├── notes/                  # Guidelines, pipeline docs, lessons learned
-├── old/                    # Previous projects (pronouns deck, etc.)
-└── venv/                   # Python 3.12 venv (genanki, py-sblgnt)
-```
+## Pimsleur Audio Course — 90 Lessons
+
+Audio lessons using the Pimsleur method (anticipation, graduated interval recall) set in 1st century Palestine with biblical scenarios.
+
+See [audio/README.md](audio/README.md) for full structure and lesson details.
+
+| Level | Lessons | Hours | Words | NT Coverage |
+|---|---|---|---|---|
+| 1 — Ὁ Ξένος | 1-30 | ~5.5 | ~200 | ~75% |
+| 2 — Ὁ Μαθητής | 31-60 | ~5.5 | ~400 | ~85% |
+| 3 — Ὁ Κήρυξ | 61-90 | ~5.7 | ~600 | ~90% |
 
 ## Data Sources
-| Source | URL | What |
-|--------|-----|------|
-| MorphGNT/SBLGNT | `pip install py-sblgnt` | NT text with lemmas, morphology, verse refs |
-| Strong's Greek Dictionary | `morphgnt/strongs-dictionary-xml` on GitHub | Etymology + definitions for 5516 NT words |
-| LXX Lemmas | `openscriptures/GreekResources/LxxLemmas/` on GitHub | 60 books of Septuagint, lemmatized JSON |
 
-## Dependencies
+| Source | What | License |
+|---|---|---|
+| MorphGNT/SBLGNT | NT text with lemmas + morphology | MIT |
+| Strong's Greek Dictionary | Etymology for 5516 NT words | Public domain |
+| openscriptures/LxxLemmas | Septuagint lemmatized (60 books) | Open |
+
+## Tech Stack
+
+- **Spanish narration**: Amazon Polly (Mia, es-MX, neural)
+- **Greek speech**: Google Cloud TTS (Chirp3-HD + Wavenet-B fallback)
+- **Audio assembly**: Python (pydub + ffmpeg)
+- **Anki generation**: genanki
+- **NT corpus**: py-sblgnt
+
+## Project Structure
+
 ```
-pip install genanki py-sblgnt
+├── audio/                  90 lesson MP3s organized by level
+├── src/                    Pipeline scripts
+│   ├── pimsleur_engine.py      Audio generation engine
+│   ├── lesson_data_*.py        Lesson content (90 lessons)
+│   ├── extract_compounds.py    Anki: extract compounds from NT
+│   ├── enrich_compounds.py     Anki: add Strong's + suffixes
+│   └── generate_deck.py        Anki: generate .apkg
+├── data/                   NT text, Strong's dictionary, frequency lists
+├── notes/                  Curriculum, guidelines, lessons learned
+└── decks/                  Generated .apkg files
+```
+
+## Quick Start
+
+```bash
+python3 -m venv venv && source venv/bin/activate
+pip install genanki py-sblgnt google-cloud-texttospeech boto3 pydub
+brew install ffmpeg
 ```
