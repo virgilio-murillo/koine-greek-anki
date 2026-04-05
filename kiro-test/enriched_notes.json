@@ -7,7 +7,7 @@
       },
       {
         "gr": "εἰρήνη",
-        "note_es": "La mujer respondió con la palabra εἰρήνη. Significa paz. Aparece noventa y una veces en el Nuevo Testamento. Escucha."
+        "note_es": "La mujer respondió con la palabra εἰρήνη. Significa paz. Aparece noventa y dos veces en el Nuevo Testamento. Escucha."
       },
       {
         "gr": "σοι",
@@ -15,19 +15,19 @@
       },
       {
         "gr": "ναί",
-        "note_es": "Aprende a decir sí. En griego koiné, sí se dice ναί. Aparece treinta y tres veces en el Nuevo Testamento. Escucha."
+        "note_es": "Aprende a decir sí. En griego koiné, sí se dice ναί. Aparece en Mateo cinco treinta y siete. Escucha."
       },
       {
         "gr": "οὐ",
-        "note_es": "No se dice οὐ. Antes de una vocal se dice οὐκ. Aparece mil seiscientas cinco veces en el Nuevo Testamento. Escucha."
+        "note_es": "No se dice οὐ. Antes de una vocal cambia a οὐκ. Es la negación más común del Nuevo Testamento. Escucha."
       },
       {
         "gr": "ἐγώ",
-        "note_es": "ἐγώ significa yo. Aparece dos mil quinientas setenta y dos veces en el Nuevo Testamento. Escucha."
+        "note_es": "ἐγώ significa yo. Es el pronombre personal de primera persona. Se usa para énfasis especial. Escucha."
       },
       {
         "gr": "εἰμί",
-        "note_es": "εἰμί significa soy o estoy. ἐγώ εἰμι juntos significan yo soy. Es una de las frases más importantes del evangelio de Juan. Escucha."
+        "note_es": "εἰμί significa soy o estoy. Es componente de περισσεύω que significa abundar. ἐγώ εἰμι juntos significan yo soy. Escucha."
       },
       {
         "gr": "σύ",
@@ -37,15 +37,15 @@
     "phrases": [
       {
         "gr": "Εἰρήνη σοι",
-        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Ahora di la frase completa: paz a ti."
+        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Juntas forman una bendición común. Ahora di la frase completa. Paz a ti."
       },
       {
         "gr": "ἐγώ εἰμι",
-        "prompt_es": "ἐγώ εἰμι se compone de ἐγώ que significa yo, y εἰμι que significa soy. ¿Cómo dirías yo soy?"
+        "prompt_es": "ἐγώ εἰμι se compone de ἐγώ que significa yo, y εἰμι que significa soy. Es una declaración de identidad muy poderosa. ¿Cómo dirías yo soy?"
       },
       {
         "gr": "σὺ εἶ",
-        "prompt_es": "σὺ εἶ se compone de σὺ que significa tú, y εἶ que significa eres. ¿Cómo dirías tú eres?"
+        "prompt_es": "σὺ εἶ se compone de σὺ que significa tú, y εἶ que significa eres. Nota que εἶ es la forma especial de εἰμί para tú. ¿Cómo dirías tú eres?"
       },
       {
         "gr": "ναί",
@@ -61,11 +61,613 @@
       },
       {
         "gr": "ἐγώ εἰμι",
-        "prompt_es": "Ya conoces ἐγώ y εἰμι. Alguien te pregunta quién eres. Di yo soy."
+        "prompt_es": "ἐγώ εἰμι se compone de ἐγώ que significa yo, y εἰμι que significa soy. Alguien te pregunta quién eres. Di yo soy."
       },
       {
         "gr": "Εἰρήνη σοι",
-        "prompt_es": "Ya conoces Εἰρήνη y σοι. Despídete con paz a ti."
+        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Despídete con paz a ti."
+      }
+    ]
+  },
+  "2": {
+    "vocab": [
+      {
+        "gr": "τί",
+        "note_es": "τί significa qué o cuál. Es una palabra interrogativa. Escucha."
+      },
+      {
+        "gr": "ὄνομα",
+        "note_es": "ὄνομα significa nombre. Es componente de εὐώνυμος que significa izquierdo. Escucha."
+      },
+      {
+        "gr": "μου",
+        "note_es": "Ya conoces ἐγώ. μου significa mi o de mí, es el genitivo de ἐγώ. Escucha."
+      },
+      {
+        "gr": "σου",
+        "note_es": "Ya conoces σοι. σου significa tu o de ti, σοι con iota es a ti, σου con ípsilon es de ti. Escucha."
+      },
+      {
+        "gr": "καί",
+        "note_es": "καί significa y o también. Es la palabra más frecuente del Nuevo Testamento, aparece casi nueve mil veces. Escucha."
+      },
+      {
+        "gr": "αὐτός",
+        "note_es": "αὐτός significa él, αὐτή significa ella, αὐτό significa ello. Escucha la forma masculina."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "Τί ὄνομά σοι;",
+        "prompt_es": "Τί ὄνομά σοι se compone de τί que significa qué, ὄνομά que significa nombre, y σοι que significa a ti. ¿Cómo preguntarías cuál es tu nombre?"
+      },
+      {
+        "gr": "Τὸ ὄνομά μου Σίμων",
+        "prompt_es": "Τὸ ὄνομά μου Σίμων se compone de τὸ que es el artículo, ὄνομά que significa nombre, μου que significa mi, y Σίμων. ¿Cómo dirías mi nombre es Simón?"
+      },
+      {
+        "gr": "Καὶ σοί;",
+        "prompt_es": "Καὶ σοί se compone de καὶ que significa y, y σοί que significa a ti. ¿Cómo preguntarías y tú?"
+      },
+      {
+        "gr": "Τί ὄνομά σοι;",
+        "prompt_es": "¿Cómo preguntarías su nombre otra vez?"
+      },
+      {
+        "gr": "Τὸ ὄνομά μου Μαρία",
+        "prompt_es": "¿Cómo dirías mi nombre es María?"
+      },
+      {
+        "gr": "αὐτός ἐστιν Σίμων",
+        "prompt_es": "αὐτός ἐστιν Σίμων se compone de αὐτός que significa él, ἐστιν que significa es, y Σίμων. ¿Cómo dirías él es Simón?"
+      },
+      {
+        "gr": "αὐτή ἐστιν Μαρία",
+        "prompt_es": "αὐτή ἐστιν Μαρία se compone de αὐτή que significa ella, ἐστιν que significa es, y Μαρία. ¿Cómo dirías ella es María?"
+      }
+    ]
+  },
+  "3": {
+    "vocab": [
+      {
+        "gr": "πόθεν",
+        "note_es": "πόθεν significa de dónde. Esta misma pregunta aparece en el evangelio de Juan cuando Pilato le pregunta a Jesús. Escucha."
+      },
+      {
+        "gr": "εἶ",
+        "note_es": "εἶ significa eres. Es la forma de εἰμί para tú. Ya la conoces de σὺ εἶ. Escucha."
+      },
+      {
+        "gr": "ἀπό",
+        "note_es": "ἀπό significa de o desde. Se usa para decir de dónde eres geográficamente. ἀπό es componente de ἀπάγχομαι, ἀπάγω y ἀπάντησις. Escucha."
+      },
+      {
+        "gr": "ἐστιν",
+        "note_es": "ἐστιν significa es. Es la tercera persona de εἰμί. εἰμί yo soy, εἶ tú eres, ἐστιν él o ella es. Escucha."
+      },
+      {
+        "gr": "ἐκ",
+        "note_es": "ἐκ también significa de, pero se usa para grupos o familias. ἀπό es para lugares, ἐκ es para grupos. ἐκ es componente de ἐκβάλλω, ἐκδίδωμι y ἐκδύω. Escucha."
+      },
+      {
+        "gr": "αὐτή",
+        "note_es": "Ya conoces αὐτός que significa él. αὐτή significa ella. αὐτή ἐστιν, ella es. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "Πόθεν εἶ;",
+        "prompt_es": "Πόθεν εἶ se compone de Πόθεν que significa de dónde, y εἶ que significa eres. Pregunta de dónde eres."
+      },
+      {
+        "gr": "ἀπὸ Γαλιλαίας",
+        "prompt_es": "ἀπὸ Γαλιλαίας se compone de ἀπὸ y Γαλιλαίας. Di de Galilea."
+      },
+      {
+        "gr": "ἀπὸ Ἰερουσαλήμ",
+        "prompt_es": "ἀπὸ Ἰερουσαλήμ se compone de ἀπὸ y Ἰερουσαλήμ. Di de Jerusalén."
+      },
+      {
+        "gr": "ἐγώ εἰμι ἀπὸ Γαλιλαίας",
+        "prompt_es": "Esta frase se compone de ἐγώ, εἰμι, ἀπὸ y Γαλιλαίας. Di yo soy de Galilea."
+      },
+      {
+        "gr": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
+        "prompt_es": "Esta frase se compone de αὐτός, ἐστιν que significa es, ἀπὸ y Ἰερουσαλήμ. Di él es de Jerusalén."
+      },
+      {
+        "gr": "αὐτή ἐστιν ἀπὸ Γαλιλαίας",
+        "prompt_es": "Esta frase se compone de αὐτή que significa ella, ἐστιν que significa es, ἀπὸ y Γαλιλαίας. Di ella es de Galilea."
+      },
+      {
+        "gr": "Πόθεν εἶ σύ;",
+        "prompt_es": "Esta frase se compone de Πόθεν que significa de dónde, εἶ que significa eres, y σύ. Pregunta de dónde eres tú, con énfasis."
+      },
+      {
+        "gr": "Καὶ σύ;",
+        "prompt_es": "Ya conoces Καὶ que significa y. Esta frase se compone de Καὶ y σύ. Pregunta y tú."
+      }
+    ]
+  },
+  "4": {
+    "vocab": [
+      {
+        "gr": "γινώσκω",
+        "note_es": "γινώσκω significa saber o conocer y aparece doscientas veintidós veces en el Nuevo Testamento. Es componente de ἀναγινώσκω que significa leer, y de ἐπιγινώσκω que significa reconocer. Escucha."
+      },
+      {
+        "gr": "ἀκούω",
+        "note_es": "ἀκούω significa oír o escuchar y aparece cuatrocientas veintisiete veces en el Nuevo Testamento. Es componente de εἰσακούω que significa escuchar u obedecer, y de παρακούω que significa desobedecer o ignorar. Escucha."
+      },
+      {
+        "gr": "λέγω",
+        "note_es": "λέγω significa decir o hablar y es una de las palabras más frecuentes del Nuevo Testamento, apareciendo más de dos mil veces. Es componente de ἐκλεκτός que significa escogido o elegido, y de ὁμολογέω que significa confesar o declarar. Escucha."
+      },
+      {
+        "gr": "λόγος",
+        "note_es": "λόγος significa palabra y es una de las palabras más importantes del Nuevo Testamento. Es componente de εὐλογέω que significa bendecir, y de πολυλογία que significa palabrería. Escucha."
+      },
+      {
+        "gr": "πάλιν",
+        "note_es": "πάλιν significa otra vez o de nuevo. λέγε πάλιν significa di otra vez, donde λέγε es la orden de decir. Escucha."
+      },
+      {
+        "gr": "δέ",
+        "note_es": "δέ significa pero o y y es especial porque nunca va al principio de la frase. Siempre va en segundo lugar, por ejemplo ἐγὼ δέ significa pero yo. Escucha."
+      },
+      {
+        "gr": "ἀλλά",
+        "note_es": "ἀλλά también significa pero, pero es más fuerte, como sino. A diferencia de δέ, ἀλλά sí va al principio de la frase. Escucha."
+      },
+      {
+        "gr": "ὅτι",
+        "note_es": "ὅτι significa que o porque y aparece más de mil veces en el Nuevo Testamento. λέγω σοι ὅτι significa te digo que. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "γινώσκω",
+        "prompt_es": "Di yo sé."
+      },
+      {
+        "gr": "οὐ γινώσκω",
+        "prompt_es": "οὐ γινώσκω se compone de οὐ que ya conoces significa no, y γινώσκω que significa saber o conocer. Di no sé."
+      },
+      {
+        "gr": "ἀκούω",
+        "prompt_es": "Di oigo."
+      },
+      {
+        "gr": "οὐκ ἀκούω",
+        "prompt_es": "οὐκ ἀκούω se compone de οὐκ que es la forma de no antes de vocal, y ἀκούω que significa oír o escuchar. Di no oigo. Recuerda, οὐ se convierte en οὐκ antes de vocal."
+      },
+      {
+        "gr": "λέγω σοι",
+        "prompt_es": "λέγω σοι se compone de λέγω que significa decir, y σοι que ya conoces. Di te digo."
+      },
+      {
+        "gr": "λέγε πάλιν",
+        "prompt_es": "λέγε πάλιν se compone de λέγε que es la forma de comando de decir, y πάλιν que significa otra vez o de nuevo. Pide que repitan. Di otra vez."
+      },
+      {
+        "gr": "λέγω σοι ὅτι",
+        "prompt_es": "λέγω σοι ὅτι se compone de λέγω que significa decir, σοι que ya conoces, y ὅτι que significa que o porque. Di te digo que."
+      },
+      {
+        "gr": "γινώσκω ὅτι",
+        "prompt_es": "γινώσκω ὅτι se compone de γινώσκω que significa saber o conocer, y ὅτι que significa que o porque. Di sé que."
+      },
+      {
+        "gr": "ἐγὼ δὲ λέγω ὑμῖν",
+        "prompt_es": "ἐγὼ δὲ λέγω ὑμῖν se compone de ἐγὼ que ya conoces, δὲ que significa pero, λέγω que significa decir, y ὑμῖν que significa a ustedes. Jesús dice muchas veces: pero yo les digo. ὑμῖν es a ustedes. Escucha."
+      }
+    ]
+  },
+  "5": {
+    "vocab": [
+      {
+        "gr": "ὁ",
+        "note_es": "En griego, el artículo cambia según el género. ὁ es el, para masculino. Escucha."
+      },
+      {
+        "gr": "ἡ",
+        "note_es": "ἡ es la, para femenino. Escucha."
+      },
+      {
+        "gr": "τό",
+        "note_es": "τό es lo, para neutro. Escucha."
+      },
+      {
+        "gr": "ἄνθρωπος",
+        "note_es": "ἄνθρωπος significa persona o hombre. Aparece quinientas cincuenta veces en el Nuevo Testamento. Con el artículo: ὁ ἄνθρωπος, el hombre. Escucha."
+      },
+      {
+        "gr": "γυνή",
+        "note_es": "γυνή significa mujer. Es femenina, así que usas ἡ γυνή, la mujer. Escucha."
+      },
+      {
+        "gr": "τέκνον",
+        "note_es": "τέκνον significa hijo o niño. Es neutro, por eso τὸ τέκνον, el niño. Escucha."
+      },
+      {
+        "gr": "οὗτος",
+        "note_es": "οὗτος significa este. Se usa con masculino: οὗτος ὁ ἄνθρωπος, este hombre. Escucha."
+      },
+      {
+        "gr": "ἐκεῖνος",
+        "note_es": "ἐκεῖνος significa aquel. También con masculino: ἐκεῖνος ὁ ἄνθρωπος, aquel hombre. Escucha."
+      },
+      {
+        "gr": "ἰδού",
+        "note_es": "ἰδού significa mira o he aquí. Aparece doscientas veces en el Nuevo Testamento. Pilato dijo ἰδοὺ ὁ ἄνθρωπος, he aquí el hombre, señalando a Jesús. Escucha."
+      },
+      {
+        "gr": "οὖν",
+        "note_es": "Ya conoces δέ que nunca va al principio. οὖν es igual: significa entonces o por lo tanto, pero siempre va en segundo lugar. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "ὁ ἄνθρωπος",
+        "prompt_es": "ὁ ἄνθρωπος se compone de ὁ que significa el masculino, y ἄνθρωπος que significa persona o hombre. Di el hombre."
+      },
+      {
+        "gr": "ἡ γυνή",
+        "prompt_es": "ἡ γυνή se compone de ἡ que significa la femenino, y γυνή que significa mujer. Di la mujer."
+      },
+      {
+        "gr": "τὸ τέκνον",
+        "prompt_es": "τὸ τέκνον se compone de τὸ que es el artículo neutro, y τέκνον que significa hijo o niño. Di el niño."
+      },
+      {
+        "gr": "οὗτος ὁ ἄνθρωπος",
+        "prompt_es": "οὗτος ὁ ἄνθρωπος se compone de οὗτος que significa este, ὁ que significa el masculino, y ἄνθρωπος que significa persona o hombre. Di este hombre."
+      },
+      {
+        "gr": "ἐκεῖνος ὁ ἄνθρωπος",
+        "prompt_es": "ἐκεῖνος ὁ ἄνθρωπος se compone de ἐκεῖνος que significa aquel, ὁ que significa el masculino, y ἄνθρωπος que significa persona o hombre. Di aquel hombre."
+      },
+      {
+        "gr": "ἰδοὺ ὁ ἄνθρωπος",
+        "prompt_es": "Ya conoces γινώσκω y λέγω. ἰδοὺ ὁ ἄνθρωπος se compone de ἰδοὺ que significa he aquí, ὁ que significa el masculino, y ἄνθρωπος que significa persona o hombre. Di he aquí el hombre. Pilato dijo esto señalando a Jesús."
+      },
+      {
+        "gr": "γινώσκω ὅτι",
+        "prompt_es": "Ya conoces γινώσκω que significa saber, y ὅτι que significa que. Di sé que."
+      },
+      {
+        "gr": "λέγω σοι ὅτι",
+        "prompt_es": "Ya conoces λέγω que significa decir, σοι que significa te, y ὅτι que significa que. Di te digo que."
+      }
+    ]
+  },
+  "6": {
+    "vocab": [
+      {
+        "gr": "ποῦ",
+        "note_es": "ποῦ significa dónde. No confundas con πόθεν que ya conoces y significa de dónde. ποῦ pregunta dónde está algo. Escucha."
+      },
+      {
+        "gr": "ὧδε",
+        "note_es": "ὧδε significa aquí. Es la respuesta cuando algo está en este lugar donde estamos. Escucha."
+      },
+      {
+        "gr": "ἐκεῖ",
+        "note_es": "ἐκεῖ significa allí. Es la respuesta cuando algo está en aquel lugar lejano. Escucha."
+      },
+      {
+        "gr": "τίς",
+        "note_es": "τίς con acento significa quién. Sin acento sería τις que significa alguien. La diferencia está en el acento. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "ποῦ ἐστιν;",
+        "prompt_es": "ποῦ ἐστιν se compone de ποῦ que significa dónde, y ya conoces ἐστιν que significa está o es. Pregunta dónde está."
+      },
+      {
+        "gr": "ὧδε ἐστιν",
+        "prompt_es": "ὧδε ἐστιν se compone de ὧδε que significa aquí, y ya conoces ἐστιν que significa está. Di está aquí."
+      },
+      {
+        "gr": "ἐκεῖ ἐστιν",
+        "prompt_es": "ἐκεῖ ἐστιν se compone de ἐκεῖ que significa allí, y ya conoces ἐστιν que significa está. Di está allí."
+      },
+      {
+        "gr": "τίς ἐστιν;",
+        "prompt_es": "τίς ἐστιν se compone de τίς que significa quién, y ya conoces ἐστιν que significa es o está. Pregunta quién es."
+      },
+      {
+        "gr": "ποῦ ἐστιν ὁ ἄνθρωπος;",
+        "prompt_es": "Esta frase usa ποῦ que significa dónde, ya conoces ἐστιν, y ya conoces ὁ ἄνθρωπος que significa el hombre. Pregunta dónde está el hombre."
+      },
+      {
+        "gr": "ὁ ἄνθρωπος ἐκεῖ ἐστιν",
+        "prompt_es": "Ya conoces ὁ ἄνθρωπος que significa el hombre, ἐκεῖ significa allí, y ya conoces ἐστιν. Di el hombre está allí."
+      }
+    ]
+  },
+  "7": {
+    "vocab": [
+      {
+        "gr": "ἔρχομαι",
+        "note_es": "ἔρχομαι significa venir o ir. Es componente de εἰσέρχομαι que significa entrar, προσέρχομαι que significa acercarse, y προσήλυτος que significa prosélito. Escucha."
+      },
+      {
+        "gr": "ἔρχου",
+        "note_es": "Para decir ven, como una orden, se dice ἔρχου. Jesús dijo a Felipe: ἔρχου, ven. Escucha."
+      },
+      {
+        "gr": "πορεύομαι",
+        "note_es": "πορεύομαι significa ir o caminar. Es componente de εἰσπορεύομαι que significa entrar, παραπορεύομαι que significa pasar al lado, y ἐκπορεύομαι que significa salir. Escucha."
+      },
+      {
+        "gr": "εἰς",
+        "note_es": "εἰς significa hacia o a, indica movimiento. Es componente de εἰσέρχομαι que significa entrar, εἰσακούω que significa escuchar, y εἰσπορεύομαι que significa entrar. Escucha."
+      },
+      {
+        "gr": "ἐν",
+        "note_es": "ἐν significa en, indica ubicación. Es componente de ἐνδύω que significa vestir, ἐνεργέω que significa obrar, y ἐνθυμέομαι que significa reflexionar. Escucha."
+      },
+      {
+        "gr": "οἶκος",
+        "note_es": "οἶκος significa casa. ὁ οἶκος, la casa. Escucha."
+      },
+      {
+        "gr": "ὁδός",
+        "note_es": "ὁδός significa camino. ἐν τῇ ὁδῷ, en el camino. Escucha."
+      },
+      {
+        "gr": "δεῦτε",
+        "note_es": "δεῦτε significa vengan, es una invitación plural. Jesús dijo a los pescadores: δεῦτε ὀπίσω μου, vengan tras de mí. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "πορεύομαι εἰς τὸ ἱερόν",
+        "prompt_es": "πορεύομαι εἰς τὸ ἱερόν se compone de πορεύομαι que significa ir, εἰς que significa hacia, τὸ y ἱερόν que es templo. Di voy al templo."
+      },
+      {
+        "gr": "ἐν τῇ ὁδῷ",
+        "prompt_es": "ἐν τῇ ὁδῷ se compone de ἐν que significa en, τῇ y ὁδῷ. Ya conoces ὁδός. Di en el camino."
+      },
+      {
+        "gr": "ἔρχου μετ᾽ ἐμοῦ",
+        "prompt_es": "ἔρχου μετ᾽ ἐμοῦ se compone de ἔρχου que significa ven, μετ᾽ y ἐμοῦ. μετ᾽ ἐμοῦ significa conmigo. Di ven conmigo."
+      },
+      {
+        "gr": "πορεύομαι εἰς τὸν οἶκον",
+        "prompt_es": "πορεύομαι εἰς τὸν οἶκον se compone de πορεύομαι que significa ir, εἰς que significa hacia, τὸν y οἶκον. Ya conoces οἶκος. Di voy a la casa."
+      },
+      {
+        "gr": "Δεῦτε ὀπίσω μου",
+        "prompt_es": "Δεῦτε ὀπίσω μου se compone de Δεῦτε que significa vengan, ὀπίσω y μου. ὀπίσω μου significa tras de mí. Di vengan tras de mí."
+      },
+      {
+        "gr": "ἐν τῷ ἱερῷ",
+        "prompt_es": "ἐν τῷ ἱερῷ se compone de ἐν que significa en, τῷ y ἱερῷ. Recuerda: εἰς es hacia, ἐν es en. Di en el templo."
+      },
+      {
+        "gr": "ποῦ πορεύῃ;",
+        "prompt_es": "ποῦ πορεύῃ se compone de ποῦ y πορεύῃ. Ya conoces ποῦ de la lección anterior. Pregunta a dónde vas."
+      }
+    ]
+  },
+  "8": {
+    "vocab": [
+      {
+        "gr": "θέλω",
+        "note_es": "θέλω significa quiero. θέλεις es quieres. θέλει es quiere. Escucha."
+      },
+      {
+        "gr": "ἄρτος",
+        "note_es": "ἄρτος significa pan. Es la palabra que Jesús usa en la última cena. En koiné siempre es ἄρτος. Escucha."
+      },
+      {
+        "gr": "ὕδωρ",
+        "note_es": "ὕδωρ significa agua. En koiné siempre es ὕδωρ. Escucha."
+      },
+      {
+        "gr": "οἶνος",
+        "note_es": "οἶνος significa vino. Escucha."
+      },
+      {
+        "gr": "ἰχθύς",
+        "note_es": "ἰχθύς significa pez. Los primeros cristianos usaban el pez como símbolo. Escucha."
+      },
+      {
+        "gr": "ἐσθίω",
+        "note_es": "ἐσθίω significa comer. Escucha."
+      },
+      {
+        "gr": "πίνω",
+        "note_es": "πίνω significa beber. Es componente de καταπίνω que significa tragar, devorar. Escucha."
+      },
+      {
+        "gr": "λάβε",
+        "note_es": "λάβε significa toma. Es una orden. Viene del verbo λαμβάνω, tomar o recibir. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "θέλω ἄρτον",
+        "prompt_es": "θέλω ἄρτον se compone de θέλω que significa quiero, y ἄρτον. Nota que ἄρτον termina en ον porque es objeto directo. Di quiero pan."
+      },
+      {
+        "gr": "θέλω ὕδωρ",
+        "prompt_es": "θέλω ὕδωρ se compone de θέλω que significa quiero, y ὕδωρ que significa agua. Di quiero agua."
+      },
+      {
+        "gr": "θέλω οἶνον",
+        "prompt_es": "θέλω οἶνον se compone de θέλω que significa quiero, y οἶνον. Di quiero vino."
+      },
+      {
+        "gr": "θέλεις ἄρτον;",
+        "prompt_es": "θέλεις ἄρτον se compone de θέλεις, y ἄρτον. Pregunta quieres pan."
+      },
+      {
+        "gr": "ἐσθίω ἄρτον",
+        "prompt_es": "ἐσθίω ἄρτον se compone de ἐσθίω que significa comer, y ἄρτον. Di como pan."
+      },
+      {
+        "gr": "πίνω οἶνον",
+        "prompt_es": "πίνω οἶνον se compone de πίνω que significa beber, y οἶνον. Di bebo vino."
+      },
+      {
+        "gr": "ἐσθίω ἄρτον καὶ πίνω οἶνον",
+        "prompt_es": "Esta frase se compone de ἐσθίω que significa comer, ἄρτον, Ya conoces καὶ, πίνω que significa beber, y οἶνον. Di como pan y bebo vino."
+      },
+      {
+        "gr": "θέλω ἄρτον καὶ ὕδωρ",
+        "prompt_es": "Esta frase se compone de θέλω que significa quiero, ἄρτον, Ya conoces καὶ, y ὕδωρ que significa agua. Di quiero pan y agua."
+      },
+      {
+        "gr": "εὐχαριστῶ",
+        "prompt_es": "En koiné, εὐχαριστῶ es formal, es dar gracias a Dios. No es el gracias casual del griego moderno. Da gracias."
+      }
+    ]
+  },
+  "9": {
+    "vocab": [
+      {
+        "gr": "εἷς",
+        "note_es": "Uno se dice εἷς para masculino, μία para femenino, ἕν para neutro. Ya conoces ἄρτος, εἷς ἄρτος significa un pan. Escucha."
+      },
+      {
+        "gr": "δύο",
+        "note_es": "Dos se dice δύο. No cambia con el género como εἷς. Escucha."
+      },
+      {
+        "gr": "τρεῖς",
+        "note_es": "Tres se dice τρεῖς. Escucha."
+      },
+      {
+        "gr": "τέσσαρες",
+        "note_es": "Cuatro se dice τέσσαρες. Escucha."
+      },
+      {
+        "gr": "πέντε",
+        "note_es": "Cinco se dice πέντε. Escucha."
+      },
+      {
+        "gr": "ἕξ",
+        "note_es": "Seis se dice ἕξ. Escucha."
+      },
+      {
+        "gr": "ἑπτά",
+        "note_es": "Siete se dice ἑπτά. Un número muy importante en la Biblia. Escucha."
+      },
+      {
+        "gr": "ὀκτώ",
+        "note_es": "Ocho se dice ὀκτώ. Escucha."
+      },
+      {
+        "gr": "ἐννέα",
+        "note_es": "Nueve se dice ἐννέα. Escucha."
+      },
+      {
+        "gr": "δέκα",
+        "note_es": "Diez se dice δέκα. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "εἷς ἄρτος",
+        "prompt_es": "εἷς ἄρτος se compone de εἷς que significa uno, y ἄρτος que ya conoces, pan. Di un pan."
+      },
+      {
+        "gr": "δύο ἰχθύες",
+        "prompt_es": "δύο ἰχθύες se compone de δύο que significa dos, y ἰχθύες que es el plural de ἰχθύς que ya conoces. Di dos peces."
+      },
+      {
+        "gr": "πέντε ἄρτοι",
+        "prompt_es": "πέντε ἄρτοι se compone de πέντε que significa cinco, y ἄρτοι que es el plural de ἄρτος. Di cinco panes."
+      },
+      {
+        "gr": "πέντε ἄρτοι καὶ δύο ἰχθύες",
+        "prompt_es": "Esta frase se compone de πέντε que significa cinco, ἄρτοι plural de ἄρτος, καὶ que ya conoces, δύο que significa dos, e ἰχθύες plural de ἰχθύς. Di cinco panes y dos peces."
+      },
+      {
+        "gr": "τρεῖς ἡμέραι",
+        "prompt_es": "τρεῖς ἡμέραι se compone de τρεῖς que significa tres, y ἡμέραι que es el plural de ἡμέρα, día. Di tres días."
+      },
+      {
+        "gr": "ἑπτά",
+        "prompt_es": "Di siete."
+      },
+      {
+        "gr": "δέκα",
+        "prompt_es": "Di diez."
+      },
+      {
+        "gr": "εἷς",
+        "prompt_es": "Di uno."
+      }
+    ]
+  },
+  "10": {
+    "vocab": [
+      {
+        "gr": "ἔχω",
+        "note_es": "ἔχω significa tengo. Es componente de εὐνουχίζω hacer eunuco, εὐνοῦχος eunuco y προσέχω prestar atención. Escucha."
+      },
+      {
+        "gr": "πολύς",
+        "note_es": "Ya conoces πολύς que significa mucho. Es componente de πολυλογία palabrería. Escucha."
+      },
+      {
+        "gr": "ὀλίγος",
+        "note_es": "ὀλίγος significa poco. Es componente de ὀλιγοπιστία poca fe y ὀλιγόπιστος de poca fe. Escucha."
+      },
+      {
+        "gr": "οὐδείς",
+        "note_es": "οὐδείς significa nadie. οὐδέν es la forma neutra que significa nada. Escucha."
+      },
+      {
+        "gr": "χρεία",
+        "note_es": "χρεία significa necesidad. Es componente de ἀχρεῖος inútil. Escucha."
+      },
+      {
+        "gr": "τοῦτον",
+        "note_es": "τοῦτον significa este cuando es objeto directo. λάβε τοῦτον significa toma este. Escucha."
+      }
+    ],
+    "phrases": [
+      {
+        "gr": "ἔχω",
+        "prompt_es": "Di tengo."
+      },
+      {
+        "gr": "οὐκ ἔχω",
+        "prompt_es": "Ya conoces οὐκ. ἔχω significa tengo. Di no tengo."
+      },
+      {
+        "gr": "ἔχεις ἄρτον;",
+        "prompt_es": "ἔχεις significa tienes. Ya conoces ἄρτον que significa pan. Pregunta tienes pan."
+      },
+      {
+        "gr": "ἔχω πολλά",
+        "prompt_es": "ἔχω significa tengo. Ya conoces πολλά que significa mucho. Di tengo mucho."
+      },
+      {
+        "gr": "ἔχω ὀλίγον",
+        "prompt_es": "ἔχω significa tengo. ὀλίγον significa poco. Di tengo poco."
+      },
+      {
+        "gr": "οὐκ ἔχω οὐδέν",
+        "prompt_es": "Ya conoces οὐκ. ἔχω significa tengo. οὐδέν significa nada. Di no tengo nada."
+      },
+      {
+        "gr": "χρείαν ἔχω ἄρτου",
+        "prompt_es": "χρείαν significa necesidad. ἔχω significa tengo. Ya conoces ἄρτου que significa de pan. Di tengo necesidad de pan."
+      },
+      {
+        "gr": "χρείαν ἔχω ὕδατος",
+        "prompt_es": "χρείαν significa necesidad. ἔχω significa tengo. ὕδατος significa de agua. Di tengo necesidad de agua."
+      },
+      {
+        "gr": "ἔχομεν πέντε ἄρτους",
+        "prompt_es": "ἔχομεν significa tenemos. Ya conoces πέντε que significa cinco. ἄρτους significa panes. Di tenemos cinco panes."
       }
     ]
   }
