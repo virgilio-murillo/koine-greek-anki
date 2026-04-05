@@ -1,0 +1,48 @@
+letter,modern_sound,sounds_like_es,notes
+α,a,a,
+β,v,v,no como b española
+γ,ɣ,g suave/j,antes de ε/ι suena como y
+δ,ð,d suave (como inglés 'the'),
+ε,e,e,
+ζ,z,z,
+η,i,i,suena igual que ι
+θ,θ,z (como inglés 'think'),
+ι,i,i,
+κ,k,k,
+λ,l,l,
+μ,m,m,
+ν,n,n,
+ξ,ks,ks,
+ο,o,o,
+π,p,p,
+ρ,r,r,
+σ/ς,s,s,ς al final de palabra
+τ,t,t,
+υ,i,i,suena igual que ι y η
+φ,f,f,
+χ,x,j (como jota española),
+ψ,ps,ps,
+ω,o,o,suena igual que ο
+diphthong,modern_sound,sounds_like_es,notes
+αι,e,e,como ε
+ει,i,i,como ι
+οι,i,i,como ι
+υι,i,i,como ι
+αυ,av/af,av antes de vocal/sonora; af antes de sorda,
+ευ,ev/ef,ev antes de vocal/sonora; ef antes de sorda,
+ου,u,u,único diptongo que NO suena como i
+combination,modern_sound,sounds_like_es,notes
+γγ,ng,ng,
+γκ,ng/nk,ng,
+γχ,nx,nj,
+μπ,mb/b,b al inicio de palabra,
+ντ,nd/d,d al inicio de palabra,
+confusing_pair,phrase,sounds_like,explanation
+σὺ εἶ,si i → si,si,dos palabras que suenan como una sílaba
+ναί,ne,ne,suena como 'ne' no como 'nai'
+οὐ,u,u,suena como 'u' simple
+οὐκ,uk,uk,
+μου,mu,mu,
+σου,su,su,
+μοι,mi,mi,suena igual que μι
+σοι,si,si,suena igual que σι
