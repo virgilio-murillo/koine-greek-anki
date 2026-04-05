@@ -3,131 +3,69 @@
     "vocab": [
       {
         "gr": "χαῖρε",
-        "note_es": "El hombre dijo χαῖρε. Significa alégrate, o simplemente, hola. En la pronunciación, alfa suena como 'a', épsilon como 'e', ro como 'r', y ji como jota española. Escucha."
+        "note_es": "El hombre dijo χαῖρε. Significa alégrate, o simplemente, hola como saludo común del Nuevo Testamento. Escucha."
       },
       {
         "gr": "εἰρήνη",
-        "note_es": "La mujer respondió con la palabra εἰρήνη. Significa paz y aparece noventa y una veces en el Nuevo Testamento. Épsilon suena como 'e', eta como 'i', ni como 'n', y ro como 'r'. Escucha."
+        "note_es": "La mujer respondió con εἰρήνη, que significa paz. Esta palabra aparece noventa y una veces en el Nuevo Testamento. Escucha."
       },
       {
         "gr": "σοι",
-        "note_es": "σοι significa a ti. Es la forma dativa de tú. Ómicron suena como 'o', pero ómicron-iota juntas suenan como 'i', así que σοι suena como 'si'. Escucha."
+        "note_es": "σοι significa a ti y es la forma dativa de tú. Εἰρήνη σοι significa paz a ti. Escucha."
       },
       {
         "gr": "ναί",
-        "note_es": "Aprende a decir sí. En griego koiné, sí se dice ναί. Nu suena como 'n', alfa como 'a', pero toda la palabra suena como 'ne', no como 'nai'. Escucha."
+        "note_es": "Para decir sí, usa ναί. Aparece treinta y tres veces en el Nuevo Testamento, incluyendo Mateo cinco treinta y siete. Escucha."
       },
       {
         "gr": "οὐ",
-        "note_es": "No se dice οὐ. Antes de una vocal se dice οὐκ. Ómicron suena como 'o', pero ómicron-ípsilon juntas suenan como 'u' simple. Escucha."
+        "note_es": "No se dice οὐ. Aparece mil seiscientas cinco veces en el Nuevo Testamento y antes de vocal se dice οὐκ. Escucha."
       },
       {
         "gr": "ἐγώ",
-        "note_es": "ἐγώ significa yo. En la pronunciación, gamma antes de épsilon suena como 'y', no como 'g' fuerte. Escucha."
+        "note_es": "ἐγώ significa yo. Es una de las palabras más frecuentes, apareciendo dos mil quinientas setenta y dos veces en el Nuevo Testamento. Escucha."
       },
       {
         "gr": "εἰμί",
-        "note_es": "εἰμί significa soy o estoy. Es componente de la palabra περισσεύω que significa abundar. Épsilon suena como 'e' y mi como 'm'. Escucha."
+        "note_es": "εἰμί significa soy o estoy. Aparece dos mil cuatrocientas cincuenta y seis veces y es componente de περισσεύω que significa abundar. Escucha."
       },
       {
         "gr": "σύ",
-        "note_es": "σύ significa tú. Para decir tú eres, se dice σὺ εἶ, donde εἶ es la forma de εἰμί para tú. Escucha."
+        "note_es": "σύ significa tú. Para decir tú eres se dice σὺ εἶ, donde εἶ es la forma de εἰμί para tú. Escucha."
       }
     ],
     "phrases": [
       {
         "gr": "Εἰρήνη σοι",
-        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Son dos palabras separadas con eta sonando como 'i' y sigma-ómicron-iota como 'si'. Ahora di la frase completa. Paz a ti."
+        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Ahora di la frase completa, paz a ti."
       },
       {
         "gr": "ἐγώ εἰμι",
-        "prompt_es": "Ya conoces ἐγώ que significa yo. Ya conoces εἰμί que significa soy. Gamma antes de épsilon suena como 'y', y épsilon como 'e'. ¿Cómo dirías yo soy?"
+        "prompt_es": "Ya conoces ἐγώ que significa yo, y εἰμι que significa soy. ¿Cómo dirías yo soy?"
       },
       {
         "gr": "σὺ εἶ",
-        "prompt_es": "Ya conoces σύ que significa tú. εἶ significa eres. Épsilon suena como 'e', y estas dos palabras suenan juntas como una sílaba 'si'. ¿Cómo dirías tú eres?"
+        "prompt_es": "Ya conoces σὺ que significa tú, y εἶ que significa eres. ¿Cómo dirías tú eres?"
       },
       {
         "gr": "ναί",
-        "prompt_es": "Ya conoces ναί que significa sí. Nu suena como 'n', alfa como 'a', pero la palabra completa suena como 'ne'. ¿Cómo dirías sí?"
+        "prompt_es": "¿Cómo dirías sí?"
       },
       {
         "gr": "οὐ",
-        "prompt_es": "Ya conoces οὐ que significa no. Ómicron suena como 'o', pero ómicron-ípsilon juntas suenan como 'u' simple. ¿Cómo dirías no?"
+        "prompt_es": "¿Cómo dirías no?"
       },
       {
         "gr": "Χαῖρε",
-        "prompt_es": "Ya conoces Χαῖρε que significa hola. Alfa suena como 'a', épsilon como 'e', y ro como 'r'. ¿Cómo saludarías a alguien?"
+        "prompt_es": "¿Cómo saludarías a alguien?"
       },
       {
         "gr": "ἐγώ εἰμι",
-        "prompt_es": "ἐγώ εἰμι se compone de ἐγώ que significa yo, y εἰμι que significa soy. Gamma antes de épsilon suena como 'y', épsilon como 'e', iota como 'i', y mi como 'm'. Alguien te pregunta quién eres. Di yo soy."
+        "prompt_es": "Ya conoces ἐγώ que significa yo, y εἰμι que significa soy. Alguien te pregunta quién eres, di yo soy."
       },
       {
         "gr": "Εἰρήνη σοι",
-        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Eta suena como 'i', ni como 'n', ro como 'r', y sigma-ómicron-iota como 'si'. Despídete con paz a ti."
-      }
-    ]
-  },
-  "3": {
-    "vocab": [
-      {
-        "gr": "πόθεν",
-        "note_es": "πόθεν significa de dónde. Esta palabra aparece veintinueve veces en el Nuevo Testamento. La theta suena como z del inglés think, y las demás letras suenan como se escriben. Escucha."
-      },
-      {
-        "gr": "εἶ",
-        "note_es": "εἶ significa eres. Es la forma de εἰμί para tú. Ya conoces esta palabra de σὺ εἶ. Escucha."
-      },
-      {
-        "gr": "ἀπό",
-        "note_es": "ἀπό significa de o desde. Se usa para decir de dónde eres geográficamente. Es componente de palabras como ἀπάγω, llevar preso. Escucha."
-      },
-      {
-        "gr": "ἐστιν",
-        "note_es": "ἐστιν significa es. Es la tercera persona de εἰμί. εἰμί yo soy, εἶ tú eres, ἐστιν él o ella es. Escucha."
-      },
-      {
-        "gr": "ἐκ",
-        "note_es": "ἐκ también significa de, pero se usa para grupos o familias. ἀπό es para lugares, ἐκ es para grupos. Es componente de ἐκβάλλω, echar fuera. Escucha."
-      },
-      {
-        "gr": "αὐτή",
-        "note_es": "αὐτή significa ella. Ya conoces αὐτός, él. αὐτή ἐστιν, ella es. Escucha."
-      }
-    ],
-    "phrases": [
-      {
-        "gr": "Πόθεν εἶ;",
-        "prompt_es": "Πόθεν εἶ se compone de Πόθεν que significa de dónde, y εἶ que significa eres. La theta suena como z del inglés think, y las demás letras suenan normalmente. Pregunta de dónde eres."
-      },
-      {
-        "gr": "ἀπὸ Γαλιλαίας",
-        "prompt_es": "ἀπὸ Γαλιλαίας se compone de ἀπὸ y Γαλιλαίας. Las letras suenan como se escriben, especialmente nota las lambdas que suenan como l. Di de Galilea."
-      },
-      {
-        "gr": "ἀπὸ Ἰερουσαλήμ",
-        "prompt_es": "ἀπὸ Ἰερουσαλήμ se compone de ἀπὸ e Ἰερουσαλήμ. Nota que ου suena como u, es el único diptongo que no suena como i. Di de Jerusalén."
-      },
-      {
-        "gr": "ἐγώ εἰμι ἀπὸ Γαλιλαίας",
-        "prompt_es": "ἐγώ εἰμι ἀπὸ Γαλιλαίας se compone de ἐγώ, εἰμι, ἀπὸ y Γαλιλαίας. La gamma antes de epsilon suena como y suave. Di yo soy de Galilea."
-      },
-      {
-        "gr": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
-        "prompt_es": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ se compone de αὐτός, ἐστιν que significa es, ἀπὸ e Ἰερουσαλήμ. Ya conoces αὐτός. Di él es de Jerusalén."
-      },
-      {
-        "gr": "αὐτή ἐστιν ἀπὸ Γαλιλαίας",
-        "prompt_es": "αὐτή ἐστιν ἀπὸ Γαλιλαίας se compone de αὐτή que significa ella, ἐστιν que significa es, ἀπὸ y Γαλιλαίας. Las letras suenan normalmente. Di ella es de Galilea."
-      },
-      {
-        "gr": "Πόθεν εἶ σύ;",
-        "prompt_es": "Πόθεν εἶ σύ se compone de Πόθεν que significa de dónde, εἶ que significa eres, y σύ. La theta suena como z del inglés think. Pregunta de dónde eres tú, con énfasis."
-      },
-      {
-        "gr": "Καὶ σύ;",
-        "prompt_es": "Καὶ σύ se compone de Καὶ y σύ. Ya conoces καί. El alfa suena normalmente como a. Pregunta y tú."
+        "prompt_es": "Ya conoces Εἰρήνη que significa paz, y σοι que significa a ti. Despídete con paz a ti."
       }
     ]
   }

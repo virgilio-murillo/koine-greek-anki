@@ -37,7 +37,7 @@ def get_pronunciation_notes(text):
                         (f" ({info['notes']})" if info.get('notes') else ""))
     return notes
 
-def get_word_facts(gr):
+def get_word_facts(gr, taught_pron=None):
     ctx = {}
     if gr in comp_map and isinstance(comp_map[gr], dict):
         c = comp_map[gr]
@@ -49,9 +49,23 @@ def get_word_facts(gr):
     if parts_key in comp_map:
         ctx['componente_de'] = [f'{c["lemma"]} ({c["meaning_es"]})' for c in comp_map[parts_key][:3]]
     pron = get_pronunciation_notes(gr)
+    if pron and taught_pron is not None:
+        pron = [p for p in pron if p not in taught_pron]
     if pron:
         ctx['pronunciacion'] = pron
     return ctx
+
+def get_taught_pronunciation(lesson_num):
+    """Collect all pronunciation notes from previous lessons."""
+    taught = set()
+    for L in ALL_LESSONS:
+        if L['num'] >= lesson_num:
+            break
+        for v in L['vocab']:
+            taught.update(get_pronunciation_notes(v['gr']))
+        for p in L['phrases']:
+            taught.update(get_pronunciation_notes(p['gr']))
+    return taught
 
 def get_prev_context(lesson_num):
     """Build context from previous lessons."""
@@ -75,8 +89,9 @@ def enrich_lesson(lesson_num):
     prev_lesson, recent_summary = get_prev_context(lesson_num)
 
     vocab_with_facts = []
+    taught_pron = get_taught_pronunciation(lesson_num)
     for v in L['vocab']:
-        facts = get_word_facts(v['gr'])
+        facts = get_word_facts(v['gr'], taught_pron)
         vocab_with_facts.append({
             'gr': v['gr'], 'es': v['es'],
             'current_note': v['note_es'],
@@ -95,7 +110,7 @@ def enrich_lesson(lesson_num):
                     break
             else:
                 breakdown.append(w)
-        pron = get_pronunciation_notes(p['gr'])
+        pron = [n for n in get_pronunciation_notes(p['gr']) if n not in taught_pron]
         phrases_with_facts.append({
             'gr': p['gr'], 'es': p['es'],
             'current_prompt': p['prompt_es'],
@@ -124,12 +139,13 @@ def enrich_lesson(lesson_num):
         "PARTE 1 — VOCABULARIO (note_es):\n"
         "- Si 'verified_facts' está vacío, mejora solo el estilo.\n"
         "- Si hay 'componente_de', menciona SOLO las palabras listadas.\n"
-        "- Si hay 'pronunciacion', menciona cómo suena.\n"
+        "- Si hay 'pronunciacion', menciona cómo suena. Si NO hay pronunciacion, el alumno ya lo aprendió — NO repitas reglas de pronunciación.\n"
         "- Termina siempre con 'Escucha.'\n\n"
         f"{json.dumps(vocab_with_facts, ensure_ascii=False, indent=2)}\n\n"
         "PARTE 2 — FRASES (prompt_es):\n"
         "- Para frases de dos o más palabras, SIEMPRE explica el significado de CADA palabra usando word_breakdown.\n"
         "- Si hay 'pronunciation_notes', SIEMPRE advierte cómo suena y que son palabras separadas.\n"
+        "- Si 'pronunciation_notes' está vacío, el alumno ya conoce esas reglas — NO repitas pronunciación.\n"
         "- Ejemplo: 'σὺ εἶ se compone de σὺ que significa tú, y εἶ que significa eres. Suenan juntas como si, pero son dos palabras. ¿Cómo dirías tú eres?'\n"
         "- Termina con la pregunta o instrucción original.\n\n"
         f"{json.dumps(phrases_with_facts, ensure_ascii=False, indent=2)}\n\n"
