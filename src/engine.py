@@ -21,9 +21,17 @@ def build(data, prev_vocab=None, output_dir="decks/lessons"):
     # 2. REVIEW PREVIOUS
     if prev:
         L += es("Antes de aprender palabras nuevas, repasemos.") + P(500)
-        random.seed(n); items = list(prev[-8:]); random.shuffle(items)
-        for it in items[:6]:
-            L += es(f"¿Cómo dirías {it['es']}?") + P(4000) + gr(it["gr"], speed=s) + P(500)
+        # Deduplicate by greek text, sample from ALL prev (not just last 8)
+        seen = set()
+        unique = []
+        for it in reversed(prev):
+            if it["gr"] not in seen:
+                seen.add(it["gr"])
+                unique.append(it)
+        random.seed(n); random.shuffle(unique)
+        for it in unique[:6]:
+            prompt = it["es"].rstrip("?.,;").split(",")[0]  # first meaning, clean punctuation
+            L += es(f"¿Cómo dirías {prompt}?") + P(4000) + gr(it["gr"], speed=s) + P(500)
         L += P(300)
 
     # 3. NEW VOCABULARY — with interleaved GIR
