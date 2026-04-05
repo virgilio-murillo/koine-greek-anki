@@ -7,9 +7,9 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.expanduser("~/.config/gcl
 
 # --- Voices ---
 M = "el-GR-Chirp3-HD-Achird"
-F = "el-GR-Wavenet-B"
-FALLBACK_M = ["el-GR-Chirp3-HD-Charon", "el-GR-Chirp3-HD-Orus", "el-GR-Chirp3-HD-Puck", "el-GR-Wavenet-B"]
-FALLBACK_F = ["el-GR-Chirp3-HD-Kore", "el-GR-Chirp3-HD-Achernar", "el-GR-Chirp3-HD-Aoede", "el-GR-Chirp3-HD-Achird"]
+F = "el-GR-Chirp3-HD-Zephyr"
+FALLBACK_M = ["el-GR-Chirp3-HD-Charon", "el-GR-Chirp3-HD-Aoede", "el-GR-Chirp3-HD-Zephyr", "el-GR-Chirp3-HD-Achird"]
+FALLBACK_F = ["el-GR-Chirp3-HD-Aoede", "el-GR-Chirp3-HD-Kore", "el-GR-Chirp3-HD-Achird", "el-GR-Chirp3-HD-Zephyr"]
 
 # --- Cache ---
 CACHE = "/tmp/tts_cache"

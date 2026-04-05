@@ -26,16 +26,16 @@ letter,modern_sound,tts_sounds_like,notes
 diphthong,modern_sound,tts_sounds_like,notes
 αι,e,e,como ε
 ει,i,i,como ι
-οι,i,oi,TTS pronuncia oi NO i — difiere del moderno estándar
+οι,i,i,como ι — pronunciación moderna estándar
 υι,i,i,como ι
 αυ,av/af,av/af,av antes de vocal/sonora; af antes de sorda
 ευ,ev/ef,ev/ef,ev antes de vocal/sonora; ef antes de sorda
 ου,u,u,único diptongo que NO suena como i
 confusing_phrase,greek,tts_sounds_like,explanation
-σὺ εἶ,σὺ εἶ,si,dos palabras que suenan como una sílaba si
-σοι,σοι,soi,TTS pronuncia soi (no si como esperaría el moderno)
-ναί,ναί,ne,suena ne
+σὺ εἶ,σὺ εἶ,si,dos palabras que suenan como una sílaba
+σοι,σοι,si,οι suena como i en moderno
+ναί,ναί,ne,αι suena como e
 οὐ,οὐ,u,muy corto
 μου,μου,mu,
 σου,σου,su,
-μοι,μοι,moi,TTS pronuncia moi (similar a σοι)
+μοι,μοι,mi,οι suena como i

@@ -3,49 +3,49 @@
     "vocab": [
       {
         "gr": "χαῖρε",
-        "note_es": "El hombre dijo χαῖρε. Significa alégrate, o simplemente, hola como saludo común del Nuevo Testamento. Escucha."
+        "note_es": "El hombre dijo χαῖρε. Significa alégrate, o simplemente, hola. Es el saludo más común del Nuevo Testamento. Escucha."
       },
       {
         "gr": "εἰρήνη",
-        "note_es": "La mujer respondió con εἰρήνη, que significa paz. Esta palabra aparece noventa y una veces en el Nuevo Testamento. Escucha."
+        "note_es": "La mujer respondió con la palabra εἰρήνη. Significa paz. Aparece noventa y una veces en el Nuevo Testamento. Escucha."
       },
       {
         "gr": "σοι",
-        "note_es": "σοι significa a ti y es la forma dativa de tú. Εἰρήνη σοι significa paz a ti. Escucha."
+        "note_es": "σοι significa a ti. Es la forma dativa de tú. Εἰρήνη σοι significa paz a ti. Escucha."
       },
       {
         "gr": "ναί",
-        "note_es": "Para decir sí, usa ναί. Aparece treinta y tres veces en el Nuevo Testamento, incluyendo Mateo cinco treinta y siete. Escucha."
+        "note_es": "Aprende a decir sí. En griego koiné, sí se dice ναί. Aparece treinta y tres veces en el Nuevo Testamento. Escucha."
       },
       {
         "gr": "οὐ",
-        "note_es": "No se dice οὐ. Aparece mil seiscientas cinco veces en el Nuevo Testamento y antes de vocal se dice οὐκ. Escucha."
+        "note_es": "No se dice οὐ. Antes de una vocal se dice οὐκ. Aparece mil seiscientas cinco veces en el Nuevo Testamento. Escucha."
       },
       {
         "gr": "ἐγώ",
-        "note_es": "ἐγώ significa yo. Es una de las palabras más frecuentes, apareciendo dos mil quinientas setenta y dos veces en el Nuevo Testamento. Escucha."
+        "note_es": "ἐγώ significa yo. Aparece dos mil quinientas setenta y dos veces en el Nuevo Testamento. Escucha."
       },
       {
         "gr": "εἰμί",
-        "note_es": "εἰμί significa soy o estoy. Aparece dos mil cuatrocientas cincuenta y seis veces y es componente de περισσεύω que significa abundar. Escucha."
+        "note_es": "εἰμί significa soy o estoy. ἐγώ εἰμι juntos significan yo soy. Es una de las frases más importantes del evangelio de Juan. Escucha."
       },
       {
         "gr": "σύ",
-        "note_es": "σύ significa tú. Para decir tú eres se dice σὺ εἶ, donde εἶ es la forma de εἰμί para tú. Escucha."
+        "note_es": "σύ significa tú. Para decir tú eres, se dice σὺ εἶ. εἶ es la forma de εἰμί para tú. Escucha."
       }
     ],
     "phrases": [
       {
         "gr": "Εἰρήνη σοι",
-        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Ahora di la frase completa, paz a ti."
+        "prompt_es": "Εἰρήνη σοι se compone de Εἰρήνη que significa paz, y σοι que significa a ti. Ahora di la frase completa: paz a ti."
       },
       {
         "gr": "ἐγώ εἰμι",
-        "prompt_es": "Ya conoces ἐγώ que significa yo, y εἰμι que significa soy. ¿Cómo dirías yo soy?"
+        "prompt_es": "ἐγώ εἰμι se compone de ἐγώ que significa yo, y εἰμι que significa soy. ¿Cómo dirías yo soy?"
       },
       {
         "gr": "σὺ εἶ",
-        "prompt_es": "Ya conoces σὺ que significa tú, y εἶ que significa eres. ¿Cómo dirías tú eres?"
+        "prompt_es": "σὺ εἶ se compone de σὺ que significa tú, y εἶ que significa eres. ¿Cómo dirías tú eres?"
       },
       {
         "gr": "ναί",
@@ -61,11 +61,11 @@
       },
       {
         "gr": "ἐγώ εἰμι",
-        "prompt_es": "Ya conoces ἐγώ que significa yo, y εἰμι que significa soy. Alguien te pregunta quién eres, di yo soy."
+        "prompt_es": "Ya conoces ἐγώ y εἰμι. Alguien te pregunta quién eres. Di yo soy."
       },
       {
         "gr": "Εἰρήνη σοι",
-        "prompt_es": "Ya conoces Εἰρήνη que significa paz, y σοι que significa a ti. Despídete con paz a ti."
+        "prompt_es": "Ya conoces Εἰρήνη y σοι. Despídete con paz a ti."
       }
     ]
   }

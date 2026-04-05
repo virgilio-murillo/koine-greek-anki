@@ -43,8 +43,6 @@ def get_word_facts(gr, taught_pron=None):
         c = comp_map[gr]
         ctx['es_compound_de'] = ' + '.join(f'{p["greek"]} ({p["meaning_es"]})' for p in c['components'])
         ctx['mnemonic'] = c['mnemonic_es']
-    if gr in freq:
-        ctx['frecuencia_nt'] = freq[gr]
     parts_key = '_parts_' + gr
     if parts_key in comp_map:
         ctx['componente_de'] = [f'{c["lemma"]} ({c["meaning_es"]})' for c in comp_map[parts_key][:3]]
