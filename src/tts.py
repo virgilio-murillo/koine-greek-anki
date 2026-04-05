@@ -46,7 +46,7 @@ def _greek_len(text):
 
 def _min_dur(text):
     n = _greek_len(text)
-    return max(400, min(n, 4) * 150 + max(0, n - 4) * 100)
+    return max(400, min(n, 4) * 150 + max(0, n - 4) * 80)
 
 def _cache_path(pfx, txt, v, ex=""):
     h = hashlib.md5(f"{txt}_{v}_{ex}".encode()).hexdigest()[:12]
