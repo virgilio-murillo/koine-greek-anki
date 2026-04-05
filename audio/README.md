@@ -26,6 +26,7 @@ audio/
 
 ## Voces
 - Narradora: Mia (Amazon Polly, es-MX)
-- Griego femenino: Kore (Google Cloud TTS, el-GR-Chirp3-HD)
-- Griego masculino: Charon (Google Cloud TTS, el-GR-Chirp3-HD)
-- Fallback para palabras cortas: Wavenet-B (el-GR)
+- Griego femenino: Wavenet-B (Google Cloud TTS, el-GR) — principal
+- Griego masculino: Achird (Google Cloud TTS, el-GR-Chirp3-HD)
+- Fallback: 4 voces por género con retry automático + QA report
+- Duración mínima: max(400ms, primeras 4 letras × 150ms + resto × 80ms)
