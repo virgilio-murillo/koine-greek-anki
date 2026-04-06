@@ -77,6 +77,25 @@ def gr(text, voice=None, speed=0.75):
     p = _cache_path("gr3", mono, voice, str(speed))
     if os.path.exists(p):
         return AudioSegment.from_mp3(p)
+    n_letters = _greek_len(mono)
+    if n_letters < 4:
+        # Short words: try ALL voices for this gender, keep longest
+        all_voices = [voice] + (FALLBACK_M if voice == M else FALLBACK_F)
+        best, best_dur = None, 0
+        for v in all_voices:
+            try:
+                data, dur = _synth(mono, v, speed)
+                if dur > best_dur: best, best_dur = data, dur
+            except Exception:
+                continue
+        if best:
+            with open(p, "wb") as f: f.write(best)
+        else:
+            with open(QA_REPORT, "a") as f:
+                f.write(f"EMPTY: '{text}' voice={voice} all voices failed\n")
+            print(f"  ⚠️ QA: '{text}' all voices failed")
+        return AudioSegment.from_mp3(p)
+    # Normal words: use min duration formula
     md = _min_dur(mono)
     best, best_dur = None, 0
     # 1) Retry primary voice 3x
