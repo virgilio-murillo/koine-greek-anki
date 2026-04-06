@@ -1,0 +1,1369 @@
+{
+  "lesson": 6,
+  "segments": [
+    {
+      "lang": "es",
+      "text": "Μάθημα ἕξ. Lección seis. Hoy repasaremos todo lo que has aprendido con un diálogo completo. También aprenderás palabras de lugar. Escucha la conversación."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε!",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι. Τί ὄνομά σοι;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Σίμων. Καὶ σοί;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Μαρία. Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ. Καὶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Γαλιλαίας.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Γινώσκεις τὸν ἄνθρωπον ἐκεῖνον;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, γινώσκω αὐτόν. Αὐτός ἐστιν ὁ διδάσκαλος.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Escuchaste una conversación completa. Saludos, nombres, origen, y una pregunta sobre alguien. ¿Cuánto entendiste? Vamos a reconstruirlo."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Antes de aprender palabras nuevas, repasemos."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces ἰδού que significa he aquí, y ὁ ἄνθρωπος que significa el hombre. ¿Cómo dirías he aquí el hombre?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἰδοὺ ὁ ἄνθρωπος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces αὐτή que significa ella y ἐστιν que es la forma de es para tercera persona. ¿Cómo dirías ella es María?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν Μαρία",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces esta palabra que significa persona o hombre. ¿Cómo dirías persona?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἄνθρωπος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces ὁ que es el artículo masculino el, y ἄνθρωπος que significa hombre. ¿Cómo dirías el hombre?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὁ ἄνθρωπος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces esta palabra postpositiva que va después del primer elemento y significa entonces. ¿Cómo dirías entonces?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὖν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces λέγε que significa di, y πάλιν que significa otra vez. ¿Cómo dirías di otra vez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λέγε πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "ποῦ significa dónde está algo. Es diferente de πόθεν que ya conoces y significa de dónde vienes. ποῦ pregunta por la ubicación actual de algo. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "ὧδε significa aquí, en este lugar donde estoy yo. Es la respuesta cuando alguien pregunta ποῦ, dónde está algo. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra pregunta por la ubicación de algo o alguien. ¿Cómo dirías dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἐκεῖ significa allí, en aquel lugar lejos de mí. Fíjate que empieza igual que ἐκεῖνος, aquel, porque ambos se refieren a algo distante. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra indica el lugar donde estoy yo. ¿Cómo dirías aquí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "τίς con acento significa quién cuando preguntas por una persona. Sin acento, τις, significa alguien indefinido. El acento cambia completamente el significado. Escucha la forma con acento que significa quién."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "τίς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τίς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra indica un lugar distante de mí. ¿Cómo dirías allí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra pregunta por la ubicación de algo. ¿Cómo dirías dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Combina ποῦ que significa dónde, con ἐστιν que significa está. Pregunta dónde está."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra pregunta por la ubicación de algo. ¿Cómo dirías dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Usa ὧδε que significa aquí, con ἐστιν que significa está. Di está aquí."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra indica el lugar donde estoy yo. ¿Cómo dirías aquí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Usa ἐκεῖ que significa allí, con ἐστιν que significa está. Di está allí."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra indica un lugar distante de mí. ¿Cómo dirías allí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Combina ποῦ con ἐστιν para hacer una pregunta de ubicación. ¿Cómo dirías dónde está?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Usa τίς que significa quién, con ἐστιν que significa es. Pregunta quién es."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "τίς ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τίς ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra pregunta por la identidad de una persona. ¿Cómo dirías quién?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τίς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Combina ὧδε con ἐστιν para indicar presencia en este lugar. ¿Cómo dirías está aquí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta por la ubicación de ὁ ἄνθρωπος usando ποῦ ἐστιν. Pregunta dónde está el hombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν ὁ ἄνθρωπος;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν ὁ ἄνθρωπος;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Combina ἐκεῖ con ἐστιν para indicar presencia en lugar distante. ¿Cómo dirías está allí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Usa ὁ ἄνθρωπος como sujeto, ἐκεῖ para indicar lugar, y ἐστιν para el verbo. En griego el verbo puede ir al final. Di el hombre está allí."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ὁ ἄνθρωπος ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὁ ἄνθρωπος ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Combina τίς con ἐστιν para preguntar identidad. ¿Cómo dirías quién es?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "τίς ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Practiquemos todo junto."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Combina el adverbio de lugar con el verbo. ¿Cómo dirías está aquí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Usa el sujeto, el adverbio de lugar, y el verbo al final. ¿Cómo dirías el hombre está allí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ὁ ἄνθρωπος ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta por la ubicación específica del hombre. ¿Cómo dirías dónde está el hombre?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν ὁ ἄνθρωπος;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra interrogativa pregunta por ubicación. ¿Cómo dirías dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces ἐκεῖνος que significa aquel y ὁ ἄνθρωπος que significa el hombre. ¿Cómo dirías aquel hombre?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖνος ὁ ἄνθρωπος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra indica el lugar donde estoy yo. ¿Cómo dirías aquí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces λέγω σοι que significa te digo y ὅτι que introduce lo que dices. ¿Cómo dirías te digo que?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra indica un lugar distante de mí. ¿Cómo dirías allí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces γινώσκω que significa sé o conozco, y ὅτι que introduce lo que sabes. ¿Cómo dirías sé que?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta por la identidad de alguien. ¿Cómo dirías quién es?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "τίς ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Indica presencia en lugar distante. ¿Cómo dirías está allí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Esta palabra interrogativa pregunta por identidad. ¿Cómo dirías quién?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "τίς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces esta expresión que llama la atención hacia algo. ¿Cómo dirías he aquí el hombre?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἰδοὺ ὁ ἄνθρωπος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta por la ubicación de algo o alguien. ¿Cómo dirías dónde está?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Ahora reconstruyamos la conversación. Tú participas como Simón."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε!",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces εἰρήνη σοι para responder al saludo, y τί ὄνομά σοι para preguntar el nombre. Respóndele con paz a ti y pregunta su nombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι. Τί ὄνομά σοι;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Μαρία. Καὶ σοί;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ella te preguntó tu nombre. Di que te llamas Simón. Di tu nombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Σίμων.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ella pregunta de dónde eres. Ya conoces ἀπὸ Ἰερουσαλήμ y καὶ σύ para preguntarle también. Di que eres de Jerusalén y pregúntale."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ. Καὶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Γαλιλαίας.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ya conoces γινώσκεις para preguntar si conoce, y τὸν ἄνθρωπον ἐκεῖνον para decir aquel hombre. Pregúntale si conoce a aquel hombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Γινώσκεις τὸν ἄνθρωπον ἐκεῖνον;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, γινώσκω αὐτόν.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ella dice que sí lo conoce. Usa τίς ἐστιν para preguntarle quién es. Pregunta quién es."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Τίς ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Οὗτός ἐστιν ὁ διδάσκαλος.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ella dice que es el maestro. Ya conoces ἰδοὺ ὁ διδάσκαλος. Di he aquí el maestro."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ἰδοὺ ὁ διδάσκαλος.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Repaso rápido."
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "dónde."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "aquí."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "allí."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "quién."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τίς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "dónde está."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "está aquí."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "está allí."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκεῖ ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "quién es."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τίς ἐστιν;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "dónde está el hombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ ἐστιν ὁ ἄνθρωπος;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "En Mateo veintiocho seis, el ángel dijo a las mujeres en la tumba vacía:"
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "gr",
+      "text": "Οὐκ ἔστιν ὧδε· ἠγέρθη.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "No está aquí. Ha resucitado. Reconoces οὐκ que significa no, ἔστιν que significa está, y ὧδε que significa aquí. La palabra ἠγέρθη significa fue levantado o resucitó."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Felicidades. Has completado seis lecciones. Ya puedes saludar, presentarte, decir de dónde eres, y tener una conversación básica en el idioma del Nuevo Testamento. En la siguiente lección aprenderás verbos de movimiento. Εἰρήνη σοι."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    }
+  ]
+}

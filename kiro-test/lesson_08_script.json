@@ -1,0 +1,1937 @@
+{
+  "lesson": 8,
+  "segments": [
+    {
+      "lang": "es",
+      "text": "Μάθημα ὀκτώ. Lección ocho. Nota que el griego ahora suena un poco más rápido. Hoy aprenderás vocabulario del mercado: pan, agua, vino. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Θέλεις ἄρτον;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, θέλω ἄρτον καὶ ὕδωρ.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Ἰδού. Λάβε.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Εὐχαριστῶ.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Una vendedora ofrece pan. El hombre quiere pan y agua. Ella le dice toma. Él da gracias."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Antes de aprender palabras nuevas, repasemos."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías vengan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δεῦτε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías aquí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὧδε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías el hombre?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὁ ἄνθρωπος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías que?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿a dónde vas?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ πορεύῃ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías este?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὗτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "θέλω significa quiero. θέλεις es quieres. θέλει es quiere. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "ἄρτος significa pan. Es la palabra que Jesús usa en la última cena. Nunca uses la palabra moderna ψωμί. En koiné siempre es ἄρτος. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ὕδωρ significa agua. Nunca uses la palabra moderna νερό. En koiné siempre es ὕδωρ. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "οἶνος significa vino. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "οἶνος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "οἶνος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἰχθύς significa pez. Los primeros cristianos usaban el pez como símbolo. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἰχθύς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἰχθύς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οἶνος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἐσθίω significa comer. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἰχθύς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "πίνω significa beber. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías comer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οἶνος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "λάβε significa toma. Es una orden. Viene del verbo λαμβάνω, tomar o recibir. Jesús dijo λάβετε, tomen, en la última cena. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "λάβε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "λάβε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "λάβετε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías beber?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἰχθύς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di quiero pan. Nota que ἄρτον termina en ον porque es objeto directo."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di quiero agua."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di quiero vino."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta quieres pan."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "θέλεις ἄρτον;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλεις ἄρτον;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οἶνος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di como pan."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἰχθύς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di bebo vino."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías comer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿quieres pan??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλεις ἄρτον;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di como pan y bebo vino."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον καὶ πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον καὶ πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías beber?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías como pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di quiero pan y agua."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον καὶ ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον καὶ ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías toma (orden)?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λάβε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías bebo vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Da gracias. En koiné, εὐχαριστῶ es formal, es dar gracias a Dios. No es el gracias casual del griego moderno. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "εὐχαριστῶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εὐχαριστῶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías como pan y bebo vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον καὶ πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Practiquemos todo junto."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías toma (orden)?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λάβε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero pan y agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον καὶ ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οἶνος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἰχθύς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías voy a la casa?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πορεύομαι εἰς τὸν οἶκον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías comer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías como pan y bebo vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον καὶ πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías en el templo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐν τῷ ἱερῷ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías doy gracias?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εὐχαριστῶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías beber?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿quieres pan??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλεις ἄρτον;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías vengan tras de mí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Δεῦτε ὀπίσω μου",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías como pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿a dónde vas??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ποῦ πορεύῃ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías bebo vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Ahora reconstruyamos la conversación. Tú participas."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Θέλεις ἄρτον;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Te ofrecen pan. Di que sí, quieres pan y agua."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, θέλω ἄρτον καὶ ὕδωρ.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Ἰδού. Λάβε.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Te dicen toma. Da gracias."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Εὐχαριστῶ.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Pregúntale si quiere vino."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Θέλεις οἶνον;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, θέλω.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Dile toma."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Λάβε.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Repaso rápido."
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "quiero."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "pan."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "agua."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "vino."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "οἶνος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "pez."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἰχθύς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "comer."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "beber."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "toma (orden)."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "λάβε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "quiero pan."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "quiero agua."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "quiero vino."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "¿quieres pan?."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλεις ἄρτον;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "como pan."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "En Juan seis cinco, Jesús vio una gran multitud y le preguntó a Felipe:"
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν ἀγοράσωμεν ἄρτους ἵνα φάγωσιν οὗτοι;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "¿De dónde compraremos panes para que estos coman? Reconoces πόθεν, de dónde. ἄρτους, panes en plural. οὗτοι, estos."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Aprendiste vocabulario del mercado: ἄρτος pan, ὕδωρ agua, οἶνος vino, ἰχθύς pez. Y los verbos θέλω querer, ἐσθίω comer, πίνω beber. En la siguiente lección aprenderás los números del uno al diez. Εἰρήνη σοι."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    }
+  ]
+}

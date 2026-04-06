@@ -1,0 +1,1665 @@
+{
+  "lesson": 3,
+  "segments": [
+    {
+      "lang": "es",
+      "text": "Μάθημα τρία. Lección tres. Hoy aprenderás a decir de dónde eres y a preguntar a otros. Escucha esta conversación."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε! Πόθεν εἶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας. Καὶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "El hombre preguntó de dónde es la mujer. Ella respondió que es de Galilea y le preguntó a él. Él es de Jerusalén."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Antes de aprender palabras nuevas, repasemos."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías él?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías hola?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías él es Simón?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν Σίμων",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías mi nombre es Simón?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Τὸ ὄνομά μου Σίμων",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "πόθεν significa de dónde. Esta misma pregunta aparece en el evangelio de Juan cuando Pilato le pregunta a Jesús. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "εἶ significa eres. Es la forma de εἰμί para tú. Ya la conoces de σὺ εἶ. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "σὺ εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἀπό significa de o desde. Se usa para decir de dónde eres geográficamente. ἀπὸ Γαλιλαίας, de Galilea. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπό",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπό",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías eres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἐστιν significa es. Es la tercera persona de εἰμί. εἰμί yo soy, εἶ tú eres, ἐστιν él o ella es. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de, desde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπό",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἐκ también significa de, pero se usa para grupos o familias. ἀπό es para lugares, ἐκ es para grupos. Por ejemplo, ἐκ τοῦ οὐρανοῦ, del cielo. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ τοῦ οὐρανοῦ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías es?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías eres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "αὐτή significa ella. Ya conoces αὐτός, él. αὐτή ἐστιν, ella es. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de, fuera de?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de, desde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπό",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta de dónde eres."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di de Galilea."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías eres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di de Jerusalén."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de, desde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπό",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿de dónde eres??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di yo soy de Galilea."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías es?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de Galilea?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di él es de Jerusalén."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de, fuera de?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de Jerusalén?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di ella es de Galilea."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ella?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo soy de Galilea?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta de dónde eres tú, con énfasis."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías él es de Jerusalén?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregunta y tú."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "Καὶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Καὶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ella es de Galilea?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Practiquemos todo junto."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de Galilea?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿y tú??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Καὶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ella?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de Jerusalén?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías es?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ella es de Galilea?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿de dónde eres??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿cuál es tu nombre??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Τί ὄνομά σοι;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de, fuera de?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías mi nombre es María?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Τὸ ὄνομά μου Μαρία",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo soy de Galilea?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de, desde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπό",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías eres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ella es María?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν Μαρία",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías él es de Jerusalén?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿de dónde eres tú??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías él es Simón?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν Σίμων",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Ahora reconstruyamos la conversación. Tú participas."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε! Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Te preguntan de dónde eres. Di que eres de Galilea."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Pregúntale de dónde es él."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Καὶ σύ; Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pregúntale su nombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Τί ὄνομά σοι;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Σίμων. Καὶ σοί;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di tu nombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Τὸ ὄνομά μου Μαρία.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Despídete."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Repaso rápido."
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "de dónde."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "eres."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "de, desde."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπό",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "es."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "de, fuera de."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "ella."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "¿de dónde eres?."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "de Galilea."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "de Jerusalén."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "yo soy de Galilea."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "él es de Jerusalén."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "En el evangelio de Juan, capítulo diecinueve, versículo nueve, Pilato le pregunta a Jesús:"
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "¿De dónde eres tú? Jesús no le respondió. Ya conoces cada palabra de esta pregunta."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Aprendiste a preguntar y decir de dónde eres. πόθεν εἶ, de dónde eres. ἀπό, de. Y las tres personas de εἰμί: εἰμί yo soy, εἶ tú eres, ἐστιν él es. En la siguiente lección aprenderás a decir que entiendes o no entiendes. Εἰρήνη σοι."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    }
+  ]
+}

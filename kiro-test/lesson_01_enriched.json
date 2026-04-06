@@ -1,0 +1,1681 @@
+{
+  "lesson": 1,
+  "segments": [
+    {
+      "lang": "es",
+      "text": "Μάθημα ἕν. Lección uno de griego koiné. Imagina que caminas por un sendero polvoriento hacia Jerusalén. Es el siglo primero. Te encuentras con dos personas que se saludan. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε!",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι. Πόθεν εἶ;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι ἀπὸ Γαλιλαίας.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "No te preocupes si no entendiste todo. Al final de esta lección podrás saludar y responder en griego koiné."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "El hombre dijo χαῖρε. Es un saludo que literalmente significa alégrate, pero se usa como hola. Es el saludo más común del Nuevo Testamento. Escucha y repite."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "La mujer respondió con εἰρήνη. Significa paz. En griego, la ῃ al final es la terminación femenina, como -a en español. Εἰρήνη es una palabra femenina. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "εἰρήνη",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἰρήνη",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías hola?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "σοι significa a ti. Es la forma que usas cuando le diriges algo a alguien, como en paz a ti. Esta forma se llama dativo. Εἰρήνη σοι significa paz a ti. Escucha la frase completa."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἰρήνη",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Aprende a decir sí. En griego koiné, sí se dice ναί. Es una palabra muy sencilla y directa. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías hola?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "No se dice οὐ. Antes de una vocal cambia a οὐκ por comodidad al hablar. Es como decir un en lugar de uno antes de consonante en español. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "οὐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἰρήνη",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἐγώ significa yo. Es la forma enfática del pronombre, como cuando en español dices yo mismo para hacer énfasis. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "εἰμί significa soy o estoy. ἐγώ εἰμι juntos significan yo soy. La terminación -μί indica que es la forma de primera persona, como yo en español. Es una de las frases más importantes del evangelio de Juan. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "εἰμί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἰμί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "σύ significa tú. Para decir tú eres, se dice σὺ εἶ. Fíjate que εἶ es diferente de εἰμί porque cambia para concordar con tú, igual que en español cambias soy por eres. Esto se llama conjugación. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "σύ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "σύ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías soy?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἰμί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ahora di la frase completa: paz a ti."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías hola?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo soy?"
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἰρήνη",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tú eres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "σὺ εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σὺ εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo soy?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no?"
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tú eres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "σὺ εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo saludarías a alguien?"
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Alguien te pregunta quién eres. Di yo soy."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías soy?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἰμί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Despídete diciendo paz a ti."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tú?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σύ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías hola?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Practiquemos todo junto."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tú?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "σύ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo soy?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εἰρήνη",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tú eres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "σὺ εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sí?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo soy?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías hola?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías soy?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εἰμί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías hola?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Ahora reconstruyamos la conversación. Tú participas."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε!",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Alguien te saluda. Respóndele con paz a ti."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Ahora salúdalo tú."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Χαῖρε!",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Σὺ τίς εἶ;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Te pregunta quién eres. Di yo soy y tu nombre."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι Μαρία.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Dile paz a ti como despedida."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Repaso rápido."
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "hola"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "χαῖρε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "paz"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἰρήνη",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "a ti"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "sí"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "no"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "yo"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "soy"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἰμί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "tú"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "σύ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "paz a ti"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "yo soy"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγώ εἰμι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "tú eres"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "σὺ εἶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "sí"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ναί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "no"
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Escucha este versículo. En el evangelio de Lucas, capítulo veinticuatro, versículo treinta y seis, Jesús se apareció a sus discípulos y les dijo:"
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη ὑμῖν.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Paz a ustedes. Ya conoces εἰρήνη, paz. ὑμῖν significa a ustedes. σοι es para una persona, ὑμῖν es para varias personas, como tú versus ustedes en español."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Excelente. Aprendiste ocho palabras en griego koiné: χαῖρε, εἰρήνη, σοι, ναί, οὐ, ἐγώ, εἰμί, y σύ. En la siguiente lección aprenderás a preguntar y decir tu nombre. Εἰρήνη σοι."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    }
+  ]
+}

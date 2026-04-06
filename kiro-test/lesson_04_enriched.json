@@ -1,0 +1,1949 @@
+{
+  "lesson": 4,
+  "segments": [
+    {
+      "lang": "es",
+      "text": "Μάθημα τέσσαρα. Lección cuatro. Hoy aprenderás a decir que entiendes, que no entiendes, y a pedir que alguien repita. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Γινώσκεις ἑλληνιστί;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, γινώσκω ὀλίγον.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Λέγω σοι ὅτι...",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Οὐκ ἀκούω. Λέγε πάλιν.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "La mujer preguntó si el hombre sabe griego. Él dijo que sabe un poco. Ella empezó a decirle algo, pero él no oyó y le pidió que repitiera."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Antes de aprender palabras nuevas, repasemos."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías mi?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "μου",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tu?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σου",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de dónde?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πόθεν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías él?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "γινώσκω significa saber o conocer. Es un verbo básico que indica conocimiento adquirido por experiencia. Cuando cambias la terminación a -εις obtienes la forma para tú: γινώσκεις, ¿sabes? A esto se le llama segunda persona. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "ἀκούω significa oír o escuchar. Es la acción de percibir sonidos con el oído. La terminación -ω es la forma básica del verbo para yo hago algo, llamada primera persona. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías saber, conocer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "λέγω significa decir o hablar. Es el acto de expresar palabras. La frase λέγω σοι significa te digo: λέγω es yo digo y ya conoces σοι que significa a ti. Jesús usa esta frase constantemente. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías oír, escuchar?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "λόγος significa palabra. Viene de la misma raíz que λέγω, decir. Es una de las palabras más importantes del Nuevo Testamento. En el principio era el λόγος, la Palabra. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "λόγος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "λόγος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías decir?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías saber, conocer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "πάλιν significa otra vez o de nuevo. La frase λέγε πάλιν significa di otra vez. λέγε es cuando le das una orden a alguien de decir algo. Cuando cambias -ω a -ε conviertes el verbo en una orden, lo que se llama imperativo. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "λέγε πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías palabra?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λόγος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías oír, escuchar?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "δέ significa pero o y. Es especial porque nunca va al principio de la frase. Siempre va en segundo lugar después de la primera palabra importante. Por ejemplo, ἐγὼ δέ significa pero yo. A las palabras que nunca van primero se les llama postpositivas. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "δέ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "δέ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγὼ δέ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías otra vez, de nuevo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías decir?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ἀλλά también significa pero, pero es más fuerte, como sino o más bien. A diferencia de δέ, ἀλλά sí puede ir al principio de la frase porque es más enfática. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἀλλά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀλλά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pero, y cuando va en segundo lugar?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δέ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías palabra?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λόγος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "ὅτι significa que o porque. Es una palabra conectora que introduce lo que alguien dice o piensa. La frase λέγω σοι ὅτι significa te digo que: λέγω σοι ya la conoces, y ὅτι introduce lo que vas a decir. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pero cuando es más enfático, sino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀλλά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías otra vez, de nuevo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di yo sé."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías saber, conocer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di no sé."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías oír, escuchar?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di oigo."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías decir?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo sé?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di no oigo. Recuerda, οὐ se convierte en οὐκ antes de vocal."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "οὐκ ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "οὐκ ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías palabra?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λόγος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no sé?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di te digo."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías otra vez, de nuevo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías oigo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Pide que repitan. Di otra vez."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "λέγε πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λέγε πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pero cuando va en segundo lugar?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δέ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no oigo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐκ ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di te digo que."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pero cuando es más enfático, sino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἀλλά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías te digo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di sé que."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías que, porque?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías di otra vez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγε πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Jesús dice muchas veces: pero yo les digo. ὑμῖν es a ustedes, igual que σοι es a ti pero para más de una persona. La frase completa es ἐγὼ δὲ λέγω ὑμῖν. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγὼ δὲ λέγω ὑμῖν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγὼ δὲ λέγω ὑμῖν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías te digo que?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Practiquemos todo junto."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías oigo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías él es de Jerusalén?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτός ἐστιν ἀπὸ Ἰερουσαλήμ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías di otra vez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγε πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías decir?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿y tú??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Καὶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pero cuando es más enfático, sino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀλλά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ¿de dónde eres tú??"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "Πόθεν εἶ σύ;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías palabra?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λόγος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no sé?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías no oigo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐκ ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías saber, conocer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías te digo que?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías yo sé?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías oír, escuchar?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías otra vez, de nuevo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías sé que?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ella es de Galilea?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "αὐτή ἐστιν ἀπὸ Γαλιλαίας",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pero cuando va en segundo lugar?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "δέ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías que, porque?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías pero yo les digo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐγὼ δὲ λέγω ὑμῖν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías te digo?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Ahora reconstruyamos la conversación. Tú participas."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Γινώσκεις ἑλληνιστί;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Te preguntan si sabes griego. Di que sí, sabes un poco. ὀλίγον significa un poco."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, γινώσκω ὀλίγον.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Λέγω σοι ὅτι ὁ κύριος ἔρχεται.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "No oíste bien. Dile que no oyes y que repita."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Οὐκ ἀκούω. Λέγε πάλιν.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "Ὁ κύριος ἔρχεται!",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ahora entendiste. Di sé que."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ναί, γινώσκω.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Repaso rápido."
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "saber, conocer."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "oír, escuchar."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "decir."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "palabra."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "λόγος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "otra vez, de nuevo."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πάλιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "pero, y cuando va en segundo lugar."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "δέ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "pero cuando es más enfático, sino."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀλλά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "que, porque."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὅτι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "yo sé."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "no sé."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐ γινώσκω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "oigo."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "no oigo."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "οὐκ ἀκούω",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "te digo."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "λέγω σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "En el evangelio de Mateo, capítulo cinco, versículo treinta y siete, Jesús dice:"
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "gr",
+      "text": "Ἔστω δὲ ὁ λόγος ὑμῶν ναὶ ναί, οὐ οὔ.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.75
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Que su palabra sea sí sí, no no. Reconoces δέ, la palabra que va en segundo lugar significando pero. λόγος, palabra. ὑμῶν, de ustedes. ναί, sí. οὐ, no."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Aprendiste ocho palabras nuevas: γινώσκω saber, ἀκούω oír, λέγω decir, λόγος palabra, πάλιν otra vez, δέ pero que va en segundo lugar, ἀλλά pero enfático, y ὅτι que. En la siguiente lección aprenderás el artículo y a señalar personas. Εἰρήνη σοι."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    }
+  ]
+}

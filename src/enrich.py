@@ -1,14 +1,14 @@
-"""Enrich lessons: LLM reviews full lesson script and rewrites naturally.
-Code provides verified data — LLM writes the lesson content."""
-import json, csv, boto3, copy, sys, os, random
+"""Enrich lesson scripts — LLM modifies only ES text in the structured JSON."""
+import json, boto3, sys, os
 sys.path.insert(0, ".")
 
 bedrock = boto3.client('bedrock-runtime', region_name='us-east-1')
 MODEL = 'us.anthropic.claude-sonnet-4-20250514-v1:0'
 
-# --- Load reference data ---
 with open('data/matthew/compounds_enriched.json') as f:
     compounds = json.load(f)
+with open('data/morphology_reference.md') as f:
+    morphology_ref = f.read()[:3000]
 
 comp_map = {}
 for c in compounds:
@@ -16,161 +16,103 @@ for c in compounds:
     for p in c['components']:
         comp_map.setdefault('_parts_' + p['greek'], []).append(c)
 
-with open('data/morphology_reference.md') as f:
-    morphology_ref = f.read()[:4000]
-
-with open('data/pronunciation.csv') as f:
-    pron_csv = f.read()
-
 from src.data import ALL_LESSONS
-from src.tts import extra_phrases, M, F
 
-def get_word_data(gr):
-    """Get all verified decomposition data for a word."""
-    ctx = {}
-    if gr in comp_map and isinstance(comp_map[gr], dict):
-        c = comp_map[gr]
-        ctx['compound'] = {
-            'components': [{'greek': p['greek'], 'meaning': p['meaning_es']} for p in c['components']],
-            'mnemonic': c['mnemonic_es']
-        }
-        if 'strongs_derivation' in c:
-            ctx['strongs'] = c['strongs_derivation']
-    parts_key = '_parts_' + gr
-    if parts_key in comp_map:
-        ctx['used_in'] = [{'word': c['lemma'], 'meaning': c['meaning_es']} for c in comp_map[parts_key][:3]]
-    return ctx
-
-def build_lesson_script(L, prev_vocab):
-    """Generate the full text script of a lesson as the engine would produce it."""
-    n = L['num']
-    lines = []
-    lines.append(f"=== INTRO ===")
-    lines.append(f"[ES] {L['intro_es']}")
-    for voice, text in L['dialogue']:
-        tag = 'M' if voice == M else 'F'
-        lines.append(f"[GR-{tag}] {text}")
-    lines.append(f"[ES] {L['context_es']}")
-
-    if prev_vocab:
-        lines.append(f"\n=== REPASO ===")
-        seen = set()
-        unique = []
-        for it in reversed(prev_vocab):
-            if it['gr'] not in seen:
-                seen.add(it['gr'])
-                unique.append(it)
-        random.seed(n); random.shuffle(unique)
-        for it in unique[:6]:
-            prompt = it['es'].rstrip('?.,;').split(',')[0]
-            lines.append(f"[ES] ¿Cómo dirías {prompt}?")
-            lines.append(f"[GR] {it['gr']}")
-
-    lines.append(f"\n=== VOCABULARIO ===")
+def get_word_data(lesson_num):
+    L = [l for l in ALL_LESSONS if l['num'] == lesson_num][0]
+    data = {}
     for v in L['vocab']:
-        lines.append(f"[ES] {v['note_es']}")
-        lines.append(f"[GR] {v['gr']} (×2)")
-
-    lines.append(f"\n=== FRASES ===")
-    for p in L['phrases']:
-        lines.append(f"[ES] {p['prompt_es']}")
-        lines.append(f"[GR] {p['gr']} (×2)")
-
-    lines.append(f"\n=== VERSÍCULO ===")
-    v = L.get('verse', {})
-    if v:
-        lines.append(f"[ES] {v['ref_es']}")
-        lines.append(f"[GR] {v['gr']}")
-        lines.append(f"[ES] {v['explain_es']}")
-
-    lines.append(f"\n=== CIERRE ===")
-    lines.append(f"[ES] {L['closing_es']}")
-    return '\n'.join(lines)
+        gr = v['gr']
+        if gr in comp_map and isinstance(comp_map[gr], dict):
+            c = comp_map[gr]
+            data[gr] = {
+                'components': [{'greek': p['greek'], 'meaning': p['meaning_es']} for p in c['components']],
+                'mnemonic': c['mnemonic_es']
+            }
+        parts_key = '_parts_' + gr
+        if parts_key in comp_map:
+            data.setdefault(gr, {})['used_in'] = [
+                {'word': c['lemma'], 'meaning': c['meaning_es']} for c in comp_map[parts_key][:3]
+            ]
+    return data
 
 def get_prev_context(lesson_num):
-    prev_lesson = None
-    recent = []
+    prev = None; recent = []
     for L in ALL_LESSONS:
         if L['num'] == lesson_num: break
         if L['num'] == lesson_num - 1:
-            prev_lesson = {
-                'num': L['num'],
-                'vocab': [f"{v['gr']} ({v['es']})" for v in L['vocab']],
-                'phrases': [f"{p['gr']} ({p['es']})" for p in L['phrases'][:4]]
-            }
+            prev = f"L{L['num']}: {', '.join(v['gr']+'('+v['es']+')' for v in L['vocab'])}"
         if L['num'] >= max(1, lesson_num - 5):
             recent.append(f"L{L['num']}: {', '.join(v['gr'] for v in L['vocab'][:4])}...")
-    return prev_lesson, recent
+    return prev, recent
 
-def enrich_lesson(lesson_num):
-    L = [l for l in ALL_LESSONS if l['num'] == lesson_num][0]
-    prev_lesson, recent = get_prev_context(lesson_num)
+def enrich_script(script_path):
+    with open(script_path) as f:
+        script = json.load(f)
+    lesson_num = script['lesson']
+    word_data = get_word_data(lesson_num)
+    prev, recent = get_prev_context(lesson_num)
 
-    # Build prev_vocab for review section
-    all_vocab = []
-    for data in ALL_LESSONS:
-        if data['num'] >= lesson_num: break
-        for v in data['vocab']:
-            all_vocab.append({'gr': v['gr'], 'es': v['es']})
-        for p in data['phrases']:
-            all_vocab.append({'gr': p['gr'], 'es': p['es']})
-
-    script = build_lesson_script(L, all_vocab)
-
-    # Gather word decomposition data
-    word_data = {}
-    for v in L['vocab']:
-        d = get_word_data(v['gr'])
-        if d: word_data[v['gr']] = d
-    for p in L['phrases']:
-        for w in p['gr'].split():
-            d = get_word_data(w.rstrip('.,;?!'))
-            if d: word_data[w.rstrip('.,;?!')] = d
+    # Build readable version for LLM
+    readable = []
+    for i, seg in enumerate(script['segments']):
+        if seg['lang'] == 'es':
+            readable.append(f"[{i}] [ES] {seg['text']}")
+        elif seg['lang'] == 'gr':
+            readable.append(f"[{i}] [GR] {seg['text']}")
+        # skip silences
 
     context = ""
-    if prev_lesson:
-        context += f"\nLECCIÓN ANTERIOR (L{prev_lesson['num']}):\n  Vocab: {', '.join(prev_lesson['vocab'])}\n  Frases: {', '.join(prev_lesson['phrases'])}\n"
-    if recent:
-        context += f"\nÚLTIMAS LECCIONES:\n  " + '\n  '.join(recent) + "\n"
+    if prev: context += f"\nLección anterior: {prev}\n"
+    if recent: context += f"Últimas lecciones: {'; '.join(recent)}\n"
 
-    prompt = f"""Eres un profesor experto de griego koiné. Recibes el script automatizado de una lección de audio estilo Pimsleur y debes REESCRIBIRLO para que suene natural y educativo.
+    prompt = f"""Eres el editor de un curso de audio de griego koiné estilo Pimsleur.
 
-SCRIPT AUTOMATIZADO DE LA LECCIÓN {lesson_num}:
-{script}
+Recibes el script de la lección {lesson_num} como una lista numerada de segmentos [ES] (español, narradora) y [GR] (griego, audio TTS). Los segmentos [GR] NO se pueden modificar. Solo puedes modificar el texto de los segmentos [ES].
+
+SCRIPT:
+{chr(10).join(readable)}
 
 DATOS DE DESCOMPOSICIÓN DE PALABRAS (verificados):
 {json.dumps(word_data, ensure_ascii=False, indent=2)}
 
-REFERENCIA DE SUFIJOS Y PREFIJOS GRIEGOS:
+REFERENCIA DE MORFOLOGÍA:
 {morphology_ref[:2000]}
-
-PRONUNCIACIÓN (griego moderno, como suena en el TTS):
-{pron_csv}
 
 CONTEXTO:{context}
 
-INSTRUCCIONES:
-1. REESCRIBE cada [ES] para que suene natural, como un profesor real hablando.
-2. DESGLOSA cada palabra de vocabulario en sus componentes (raíz, prefijo, sufijo) cuando sea posible. Usa SOLO los datos verificados de arriba. Si no hay datos, explica la palabra de forma clara sin inventar etimología.
-3. DESGLOSA cada frase explicando cada palabra que la compone.
-4. CORRIGE errores: si un prompt dice "¿Cómo dirías él, ella, ello?" pero el griego es solo αὐτός (masculino), corrígelo a "¿Cómo dirías él?".
-5. Si una nota dice "Escucha la frase completa" pero solo se reproduce una palabra, quita esa promesa.
-6. NO menciones cuántas veces aparece una palabra en el NT.
-7. Máximo 3 oraciones por nota de vocabulario. Será leído por TTS.
-8. Escribe números en letras. Sin abreviaciones.
-9. Las notas de vocabulario terminan con "Escucha."
-10. Si el alumno ya aprendió algo en lecciones anteriores, di "Ya conoces X".
+REGLAS:
+- Solo modifica segmentos [ES]. Los [GR] son intocables.
+- El alumno NO es lingüista pero SÍ quiere aprender los términos. SIEMPRE explica primero de forma simple, y LUEGO menciona el término técnico.
+  MAL: "La terminación -ομαι indica voz media. Esto se llama verbo deponente."
+  BIEN: "La terminación -ομαι significa que la acción la haces tú mismo. ἔρχομαι, yo vengo, yo mismo me muevo. Esto en gramática se llama voz media."
+  MAL: "La terminación -ου es imperativo."
+  BIEN: "Cuando cambias la terminación a -ου, conviertes el verbo en una orden. ἔρχου significa ven. A esto se le llama imperativo."
+  MAL: "Es la forma dativa del pronombre."
+  BIEN: "σοι es la forma que usas cuando le diriges algo a alguien, como en paz a ti. Esta forma se llama dativo."
+- NUNCA digas "no te preocupes por eso". Si mencionas algo, explícalo de forma que cualquier persona lo entienda, y luego dale el nombre técnico.
 
-FORMATO DE RESPUESTA — JSON exacto:
-{{
-  "vocab": [{{"gr": "...", "note_es": "..."}}],
-  "phrases": [{{"gr": "...", "prompt_es": "..."}}],
-  "review": [{{"gr": "...", "prompt_es": "..."}}],
-  "verse_explain": "...",
-  "closing": "..."
-}}
+VOCABULARIO (notas que terminan con "Escucha."):
+- Explica qué significa la palabra. Máximo 4 oraciones.
+- Si la palabra tiene PREFIJO conocido, explica en lenguaje simple: "Empieza con X que significa Y, así que la palabra completa significa Z."
+- Si la palabra tiene SUFIJO o TERMINACIÓN conocida, explica qué hace de forma práctica con un ejemplo: "-σις es como -ción en español, indica una acción", "-τής es como -dor, indica quién hace algo".
+- Si la palabra es COMPUESTA y hay datos en DESCOMPOSICIÓN, desglosa cada parte con un ejemplo cotidiano.
+- Termina con "Escucha."
 
-SOLO el JSON, nada más."""
+FRASES (prompts que terminan con "Di X" o "¿Cómo dirías X?"):
+- Explica de qué palabras se compone y qué significa cada una.
+- Si el orden es diferente al español, explícalo con un ejemplo simple.
+- Termina con "Di X" o "¿Cómo dirías X?"
+
+CORRECCIONES:
+- Si dice "¿Cómo dirías él, ella, ello?" y el griego es αὐτός, corrígelo a "¿Cómo dirías él?"
+- NO menciones frecuencia ni cuántas veces aparece en el NT.
+- Si el alumno ya aprendió algo, di "Ya conoces X".
+- Escribe números en letras. Sin abreviaciones.
+
+RESPONDE con un JSON object donde las keys son los números de segmento y los values son el texto nuevo. Incluye TODOS los segmentos [ES], no solo los que cambies.
+Ejemplo: {{"0": "texto", "5": "otro texto", "12": "más texto"}}
+SOLO el JSON."""
 
     response = bedrock.invoke_model(
         modelId=MODEL,
@@ -184,24 +126,23 @@ SOLO el JSON, nada más."""
     text = result['content'][0]['text']
     start = text.find('{')
     end = text.rfind('}') + 1
-    return json.loads(text[start:end])
+    changes = json.loads(text[start:end])
+
+    # Apply changes
+    modified = 0
+    for idx_str, new_text in changes.items():
+        idx = int(idx_str)
+        if idx < len(script['segments']) and script['segments'][idx]['lang'] == 'es':
+            script['segments'][idx]['text'] = new_text
+            modified += 1
+
+    out_path = script_path.replace('_script.json', '_enriched.json')
+    with open(out_path, 'w') as f:
+        json.dump(script, f, ensure_ascii=False, indent=2)
+    print(f"  L{lesson_num}: {modified} segments modified → {out_path}")
+    return out_path
 
 if __name__ == '__main__':
-    targets = [int(x) for x in sys.argv[1:]] if len(sys.argv) > 1 else [1]
-    results = {}
-    for n in targets:
-        print(f'Enriching L{n}...', flush=True)
-        enriched = enrich_lesson(n)
-        results[n] = enriched
-        for item in enriched.get('vocab', []):
-            print(f'  V [{item["gr"]}] {item["note_es"][:80]}...')
-        for item in enriched.get('phrases', []):
-            print(f'  P [{item["gr"]}] {item["prompt_es"][:80]}...')
-        if enriched.get('review'):
-            print(f'  R [{len(enriched["review"])} review items]')
-        print()
-
-    os.makedirs('kiro-test', exist_ok=True)
-    with open('kiro-test/enriched_notes.json', 'w') as f:
-        json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f'Saved {len(results)} lessons to kiro-test/enriched_notes.json')
+    paths = sys.argv[1:]
+    for p in paths:
+        enrich_script(p)

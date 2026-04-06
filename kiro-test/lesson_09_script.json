@@ -1,0 +1,2025 @@
+{
+  "lesson": 9,
+  "segments": [
+    {
+      "lang": "es",
+      "text": "Μάθημα ἐννέα. Lección nueve. Hoy aprenderás los números del uno al diez en griego koiné. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Πόσους ἄρτους ἔχετε;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "gr",
+      "text": "Πέντε ἄρτους καὶ δύο ἰχθύας.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "El hombre preguntó cuántos panes tienen. La mujer respondió cinco panes y dos peces. Es la escena de la alimentación de los cinco mil."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Antes de aprender palabras nuevas, repasemos."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías qué?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τί",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías paz a ti?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "Εἰρήνη σοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías es?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐστιν",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tu?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "σου",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías de?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐκ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías mujer?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "γυνή",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Uno se dice εἷς para masculino, μία para femenino, ἕν para neutro. εἷς ἄρτος, un pan. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "es",
+      "text": "Dos se dice δύο. No cambia con el género. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "δύο",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "δύο",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías uno?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Tres se dice τρεῖς. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías dos?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δύο",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Cuatro se dice τέσσαρες. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "τέσσαρες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τέσσαρες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías uno?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Cinco se dice πέντε. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cuatro?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τέσσαρες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías dos?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δύο",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Seis se dice ἕξ. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἕξ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἕξ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Siete se dice ἑπτά. Un número muy importante en la Biblia. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías seis?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἕξ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cuatro?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τέσσαρες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Ocho se dice ὀκτώ. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ὀκτώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὀκτώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías siete?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Nueve se dice ἐννέα. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἐννέα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐννέα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ocho?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὀκτώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías seis?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἕξ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Diez se dice δέκα. Escucha."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "δέκα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "δέκα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías nueve?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἐννέα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías siete?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di un pan."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías uno?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di dos peces. El plural de ἰχθύς es ἰχθύες."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías dos?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δύο",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di cinco panes. El plural de ἄρτος es ἄρτοι."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías un pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di cinco panes y dos peces. Exactamente lo que tenían los discípulos."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι καὶ δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι καὶ δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cuatro?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τέσσαρες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías dos peces?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di tres días. ἡμέραι es el plural de ἡμέρα, día."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς ἡμέραι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς ἡμέραι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco panes?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di siete."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías seis?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἕξ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco panes y dos peces?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι καὶ δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di diez."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "δέκα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "δέκα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías siete?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tres días?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς ἡμέραι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di uno."
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ocho?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4000
+    },
+    {
+      "lang": "gr",
+      "text": "ὀκτώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías siete?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Practiquemos todo junto."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías quiero pan y agua?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "θέλω ἄρτον καὶ ὕδωρ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco panes y dos peces?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι καὶ δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías un pan?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tres?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías ocho?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ὀκτώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías nueve?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐννέα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cuatro?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "τέσσαρες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías dos?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "δύο",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías como pan y bebo vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐσθίω ἄρτον καὶ πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías siete?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías seis?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἕξ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías diez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "δέκα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías uno?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías diez?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "δέκα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías uno?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías doy gracias?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "εὐχαριστῶ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías cinco panes?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías siete?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías tres días?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς ἡμέραι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías dos peces?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "¿Cómo dirías bebo vino?"
+    },
+    {
+      "lang": "silence",
+      "ms": 4500
+    },
+    {
+      "lang": "gr",
+      "text": "πίνω οἶνον",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "Ahora reconstruyamos la conversación. Tú participas."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "gr",
+      "text": "Πόσους ἄρτους ἔχεις;",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Te preguntan cuántos panes tienes. Di que tienes cinco."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "ἔχω πέντε ἄρτους.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Pregúntale cuántos peces tiene. πόσους ἰχθύας."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "Πόσους ἰχθύας ἔχεις;",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "gr",
+      "text": "δύο ἰχθύας.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "es",
+      "text": "Di cinco panes y dos peces."
+    },
+    {
+      "lang": "silence",
+      "ms": 5000
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι καὶ δύο ἰχθύες.",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "Repaso rápido."
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "uno."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "dos."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "δύο",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "tres."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "cuatro."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τέσσαρες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "cinco."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "seis."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἕξ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "siete."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἑπτά",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "ocho."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ὀκτώ",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "nueve."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "ἐννέα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "diez."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "δέκα",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "un pan."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "εἷς ἄρτος",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "dos peces."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "cinco panes."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "cinco panes y dos peces."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "πέντε ἄρτοι καὶ δύο ἰχθύες",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "es",
+      "text": "tres días."
+    },
+    {
+      "lang": "silence",
+      "ms": 3500
+    },
+    {
+      "lang": "gr",
+      "text": "τρεῖς ἡμέραι",
+      "voice": "el-GR-Chirp3-HD-Zephyr",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 400
+    },
+    {
+      "lang": "silence",
+      "ms": 300
+    },
+    {
+      "lang": "es",
+      "text": "En Mateo catorce diecisiete, los discípulos le dijeron a Jesús:"
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    },
+    {
+      "lang": "gr",
+      "text": "Οὐκ ἔχομεν ὧδε εἰ μὴ πέντε ἄρτους καὶ δύο ἰχθύας.",
+      "voice": "el-GR-Chirp3-HD-Achird",
+      "speed": 0.85
+    },
+    {
+      "lang": "silence",
+      "ms": 600
+    },
+    {
+      "lang": "es",
+      "text": "No tenemos aquí sino cinco panes y dos peces. Reconoces οὐκ ἔχομεν, no tenemos. ὧδε, aquí. πέντε, cinco. ἄρτους, panes. δύο, dos. ἰχθύας, peces."
+    },
+    {
+      "lang": "silence",
+      "ms": 800
+    },
+    {
+      "lang": "es",
+      "text": "Aprendiste los números del uno al diez: εἷς, δύο, τρεῖς, τέσσαρες, πέντε, ἕξ, ἑπτά, ὀκτώ, ἐννέα, δέκα. En la siguiente lección aprenderás el verbo tener. Εἰρήνη σοι."
+    },
+    {
+      "lang": "silence",
+      "ms": 500
+    }
+  ]
+}
