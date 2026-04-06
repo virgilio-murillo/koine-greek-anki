@@ -173,7 +173,7 @@
     },
     {
       "lang": "es",
-      "text": "ἔχω significa tengo. Es uno de los verbos más importantes del Nuevo Testamento. ἔχεις es tienes. ἔχει es tiene. ἔχομεν es tenemos. Escucha."
+      "text": "ἔχω significa tengo. Es la forma básica del verbo tener. ἔχεις es tienes. ἔχει es tiene. ἔχομεν es tenemos. La terminación cambia según quién hace la acción. Escucha."
     },
     {
       "lang": "silence",
@@ -201,7 +201,7 @@
     },
     {
       "lang": "es",
-      "text": "πολύς significa mucho. πολλά es la forma neutra plural: muchas cosas. ἔχω πολλά, tengo mucho. Esta palabra forma otras como πολυλογία que significa palabrería, muchas palabras. Escucha."
+      "text": "πολύς significa mucho. Cuando hablas de muchas cosas, usas la forma πολλά. ἔχω πολλά significa tengo muchas cosas, tengo mucho. Escucha."
     },
     {
       "lang": "silence",
@@ -247,7 +247,7 @@
     },
     {
       "lang": "es",
-      "text": "ὀλίγος significa poco. ἔχω ὀλίγον, tengo poco. De esta palabra viene ὀλιγόπιστος que significa de poca fe, combinando ὀλίγος con πίστις fe. Escucha."
+      "text": "ὀλίγος significa poco. Cuando dices tengo poco, usas ἔχω ὀλίγον. La terminación -ον hace que concuerde con lo poco que tienes. Escucha."
     },
     {
       "lang": "silence",
@@ -293,7 +293,7 @@
     },
     {
       "lang": "es",
-      "text": "οὐδείς significa nadie. οὐδέν es la forma neutra: nada. οὐκ ἔχω οὐδέν, no tengo nada. La palabra empieza con οὐ que es la negación no, así que significa literalmente no uno, es decir, nadie. Escucha."
+      "text": "οὐδείς significa nadie. Su forma neutra es οὐδέν que significa nada. Para decir no tengo nada, dices οὐκ ἔχω οὐδέν. Escucha."
     },
     {
       "lang": "silence",
@@ -357,7 +357,7 @@
     },
     {
       "lang": "es",
-      "text": "χρεία significa necesidad. χρείαν ἔχω significa tengo necesidad. χρείαν ἔχω ἄρτου, tengo necesidad de pan. Nota: ἄρτου con ου al final es la forma que indica de quién o de qué se trata, de pan. En gramática se llama genitivo. Escucha."
+      "text": "χρεία significa necesidad. Para decir tengo necesidad, dices χρείαν ἔχω. La terminación -αν indica que necesidad es lo que tienes. χρείαν ἔχω ἄρτου significa tengo necesidad de pan. ἄρτου con -ου indica de pan, de quién o de qué tienes necesidad. Escucha."
     },
     {
       "lang": "silence",
@@ -441,7 +441,7 @@
     },
     {
       "lang": "es",
-      "text": "τοῦτον significa este, cuando es objeto directo, o sea, cuando este recibe la acción. λάβε τοῦτον, toma este. Esta forma se llama acusativo. Escucha."
+      "text": "τοῦτον significa este cuando es el objeto de la acción. En λάβε τοῦτον, toma este, la palabra este recibe la acción de tomar. Por eso usa la terminación -ον. Escucha."
     },
     {
       "lang": "silence",
@@ -827,7 +827,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías este cuando es objeto directo?"
+      "text": "¿Cómo dirías este cuando es objeto?"
     },
     {
       "lang": "silence",
@@ -909,7 +909,7 @@
     },
     {
       "lang": "es",
-      "text": "Di tengo necesidad de agua. ὕδατος es la forma de ὕδωρ que indica de qué tienes necesidad."
+      "text": "Di tengo necesidad de agua. ὕδατος es la forma de ὕδωρ que indica de agua."
     },
     {
       "lang": "silence",
@@ -1027,7 +1027,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías este cuando es objeto directo?"
+      "text": "¿Cómo dirías este cuando es objeto?"
     },
     {
       "lang": "silence",
@@ -1581,7 +1581,7 @@
     },
     {
       "lang": "es",
-      "text": "este cuando es objeto directo."
+      "text": "este cuando es objeto."
     },
     {
       "lang": "silence",
@@ -1711,7 +1711,7 @@
     },
     {
       "lang": "es",
-      "text": "Ve, vende todo lo que tienes y dalo a los pobres. Ya conoces ἔχεις, tienes. Ya conoces καί, y. τοῖς πτωχοῖς significa a los pobres, en la forma que se usa para darle algo a alguien."
+      "text": "Ve, vende todo lo que tienes y dalo a los pobres. Ya conoces ἔχεις, tienes. Ya conoces καί, y. τοῖς πτωχοῖς significa a los pobres, es la forma que usas cuando das algo a alguien."
     },
     {
       "lang": "silence",

@@ -94,6 +94,7 @@ REGLAS:
 
 VOCABULARIO (notas que terminan con "Escucha."):
 - Explica qué significa la palabra. Máximo 4 oraciones.
+- Para palabras CORTAS (3 letras o menos como σοι, ναί, οὐ, εἶ), deletréalas letra por letra para que el alumno las identifique. Ejemplo: "σοι se escribe sigma, ómicron, iota" o "εἶ se escribe épsilon, iota".
 - Si la palabra tiene PREFIJO conocido, explica en lenguaje simple: "Empieza con X que significa Y, así que la palabra completa significa Z."
 - Si la palabra tiene SUFIJO o TERMINACIÓN conocida, explica qué hace de forma práctica con un ejemplo: "-σις es como -ción en español, indica una acción", "-τής es como -dor, indica quién hace algo".
 - Si la palabra es COMPUESTA y hay datos en DESCOMPOSICIÓN, desglosa cada parte con un ejemplo cotidiano.

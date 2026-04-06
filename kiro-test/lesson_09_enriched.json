@@ -163,7 +163,7 @@
     },
     {
       "lang": "es",
-      "text": "Uno cambia según si acompaña a una palabra masculina, femenina o neutra. εἷς para masculino, μία para femenino, ἕν para neutro. εἷς ἄρτος, un pan. Escucha."
+      "text": "Uno se dice εἷς para masculino, μία para femenino, ἕν para neutro. εἷς ἄρτος, un pan. Escucha."
     },
     {
       "lang": "silence",
@@ -201,7 +201,7 @@
     },
     {
       "lang": "es",
-      "text": "Dos es δύο. No cambia con el género. Escucha."
+      "text": "Dos se dice δύο. No cambia con el género. Escucha."
     },
     {
       "lang": "silence",
@@ -247,7 +247,7 @@
     },
     {
       "lang": "es",
-      "text": "Tres es τρεῖς. Escucha."
+      "text": "Tres se dice τρεῖς. Escucha."
     },
     {
       "lang": "silence",
@@ -293,7 +293,7 @@
     },
     {
       "lang": "es",
-      "text": "Cuatro es τέσσαρες. Escucha."
+      "text": "Cuatro se dice τέσσαρες. Escucha."
     },
     {
       "lang": "silence",
@@ -357,7 +357,7 @@
     },
     {
       "lang": "es",
-      "text": "Cinco es πέντε. Escucha."
+      "text": "Cinco se dice πέντε. Escucha."
     },
     {
       "lang": "silence",
@@ -421,7 +421,7 @@
     },
     {
       "lang": "es",
-      "text": "Seis es ἕξ. Escucha."
+      "text": "Seis se dice ἕξ. Escucha."
     },
     {
       "lang": "silence",
@@ -485,7 +485,7 @@
     },
     {
       "lang": "es",
-      "text": "Siete es ἑπτά. Un número muy importante en la Biblia. Escucha."
+      "text": "Siete se dice ἑπτά. Un número muy importante en la Biblia. Escucha."
     },
     {
       "lang": "silence",
@@ -549,7 +549,7 @@
     },
     {
       "lang": "es",
-      "text": "Ocho es ὀκτώ. Escucha."
+      "text": "Ocho se dice ὀκτώ. Escucha."
     },
     {
       "lang": "silence",
@@ -613,7 +613,7 @@
     },
     {
       "lang": "es",
-      "text": "Nueve es ἐννέα. Escucha."
+      "text": "Nueve se dice ἐννέα. Escucha."
     },
     {
       "lang": "silence",
@@ -677,7 +677,7 @@
     },
     {
       "lang": "es",
-      "text": "Diez es δέκα. Escucha."
+      "text": "Diez se dice δέκα. Escucha."
     },
     {
       "lang": "silence",
@@ -787,7 +787,7 @@
     },
     {
       "lang": "es",
-      "text": "Di dos peces. Ya conoces que ἰχθύς significa pez. El plural es ἰχθύες."
+      "text": "Di dos peces. El plural de ἰχθύς es ἰχθύες."
     },
     {
       "lang": "silence",
@@ -833,7 +833,7 @@
     },
     {
       "lang": "es",
-      "text": "Di cinco panes. Ya conoces que ἄρτος significa pan. El plural es ἄρτοι."
+      "text": "Di cinco panes. El plural de ἄρτος es ἄρτοι."
     },
     {
       "lang": "silence",
@@ -961,7 +961,7 @@
     },
     {
       "lang": "es",
-      "text": "Di tres días. Ya conoces que ἡμέρα significa día. El plural es ἡμέραι."
+      "text": "Di tres días. ἡμέραι es el plural de ἡμέρα, día."
     },
     {
       "lang": "silence",
@@ -1225,7 +1225,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces θέλω, quiero, ἄρτον, pan, y ὕδωρ, agua. ¿Cómo dirías quiero pan y agua?"
+      "text": "¿Cómo dirías quiero pan y agua?"
     },
     {
       "lang": "silence",
@@ -1387,7 +1387,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces ἐσθίω, como, πίνω, bebo, y οἶνον, vino. ¿Cómo dirías como pan y bebo vino?"
+      "text": "¿Cómo dirías como pan y bebo vino?"
     },
     {
       "lang": "silence",
@@ -1513,7 +1513,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces εὐχαριστῶ, doy gracias. ¿Cómo dirías doy gracias?"
+      "text": "¿Cómo dirías doy gracias?"
     },
     {
       "lang": "silence",
@@ -1603,7 +1603,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces πίνω, bebo, y οἶνον, vino. ¿Cómo dirías bebo vino?"
+      "text": "¿Cómo dirías bebo vino?"
     },
     {
       "lang": "silence",

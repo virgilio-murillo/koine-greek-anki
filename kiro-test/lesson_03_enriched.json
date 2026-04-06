@@ -3,7 +3,7 @@
   "segments": [
     {
       "lang": "es",
-      "text": "Μάθημα τρία. Lección tres. Hoy aprenderás a decir de dónde eres y a preguntar a otros de dónde son. Escucha esta conversación."
+      "text": "Μάθημα τρία. Lección tres. Hoy aprenderás a decir de dónde eres y a preguntar a otros. Escucha esta conversación."
     },
     {
       "lang": "silence",
@@ -45,7 +45,7 @@
     },
     {
       "lang": "es",
-      "text": "El hombre preguntó de dónde es la mujer. Ella respondió que es de Galilea y le preguntó a él. Él dijo que es de Jerusalén."
+      "text": "El hombre preguntó de dónde es la mujer. Ella respondió que es de Galilea y le preguntó a él. Él es de Jerusalén."
     },
     {
       "lang": "silence",
@@ -53,7 +53,7 @@
     },
     {
       "lang": "es",
-      "text": "Antes de aprender palabras nuevas, repasemos lo que ya sabes."
+      "text": "Antes de aprender palabras nuevas, repasemos."
     },
     {
       "lang": "silence",
@@ -173,7 +173,7 @@
     },
     {
       "lang": "es",
-      "text": "πόθεν significa de dónde. Es la palabra para preguntar el origen de alguien o algo. Esta misma pregunta aparece en el evangelio de Juan cuando Pilato le pregunta a Jesús. Escucha."
+      "text": "πόθεν significa de dónde. Esta pregunta aparece cuando Pilato interroga a Jesús en el evangelio de Juan. Es una palabra compuesta: πο- indica lugar y -θεν significa desde. Así que literalmente es desde qué lugar. Escucha."
     },
     {
       "lang": "silence",
@@ -201,7 +201,7 @@
     },
     {
       "lang": "es",
-      "text": "εἶ significa eres. Es la forma de εἰμί para cuando hablas directamente con alguien. Ya la conoces de σὺ εἶ. En griego, las terminaciones del verbo cambian según quién hace la acción, esto se llama conjugación. Escucha."
+      "text": "εἶ significa eres. Es la forma de εἰμί para tú. Ya la conoces de σὺ εἶ, tú eres. Cuando hablas con una persona directamente, usas εἶ. Escucha."
     },
     {
       "lang": "silence",
@@ -257,7 +257,7 @@
     },
     {
       "lang": "es",
-      "text": "ἀπό significa de o desde. Se usa para decir de dónde vienes geográficamente, como tu ciudad o región. Por ejemplo, ἀπὸ Γαλιλαίας significa de Galilea. Escucha."
+      "text": "ἀπό significa de o desde. Se usa para lugares geográficos. ἀπὸ Γαλιλαίας, de Galilea. Es como decir desde Galilea hasta aquí. Esta preposición siempre va antes del lugar. En gramática se llama preposición. Escucha."
     },
     {
       "lang": "silence",
@@ -303,7 +303,7 @@
     },
     {
       "lang": "es",
-      "text": "ἐστιν significa es. Es cuando hablas de otra persona, él o ella. Ya conoces εἰμί que significa yo soy, y εἶ que significa tú eres. Ahora tienes las tres formas principales: εἰμί yo soy, εἶ tú eres, ἐστιν él o ella es. Escucha."
+      "text": "ἐστιν significa es. Es la tercera persona del verbo εἰμί. El patrón completo es εἰμί yo soy, εἶ tú eres, ἐστιν él o ella es. Cuando hablas sobre otra persona, usas ἐστιν. Escucha."
     },
     {
       "lang": "silence",
@@ -331,7 +331,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías de o desde?"
+      "text": "¿Cómo dirías de, desde?"
     },
     {
       "lang": "silence",
@@ -367,7 +367,7 @@
     },
     {
       "lang": "es",
-      "text": "ἐκ también significa de, pero se usa cuando sales de algo o perteneces a un grupo. ἀπό es para lugares geográficos, ἐκ es para salir de adentro de algo o pertenecer a algo. Por ejemplo, ἐκ τοῦ οὐρανοῦ significa del cielo, como saliendo del cielo. Escucha."
+      "text": "ἐκ también significa de, pero se usa para origen o grupo. ἀπό es para lugares físicos, ἐκ es para procedencia o pertenencia. Por ejemplo, ἐκ τοῦ οὐρανοῦ, del cielo, indica procedencia. Esta preposición aparece en muchas palabras compuestas como ἐκβάλλω, echar fuera. Escucha."
     },
     {
       "lang": "silence",
@@ -441,7 +441,7 @@
     },
     {
       "lang": "es",
-      "text": "αὐτή significa ella. Ya conoces αὐτός que significa él. Cuando hablas de una mujer usas αὐτή, cuando hablas de un hombre usas αὐτός. Por ejemplo, αὐτή ἐστιν significa ella es. Escucha."
+      "text": "αὐτή significa ella. Ya conoces αὐτός, él. La diferencia está en la terminación: -ός para masculino, -ή para femenino. αὐτή ἐστιν significa ella es. Escucha."
     },
     {
       "lang": "silence",
@@ -479,7 +479,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías de, saliendo de?"
+      "text": "¿Cómo dirías de, fuera de?"
     },
     {
       "lang": "silence",
@@ -497,7 +497,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías de o desde?"
+      "text": "¿Cómo dirías de, desde?"
     },
     {
       "lang": "silence",
@@ -515,7 +515,7 @@
     },
     {
       "lang": "es",
-      "text": "Pregunta de dónde eres. Son dos palabras: πόθεν que significa de dónde, y εἶ que significa eres."
+      "text": "Pregunta de dónde eres."
     },
     {
       "lang": "silence",
@@ -561,7 +561,7 @@
     },
     {
       "lang": "es",
-      "text": "Di de Galilea. Usas ἀπό porque es un lugar geográfico."
+      "text": "Di de Galilea."
     },
     {
       "lang": "silence",
@@ -607,7 +607,7 @@
     },
     {
       "lang": "es",
-      "text": "Di de Jerusalén. De nuevo usas ἀπό porque es una ciudad."
+      "text": "Di de Jerusalén."
     },
     {
       "lang": "silence",
@@ -635,7 +635,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías de o desde?"
+      "text": "¿Cómo dirías de, desde?"
     },
     {
       "lang": "silence",
@@ -671,7 +671,7 @@
     },
     {
       "lang": "es",
-      "text": "Di yo soy de Galilea. Usas ἐγώ εἰμι para yo soy, y ἀπό para indicar el lugar de origen."
+      "text": "Di yo soy de Galilea."
     },
     {
       "lang": "silence",
@@ -735,7 +735,7 @@
     },
     {
       "lang": "es",
-      "text": "Di él es de Jerusalén. Combinas αὐτός que es él, ἐστιν que es es, y ἀπὸ Ἰερουσαλήμ que es de Jerusalén."
+      "text": "Di él es de Jerusalén."
     },
     {
       "lang": "silence",
@@ -763,7 +763,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías de, saliendo de?"
+      "text": "¿Cómo dirías de, fuera de?"
     },
     {
       "lang": "silence",
@@ -799,7 +799,7 @@
     },
     {
       "lang": "es",
-      "text": "Di ella es de Galilea. Usas αὐτή para ella, ἐστιν para es, y ἀπὸ Γαλιλαίας para de Galilea."
+      "text": "Di ella es de Galilea."
     },
     {
       "lang": "silence",
@@ -863,7 +863,7 @@
     },
     {
       "lang": "es",
-      "text": "Pregunta de dónde eres tú, con énfasis. Agregas σύ al final para dar énfasis, como decir de dónde eres TÚ."
+      "text": "Pregunta de dónde eres tú, con énfasis."
     },
     {
       "lang": "silence",
@@ -909,7 +909,7 @@
     },
     {
       "lang": "es",
-      "text": "Pregunta y tú. Ya conoces καί que significa y, y σύ que significa tú."
+      "text": "Pregunta y tú."
     },
     {
       "lang": "silence",
@@ -955,7 +955,7 @@
     },
     {
       "lang": "es",
-      "text": "Ahora practiquemos todo lo que has aprendido."
+      "text": "Practiquemos todo junto."
     },
     {
       "lang": "silence",
@@ -1107,7 +1107,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías de, saliendo de?"
+      "text": "¿Cómo dirías de, fuera de?"
     },
     {
       "lang": "silence",
@@ -1161,7 +1161,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías de o desde?"
+      "text": "¿Cómo dirías de, desde?"
     },
     {
       "lang": "silence",
@@ -1291,7 +1291,7 @@
     },
     {
       "lang": "es",
-      "text": "Ahora reconstruyamos la conversación del principio. Tú vas a participar como si fueras una de las personas."
+      "text": "Ahora reconstruyamos la conversación. Tú participas."
     },
     {
       "lang": "silence",
@@ -1309,7 +1309,7 @@
     },
     {
       "lang": "es",
-      "text": "Te preguntan de dónde eres. Responde que eres de Galilea."
+      "text": "Te preguntan de dónde eres. Di que eres de Galilea."
     },
     {
       "lang": "silence",
@@ -1327,7 +1327,7 @@
     },
     {
       "lang": "es",
-      "text": "Ahora pregúntale de dónde es él. Puedes usar y tú."
+      "text": "Pregúntale de dónde es él."
     },
     {
       "lang": "silence",
@@ -1355,7 +1355,7 @@
     },
     {
       "lang": "es",
-      "text": "Ahora pregúntale cuál es su nombre."
+      "text": "Pregúntale su nombre."
     },
     {
       "lang": "silence",
@@ -1383,7 +1383,7 @@
     },
     {
       "lang": "es",
-      "text": "Di que tu nombre es María."
+      "text": "Di tu nombre."
     },
     {
       "lang": "silence",
@@ -1401,7 +1401,7 @@
     },
     {
       "lang": "es",
-      "text": "Despídete con paz a ti."
+      "text": "Despídete."
     },
     {
       "lang": "silence",
@@ -1419,7 +1419,7 @@
     },
     {
       "lang": "es",
-      "text": "Repaso rápido de las palabras nuevas."
+      "text": "Repaso rápido."
     },
     {
       "lang": "silence",
@@ -1427,7 +1427,7 @@
     },
     {
       "lang": "es",
-      "text": "de dónde"
+      "text": "de dónde."
     },
     {
       "lang": "silence",
@@ -1445,7 +1445,7 @@
     },
     {
       "lang": "es",
-      "text": "eres"
+      "text": "eres."
     },
     {
       "lang": "silence",
@@ -1463,7 +1463,7 @@
     },
     {
       "lang": "es",
-      "text": "de, desde"
+      "text": "de, desde."
     },
     {
       "lang": "silence",
@@ -1481,7 +1481,7 @@
     },
     {
       "lang": "es",
-      "text": "es"
+      "text": "es."
     },
     {
       "lang": "silence",
@@ -1499,7 +1499,7 @@
     },
     {
       "lang": "es",
-      "text": "de, saliendo de"
+      "text": "de, fuera de."
     },
     {
       "lang": "silence",
@@ -1517,7 +1517,7 @@
     },
     {
       "lang": "es",
-      "text": "ella"
+      "text": "ella."
     },
     {
       "lang": "silence",
@@ -1535,7 +1535,7 @@
     },
     {
       "lang": "es",
-      "text": "de dónde eres"
+      "text": "de dónde eres."
     },
     {
       "lang": "silence",
@@ -1553,7 +1553,7 @@
     },
     {
       "lang": "es",
-      "text": "de Galilea"
+      "text": "de Galilea."
     },
     {
       "lang": "silence",
@@ -1571,7 +1571,7 @@
     },
     {
       "lang": "es",
-      "text": "de Jerusalén"
+      "text": "de Jerusalén."
     },
     {
       "lang": "silence",
@@ -1589,7 +1589,7 @@
     },
     {
       "lang": "es",
-      "text": "yo soy de Galilea"
+      "text": "yo soy de Galilea."
     },
     {
       "lang": "silence",
@@ -1607,7 +1607,7 @@
     },
     {
       "lang": "es",
-      "text": "él es de Jerusalén"
+      "text": "él es de Jerusalén."
     },
     {
       "lang": "silence",
@@ -1647,7 +1647,7 @@
     },
     {
       "lang": "es",
-      "text": "De dónde eres tú. Jesús no le respondió. Ya conoces cada palabra de esta pregunta bíblica."
+      "text": "De dónde eres tú. Jesús no le respondió. Ya conoces cada palabra de esta pregunta."
     },
     {
       "lang": "silence",
@@ -1655,7 +1655,7 @@
     },
     {
       "lang": "es",
-      "text": "Muy bien. Hoy aprendiste a preguntar y decir de dónde eres. πόθεν εἶ significa de dónde eres. ἀπό significa de un lugar. Y las tres formas del verbo ser: εἰμί yo soy, εἶ tú eres, ἐστιν él o ella es. En la siguiente lección aprenderás a decir que entiendes o no entiendes algo. Εἰρήνη σοι."
+      "text": "Aprendiste a preguntar y decir de dónde eres. πόθεν εἶ, de dónde eres. ἀπό, de. Y las tres personas de εἰμί: εἰμί yo soy, εἶ tú eres, ἐστιν él es. En la siguiente lección aprenderás a decir que entiendes o no entiendes. Εἰρήνη σοι."
     },
     {
       "lang": "silence",

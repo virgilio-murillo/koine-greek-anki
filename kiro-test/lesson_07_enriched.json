@@ -107,7 +107,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías ¿de dónde eres tú?"
+      "text": "¿Cómo dirías de dónde eres tú?"
     },
     {
       "lang": "silence",
@@ -183,7 +183,7 @@
     },
     {
       "lang": "es",
-      "text": "ἔρχομαι significa venir o ir. Termina en -ομαι, lo que significa que tú mismo haces la acción. ἔρχομαι, yo vengo, yo mismo me muevo hacia un lugar. Esta forma donde la acción la haces tú mismo se llama voz media. Algunos verbos siempre usan esta forma aunque tengan significado normal. Esto se llama verbo deponente. Escucha."
+      "text": "ἔρχομαι significa venir o ir. La terminación -ομαι significa que la acción la haces tú mismo: yo vengo, yo mismo me muevo hacia un lugar. Esta forma se llama voz media. Algunos verbos griegos solo existen en esta forma, llamados verbos deponentes. Escucha."
     },
     {
       "lang": "silence",
@@ -211,7 +211,7 @@
     },
     {
       "lang": "es",
-      "text": "Para decir ven, como una orden, cambias la terminación a -ου. ἔρχου significa ven. Cuando cambias a -ου, conviertes el verbo en una orden. Jesús dijo a Felipe: ἔρχου. Ven. Esta forma de orden se llama imperativo. Escucha."
+      "text": "Para decir ven, como una orden, cambias la terminación a -ου: ἔρχου. Esta forma de dar órdenes se llama imperativo. Jesús dijo a Felipe: ἔρχου. Ven. Escucha."
     },
     {
       "lang": "silence",
@@ -257,7 +257,7 @@
     },
     {
       "lang": "es",
-      "text": "πορεύομαι significa ir o caminar. También termina en -ομαι, igual que ἔρχομαι, porque la acción la haces tú mismo. πορεύομαι, yo voy, yo mismo camino. También es deponente. Escucha."
+      "text": "πορεύομαι significa ir o caminar. Tiene la misma terminación -ομαι que ἔρχομαι, donde tú mismo haces la acción de moverte de un lugar a otro. También es un verbo deponente. Escucha."
     },
     {
       "lang": "silence",
@@ -331,7 +331,7 @@
     },
     {
       "lang": "es",
-      "text": "εἰς significa hacia o a. Indica movimiento de un lugar a otro. Es diferente a estar en un lugar. Ya conoces ἐν que significa en. εἰς es hacia dónde vas, ἐν es dónde estás. πορεύομαι εἰς τὸ ἱερόν, voy hacia el templo. Escucha."
+      "text": "εἰς significa hacia o a. Indica movimiento de un lugar hacia otro. La usas cuando vas hacia algún sitio. πορεύομαι εἰς τὸ ἱερόν, voy hacia el templo. Escucha."
     },
     {
       "lang": "silence",
@@ -405,7 +405,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces ἐν que significa en. Indica ubicación, dónde estás. εἰς es hacia dónde vas, ἐν es dónde estás. ἐν τῷ ἱερῷ, en el templo. Escucha."
+      "text": "ἐν significa en. Indica ubicación, estar dentro de un lugar. εἰς es hacia, ἐν es en. ἐν τῷ ἱερῷ, en el templo. Escucha."
     },
     {
       "lang": "silence",
@@ -479,7 +479,7 @@
     },
     {
       "lang": "es",
-      "text": "οἶκος significa casa. Se compone de οἶκ- que es la raíz de casa o hogar, más -ος que es la terminación masculina. ὁ οἶκος, la casa. Escucha."
+      "text": "οἶκος significa casa. Es masculino, por eso decimos ὁ οἶκος, la casa. Escucha."
     },
     {
       "lang": "silence",
@@ -553,7 +553,7 @@
     },
     {
       "lang": "es",
-      "text": "ὁδός significa camino o sendero. Se forma de ὁδ- que es la raíz de camino, más -ός terminación femenina. ἐν τῇ ὁδῷ, en el camino. Escucha."
+      "text": "ὁδός significa camino. Es femenino, por eso decimos ἡ ὁδός. ἐν τῇ ὁδῷ, en el camino. Escucha."
     },
     {
       "lang": "silence",
@@ -617,7 +617,7 @@
     },
     {
       "lang": "es",
-      "text": "δεῦτε significa vengan. Es una invitación para más de una persona. Cuando Jesús habló a los pescadores, usó δεῦτε porque eran dos hermanos. δεῦτε ὀπίσω μου, vengan tras de mí. ὀπίσω significa detrás o después. Escucha."
+      "text": "δεῦτε significa vengan. Es una invitación a varias personas, la forma plural de ven. Jesús dijo a los pescadores: δεῦτε ὀπίσω μου, vengan tras de mí. ὀπίσω significa detrás. Escucha."
     },
     {
       "lang": "silence",
@@ -691,7 +691,7 @@
     },
     {
       "lang": "es",
-      "text": "Di voy al templo. Se forma con πορεύομαι que significa voy, εἰς que significa hacia, y τὸ ἱερόν que es el templo."
+      "text": "Di voy al templo. πορεύομαι significa voy, εἰς significa hacia, τὸ ἱερόν es el templo."
     },
     {
       "lang": "silence",
@@ -737,7 +737,7 @@
     },
     {
       "lang": "es",
-      "text": "Di en el camino. Se forma con ἐν que significa en y τῇ ὁδῷ que es el camino."
+      "text": "Di en el camino. ἐν significa en, τῇ ὁδῷ es el camino en forma femenina."
     },
     {
       "lang": "silence",
@@ -783,7 +783,7 @@
     },
     {
       "lang": "es",
-      "text": "Di ven conmigo. Se forma con ἔρχου que significa ven y μετ᾽ ἐμοῦ que significa conmigo."
+      "text": "Di ven conmigo. ἔρχου es ven, μετ᾽ ἐμοῦ significa conmigo."
     },
     {
       "lang": "silence",
@@ -847,7 +847,7 @@
     },
     {
       "lang": "es",
-      "text": "Di voy a la casa. Se forma con πορεύομαι que significa voy, εἰς que significa hacia, y τὸν οἶκον que es la casa."
+      "text": "Di voy a la casa. πορεύομαι es voy, εἰς significa hacia, τὸν οἶκον es la casa en forma masculina."
     },
     {
       "lang": "silence",
@@ -911,7 +911,7 @@
     },
     {
       "lang": "es",
-      "text": "Di vengan tras de mí. Como Jesús dijo a los pescadores."
+      "text": "Di vengan tras de mí. Como Jesús dijo a los pescadores. δεῦτε es vengan, ὀπίσω μου es tras de mí."
     },
     {
       "lang": "silence",
@@ -975,7 +975,7 @@
     },
     {
       "lang": "es",
-      "text": "Di en el templo. Recuerda: εἰς es hacia dónde vas, ἐν es dónde estás."
+      "text": "Di en el templo. ἐν significa en, τῷ ἱερῷ es el templo. Nota: εἰς es hacia, ἐν es en."
     },
     {
       "lang": "silence",
@@ -1039,7 +1039,7 @@
     },
     {
       "lang": "es",
-      "text": "Pregunta a dónde vas. Se forma con ποῦ que ya conoces y significa dónde, y πορεύῃ que significa vas."
+      "text": "Pregunta a dónde vas. Ya conoces ποῦ que significa dónde. πορεύῃ es la forma de preguntar a dónde vas tú."
     },
     {
       "lang": "silence",
@@ -1219,7 +1219,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías ¿a dónde vas?"
+      "text": "¿Cómo dirías a dónde vas?"
     },
     {
       "lang": "silence",
@@ -1237,7 +1237,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías ¿dónde está el hombre?"
+      "text": "¿Cómo dirías dónde está el hombre?"
     },
     {
       "lang": "silence",
@@ -1417,7 +1417,7 @@
     },
     {
       "lang": "es",
-      "text": "¿Cómo dirías ¿quién es?"
+      "text": "¿Cómo dirías quién es?"
     },
     {
       "lang": "silence",
@@ -1803,7 +1803,7 @@
     },
     {
       "lang": "es",
-      "text": "En Mateo cuatro diecinueve, Jesús vio a Simón y Andrés pescando y les dijo:"
+      "text": "En Mateo capítulo cuatro versículo diecinueve, Jesús vio a Simón y Andrés pescando y les dijo:"
     },
     {
       "lang": "silence",

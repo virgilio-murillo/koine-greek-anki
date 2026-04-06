@@ -173,7 +173,7 @@
     },
     {
       "lang": "es",
-      "text": "τί significa qué o cuál. Es la palabra que usas cuando haces una pregunta pidiendo información específica. En gramática se llama palabra interrogativa. Escucha."
+      "text": "τί significa qué o cuál. Es una palabra interrogativa. Cuando quieres preguntar algo, usas τί al inicio. Escucha."
     },
     {
       "lang": "silence",
@@ -201,7 +201,7 @@
     },
     {
       "lang": "es",
-      "text": "ὄνομα significa nombre. Esta palabra no cambia como las masculinas y femeninas que hemos visto. Pertenece a un grupo especial llamado neutro. Escucha."
+      "text": "ὄνομα significa nombre. Es una palabra neutra, ni masculina ni femenina. En griego, todas las palabras tienen género. Escucha."
     },
     {
       "lang": "silence",
@@ -247,7 +247,7 @@
     },
     {
       "lang": "es",
-      "text": "μου significa mi o de mí. Ya conoces ἐγώ que significa yo. μου es la forma que usas cuando dices que algo te pertenece, como en mi nombre. Esta forma de posesión se llama genitivo. Escucha."
+      "text": "μου significa mi o de mí. Viene de la palabra ἐγώ que ya conoces, que significa yo. Cuando algo me pertenece o viene de mí, usas μου. Esta forma se llama genitivo. Escucha."
     },
     {
       "lang": "silence",
@@ -293,7 +293,7 @@
     },
     {
       "lang": "es",
-      "text": "σου significa tu o de ti. Es diferente de σοι que ya conoces. σοι con iota es a ti, como en paz a ti. σου con ípsilon es de ti, para mostrar posesión, como en tu nombre. Escucha las dos."
+      "text": "σου significa tu o de ti. Es diferente de σοι que ya conoces. σοι con iota es para dirigirte a alguien, como en paz a ti. σου con ípsilon es para mostrar posesión, como tu nombre. Escucha las dos."
     },
     {
       "lang": "silence",
@@ -357,7 +357,7 @@
     },
     {
       "lang": "es",
-      "text": "καί significa y o también. Es la palabra conectora más básica del griego, como y en español. La usas para unir dos cosas o ideas. Escucha."
+      "text": "καί significa y o también. Es una palabra conectora que une dos cosas. Aparece constantemente en el Nuevo Testamento. Escucha."
     },
     {
       "lang": "silence",
@@ -421,7 +421,7 @@
     },
     {
       "lang": "es",
-      "text": "αὐτός significa él. También existen αὐτή que significa ella y αὐτό que significa ello. La terminación cambia según si hablas de hombre, mujer o cosa. Escucha la forma masculina."
+      "text": "αὐτός significa él. También existen las formas αὐτή para ella y αὐτό para las cosas. En griego, los pronombres cambian según el género. Escucha la forma masculina."
     },
     {
       "lang": "silence",
@@ -485,7 +485,7 @@
     },
     {
       "lang": "es",
-      "text": "Pregunta cuál es tu nombre. En griego se construye diferente al español. Se dice literalmente qué nombre a ti. Primero qué, después nombre, y al final a ti. Escucha."
+      "text": "Pregunta cuál es tu nombre. En griego se dice literalmente qué nombre a ti. El orden es diferente al español. Escucha."
     },
     {
       "lang": "silence",
@@ -531,7 +531,7 @@
     },
     {
       "lang": "es",
-      "text": "Di mi nombre es Simón. Se compone de τὸ que significa el, ὄνομα que significa nombre, μου que significa mi, y después el nombre Simón."
+      "text": "Responde mi nombre es Simón. Se compone de τὸ que es el, ὄνομά que es nombre, μου que es mi, y Σίμων que es Simón."
     },
     {
       "lang": "silence",
@@ -577,7 +577,7 @@
     },
     {
       "lang": "es",
-      "text": "Pregunta y tú. En griego se dice καὶ σοί. καὶ significa y, σοί significa a ti. Es una forma corta de preguntar lo mismo de vuelta."
+      "text": "Pregunta y tú. Se forma con καὶ que significa y, más σοί que es a ti. Es una forma corta de preguntar y cuál es tu nombre."
     },
     {
       "lang": "silence",
@@ -705,7 +705,7 @@
     },
     {
       "lang": "es",
-      "text": "Di mi nombre es María. Cambias solamente el nombre al final, el resto de la frase se mantiene igual."
+      "text": "Di mi nombre es María. Usas las mismas palabras pero cambias el nombre al final."
     },
     {
       "lang": "silence",
@@ -833,7 +833,7 @@
     },
     {
       "lang": "es",
-      "text": "Di ella es María. Se compone de αὐτή que significa ella, ἐστιν que significa es, y Μαρία que es el nombre María."
+      "text": "Di ella es María. Usas αὐτή que es la forma femenina de él, porque María es mujer."
     },
     {
       "lang": "silence",
@@ -1507,7 +1507,7 @@
     },
     {
       "lang": "es",
-      "text": "Cuál es tu nombre? Legión es mi nombre, porque somos muchos. Reconoces τί ὄνομά σοι, la pregunta que ya sabes. Y ὄνομά μοι, mi nombre. μοι es otra forma de decir a mí."
+      "text": "Cuál es tu nombre? Legión es mi nombre, porque somos muchos. Reconoces τί ὄνομά σοι, la pregunta que ya conoces. Y ὄνομά μοι, mi nombre. μοι es otra forma de decir a mí."
     },
     {
       "lang": "silence",
@@ -1515,7 +1515,7 @@
     },
     {
       "lang": "es",
-      "text": "Aprendiste a preguntar y decir tu nombre. Τί ὄνομά σοι. Τὸ ὄνομά μου. Y la palabra conectora más importante: καί, y. En la siguiente lección aprenderás a decir de dónde eres. Εἰρήνη σοι."
+      "text": "Aprendiste a preguntar y decir tu nombre. Τί ὄνομά σοι. Τὸ ὄνομά μου. Y la palabra conectora καί, y. En la siguiente lección aprenderás a decir de dónde eres. Εἰρήνη σοι."
     },
     {
       "lang": "silence",

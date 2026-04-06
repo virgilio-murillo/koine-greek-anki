@@ -173,7 +173,7 @@
     },
     {
       "lang": "es",
-      "text": "En griego, el artículo cambia según el género. Cuando la persona o cosa es masculina, usas ὁ que significa el. Es como decir el hombre, el libro. A esto se le llama género masculino. Escucha."
+      "text": "En griego, el artículo cambia según el género. ὁ es el, para masculino. Escucha."
     },
     {
       "lang": "silence",
@@ -201,7 +201,7 @@
     },
     {
       "lang": "es",
-      "text": "Cuando la persona o cosa es femenina, usas ἡ que significa la. Es como decir la mujer, la casa. A esto se le llama género femenino. Escucha."
+      "text": "ἡ es la, para femenino. Escucha."
     },
     {
       "lang": "silence",
@@ -247,7 +247,7 @@
     },
     {
       "lang": "es",
-      "text": "Cuando la cosa no es ni masculina ni femenina, usas τό que significa lo. Es como decir lo bueno, lo importante. A esto se le llama género neutro. Escucha."
+      "text": "τό es lo, para neutro. Escucha."
     },
     {
       "lang": "silence",
@@ -293,7 +293,7 @@
     },
     {
       "lang": "es",
-      "text": "ἄνθρωπος significa persona o hombre. Se forma de ἄνθρωπ, que es la raíz para humano, más la terminación -ος que indica que es masculino. Por eso dices ὁ ἄνθρωπος, el hombre. Escucha."
+      "text": "ἄνθρωπος significa persona o hombre. Se forma de ἀνήρ que significa varón y θρωπ que se relaciona con alimentar o criar, así que literalmente es el ser que se alimenta como un varón. ὁ ἄνθρωπος, el hombre. Escucha."
     },
     {
       "lang": "silence",
@@ -367,7 +367,7 @@
     },
     {
       "lang": "es",
-      "text": "γυνή significa mujer. Es una palabra femenina, por eso dices ἡ γυνή, la mujer. Escucha."
+      "text": "γυνή significa mujer. Es la palabra básica para referirse a una persona femenina. ἡ γυνή, la mujer. Escucha."
     },
     {
       "lang": "silence",
@@ -441,7 +441,7 @@
     },
     {
       "lang": "es",
-      "text": "τέκνον significa hijo o niño. Termina en -ον, que indica que es neutro. Por eso dices τὸ τέκνον, el niño. Escucha."
+      "text": "τέκνον significa hijo o niño. Se forma de la raíz τεκ que significa dar a luz, así que es literalmente lo que fue dado a luz. Es neutro: τὸ τέκνον, el niño. Escucha."
     },
     {
       "lang": "silence",
@@ -515,7 +515,7 @@
     },
     {
       "lang": "es",
-      "text": "οὗτος significa este. Lo usas para señalar algo que está cerca de ti, como este hombre que tengo aquí. οὗτος ὁ ἄνθρωπος, este hombre. A esto se le llama pronombre demostrativo. Escucha."
+      "text": "οὗτος significa este. Señala algo o alguien cercano. οὗτος ὁ ἄνθρωπος, este hombre. Escucha."
     },
     {
       "lang": "silence",
@@ -589,7 +589,7 @@
     },
     {
       "lang": "es",
-      "text": "ἐκεῖνος significa aquel. Lo usas para señalar algo que está lejos de ti, como aquel hombre que está allá. ἐκεῖνος ὁ ἄνθρωπος, aquel hombre. También es un pronombre demostrativo. Escucha."
+      "text": "ἐκεῖνος significa aquel. Señala algo o alguien lejano. ἐκεῖνος ὁ ἄνθρωπος, aquel hombre. Escucha."
     },
     {
       "lang": "silence",
@@ -663,7 +663,7 @@
     },
     {
       "lang": "es",
-      "text": "ἰδού significa mira o he aquí. Es como decir oye, fíjate en esto. Cuando Pilato mostró a Jesús, dijo ἰδοὺ ὁ ἄνθρωπος, he aquí el hombre. Escucha."
+      "text": "ἰδού significa mira o he aquí. Es una exclamación para llamar la atención hacia algo importante. Pilato dijo ἰδοὺ ὁ ἄνθρωπος, he aquí el hombre. Escucha."
     },
     {
       "lang": "silence",
@@ -727,7 +727,7 @@
     },
     {
       "lang": "es",
-      "text": "οὖν significa entonces o por lo tanto. Como δέ, nunca va al principio de la frase. Siempre va en segunda posición. Es una palabra postpositiva. Escucha."
+      "text": "οὖν significa entonces o por lo tanto. Ya conoces δέ, nunca van al principio. Siempre en segundo lugar en la oración. Escucha."
     },
     {
       "lang": "silence",
@@ -1139,7 +1139,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces γινώσκω que significa saber, y ὅτι que significa que. Júntalas para decir sé que."
+      "text": "Di sé que."
     },
     {
       "lang": "silence",
@@ -1203,7 +1203,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces λέγω que significa decir, σοι que significa a ti, y ὅτι que significa que. Júntalas para decir te digo que."
+      "text": "Di te digo que."
     },
     {
       "lang": "silence",
@@ -1329,7 +1329,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces λέγε que significa di, y πάλιν que significa otra vez. ¿Cómo dirías di otra vez?"
+      "text": "¿Cómo dirías di otra vez?"
     },
     {
       "lang": "silence",
@@ -1401,7 +1401,7 @@
     },
     {
       "lang": "es",
-      "text": "Ya conoces todas estas palabras. ἐγὼ es yo, δὲ es pero, λέγω es digo, ὑμῖν es a ustedes. ¿Cómo dirías pero yo les digo?"
+      "text": "¿Cómo dirías pero yo les digo?"
     },
     {
       "lang": "silence",
