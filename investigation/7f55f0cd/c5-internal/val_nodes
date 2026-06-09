@@ -1,0 +1,10 @@
+21:47:24|Starting validation
+21:47:43|Reading findings file
+21:48:01|Verifying directory structure
+21:48:39|Checking code details
+21:49:27|Verifying data schemas
+21:50:02|Verifying bible-tools tools
+21:50:53|Verifying lesson schema
+21:51:13|Checking false friends claim
+21:51:47|Writing validated findings
+21:53:10|Validation complete

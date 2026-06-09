@@ -1,0 +1,627 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-prod.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 459 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-agent.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 457 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/kiro-developer.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 455 column 16
+One or more mcp server did not load correctly. See $TMPDIR/kiro-log/kiro-chat.log for more details.
+------
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 0.85s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mmkdir -p /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal && printf '%s|Starting investigation\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mcat /Users/murivirg/work/github/anki/investigation/7f55f0cd/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.354s[0m
+[38;5;12m[1m [1.1][0m[0m
+[38;5;244m - Completed in 2.193s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m4[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading directory: [38;5;141m/Users/murivirg/work/github/anki[0m
+↱ Operation 2: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/anki-main[0m
+↱ Operation 3: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/koine-anki[0m
+↱ Operation 4: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur[0m
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki[0m [38;5;244m(143 entries)[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/anki-main[0m [38;5;244m(21 entries)[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/koine-anki[0m [38;5;244m(321 entries)[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur[0m [38;5;244m(209 entries)[0m
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 4 operations processed, 4 successful, 0 failed
+[38;5;244m - Completed in 2.117s[0m
+[38;5;12m[1m [1.3][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me read the key files to understand the project structure and tools:[0m[0m
+[?25l[0m[0mBatch fs_read operation with [38;5;141m5[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/README.md[0m, all lines
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/README.md[0m, all lines
+↱ Operation 3: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/notes/compounds-pipeline.md[0m, all lines
+↱ Operation 4: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/notes/koine-greek-anki-guidelines.md[0m, all lines
+↱ Operation 5: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/notes/card-quality-standards.md[0m, all lines
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m1636 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/README.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2322 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/README.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m5669 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/notes/compounds-pipeline.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m4754 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/notes/koine-greek-anki-guidelines.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2279 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/notes/card-quality-standards.md
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 5 operations processed, 5 successful, 0 failed
+[38;5;244m - Completed in 2.349s[0m
+[38;5;12m[1m [1.4][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading project files\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/nodes && echo '{"from":"c5-internal","finding":"Project has 3 subdirs: anki-main (AWS cert prep + language decks), koine-anki (compound word flashcards with 5-step pipeline), koine-pimsleur (90-lesson Pimsleur audio course). All use genanki for .apkg generation."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 3.137s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me read the key generation scripts and the current agent prompt:[0m[0m
+[?25l[0m[0mBatch fs_read operation with [38;5;141m4[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/compounds/generate_deck.py[0m, all lines
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/terminaciones/gen_deck.py[0m, all lines
+↱ Operation 3: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/terminaciones/gen_deck_vol3.py[0m, all lines
+↱ Operation 4: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/src/generate_decks.py[0m, all lines
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m8066 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/compounds/generate_deck.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m500 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/terminaciones/gen_deck.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m1220 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/terminaciones/gen_deck_vol3.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2549 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/src/generate_decks.py
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 4 operations processed, 4 successful, 0 failed
+[38;5;244m - Completed in 2.321s[0m
+[38;5;12m[1m [1.6][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m3[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/anki-main/languages/README.md[0m, all lines
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/src/enrich.py[0m, from line [38;5;141m1[0m to [38;5;141m50[0m
+↱ Operation 3: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/compounds/enrich_compounds.py[0m, from line [38;5;141m1[0m to [38;5;141m50[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2633 bytes[0m from /Users/murivirg/work/github/anki/anki-main/languages/README.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m1951 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/src/enrich.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2700 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/compounds/enrich_compounds.py
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 3 operations processed, 3 successful, 0 failed
+[38;5;244m - Completed in 2.274s[0m
+[38;5;12m[1m [1.7][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me search internal sources for Anki-related best practices and tools:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Searching internal sources\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+Running tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "query": "anki flashcard generation agent prompt engineering",
+ ⋮    "domain": "WIKI",
+ ⋮    "pageSize": 5
+ ⋮  }
+[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "query": "kiro agent prompt system instructions best practices",
+ ⋮    "domain": "BUILDER_HUB",
+ ⋮    "pageSize": 5
+ ⋮  }
+[0m[38;5;244m - Completed in 1.979s[0m
+[38;5;12m[1m [1.8][0m[0m
+[38;5;244m - Completed in 2.791s[0m
+[38;5;12m[1m [1.9][0m[0m
+[38;5;244m - Completed in 3.155s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[38;5;141m> [0mInternal search requires Midway auth. Let me try Atlas and other tools:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mAtlas[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "entities": [
+ ⋮      {
+ ⋮        "entityId": "kiro",
+ ⋮        "contentDetail": "DESCRIPTION",
+ ⋮        "relationshipDetail": "LIST"
+ ⋮      },
+ ⋮      {
+ ⋮        "entityId": "genanki",
+ ⋮        "contentDetail": "DESCRIPTION",
+ ⋮        "relationshipDetail": "NONE"
+ ⋮      },
+ ⋮      {
+ ⋮        "entityId": "ankiflashcards",
+ ⋮        "contentDetail": "DESCRIPTION",
+ ⋮        "relationshipDetail": "NONE"
+ ⋮      }
+ ⋮    ]
+ ⋮  }
+[0mRunning tool [38;5;141mSearchSoftwareRecommendations[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "keyword": "agent prompt engineering system instructions"
+ ⋮  }
+[0m[38;5;244m - Completed in 6.185s[0m
+[38;5;12m[1m [1.11][0m[0m
+[38;5;244m - Completed in 2.810s[0m
+[38;5;12m[1m [1.12][0m[0m
+[?25l[0m[38;5;141m> [0mAll internal tools require Midway auth which is expired. Let me focus on what I can gather from the local project files and write comprehensive findings. Let me check for any existing agent prompt:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mfind /Users/murivirg/work/github/anki -name "*.md" -path "*kiro*" -not -path "*investigation*" -not -path "*.kiro-shadow*" 2>/dev/null | head -20[0m[38;5;244m (using tool: shell)[0m
+
+Searching for: [38;5;141mKIRO_INSTRUCTIONS|system.*prompt|agent.*prompt|\.kiro[0m in [38;5;141m/Users/murivirg/work/github/anki[0m ([38;5;141m*.md[0m)[38;5;244m (using tool: grep)[0m/Users/murivirg/work/github/anki/koine-anki/kiro-test/solution_report.md
+/Users/murivirg/work/github/anki/anki-main/languages/kiro-notes/001_plan_greek_infinitives.md
+/Users/murivirg/work/github/anki/anki-main/languages/kiro-notes/INDEX.md
+[38;5;244m - Completed in 5.184s[0m
+[38;5;12m[1m [1.13][0m[0m
+
+[38;5;9m ❗ [0mNo matches found for pattern: [38;5;244mKIRO_INSTRUCTIONS|system.*prompt|agent.*prompt|\.kiro[0m under /Users/murivirg/work/github/anki
+[38;5;244m - Completed in 3.202s[0m
+[38;5;12m[1m [1.14][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mfind /Users/murivirg/work/github/anki -name "AGENTS.md" -o -name ".kiro" -o -name "kiro.md" -o -name "instructions.md" -o -name "CLAUDE.md" -o -name ".cursorrules" -o -name ".clinerules" 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+Searching for files: [38;5;141m**/.kiro/**[0m in [38;5;141m/Users/murivirg/work/github/anki[0m[38;5;244m (using tool: glob)[0m[38;5;244m - Completed in 3.495s[0m
+[38;5;12m[1m [1.15][0m[0m
+
+[38;5;9m ❗ [0mNo files found matching pattern: [38;5;244m**/.kiro/**[0m under /Users/murivirg/work/github/anki
+[38;5;244m - Completed in 1.975s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mfind /Users/murivirg/work/github/anki -name "*.toml" -o -name "requirements*.txt" -o -name "pyproject.toml" -o -name "Makefile" 2>/dev/null | grep -v investigation | grep -v .kiro-shadow[0m[38;5;244m (using tool: shell)[0m
+
+Batch fs_read operation with [38;5;141m2[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/notes/pimsleur-project.md[0m, all lines
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/notes/lessons-learned-koine.md[0m, all lines[38;5;244m - Completed in 3.755s[0m
+[38;5;12m[1m [1.17][0m[0m
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2487 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/notes/pimsleur-project.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m5105 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/notes/lessons-learned-koine.md
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 2 operations processed, 2 successful, 0 failed
+[38;5;244m - Completed in 1.841s[0m
+[38;5;12m[1m [1.18][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading data formats\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/nodes && echo '{"from":"c5-internal","finding":"koine-pimsleur depends on koine-anki/data/ for NT corpus, morphology, and compounds. Uses KOINE_ANKI_PATH env var or sibling dir detection. Tech: Polly+Google TTS, pydub, genanki, Bedrock Claude for enrichment."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.168s[0m
+[38;5;12m[1m [1.19][0m[0m
+[?25l[0m[?25l[?25l[0m[0mBatch fs_read operation with [38;5;141m2[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/data/morphology_reference.md[0m, from line [38;5;141m1[0m to [38;5;141m30[0m
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/src/data/__init__.py[0m, from line [38;5;141m1[0m to [38;5;141m30[0mI will run the following command: [38;5;141mhead -50 /Users/murivirg/work/github/anki/koine-anki/data/nt_compounds_full.json 2>/dev/null | python3 -c "import sys,json; d=json.load(sys.stdin); print(type(d), len(d) if isinstance(d,list) else 'dict')" 2>/dev/null || head -5 /Users/murivirg/work/github/anki/koine-anki/data/nt_compounds_full.json[0m[38;5;244m (using tool: shell)[0m
+
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m3035 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/data/morphology_reference.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m1455 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/src/data/__init__.py
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 2 operations processed, 2 successful, 0 failed
+[38;5;244m - Completed in 2.353s[0m
+[38;5;12m[1m [1.20][0m[0m
+[
+  {
+    "lemma": "Αἰγύπτιος",
+    "components": [
+      {
+[38;5;244m - Completed in 2.273s[0m
+[38;5;12m[1m [1.21][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mpython3 -c "import json; d=json.load(open('/Users/murivirg/work/github/anki/koine-anki/data/nt_compounds_full.json')); print(f'Total entries: {len(d)}'); print('Keys in first entry:', list(d[0].keys()))" 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/src/data/lesson_data_01_05.py[0m, from line [38;5;141m1[0m to [38;5;141m30[0m[38;5;244m (using tool: read)[0mTotal entries: 4233
+Keys in first entry: ['lemma', 'components', 'meaning_es', 'root_note_es']
+[38;5;244m - Completed in 2.294s[0m
+[38;5;12m[1m [1.22][0m[0m
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2950 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/src/data/lesson_data_01_05.py
+[38;5;244m - Completed in 2.751s[0m
+[38;5;12m[1m [1.23][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me check the [38;5;10manki-main/languages/src[0m directory and look for any existing agent configuration:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mBatch fs_read operation with [38;5;141m2[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/anki-main/languages/src[0m
+↱ Operation 2: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/anki-main/languages/data[0mI will run the following command: [38;5;141mcat /Users/murivirg/work/github/anki/investigation/7f55f0cd/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/anki-main/languages/src[0m [38;5;244m(76 entries)[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/anki-main/languages/data[0m [38;5;244m(39 entries)[0m
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 2 operations processed, 2 successful, 0 failed
+[38;5;244m - Completed in 2.157s[0m
+[38;5;12m[1m [1.24][0m[0m
+[38;5;244m - Completed in 2.268s[0m
+[38;5;12m[1m [1.25][0m[0m
+[?25l[0m[38;5;141m> [0mNow I have a comprehensive picture. Let me also check the [38;5;10manki-main/languages[0m relationship to the other repos (it appears to be an older monorepo version that was later split):[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Analyzing relationships\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/nodes && echo '{"from":"c5-internal","finding":"anki-main/languages/ is the ORIGINAL monorepo that was later split into koine-anki/ and koine-pimsleur/ as separate repos. koine-anki/data/ is the shared data layer referenced by both. Formats: .apkg (genanki), .txt (tab-separated), .json (enriched data), .mp3 (TTS audio)."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.890s[0m
+[38;5;12m[1m [1.26][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me look at the [38;5;10mkoine-anki/data/[0m relationship to any [38;5;10mbible-tools[0m reference:[0m[0m
+[?25l[0m[0mSearching for: [38;5;141mbible.tools|bible-tools|openscriptures|morphgnt|sblgnt[0m in [38;5;141m/Users/murivirg/work/github/anki[0m ([38;5;141m*.py[0m)[38;5;244m (using tool: grep)[0m
+[38;5;10m ✓ [0mSuccessfully found [38;5;244m18 matches[0m in [38;5;244m6 files[0m under /Users/murivirg/work/github/anki (result is truncated)
+[38;5;244m - Completed in 2.411s[0m
+[38;5;12m[1m [1.27][0m[0m
+[?25l[0m[?25l[0m[0mSearching for: [38;5;141mbible.tools|bible-tools|KOINE_ANKI_PATH|NFC|unicodedata.normalize[0m in [38;5;141m/Users/murivirg/work/github/anki[0m[38;5;244m (using tool: grep)[0m
+[38;5;10m ✓ [0mSuccessfully found [38;5;244m75 matches[0m in [38;5;244m22 files[0m under /Users/murivirg/work/github/anki (result is truncated)
+[38;5;244m - Completed in 2.287s[0m
+[38;5;12m[1m [1.28][0m[0m
+[?25l[0m[38;5;141m> [0mI now have a complete picture. The [38;5;10mbible-tools[0m reference is to a Kiro MCP server at [38;5;10m~/.kiro/mcp-servers/bible-tools/[0m that provides Bible data access. Let me check what that MCP server provides:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mls /Users/murivirg/.kiro/mcp-servers/bible-tools/ 2>/dev/null | head -20; echo "---"; cat /Users/murivirg/.kiro/mcp-servers/bible-tools/README.md 2>/dev/null | head -40 || cat /Users/murivirg/.kiro/mcp-servers/bible-tools/pyproject.toml 2>/dev/null | head -30[0m[38;5;244m (using tool: shell)[0m
+
+__pycache__
+ARCHITECTURE.md
+bible_places.py
+bible_study.db
+bible_tools.db
+bible.db
+books.py
+corpus_reader.py
+data
+db
+DEVELOPMENT.md
+greek_corpus.db
+ingest
+investigation
+map_generator.py
+pyproject.toml
+requirements.lock
+server.py
+study_html_generator.py
+sync_from_s3.sh
+---
+[38;5;244m - Completed in 1.808s[0m
+[38;5;12m[1m [1.29][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mhead -80 /Users/murivirg/.kiro/mcp-servers/bible-tools/server.py 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+"""Bible Expert MCP Server — Comprehensive biblical research tools."""
+import json
+import os
+import sqlite3
+from pathlib import Path
+from mcp.server.fastmcp import FastMCP
+from books import resolve_book, get_all_db_names, BOOKS
+
+DB_PATH = Path(__file__).parent / "db" / "bible.db"
+DATA_DIR = Path(__file__).parent / "data"
+
+mcp = FastMCP("Bible-Expert")
+
+
+def _resolve_book_or_error(book) -> str:
+    """Resolve book name/ID or raise a helpful error."""
+    resolved = resolve_book(book)
+    if resolved:
+        return resolved
+    # Build hint
+    raise ValueError(
+        f"Unknown book: '{book}'. Use a numeric ID (1-84), English name, Spanish name, or abbreviation. "
+        f"Examples: 2 or 'Exodus' or 'Éxodo' or 'Exod' or 'Ex'"
+    )
+
+
+def get_db(readonly=True):
+    """Get a database connection with concurrency-safe settings."""
+    if readonly:
+        uri = f"file:{DB_PATH}?mode=ro"
+        conn = sqlite3.connect(uri, uri=True, timeout=30)
+    else:
+        conn = sqlite3.connect(str(DB_PATH), timeout=30)
+    conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA busy_timeout=30000")
+    return conn
+
+
+@mcp.tool()
+def book_list() -> str:
+    """List all available book IDs with their canonical names. Use these IDs in other tools."""
+    lines = []
+    for bid, (name, aliases) in BOOKS.items():
+        lines.append(f"{bid}: {name}")
+    return "\n".join(lines)
+
+
+@mcp.tool()
+def verse_lookup(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, version: str = "SBLGNT", include_morphology: bool = False) -> str:
+    """Look up Bible verse(s). Uses RVR60/Hebrew numbering.
+    
+    Args:
+        book: Book name (English/Spanish/abbreviation) or numeric ID (1=Genesis, 2=Exodus... 66=Revelation). Full list via book_list tool.
+        chapter: Chapter number
+        verse_start: Starting verse (default 1)
+        verse_end: Ending verse (default = verse_start, or end of chapter if verse_start=1)
+        version: Text version. Options: MorphGNT, LXX, WLC, RVR60, YLT, Vulgate, ApostolicFathers
+        include_morphology: Include word-level morphological parsing (Greek/Hebrew only)
+    """
+    db = get_db()
+    try:
+        resolved = _resolve_book_or_error(book)
+        if verse_end is None:
+            verse_end = 176 if verse_start == 1 else verse_start
+        
+        rows = _query_verse(db, resolved, chapter, verse_start, verse_end, version)
+        
+        if not rows:
+            return f"No results for {resolved} {chapter}:{verse_start}-{verse_end} in {version}. Available versions: " + _list_versions(db)
+        
+        ref = f"{resolved} {chapter}:{verse_start}" + (f"-{verse_end}" if verse_end != verse_start else "")
+        result = f"**{ref}** ({version}):\n\n"
+        
+        note = _get_versification_note(resolved, chapter, verse_start, version)
+        if note:
+            result += f"_{note}_\n\n"
+        
+        for r in rows:
+            result += f"  {r['verse_num']}. {r['text']}\n"
+            if include_morphology and r['morphology']:
+[38;5;244m - Completed in 1.708s[0m
+[38;5;12m[1m [1.30][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mgrep -n "@mcp.tool" /Users/murivirg/.kiro/mcp-servers/bible-tools/server.py 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+39:@mcp.tool()
+48:@mcp.tool()
+89:@mcp.tool()
+128:@mcp.tool()
+189:@mcp.tool()
+234:@mcp.tool()
+281:@mcp.tool()
+343:@mcp.tool()
+368:@mcp.tool()
+422:@mcp.tool()
+463:@mcp.tool()
+537:@mcp.tool()
+583:@mcp.tool()
+609:@mcp.tool()
+855:@mcp.tool()
+983:@mcp.tool()
+1008:@mcp.tool()
+[38;5;244m - Completed in 1.858s[0m
+[38;5;12m[1m [1.31][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mgrep -A2 "@mcp.tool" /Users/murivirg/.kiro/mcp-servers/bible-tools/server.py 2>/dev/null | grep "^def "[0m[38;5;244m (using tool: shell)[0m
+
+def book_list() -> str:
+def verse_lookup(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, version: str = "SBLGNT", include_morphology: bool = False) -> str:
+def parallel_versions(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, versions: list[str] | None = None) -> str:
+def semantic_search(query: str, scope: str = "all", limit: int = 10, language: str = "auto") -> str:
+def morphology_analysis(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, version: str = "MorphGNT") -> str:
+def critical_apparatus(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None) -> str:
+def patristic_commentary(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, fathers: list[str] | None = None) -> str:
+def save_patristic_original(patristic_id: int, text_original: str, original_lang: str = "greek") -> str:
+def cross_references(book: str, chapter: int, verse_start: int = 1, verse_end: int | None = None, include_intertextual: bool = True) -> str:
+def word_lookup(word: str, language: str = "greek") -> str:
+def authenticity_report(text_name: str) -> str:
+def dss_lookup(scroll_id: str = "", keyword: str = "") -> str:
+def canon_history(book_name: str) -> str:
+def text_comparison(book1: str, chapter1: int, verse1: int, book2: str, chapter2: int, verse2: int, version1: str = "WLC", version2: str = "LXX") -> str:
+def chapter_study(book: str, chapter: int, version: str = "RVR1909", output_dir: str = "") -> str:
+def translate_corpus(author: str, ref: str, output_dir: str = "") -> str:
+def word_study(word: str, limit: int = 20, output_dir: str = "") -> str:
+[38;5;244m - Completed in 1.970s[0m
+[38;5;12m[1m [1.32][0m[0m
+[?25l[0m[38;5;141m> [0mExcellent! Now I have the full picture. Let me write the findings:[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Writing findings\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/nodes && echo '{"from":"c5-internal","finding":"bible-tools is a Kiro MCP server at ~/.kiro/mcp-servers/bible-tools/ providing 17 tools: verse_lookup, parallel_versions, semantic_search, morphology_analysis, critical_apparatus, patristic_commentary, cross_references, word_lookup, word_study, etc. It has its own SQLite DBs (bible.db, greek_corpus.db, bible_study.db). koine-anki/data/ is NOT directly from bible-tools but from the same upstream sources (MorphGNT, Strong'"'"'s, openscriptures)."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.729s[0m
+[38;5;12m[1m [1.33][0m[0m
+[?25l[0m[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/findings.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mInternal Investigation Findings: Enhance anki-agent[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSource: Local project analysis + internal tool exploration[K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mNote[38;2;235;203;139m**[38;2;192;197;206m: Amazon internal tools (InternalSearch, Atlas, SearchSoftwareRecommendations) were unavailable due to expired Midway credentials. Findings are based on comprehensive local project analysis.[K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m1. What's in Each Subdirectory[K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140manki-main/[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPurpose[38;2;235;203;139m**[38;2;191;97;106m: Original monorepo (now mostly historical). Contains AWS cert prep ([38;2;163;190;140m`[38;2;163;190;140mDVA-C02_Questions.txt[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mSAW/[38;2;163;190;140m`[38;2;191;97;106m) and a [38;2;163;190;140m`[38;2;163;190;140mlanguages/[38;2;163;190;140m`[38;2;191;97;106m subdirectory that was the precursor to the split repos.[K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;163;190;140m`[38;2;163;190;140mlanguages/[38;2;163;190;140m`[38;2;235;203;139m**[38;2;191;97;106m: Contains a copy of the Pimsleur + Anki pipeline code (older version). Has its own [38;2;163;190;140m`[38;2;163;190;140msrc/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdata/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdecks/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140maudio/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mnotes/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mvenv/[38;2;163;190;140m`[38;2;191;97;106m, and TLS certs for [38;2;163;190;140m`[38;2;163;190;140mserve_audio.py[38;2;163;190;140m`[38;2;191;97;106m.[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mKey files[38;2;235;203;139m**[38;2;191;97;106m: [38;2;163;190;140m`[38;2;163;190;140mDVA-C02_Questions.txt[38;2;163;190;140m`[38;2;191;97;106m (AWS Developer Associate prep), [38;2;163;190;140m`[38;2;163;190;140mSAW/SAW_Topics4-9.apkg[38;2;163;190;140m`[38;2;191;97;106m (Solutions Architect Workshop)[K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPurpose[38;2;235;203;139m**[38;2;191;97;106m: Koine Greek Anki flashcard generation — compound words and grammar endings.[K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSubdirectories[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mcompounds/[38;2;163;190;140m`[38;2;191;97;106m — 10 Python scripts forming a 5-step pipeline: extract → fetch_strongs → enrich_compounds → enrich_cognates → enrich_verses → add_rvr60 → improve_mnemonics → audit_cognates → generate_deck[K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mterminaciones/[38;2;163;190;140m`[38;2;191;97;106m — Grammar endings decks (7 categories × 2 volumes). [38;2;163;190;140m`[38;2;163;190;140mgen_deck.py[38;2;163;190;140m`[38;2;191;97;106m (text export), [38;2;163;190;140m`[38;2;163;190;140mgen_deck_vol3.py[38;2;163;190;140m`[38;2;191;97;106m (.apkg)[K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mdata/[38;2;163;190;140m`[38;2;191;97;106m — [38;2;235;203;139m**[38;2;235;203;139mShared data layer[38;2;235;203;139m**[38;2;191;97;106m used by both koine-anki and koine-pimsleur:[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnt-morphgnt/[38;2;163;190;140m`[38;2;191;97;106m — 27 NT books morphologically tagged (MorphGNT/SBLGNT)[K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mstrongs_greek.xml[38;2;163;190;140m`[38;2;191;97;106m — Strong's Greek Dictionary (5516 entries)[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnt_vocabulary_frequency.json[38;2;163;190;140m`[38;2;191;97;106m — Word frequencies[K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnt_top600.json[38;2;163;190;140m`[38;2;191;97;106m — Top 600 NT words[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnt_compounds_full.json[38;2;163;190;140m`[38;2;191;97;106m — 4,233 compound word entries (full NT)[K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mcompounds_registry.json[38;2;163;190;140m`[38;2;191;97;106m — Deduplication registry[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mes_rvr.json[38;2;163;190;140m`[38;2;191;97;106m — Spanish RVR60 Bible text[K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mmatthew/[38;2;163;190;140m`[38;2;191;97;106m — Matthew-specific enriched data[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mmorphology_reference.md[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mmorphology_context.md[38;2;163;190;140m`[38;2;191;97;106m — Grammar references[K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;191;97;106m    [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mpronunciation.csv[38;2;163;190;140m`[38;2;191;97;106m — Pronunciation guide[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnotes/[38;2;163;190;140m`[38;2;191;97;106m — Guidelines: [38;2;163;190;140m`[38;2;163;190;140mcompounds-pipeline.md[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mkoine-greek-anki-guidelines.md[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mcard-quality-standards.md[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mdecks/[38;2;163;190;140m`[38;2;191;97;106m — Generated output: [38;2;163;190;140m`[38;2;163;190;140mmatthew_compounds.apkg[38;2;163;190;140m`[38;2;191;97;106m (290 cards)[K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPurpose[38;2;235;203;139m**[38;2;191;97;106m: 90-lesson Pimsleur-method audio course for Koine Greek (16.7 hours).[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSubdirectories[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140msrc/[38;2;163;190;140m`[38;2;191;97;106m — Generation pipeline: [38;2;163;190;140m`[38;2;163;190;140mengine.py[38;2;163;190;140m`[38;2;191;97;106m (audio assembly), [38;2;163;190;140m`[38;2;163;190;140mtts.py[38;2;163;190;140m`[38;2;191;97;106m (Polly + Google TTS), [38;2;163;190;140m`[38;2;163;190;140mgenerate.py[38;2;163;190;140m`[38;2;191;97;106m (lesson generator), [38;2;163;190;140m`[38;2;163;190;140mrender.py[38;2;163;190;140m`[38;2;191;97;106m (MP3 renderer), [38;2;163;190;140m`[38;2;163;190;140mscript_builder.py[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140menrich.py[38;2;163;190;140m`[38;2;191;97;106m (LLM enrichment using koine-anki data), [38;2;163;190;140m`[38;2;163;190;140mgenerate_decks.py[38;2;163;190;140m`[38;2;191;97;106m (Anki deck from lessons)[K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140msrc/data/[38;2;163;190;140m`[38;2;191;97;106m — 18 Python modules with structured lesson content (90 lessons total)[K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mdecks/[38;2;163;190;140m`[38;2;191;97;106m — Generated MP3s ([38;2;163;190;140m`[38;2;163;190;140mlessons/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mlessons_v2/[38;2;163;190;140m`[38;2;191;97;106m) and [38;2;163;190;140m`[38;2;163;190;140m.apkg[38;2;163;190;140m`[38;2;191;97;106m files ([38;2;163;190;140m`[38;2;163;190;140manki/[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140maudio/[38;2;163;190;140m`[38;2;191;97;106m — Organized by level: [38;2;163;190;140m`[38;2;163;190;140mlevel1_el_extranjero/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mlevel2_el_discipulo/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mlevel3_el_predicador/[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnotes/[38;2;163;190;140m`[38;2;191;97;106m — Curriculum docs, lessons learned, project notes[K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m2. Deck Generation Tools[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Tool [38;2;192;197;206m|[38;2;192;197;206m Location [38;2;192;197;206m|[38;2;192;197;206m Input [38;2;192;197;206m|[38;2;192;197;206m Output [38;2;192;197;206m|[38;2;192;197;206m Library [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgenerate_deck.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/compounds/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mdata/matthew/compounds_enriched.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m.apkg[38;2;163;190;140m`[38;2;192;197;206m (290 cards) [38;2;192;197;206m|[38;2;192;197;206m genanki [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgen_deck.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/terminaciones/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 7 [38;2;163;190;140m`[38;2;163;190;140mcards_cat*.py[38;2;163;190;140m`[38;2;192;197;206m modules [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m.txt[38;2;163;190;140m`[38;2;192;197;206m (tab-separated) [38;2;192;197;206m|[38;2;192;197;206m none [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgen_deck_vol3.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/terminaciones/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 7 [38;2;163;190;140m`[38;2;163;190;140mcards_vol3_cat*.py[38;2;163;190;140m`[38;2;192;197;206m modules [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m.apkg[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m genanki [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgenerate_decks.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/src/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140msrc/data/ALL_LESSONS[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m.apkg[38;2;163;190;140m`[38;2;192;197;206m (4 cards/lesson, 10 lessons/deck) [38;2;192;197;206m|[38;2;192;197;206m genanki [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mCommon pattern[38;2;235;203;139m**[38;2;192;197;206m: All use [38;2;163;190;140m`[38;2;163;190;140mgenanki[38;2;163;190;140m`[38;2;192;197;206m for [38;2;163;190;140m`[38;2;163;190;140m.apkg[38;2;163;190;140m`[38;2;192;197;206m generation with:[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mStable model IDs and deck IDs (for Anki merge compatibility)[K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m HTML+CSS card templates with inline styling[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mrandom.seed(42)[38;2;163;190;140m`[38;2;191;97;106m for reproducibility[K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m3. Relationship to bible-tools[K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;163;190;140m`[38;2;163;190;140mbible-tools[38;2;163;190;140m`[38;2;235;203;139m**[38;2;192;197;206m is a separate Kiro MCP server at [38;2;163;190;140m`[38;2;163;190;140m~/.kiro/mcp-servers/bible-tools/[38;2;163;190;140m`[38;2;192;197;206m providing 17 tools:[K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mverse_lookup[38;2;163;190;140m`[38;2;191;97;106m (SBLGNT, RVR60, YLT, Vulgate, LXX, WLC, ApostolicFathers)[K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mparallel_versions[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140msemantic_search[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mmorphology_analysis[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mcritical_apparatus[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mpatristic_commentary[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mcross_references[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mword_lookup[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mword_study[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mcanon_history[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdss_lookup[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mchapter_study[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mtranslate_corpus[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mauthenticity_report[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mtext_comparison[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140msave_patristic_original[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mRelationship[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/data/[38;2;163;190;140m`[38;2;192;197;206m and [38;2;163;190;140m`[38;2;163;190;140mbible-tools[38;2;163;190;140m`[38;2;192;197;206m share the same upstream sources (MorphGNT, Strong's, openscriptures) but are independent. [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/data/[38;2;163;190;140m`[38;2;192;197;206m is a curated subset optimized for flashcard generation. [38;2;163;190;140m`[38;2;163;190;140mbible-tools[38;2;163;190;140m`[38;2;192;197;206m has its own SQLite databases ([38;2;163;190;140m`[38;2;163;190;140mbible.db[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mgreek_corpus.db[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mbible_study.db[38;2;163;190;140m`[38;2;192;197;206m) with broader coverage.[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mIntegration point[38;2;235;203;139m**[38;2;192;197;206m: [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/src/enrich.py[38;2;163;190;140m`[38;2;192;197;206m reads [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/data/[38;2;163;190;140m`[38;2;192;197;206m via [38;2;163;190;140m`[38;2;163;190;140mKOINE_ANKI_PATH[38;2;163;190;140m`[38;2;192;197;206m env var (or sibling directory detection). The bible-tools MCP server could be used during enrichment for verse lookups and morphology analysis.[K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m4. Formats Used[K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mData Formats[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Format [38;2;192;197;206m|[38;2;192;197;206m Files [38;2;192;197;206m|[38;2;192;197;206m Purpose [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m JSON array [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mcompounds_enriched.json[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mnt_compounds_full.json[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mnt_top600.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Structured card data [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m JSON dict [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mcompounds_registry.json[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mes_rvr.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Lookup maps [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m XML [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mstrongs_greek.xml[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Strong's dictionary [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Space-separated text [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnt-morphgnt/*.txt[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m MorphGNT corpus (ref, POS, morph-code, text, normalized, lemma) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Markdown [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mmorphology_reference.md[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mmorphology_context.md[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Grammar references [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m CSV [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mpronunciation.csv[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Pronunciation guide [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Python modules [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mcards_cat*.py[38;2;163;190;140m`[38;2;192;197;206m, [38;2;163;190;140m`[38;2;163;190;140mlesson_data_*.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Card/lesson content as code [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mOutput Formats[K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Format [38;2;192;197;206m|[38;2;192;197;206m Tool [38;2;192;197;206m|[38;2;192;197;206m Notes [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m------[38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m.apkg[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m genanki [38;2;192;197;206m|[38;2;192;197;206m Anki package (zip with SQLite + media) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m.txt[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m manual [38;2;192;197;206m|[38;2;192;197;206m Tab-separated front\tback (Anki import) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m.mp3[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m pydub + ffmpeg [38;2;192;197;206m|[38;2;192;197;206m Audio lessons [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mCard Data Schema (compounds_enriched.json)[K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mjson[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;192;197;206m{[K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "lemma": "ἀποκαλύπτω",[K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "components": [{"greek": "ἀπό", "meaning_es": "lejos de", "strongs_number": "G575", "strongs_definition": "..."}],[K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "meaning_es": "revelar",[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "mnemonic_es": "...",[K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "first_ref": "Mt 10:26",[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "strongs_number": "G601",[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "strongs_derivation": "...",[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "strongs_definition": "...",[K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "suffix": "-τω",[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "suffix_type_es": "...",[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "suffix_explanation_es": "...",[K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "root_note_es": "...",[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "cognates_by_part": {...},[K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "greek_verses": [{"ref": "...", "text": "...", "rvr60": "..."}][K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mLesson Data Schema (lesson_data_*.py)[K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;192;197;206m{[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "num": 1,[K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "intro_es": "...",[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "dialogue": [(M, "Χαῖρε!"), (F, "Εἰρήνη σοι.")],[K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "context_es": "...",[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "vocab": [{"gr": "χαῖρε", "es": "hola", "note_es": "..."}],[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "phrases": [{"gr": "...", "es": "...", "prompt_es": "..."}],[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "recon": [{"other_gr": "...", "prompt_es": "...", "answer_gr": "..."}],[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;192;197;206m  "verse": {"gr": "...", "ref": "...", "explain_es": "..."}[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;192;197;206m}[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m5. What the Enhanced Prompt Should Contain[K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [38;2;192;197;206mBased on the project's documented guidelines, lessons learned, and shared learnings:[K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mCritical Rules (highest ROI per shared learnings)[K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mGreek text MUST use NFC normalization[38;2;235;203;139m**[38;2;191;97;106m — [38;2;163;190;140m`[38;2;163;190;140municodedata.normalize('NFC', text)[38;2;163;190;140m`[38;2;191;97;106m before any comparison or storage. The [38;2;163;190;140m`[38;2;163;190;140mto_mono()[38;2;163;190;140m`[38;2;191;97;106m function strips polytonic→monotonic for TTS only.[K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mVerify all Greek against NT/LXX attestation[38;2;235;203;139m**[38;2;191;97;106m — No Modern Greek contamination. Check vocabulary blacklist (νερό, σπίτι, ψωμί, πόρτα) and false friends (παρακαλέω, ῥῆμα, δουλεύω).[K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mCards must be 100% self-contained[38;2;235;203;139m**[38;2;191;97;106m — Every morpheme explained (prefix, root, suffix). No external lookups needed.[K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMnemonics must tell a story[38;2;235;203;139m**[38;2;191;97;106m — Not just translations. Include biblical context, Spanish/English cognates, vivid imagery. Minimum 40 chars.[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAnti-duplication[38;2;235;203;139m**[38;2;191;97;106m: Check [38;2;163;190;140m`[38;2;163;190;140mcompounds_registry.json[38;2;163;190;140m`[38;2;191;97;106m before processing new books.[K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [38;2;191;97;106m6[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mStable IDs[38;2;235;203;139m**[38;2;191;97;106m: genanki model/deck IDs must be stable across regenerations for Anki merge compatibility.[K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mProject Context[K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mUser: Native Spanish speaker, also speaks English. Beginner in Koine Greek.[K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m All explanations in Spanish. Simplified grammar terminology (no "1ª declinación" → "grupo -η/-α").[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Three complementary learning tools: flashcards (koine-anki), audio course (koine-pimsleur), Bible research (bible-tools MCP).[K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Data layer: [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/data/[38;2;163;190;140m`[38;2;191;97;106m is the shared source of truth.[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPipeline Knowledge[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mCompounds pipeline: extract → fetch_strongs → enrich_compounds → enrich_cognates → enrich_verses → add_rvr60 → improve_mnemonics → generate_deck[K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Pimsleur pipeline: lesson_data → engine (GIR cycles) → TTS (Polly+Google) → pydub → MP3[K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Enrichment: [38;2;163;190;140m`[38;2;163;190;140msrc/enrich.py[38;2;163;190;140m`[38;2;191;97;106m uses Bedrock Claude + koine-anki data[K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mTechnical Constraints[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mPython 3.12, genanki, py-sblgnt, pydub, boto3, google-cloud-texttospeech[K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m TTS: Chirp3-HD fails on short words ([38;2;191;97;106m<[38;2;191;97;106m400ms) → Wavenet-B fallback[K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Audio: 75% speed for lessons 1-7, 85% for 8-15, 100% for 16+[K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Card HTML: inline CSS only (Anki renders HTML, no external stylesheets)[K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mData Sources Available[K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mMorphGNT/SBLGNT (MIT) — NT text with lemmas + morphology[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Strong's Greek Dictionary (public domain) — Etymology for 5516 words[K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m openscriptures/LxxLemmas (Open) — Septuagint lemmatized[K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m RVR60 Spanish Bible — For verse translations[K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m bible-tools MCP server — 17 tools for verse lookup, morphology, cross-references, patristic commentary[K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mQuality Standards[K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mSuffix explanations for all -τός, -σις, -μα, -ία, -μός, -ή, -ικός, -ιος, -ών, -τής, -εια suffixes[K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Root-change notes for 45+ words where verb roots change form (βάλλω→βολ-, τίθημι→θε-/θηκ-)[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Contrastive explanations showing alternatives ("Termina en X porque... Si fuera Y significaría...")[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Strong's data for compound AND each component[K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    176[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    177[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mInternal Source Limitations[K
+[0m[48;2;40;67;43m[39m+    178[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    179[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAll Amazon internal tools (InternalSearch, Atlas, BuilderHub, Sage, TicketingReadActions, SearchSoftwareRecommendations) returned Midway authentication errors. The findings above are based entirely on local project file analysis, which proved sufficient given this is a personal project with comprehensive local documentation.[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/findings.md[0m
+[38;5;244m - Completed in 1.997s[0m
+[38;5;12m[1m [1.34][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Findings written\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/nodes && echo '{"from":"c5-internal","finding":"COMPLETE: Wrote comprehensive findings to c5-internal/findings.md covering all 5 questions. Key insight: bible-tools is a Kiro MCP server with 17 tools sharing upstream sources with koine-anki/data/. Enhanced prompt should include: NFC normalization rule, NT/LXX attestation verification, self-contained card rule, stable genanki IDs, anti-duplication via registry, pipeline knowledge, and data source references."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.787s[0m
+[38;5;12m[1m [1.35][0m[0m
+[?25l[0m[38;5;141m> [0mInvestigation complete. Findings written to [38;5;10m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c5-internal/findings.md[0m.[0m[0m
+[0m[0m
+[1mSummary[22m: All 5 questions answered from local project analysis. Internal Amazon tools were blocked by expired Midway credentials, but the project is a personal Koine Greek learning toolkit with comprehensive local documentation that made internal sources unnecessary. Key findings:[0m[0m
+[0m[0m
+1. [1m3 subdirs[22m: anki-main (legacy monorepo + AWS prep), koine-anki (flashcard pipeline), koine-pimsleur (90-lesson audio course)[0m[0m
+2. [1m4 deck generators[22m: all use genanki, producing .apkg or .txt[0m[0m
+3. [1mbible-tools[22m: Separate MCP server (17 tools) sharing upstream data sources with koine-anki/data/[0m[0m
+4. [1mFormats[22m: JSON, XML, MorphGNT text, Python modules, .apkg, .mp3[0m[0m
+5. [1mEnhanced prompt needs[22m: NFC normalization, NT attestation checks, self-contained cards, stable IDs, anti-duplication, pipeline knowledge, quality ]9;Response completestandards[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 5.30 • Time: 4m 48s
+
+[0m[1G[0m[0m[?25h

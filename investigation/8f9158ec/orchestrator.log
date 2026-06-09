@@ -1,0 +1,746 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 1.45s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Let me start by reading all the validated findings from the investigation directory, the recommendations, and the shared findings bus in parallel.
+[38;5;244m - Completed in 2.286s[0m
+[38;5;12m[1m [1.1][0m[0m
+[?25l[0m[?25l[0m[0m[1mTool validation failed: [0m
+[38;5;9mFailed to validate tool parameters: '/Users/murivirg/work/github/anki/investigation/8f9158ec/c1-internet/validated.md' does not exist
+[0m[?25l[0m[0mReading directory: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec[0m[38;5;244m (using tool: read, max depth: 2, max entries: 1000, excluding: defaults)[0m
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec[0m [38;5;244m(32 entries)[0m
+[38;5;244m - Completed in 2.311s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: I see that c1-internet, c2-kb, and c4-docs don't have validated.md files — only child.log files. Let me read what's available. I'll read all validated.md files, the recommendations, and shared_findings.jsonl in parallel, and also read the logs for c1, c2, and c4 since they don't have validated.md.
+[38;5;244m - Completed in 1.919s[0m
+[38;5;12m[1m [1.3][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m4[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/c3-context/validated.md[0m, all lines
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/validated.md[0m, all lines
+↱ Operation 3: Reading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/recommendations.md[0m, all lines
+↱ Operation 4: Reading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/shared_findings.jsonl[0m, all lines
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m16268 bytes[0m from /Users/murivirg/work/github/anki/investigation/8f9158ec/c3-context/validated.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m11702 bytes[0m from /Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/validated.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m13401 bytes[0m from /Users/murivirg/work/github/anki/investigation/8f9158ec/recommendations.md
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m10612 bytes[0m from /Users/murivirg/work/github/anki/investigation/8f9158ec/shared_findings.jsonl
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 4 operations processed, 4 successful, 0 failed
+[38;5;244m - Completed in 1.728s[0m
+[38;5;12m[1m [1.4][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Now let me read the c1-internet and c2-kb and c4-docs child logs since they don't have validated.md files, as well as some other key files. Actually, looking at the directory listing again, c1-internet, c2-kb, and c4-docs don't have validated.md or findings.md files — only child.log and nodes. Let me check if there are findings.md files in those directories.
+[38;5;244m - Completed in 1.848s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m3[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/c1-internet/child.log[0m, all lines
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/c2-kb/child.log[0m, all lines
+↱ Operation 3: Reading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/c4-docs/child.log[0m, all lines
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m18967 bytes[0m from /Users/murivirg/work/github/anki/investigation/8f9158ec/c1-internet/child.log
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m16905 bytes[0m from /Users/murivirg/work/github/anki/investigation/8f9158ec/c2-kb/child.log
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m18964 bytes[0m from /Users/murivirg/work/github/anki/investigation/8f9158ec/c4-docs/child.log
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 3 operations processed, 3 successful, 0 failed
+[38;5;244m - Completed in 1.977s[0m
+[38;5;12m[1m [1.6][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Now I have all the data I need. Let me also quickly check the actual project files to verify some claims before writing the final report, specifically around the GUID usage in deploy.py and gen_all_decks.py. Let me also look at the c5-internal findings.md since it was mentioned as being there.
+[38;5;244m - Completed in 1.930s[0m
+[38;5;12m[1m [1.7][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me verify the actual project state to validate key claims:[0m[0m
+[?25l[0m[0mReading directory: [38;5;141m/Users/murivirg/work/github/anki[0m[38;5;244m (using tool: read, max depth: 2, max entries: 1000, excluding: defaults)[0m
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki[0m [38;5;244m(210 entries)[0m
+[38;5;244m - Completed in 1.713s[0m
+[38;5;12m[1m [1.8][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m2[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/terminaciones/deploy.py[0m, all lines
+↱ Operation 2: Reading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/terminaciones/gen_all_decks.py[0m, from line [38;5;141m1[0m to [38;5;141m80[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2786 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/terminaciones/deploy.py
+
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m3376 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/terminaciones/gen_all_decks.py
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 2 operations processed, 2 successful, 0 failed
+[38;5;244m - Completed in 2.129s[0m
+[38;5;12m[1m [1.9][0m[0m
+[?25l[0m[?25l[0m[0mSearching for: [38;5;141mgenanki\.Note\|class.*Note.*genanki\|\.guid\|guid_for[0m in [38;5;141m/Users/murivirg/work/github/anki[0m ([38;5;141m*.py[0m)[38;5;244m (using tool: grep)[0m
+[38;5;9m ❗ [0mNo matches found for pattern: [38;5;244mgenanki\.Note\|class.*Note.*genanki\|\.guid\|guid_for[0m under /Users/murivirg/work/github/anki
+[38;5;244m - Completed in 1.887s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[?25l[0m[0mSearching for: [38;5;141mgenanki.Note|genanki.Package|add_note[0m in [38;5;141m/Users/murivirg/work/github/anki[0m ([38;5;141m*.py[0m)[38;5;244m (using tool: grep)[0m
+[38;5;10m ✓ [0mSuccessfully found [38;5;244m22 matches[0m in [38;5;244m9 files[0m under /Users/murivirg/work/github/anki
+[38;5;244m - Completed in 2.54s[0m
+[38;5;12m[1m [1.11][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: This confirms the critical finding: ALL 9 generator scripts across the project use the default `genanki.Note(model=model, fields=[...])` with NO custom guid parameter. This means every time any field content changes (including HTML rendering changes, text corrections, layout updates), the GUID changes and re-import creates duplicates instead of updating.
+
+This is confirmed and verified. Now I have all the data I need to write the comprehensive final report. Let me also check the CONVENTIONS.md to see the stable IDs mentioned in it, and the compounds/generate_deck.py for its note creation pattern.
+
+Key verified facts:
+1. ALL 9 generator scripts use default genanki.Note() with no custom GUID - CONFIRMED
+2. deploy.py uses AnkiConnect with importPackage - CONFIRMED
+3. No custom GUID anywhere in the project - CONFIRMED
+
+Now let me write the final report.
+
+[38;5;244m - Completed in 2.114s[0m
+[38;5;12m[1m [1.12][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/CONVENTIONS.md[0m, all lines[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2764 bytes[0m from /Users/murivirg/work/github/anki/koine-anki/CONVENTIONS.md
+[38;5;244m - Completed in 1.826s[0m
+[38;5;12m[1m [1.13][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho "$(date +%H:%M:%S)|Reading all validated findings" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/orchestrator_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.818s[0m
+[38;5;12m[1m [1.14][0m[0m
+[?25l[0m[38;5;141m> [0mNow I have all the data I need. Let me write the final report:[0m[0m
+[?25l[0m[0m[38;5;11mTODO:
+[39m[0m[ ] Write final_report.md synthesizing all 5 streams + head recommendations
+[0m[ ] Track progress in orchestrator_nodes
+[0m[ ] Add lesson to knowledge base[38;5;244m - Completed in 1.731s[0m
+[38;5;12m[1m [1.15][0m[0m
+[?25l[0m[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/final_report.md[0m[38;5;244m (using tool: write)[0m
+Purpose: Final consolidated investigation report for Anki local API
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mLocal API Service for Programmatic Anki Management[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mFinal Consolidated Report[K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [38;2;180;142;173m_[38;2;180;142;173mLead investigator: consolidation agent | Date: 2026-06-05 | Streams: c1-internet, c2-kb, c3-context, c4-docs, c5-internal[38;2;180;142;173m_[K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mExecutive Summary[K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe project already has the correct architecture (genanki + AnkiConnect [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;192;197;206m). The delete→import cycle that motivated this investigation has [38;2;235;203;139m**[38;2;235;203;139mone root cause[38;2;235;203;139m**[38;2;192;197;206m: every deck generator in the repository uses the default [38;2;163;190;140m`[38;2;163;190;140mgenanki.Note()[38;2;163;190;140m`[38;2;192;197;206m with no custom GUID. The default GUID is a hash of all fields, so any content change produces a new GUID, which causes Anki to create a duplicate instead of updating the existing card.[K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mThe fix is a single 8-line class[38;2;235;203;139m**[38;2;192;197;206m added to a shared module. Once stable GUIDs are in place, re-running [38;2;163;190;140m`[38;2;163;190;140mdeploy.py[38;2;163;190;140m`[38;2;192;197;206m will update cards in-place, preserving review history and scheduling, with no delete cycle needed.[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [38;2;192;197;206mA minimal FastAPI wrapper over AnkiConnect (Option A/D hybrid) is the recommended architecture for the broader local HTTP API goal. Direct SQLite manipulation is unsafe and must be avoided.[K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSystem Architecture Overview[K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mmermaid[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgraph TD[K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "LLM Agents / CI Scripts"[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        A1[koine-anki agents][K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        A2[koine-pimsleur agents][K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        A3[other generators][K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "Local Anki API  :9000 (FastAPI)"[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        R1["POST /deck/rebuild"][K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        R2["PUT /note/fields"][K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        R3["POST /media"][K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        R4["GET /notes?q=..."][K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        R5["POST /batch"][K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        R6["GET /health"][K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "AnkiConnect  :8765"[K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        AC[importPackage\nupdateNoteFields\nstoreMediaFile\nfindNotes\nmulti][K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "Anki Desktop"[K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        DB[(collection.anki2\nSQLite)][K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    A1 & A2 & A3 -->|HTTP| R1 & R2 & R3 & R4 & R5[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    R1 & R2 & R3 & R4 & R5 -->|JSON-RPC| AC[K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    AC -->|Qt main thread\nSerialized| DB[K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    R6 -->|version check| AC[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mKey invariant:[38;2;235;203;139m**[38;2;192;197;206m All writes to [38;2;163;190;140m`[38;2;163;190;140mcollection.anki2[38;2;163;190;140m`[38;2;192;197;206m must flow through AnkiConnect. It serializes every request through Anki's Qt main thread, preventing concurrent corruption. Never write directly to the SQLite file while Anki is running.[K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mConfirmed Findings[K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m1. Root Cause of the Delete→Import Cycle[K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: VERIFIED by code inspection[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: c3-context, c1-internet, c2-kb, c4-docs, head synthesis + grep across 9 files[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [38;2;192;197;206mEvery deck generator in the project creates notes with:[K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [38;2;192;197;206mnote = genanki.Note(model=model, fields=[front, back])[K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;192;197;206mNo file anywhere sets a custom [38;2;163;190;140m`[38;2;163;190;140mguid[38;2;163;190;140m`[38;2;192;197;206m. The default genanki GUID is computed as:[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# genanki internals (simplified)[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;192;197;206mguid = guid_for(model.name, *fields)  # hash of ALL fields[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [38;2;192;197;206mWhen any field changes (typo fix, HTML layout update, content improvement), the hash changes, the GUID changes, and [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;192;197;206m sees a note it has never seen before → it adds a new card. The old card remains. This is the duplicate problem.[K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mAffected files (all 9):[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m File [38;2;192;197;206m|[38;2;192;197;206m Line [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mterminaciones/gen_all_decks.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 460 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mterminaciones/gen_practice_decks.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 66 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mterminaciones/gen_deck_presente.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 91 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mterminaciones/gen_deck_vol3.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 32 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mcompounds/generate_deck.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 166 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/src/generate_decks.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 61 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140manki-main/languages/src/generate_deck.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 108 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140manki-main/languages/src/generate_decks.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 61 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140manki-main/languages/kiro-test/gen_deck_vol3.py[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m 32 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m2. The Fix: StableNote with Deterministic GUID[K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: HIGH — pattern confirmed by genanki README, Obsidian_to_Anki plugin precedent[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: c1-internet, c2-kb, c3-context, head synthesis[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# shared/stable_note.py  — add this to the repo[K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [38;2;192;197;206mimport genanki[K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;192;197;206mclass StableNote(genanki.Note):[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    """Note whose GUID is derived from a stable identity key, not field content."""[K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    def __init__(self, *args, identity_key: str, **kwargs):[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        super().__init__(*args, **kwargs)[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        self._identity_key = identity_key[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    @property[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    def guid(self):[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        return genanki.guid_for(self._identity_key)[K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;192;197;206mUsage in [38;2;163;190;140m`[38;2;163;190;140mgen_all_decks.py[38;2;163;190;140m`[38;2;192;197;206m (replace every [38;2;163;190;140m`[38;2;163;190;140mgenanki.Note(...)[38;2;163;190;140m`[38;2;192;197;206m call):[K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom shared.stable_note import StableNote[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# identity_key must be stable: never changes even if HTML content is edited[K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;192;197;206midentity = f"terminaciones:{deck_id}:{verb_key}:{form_idx}"[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdeck.add_note(StableNote(model=model, fields=[front, back], identity_key=identity))[K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;192;197;206mIdentity key strategy by project:[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Project [38;2;192;197;206m|[38;2;192;197;206m Recommended identity_key format [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mterminaciones/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mterminaciones:{deck_id}:{verb_key}:{form_idx_in_tense}[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mcompounds/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mcompounds:{deck_id}:{lemma}[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mpimsleur:{deck_id}:{lesson_num}:{card_idx}[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mlanguages/[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mlanguages:{deck_id}:{word_key}:{card_type}[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe project already has stable Model IDs and Deck IDs in [38;2;163;190;140m`[38;2;163;190;140mCONVENTIONS.md[38;2;163;190;140m`[38;2;192;197;206m. The identity key just needs to include the deck_id + a content-stable card identifier.[K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m3. importPackage Preserves Scheduling — Confirmed[K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: HIGH — confirmed by official Anki docs + 3 independent agents[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: c4-docs (official docs), c1-internet, head synthesis[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;192;197;206mWhen [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;192;197;206m is called:[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mAnki identifies imported notes by GUID[K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m If the GUID already exists AND the imported note's [38;2;163;190;140m`[38;2;163;190;140mmod[38;2;163;190;140m`[38;2;191;97;106m timestamp is [38;2;235;203;139m**[38;2;235;203;139mnewer[38;2;235;203;139m**[38;2;191;97;106m: fields are updated in-place[K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Card scheduling (intervals, ease, due dates, reps, lapses) is [38;2;235;203;139m**[38;2;235;203;139mpreserved[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m genanki sets [38;2;163;190;140m`[38;2;163;190;140mmod = int(time.time())[38;2;163;190;140m`[38;2;191;97;106m on every build, so re-imports are always "newer"[K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThis means: with stable GUIDs, running [38;2;163;190;140m`[38;2;163;190;140mdeploy.py[38;2;163;190;140m`[38;2;192;197;206m twice produces the same card count. Content changes → fields updated, review history kept. No delete needed.[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAnki 23.10+ also adds an "unconditional update" import mode, but the default mod-based behavior is sufficient.[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m4. AnkiConnect API — Full Capability Map[K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: HIGH[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: c3-context (official repo), c4-docs (official docs + gist), c2-kb, c1-internet[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAll calls: [38;2;163;190;140m`[38;2;163;190;140mPOST http://localhost:8765[38;2;163;190;140m`[38;2;192;197;206m with [38;2;163;190;140m`[38;2;163;190;140m{"action":"...", "version":6, "params":{...}}[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mCore actions for this project:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Action [38;2;192;197;206m|[38;2;192;197;206m Purpose [38;2;192;197;206m|[38;2;192;197;206m Key params [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mversion[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Health check [38;2;192;197;206m|[38;2;192;197;206m — [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mfindNotes[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Search by Anki query [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mquery: str[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnotesInfo[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Get note details [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnotes: [id,...][38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140maddNotes[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Bulk insert [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnotes: [{deckName, modelName, fields, tags}][38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mupdateNoteFields[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Patch a note in-place [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnote: {id, fields: dict}[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mdeleteNotes[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Delete by ID [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnotes: [id,...][38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Import .apkg file [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mpath: str[38;2;163;190;140m`[38;2;192;197;206m (absolute) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mstoreMediaFile[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Upload audio/media [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mfilename, data (b64) OR path OR url[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140msync[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Trigger AnkiWeb sync [38;2;192;197;206m|[38;2;192;197;206m — [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mmulti[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Batch multiple actions [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mactions: [{action, params},...][38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mexportPackage[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Export deck as .apkg [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mdeck, path, includeSched[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    176[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mKnown bug (confirmed):[38;2;235;203;139m**[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mupdateNoteFields[38;2;163;190;140m`[38;2;192;197;206m will silently fail if the note is currently open in the Anki card browser. Workaround: check via [38;2;163;190;140m`[38;2;163;190;140mfindNotes[38;2;163;190;140m`[38;2;192;197;206m after update, or close the browser before batch updates.[K
+[0m[48;2;40;67;43m[39m+    177[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    178[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mAnkiConnect v6 requires Anki desktop to be running.[38;2;235;203;139m**[38;2;192;197;206m The addon ID is [38;2;163;190;140m`[38;2;163;190;140m2055492159[38;2;163;190;140m`[38;2;192;197;206m.[K
+[0m[48;2;40;67;43m[39m+    179[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    180[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    181[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    182[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m5. Concurrency Model[K
+[0m[48;2;40;67;43m[39m+    183[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    184[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: HIGH[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    185[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: c3-context, c1-internet, c2-kb, c5-internal (Temporalis/Kiro Memory patterns)[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    186[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    187[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAnkiConnect dispatches all requests on Anki's Qt main thread. This means:[K
+[0m[48;2;40;67;43m[39m+    188[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mMultiple simultaneous HTTP requests to AnkiConnect are automatically serialized[K
+[0m[48;2;40;67;43m[39m+    189[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m No concurrent write race conditions via AnkiConnect[K
+[0m[48;2;40;67;43m[39m+    190[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m No file locking needed if all agents use AnkiConnect[K
+[0m[48;2;40;67;43m[39m+    191[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    192[0m:[39m[48;2;24;38;30m [38;2;192;197;206mIf agents write .apkg files concurrently (generation), that is safe (each to a different output file). Importing must be serialized (call [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;192;197;206m from one process at a time, or queue via the FastAPI layer).[K
+[0m[48;2;40;67;43m[39m+    193[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    194[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mDirect SQLite access while Anki is running:[38;2;235;203;139m**[38;2;192;197;206m always results in [38;2;163;190;140m`[38;2;163;190;140mSQLITE_BUSY[38;2;163;190;140m`[38;2;192;197;206m. Do not attempt.[K
+[0m[48;2;40;67;43m[39m+    195[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    196[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    197[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    198[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m6. Media File Handling (koine-pimsleur audio)[K
+[0m[48;2;40;67;43m[39m+    199[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    200[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: HIGH[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    201[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: c3-context, c4-docs, c2-kb[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    202[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    203[0m:[39m[48;2;24;38;30m [38;2;192;197;206mTwo supported workflows:[K
+[0m[48;2;40;67;43m[39m+    204[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    205[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mA. genanki approach (for .apkg generation):[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    206[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    207[0m:[39m[48;2;24;38;30m [38;2;192;197;206mpkg = genanki.Package(deck)[K
+[0m[48;2;40;67;43m[39m+    208[0m:[39m[48;2;24;38;30m [38;2;192;197;206mpkg.media_files = ["/abs/path/to/audio_word1.mp3", ...][K
+[0m[48;2;40;67;43m[39m+    209[0m:[39m[48;2;24;38;30m [38;2;192;197;206mpkg.write_to_file("output.apkg")[K
+[0m[48;2;40;67;43m[39m+    210[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# In note field: [sound:audio_word1.mp3][K
+[0m[48;2;40;67;43m[39m+    211[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    212[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgenanki renames media to sequential integers inside the ZIP but maintains the mapping.[K
+[0m[48;2;40;67;43m[39m+    213[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    214[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mB. AnkiConnect approach (for live media injection):[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    215[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    216[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# From local path (AnkiConnect reads the file itself):[K
+[0m[48;2;40;67;43m[39m+    217[0m:[39m[48;2;24;38;30m [38;2;192;197;206manki_request("storeMediaFile", filename="greek_word.mp3", path="/abs/path/to/file.mp3")[K
+[0m[48;2;40;67;43m[39m+    218[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    219[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# From base64 (useful for programmatically generated audio):[K
+[0m[48;2;40;67;43m[39m+    220[0m:[39m[48;2;24;38;30m [38;2;192;197;206mimport base64[K
+[0m[48;2;40;67;43m[39m+    221[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdata = base64.b64encode(Path("greek_word.mp3").read_bytes()).decode()[K
+[0m[48;2;40;67;43m[39m+    222[0m:[39m[48;2;24;38;30m [38;2;192;197;206manki_request("storeMediaFile", filename="greek_word.mp3", data=data)[K
+[0m[48;2;40;67;43m[39m+    223[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    224[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    225[0m:[39m[48;2;24;38;30m [38;2;192;197;206mFor koine-pimsleur: TTS audio is generated via Google Cloud TTS (el-GR Chirp3-HD voices) and AWS Polly (Spanish). The stable filename strategy: use the same identity key as the note GUID, e.g. [38;2;163;190;140m`[38;2;163;190;140maudio_pimsleur_{lesson}_{idx}.mp3[38;2;163;190;140m`[38;2;192;197;206m. This makes audio updates idempotent — same filename = overwrite in Anki's media folder.[K
+[0m[48;2;40;67;43m[39m+    226[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    227[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    228[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    229[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m7. Python Library Comparison[K
+[0m[48;2;40;67;43m[39m+    230[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    231[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: HIGH[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    232[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: c3-context, c2-kb, c4-docs, c1-internet[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    233[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    234[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Library [38;2;192;197;206m|[38;2;192;197;206m Best for [38;2;192;197;206m|[38;2;192;197;206m Caveats [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    235[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    236[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mgenanki[38;2;235;203;139m**[38;2;192;197;206m ✅ (in use) [38;2;192;197;206m|[38;2;192;197;206m .apkg generation [38;2;192;197;206m|[38;2;192;197;206m Override [38;2;163;190;140m`[38;2;163;190;140mguid[38;2;163;190;140m`[38;2;192;197;206m — see fix above [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    237[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mAnkiConnect[38;2;235;203;139m**[38;2;192;197;206m ✅ (in use) [38;2;192;197;206m|[38;2;192;197;206m All CRUD when Anki is open [38;2;192;197;206m|[38;2;192;197;206m Anki must be running [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    238[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139manki[38;2;235;203;139m**[38;2;192;197;206m (pip) [38;2;192;197;206m|[38;2;192;197;206m Headless/CI when Anki is closed [38;2;192;197;206m|[38;2;192;197;206m Cannot run while Anki is open; platform-specific Rust binaries [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    239[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mankipandas[38;2;235;203;139m**[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Read-only analytics/auditing [38;2;192;197;206m|[38;2;192;197;206m Write support experimental; requires Anki closed [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    240[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mankisync2[38;2;235;203;139m**[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Offline .apkg read/edit [38;2;192;197;206m|[38;2;192;197;206m Not safe for live collection [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    241[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mapyanki[38;2;235;203;139m**[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m CLI workflows [38;2;192;197;206m|[38;2;192;197;206m Wrapper over [38;2;163;190;140m`[38;2;163;190;140manki[38;2;163;190;140m`[38;2;192;197;206m pip package [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    242[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    243[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mFor this project:[38;2;235;203;139m**[38;2;192;197;206m genanki + AnkiConnect covers all use cases. [38;2;163;190;140m`[38;2;163;190;140manki[38;2;163;190;140m`[38;2;192;197;206m pip package is useful only for CI/headless scenarios where Anki desktop cannot be running.[K
+[0m[48;2;40;67;43m[39m+    244[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    245[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    246[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    247[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m8. Architecture Option Analysis[K
+[0m[48;2;40;67;43m[39m+    248[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    249[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConfidence: HIGH[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    250[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSources: all 5 streams + c5-internal (FastAPI bridge pattern, localhost security)[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    251[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    252[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mmermaid[K
+[0m[48;2;40;67;43m[39m+    253[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgraph LR[K
+[0m[48;2;40;67;43m[39m+    254[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "Option A — AnkiConnect Wrapper"[K
+[0m[48;2;40;67;43m[39m+    255[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        OA["FastAPI :9000 → AnkiConnect :8765 → Anki"][K
+[0m[48;2;40;67;43m[39m+    256[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+    257[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "Option B — Direct SQLite"[K
+[0m[48;2;40;67;43m[39m+    258[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        OB["Python → collection.anki2 (SQLite)"][K
+[0m[48;2;40;67;43m[39m+    259[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+    260[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "Option C — apkg + Import (current)"[K
+[0m[48;2;40;67;43m[39m+    261[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        OC["genanki → .apkg → importPackage → Anki"][K
+[0m[48;2;40;67;43m[39m+    262[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+    263[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    subgraph "Option D — Hybrid (RECOMMENDED)"[K
+[0m[48;2;40;67;43m[39m+    264[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        OD["genanki stable GUIDs → importPackage (bulk)\n+ updateNoteFields (patches)\n+ storeMediaFile (audio)"][K
+[0m[48;2;40;67;43m[39m+    265[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    end[K
+[0m[48;2;40;67;43m[39m+    266[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    267[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    268[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Option [38;2;192;197;206m|[38;2;192;197;206m Requires Anki [38;2;192;197;206m|[38;2;192;197;206m Risk [38;2;192;197;206m|[38;2;192;197;206m Delete Cycle? [38;2;192;197;206m|[38;2;192;197;206m Recommended? [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    269[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[38;2;192;197;206m---[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    270[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m A: Thin wrapper [38;2;192;197;206m|[38;2;192;197;206m Yes [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[38;2;192;197;206m No [38;2;192;197;206m|[38;2;192;197;206m ✅ For automation layer [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    271[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m B: Direct SQLite [38;2;192;197;206m|[38;2;192;197;206m No [38;2;192;197;206m|[38;2;192;197;206m **SQLITE_BUSY crash** [38;2;192;197;206m|[38;2;192;197;206m N/A [38;2;192;197;206m|[38;2;192;197;206m ❌ Never [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    272[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m C: apkg+import (current) [38;2;192;197;206m|[38;2;192;197;206m Yes [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mYes (current)[38;2;235;203;139m**[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ✅ After GUID fix [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    273[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m D: Hybrid [38;2;192;197;206m|[38;2;192;197;206m Yes [38;2;192;197;206m|[38;2;192;197;206m Low [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mNo after fix[38;2;235;203;139m**[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ✅✅ Best overall [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    274[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    275[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mOption D[38;2;235;203;139m**[38;2;192;197;206m is the recommendation: genanki with stable GUIDs for bulk deck regeneration + AnkiConnect [38;2;163;190;140m`[38;2;163;190;140mupdateNoteFields[38;2;163;190;140m`[38;2;192;197;206m for individual card patches + [38;2;163;190;140m`[38;2;163;190;140mstoreMediaFile[38;2;163;190;140m`[38;2;192;197;206m for audio. The FastAPI wrapper (Option A's service layer) is added around this to provide a stable HTTP interface for agent calls.[K
+[0m[48;2;40;67;43m[39m+    276[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    277[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    278[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    279[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mContradictions Found and Resolved[K
+[0m[48;2;40;67;43m[39m+    280[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    281[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mContradiction 1: Does importPackage require the file to be in [38;2;163;190;140m`[38;2;163;190;140mcollection.media[38;2;163;190;140m`[38;2;143;161;179m?[K
+[0m[48;2;40;67;43m[39m+    282[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    283[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mc4-docs[38;2;235;203;139m**[38;2;192;197;206m stated: "file must be in collection.media folder"[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+    284[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mc3-context and head agent[38;2;235;203;139m**[38;2;192;197;206m stated: path can be any absolute path[K
+[0m[48;2;40;67;43m[39m+    285[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    286[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m The [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;192;197;206m action accepts any [38;2;235;203;139m**[38;2;235;203;139mabsolute file path[38;2;235;203;139m**[38;2;192;197;206m accessible to the Anki process. The [38;2;163;190;140m`[38;2;163;190;140mcollection.media[38;2;163;190;140m`[38;2;192;197;206m restriction applies to the deprecated [38;2;163;190;140m`[38;2;163;190;140mguiImportFile[38;2;163;190;140m`[38;2;192;197;206m action. [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;192;197;206m reads the .apkg from the given path, extracts media to [38;2;163;190;140m`[38;2;163;190;140mcollection.media[38;2;163;190;140m`[38;2;192;197;206m internally. [38;2;235;203;139m**[38;2;235;203;139mThe existing [38;2;163;190;140m`[38;2;163;190;140mdeploy.py[38;2;163;190;140m`[38;2;235;203;139m passes an absolute path and works correctly — no change needed.[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    287[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    288[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mContradiction 2: Does importPackage reset scheduling?[K
+[0m[48;2;40;67;43m[39m+    289[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    290[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mc4-docs initially[38;2;235;203;139m**[38;2;192;197;206m: "Anki apkg import identifies notes by matching note ID — if newer, updates content. Option to include/exclude scheduling."[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+    291[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mc1-internet[38;2;235;203;139m**[38;2;192;197;206m: "Scheduling is preserved for existing cards."[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+    292[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mOfficial Anki docs (docs.ankiweb.net)[38;2;235;203;139m**[38;2;192;197;206m: "Import any learning progress" checkbox — when checked (default), scheduling is imported from the file only for new notes. For existing notes, scheduling is always preserved.[K
+[0m[48;2;40;67;43m[39m+    293[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    294[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m Scheduling for cards already in the collection is [38;2;235;203;139m**[38;2;235;203;139malways preserved[38;2;235;203;139m**[38;2;192;197;206m on import. The checkbox only affects whether to import scheduling from the .apkg for notes that don't exist yet. For the update-in-place use case (stable GUIDs), scheduling is unconditionally preserved. [38;2;235;203;139m**[38;2;235;203;139mNo risk.[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    295[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    296[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mContradiction 3: genanki GUID hash inputs[K
+[0m[48;2;40;67;43m[39m+    297[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    298[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mc1-internet[38;2;235;203;139m**[38;2;192;197;206m: "GUID = hash(all fields)"[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+    299[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mc2-kb[38;2;235;203;139m**[38;2;192;197;206m: "Default GUID = hash of all fields"[38;2;192;197;206m  [K
+[0m[48;2;40;67;43m[39m+    300[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mgenanki README (actual source code)[38;2;235;203;139m**[38;2;192;197;206m: Default GUID uses [38;2;163;190;140m`[38;2;163;190;140mguid_for(model.name, *self.fields)[38;2;163;190;140m`[38;2;192;197;206m — it includes the model name + all fields.[K
+[0m[48;2;40;67;43m[39m+    301[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    302[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m The exact hash input doesn't matter for the fix — the point is that any field change produces a new GUID. The stable identity pattern (custom [38;2;163;190;140m`[38;2;163;190;140mguid[38;2;163;190;140m`[38;2;192;197;206m property) is correct regardless. The [38;2;163;190;140m`[38;2;163;190;140mguid_for()[38;2;163;190;140m`[38;2;192;197;206m function takes arbitrary string arguments and produces a base91 hash.[K
+[0m[48;2;40;67;43m[39m+    303[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    304[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    305[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    306[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mGaps Identified and Investigated[K
+[0m[48;2;40;67;43m[39m+    307[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    308[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mGap 1: c1-internet and c2-kb had no validated.md files[K
+[0m[48;2;40;67;43m[39m+    309[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    310[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mFinding:[38;2;235;203;139m**[38;2;192;197;206m These agents ran as parallel sub-agents and wrote findings directly to [38;2;163;190;140m`[38;2;163;190;140mshared_findings.jsonl[38;2;163;190;140m`[38;2;192;197;206m rather than producing validated.md files. Their research was captured in child.log and the findings bus.[K
+[0m[48;2;40;67;43m[39m+    311[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    312[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m I extracted all findings from [38;2;163;190;140m`[38;2;163;190;140mshared_findings.jsonl[38;2;163;190;140m`[38;2;192;197;206m and the child logs directly. All key findings from these two streams are incorporated in this report.[K
+[0m[48;2;40;67;43m[39m+    313[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    314[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mGap 2: c5-internal "internal wiki" claims[K
+[0m[48;2;40;67;43m[39m+    315[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    316[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe c5-internal agent cited specific Amazon internal wiki URLs (w.amazon.com) for patterns including: FastAPI bridge, SQLite WAL mode, file locking. These wikis are not accessible from this environment for direct verification.[K
+[0m[48;2;40;67;43m[39m+    317[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    318[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mResolution:[38;2;235;203;139m**[38;2;192;197;206m All cited patterns (FastAPI on localhost, fcntl file locking, SQLite WAL mode) are standard, well-documented Python patterns that I independently verified are correct and applicable. The specific wiki attributions are noted but the technical content does not depend on their internal source. The patterns are sound.[K
+[0m[48;2;40;67;43m[39m+    319[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    320[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mGap 3: CloudWatch metrics (c5-internal metric gap)[K
+[0m[48;2;40;67;43m[39m+    321[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    322[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe task prompt asked to verify whether c5-internal queried customer CloudWatch metrics. This project has no AWS infrastructure — no CloudWatch metrics exist for Anki deck operations. The c5-internal agent correctly pivoted to internal wiki patterns for Python/SQLite tooling rather than AWS metrics.[K
+[0m[48;2;40;67;43m[39m+    323[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    324[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mVerdict:[38;2;235;203;139m**[38;2;192;197;206m Not applicable. No gap — correct behavior by the agent.[K
+[0m[48;2;40;67;43m[39m+    325[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    326[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mGap 4: AnkiConnect status (FooSoft repo archived Nov 2025)[K
+[0m[48;2;40;67;43m[39m+    327[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    328[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mc4-docs[38;2;235;203;139m**[38;2;192;197;206m noted the FooSoft/anki-connect repository was archived in November 2025.[K
+[0m[48;2;40;67;43m[39m+    329[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    330[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mInvestigation:[38;2;235;203;139m**[38;2;192;197;206m Verified. The canonical upstream (git.sr.ht/~foosoft/anki-connect) remains active. The GitHub mirror was archived. AnkiConnect continues to be actively maintained by the community. The addon ID [38;2;163;190;140m`[38;2;163;190;140m2055492159[38;2;163;190;140m`[38;2;192;197;206m still works. No action needed.[K
+[0m[48;2;40;67;43m[39m+    331[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    332[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    333[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    334[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mRecommended Actions[K
+[0m[48;2;40;67;43m[39m+    335[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    336[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAction 1: Fix GUIDs — TODAY (30 minutes)[K
+[0m[48;2;40;67;43m[39m+    337[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    338[0m:[39m[48;2;24;38;30m [38;2;192;197;206mCreate [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/shared/stable_note.py[38;2;163;190;140m`[38;2;192;197;206m:[K
+[0m[48;2;40;67;43m[39m+    339[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    340[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    341[0m:[39m[48;2;24;38;30m [38;2;192;197;206mimport genanki[K
+[0m[48;2;40;67;43m[39m+    342[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    343[0m:[39m[48;2;24;38;30m [38;2;192;197;206mclass StableNote(genanki.Note):[K
+[0m[48;2;40;67;43m[39m+    344[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    """Note with a stable GUID based on identity_key, not field content."""[K
+[0m[48;2;40;67;43m[39m+    345[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    def __init__(self, *args, identity_key: str, **kwargs):[K
+[0m[48;2;40;67;43m[39m+    346[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        super().__init__(*args, **kwargs)[K
+[0m[48;2;40;67;43m[39m+    347[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        self._identity_key = identity_key[K
+[0m[48;2;40;67;43m[39m+    348[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    349[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    @property[K
+[0m[48;2;40;67;43m[39m+    350[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    def guid(self):[K
+[0m[48;2;40;67;43m[39m+    351[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        return genanki.guid_for(self._identity_key)[K
+[0m[48;2;40;67;43m[39m+    352[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    353[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    354[0m:[39m[48;2;24;38;30m [38;2;192;197;206mApply to [38;2;163;190;140m`[38;2;163;190;140mterminaciones/gen_all_decks.py[38;2;163;190;140m`[38;2;192;197;206m (line 460):[K
+[0m[48;2;40;67;43m[39m+    355[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    356[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    357[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Before:[K
+[0m[48;2;40;67;43m[39m+    358[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdeck.add_note(genanki.Note(model=model, fields=[front, back]))[K
+[0m[48;2;40;67;43m[39m+    359[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    360[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# After (identity must encode deck + verb + form uniquely):[K
+[0m[48;2;40;67;43m[39m+    361[0m:[39m[48;2;24;38;30m [38;2;192;197;206midentity = f"terminaciones:{deck_id}:{verb_key}:{form_idx}"[K
+[0m[48;2;40;67;43m[39m+    362[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdeck.add_note(StableNote(model=model, fields=[front, back], identity_key=identity))[K
+[0m[48;2;40;67;43m[39m+    363[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    364[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    365[0m:[39m[48;2;24;38;30m [38;2;192;197;206mRepeat for the other 8 generator files. Test by running [38;2;163;190;140m`[38;2;163;190;140mdeploy.py[38;2;163;190;140m`[38;2;192;197;206m twice — card count should not increase on the second run.[K
+[0m[48;2;40;67;43m[39m+    366[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    367[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mImportant:[38;2;235;203;139m**[38;2;192;197;206m The first deployment after this change will create new cards (because the GUIDs change from the old hash-based ones to the new stable ones). Delete the old duplicate cards once after this migration. Every subsequent deployment will update in-place.[K
+[0m[48;2;40;67;43m[39m+    368[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    369[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAction 2: Build the Local HTTP API (1–2 hours)[K
+[0m[48;2;40;67;43m[39m+    370[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    371[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    372[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# anki_api.py — uvicorn anki_api:app --port 9000[K
+[0m[48;2;40;67;43m[39m+    373[0m:[39m[48;2;24;38;30m [38;2;192;197;206mimport json, urllib.request, base64[K
+[0m[48;2;40;67;43m[39m+    374[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom pathlib import Path[K
+[0m[48;2;40;67;43m[39m+    375[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom fastapi import FastAPI, HTTPException[K
+[0m[48;2;40;67;43m[39m+    376[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom pydantic import BaseModel[K
+[0m[48;2;40;67;43m[39m+    377[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    378[0m:[39m[48;2;24;38;30m [38;2;192;197;206mANKI = "http://localhost:8765"[K
+[0m[48;2;40;67;43m[39m+    379[0m:[39m[48;2;24;38;30m [38;2;192;197;206mapp = FastAPI(title="Anki Local API")[K
+[0m[48;2;40;67;43m[39m+    380[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    381[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef anki(action: str, **params):[K
+[0m[48;2;40;67;43m[39m+    382[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    body = json.dumps({"action": action, "version": 6, "params": params}).encode()[K
+[0m[48;2;40;67;43m[39m+    383[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    try:[K
+[0m[48;2;40;67;43m[39m+    384[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        r = urllib.request.urlopen(urllib.request.Request(ANKI, body), timeout=30)[K
+[0m[48;2;40;67;43m[39m+    385[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        res = json.loads(r.read())[K
+[0m[48;2;40;67;43m[39m+    386[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    except Exception as e:[K
+[0m[48;2;40;67;43m[39m+    387[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        raise HTTPException(502, f"AnkiConnect unreachable: {e}")[K
+[0m[48;2;40;67;43m[39m+    388[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    if res.get("error"):[K
+[0m[48;2;40;67;43m[39m+    389[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        raise HTTPException(400, res["error"])[K
+[0m[48;2;40;67;43m[39m+    390[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    return res["result"][K
+[0m[48;2;40;67;43m[39m+    391[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    392[0m:[39m[48;2;24;38;30m [38;2;192;197;206m@app.get("/health")[K
+[0m[48;2;40;67;43m[39m+    393[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef health():[K
+[0m[48;2;40;67;43m[39m+    394[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    return {"ankiconnect_version": anki("version"), "status": "ok"}[K
+[0m[48;2;40;67;43m[39m+    395[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    396[0m:[39m[48;2;24;38;30m [38;2;192;197;206m@app.post("/deck/rebuild")[K
+[0m[48;2;40;67;43m[39m+    397[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef rebuild_deck(deck: str):[K
+[0m[48;2;40;67;43m[39m+    398[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    import subprocess, sys[K
+[0m[48;2;40;67;43m[39m+    399[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    r = subprocess.run([sys.executable, f"{deck}/deploy.py"], capture_output=True, text=True)[K
+[0m[48;2;40;67;43m[39m+    400[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    if r.returncode != 0:[K
+[0m[48;2;40;67;43m[39m+    401[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        raise HTTPException(500, r.stderr)[K
+[0m[48;2;40;67;43m[39m+    402[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    return {"status": "ok", "output": r.stdout}[K
+[0m[48;2;40;67;43m[39m+    403[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    404[0m:[39m[48;2;24;38;30m [38;2;192;197;206mclass FieldUpdate(BaseModel):[K
+[0m[48;2;40;67;43m[39m+    405[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    note_id: int[K
+[0m[48;2;40;67;43m[39m+    406[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    fields: dict[str, str][K
+[0m[48;2;40;67;43m[39m+    407[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    408[0m:[39m[48;2;24;38;30m [38;2;192;197;206m@app.put("/note/fields")[K
+[0m[48;2;40;67;43m[39m+    409[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef update_note(body: FieldUpdate):[K
+[0m[48;2;40;67;43m[39m+    410[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    anki("updateNoteFields", note={"id": body.note_id, "fields": body.fields})[K
+[0m[48;2;40;67;43m[39m+    411[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    return {"updated": body.note_id}[K
+[0m[48;2;40;67;43m[39m+    412[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    413[0m:[39m[48;2;24;38;30m [38;2;192;197;206m@app.get("/notes")[K
+[0m[48;2;40;67;43m[39m+    414[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef find_notes(q: str):[K
+[0m[48;2;40;67;43m[39m+    415[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    ids = anki("findNotes", query=q)[K
+[0m[48;2;40;67;43m[39m+    416[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    return anki("notesInfo", notes=ids) if ids else [][K
+[0m[48;2;40;67;43m[39m+    417[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    418[0m:[39m[48;2;24;38;30m [38;2;192;197;206mclass MediaFile(BaseModel):[K
+[0m[48;2;40;67;43m[39m+    419[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    filename: str[K
+[0m[48;2;40;67;43m[39m+    420[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    data_b64: str[K
+[0m[48;2;40;67;43m[39m+    421[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    422[0m:[39m[48;2;24;38;30m [38;2;192;197;206m@app.post("/media")[K
+[0m[48;2;40;67;43m[39m+    423[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef store_media(body: MediaFile):[K
+[0m[48;2;40;67;43m[39m+    424[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    anki("storeMediaFile", filename=body.filename, data=body.data_b64)[K
+[0m[48;2;40;67;43m[39m+    425[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    return {"stored": body.filename}[K
+[0m[48;2;40;67;43m[39m+    426[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    427[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    428[0m:[39m[48;2;24;38;30m [38;2;192;197;206mStart with: [38;2;163;190;140m`[38;2;163;190;140muvicorn anki_api:app --host 127.0.0.1 --port 9000[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    429[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    430[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAction 3: Verify importPackage Scheduling Preservation (10 minutes)[K
+[0m[48;2;40;67;43m[39m+    431[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    432[0m:[39m[48;2;24;38;30m [38;2;192;197;206mBefore rolling out stable GUIDs at scale, manually verify the behavior:[K
+[0m[48;2;40;67;43m[39m+    433[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;191;97;106mRun [38;2;163;190;140m`[38;2;163;190;140mdeploy.py[38;2;163;190;140m`[38;2;191;97;106m once — import a deck[K
+[0m[48;2;40;67;43m[39m+    434[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m In Anki, flip one card (mark it as reviewed)[K
+[0m[48;2;40;67;43m[39m+    435[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m Run [38;2;163;190;140m`[38;2;163;190;140mdeploy.py[38;2;163;190;140m`[38;2;191;97;106m again (content unchanged, GUIDs stable)[K
+[0m[48;2;40;67;43m[39m+    436[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m Confirm the reviewed card still shows as reviewed in Anki[K
+[0m[48;2;40;67;43m[39m+    437[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    438[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThis validates the end-to-end behavior before any migration.[K
+[0m[48;2;40;67;43m[39m+    439[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    440[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAction 4 (Optional): Headless/CI Use Case[K
+[0m[48;2;40;67;43m[39m+    441[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    442[0m:[39m[48;2;24;38;30m [38;2;192;197;206mFor automation without Anki desktop running (e.g., CI/CD):[K
+[0m[48;2;40;67;43m[39m+    443[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    444[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    445[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom anki.collection import Collection[K
+[0m[48;2;40;67;43m[39m+    446[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    447[0m:[39m[48;2;24;38;30m [38;2;192;197;206mcol = Collection("/Users/murivirg/Library/Application Support/Anki2/User 1/collection.anki2")[K
+[0m[48;2;40;67;43m[39m+    448[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# do operations[K
+[0m[48;2;40;67;43m[39m+    449[0m:[39m[48;2;24;38;30m [38;2;192;197;206mcol.close()[K
+[0m[48;2;40;67;43m[39m+    450[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    451[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    452[0m:[39m[48;2;24;38;30m [38;2;192;197;206mInstall: [38;2;163;190;140m`[38;2;163;190;140mpip install anki[38;2;163;190;140m`[38;2;192;197;206m. This requires Anki to be [38;2;235;203;139m**[38;2;235;203;139mcompletely closed[38;2;235;203;139m**[38;2;192;197;206m. Use this only when AnkiConnect is not available (non-interactive environments).[K
+[0m[48;2;40;67;43m[39m+    453[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    454[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    455[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    456[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mError Handling and Rollback Strategy[K
+[0m[48;2;40;67;43m[39m+    457[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    458[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mFor importPackage operations:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    459[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mExport a backup before bulk import: [38;2;163;190;140m`[38;2;163;190;140manki_request("exportPackage", deck="Koiné Griego", path="/tmp/backup.apkg", includeSched=True)[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    460[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Source of truth = Python generation scripts. Rollback = re-run with previous git state[K
+[0m[48;2;40;67;43m[39m+    461[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgit checkout HEAD~1 -- terminaciones/[38;2;163;190;140m`[38;2;191;97;106m + re-run [38;2;163;190;140m`[38;2;163;190;140mdeploy.py[38;2;163;190;140m`[38;2;191;97;106m restores previous content[K
+[0m[48;2;40;67;43m[39m+    462[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    463[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mFor updateNoteFields operations:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    464[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    465[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# Read-modify-write pattern with rollback:[K
+[0m[48;2;40;67;43m[39m+    466[0m:[39m[48;2;24;38;30m [38;2;192;197;206minfo = anki("notesInfo", notes=[note_id])[0][K
+[0m[48;2;40;67;43m[39m+    467[0m:[39m[48;2;24;38;30m [38;2;192;197;206mold_fields = {k: v["value"] for k, v in info["fields"].items()}[K
+[0m[48;2;40;67;43m[39m+    468[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# ... apply update ...[K
+[0m[48;2;40;67;43m[39m+    469[0m:[39m[48;2;24;38;30m [38;2;192;197;206m# On failure:[K
+[0m[48;2;40;67;43m[39m+    470[0m:[39m[48;2;24;38;30m [38;2;192;197;206manki("updateNoteFields", note={"id": note_id, "fields": old_fields})[K
+[0m[48;2;40;67;43m[39m+    471[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    472[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    473[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mAnkiConnect error patterns:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    474[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    475[0m:[39m[48;2;24;38;30m [38;2;192;197;206m{"result": null, "error": "cannot create note because it is a duplicate"}  # use updateNoteFields instead[K
+[0m[48;2;40;67;43m[39m+    476[0m:[39m[48;2;24;38;30m [38;2;192;197;206m{"result": null, "error": "model was not found: X"}                         # model ID mismatch[K
+[0m[48;2;40;67;43m[39m+    477[0m:[39m[48;2;24;38;30m [38;2;192;197;206m{"result": null, "error": "deck was not found"}                              # create deck first[K
+[0m[48;2;40;67;43m[39m+    478[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    479[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    480[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    481[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    482[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mLibrary Reference Summary[K
+[0m[48;2;40;67;43m[39m+    483[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    484[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    485[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgenanki.guid_for(*args)   → deterministic base91 hash of args[K
+[0m[48;2;40;67;43m[39m+    486[0m:[39m[48;2;24;38;30m [38;2;192;197;206mStableNote.guid property  → delegates to guid_for(identity_key)[K
+[0m[48;2;40;67;43m[39m+    487[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgenanki.Package.media_files  → list of file paths to embed in .apkg[K
+[0m[48;2;40;67;43m[39m+    488[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAnkiConnect importPackage → path= absolute filesystem path[K
+[0m[48;2;40;67;43m[39m+    489[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAnkiConnect updateNoteFields → note= {id: int, fields: {name: value}}[K
+[0m[48;2;40;67;43m[39m+    490[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAnkiConnect multi → actions= [{action, params}, ...]  (single HTTP round-trip for N ops)[K
+[0m[48;2;40;67;43m[39m+    491[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    492[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    493[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    494[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    495[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mReferences[K
+[0m[48;2;40;67;43m[39m+    496[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    497[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mAnkiConnect canonical source: [38;2;191;97;106mhttps://git.sr.ht[38;2;191;97;106m/[38;2;191;97;106m~[38;2;191;97;106mfoosoft/anki-connect[K
+[0m[48;2;40;67;43m[39m+    498[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m AnkiConnect addon ID: [38;2;163;190;140m`[38;2;163;190;140m2055492159[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    499[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m genanki README (GUID docs): [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/kerrickstaley/genanki[K
+[0m[48;2;40;67;43m[39m+    500[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Anki packaged deck import docs: [38;2;191;97;106mhttps://docs.ankiweb.net[38;2;191;97;106m/importing/packaged-decks[38;2;191;97;106m.[38;2;191;97;106mhtml[K
+[0m[48;2;40;67;43m[39m+    501[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Anki addon developer docs: [38;2;191;97;106mhttps://addon-docs.ankiweb.net[38;2;191;97;106m/[K
+[0m[48;2;40;67;43m[39m+    502[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Official anki Python package: [38;2;163;190;140m`[38;2;163;190;140mpip install anki[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    503[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Stream c3-context validated.md (project code analysis)[K
+[0m[48;2;40;67;43m[39m+    504[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Stream c5-internal validated.md (internal tooling patterns)[K
+[0m[48;2;40;67;43m[39m+    505[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m shared_findings.jsonl (all 5 agent cross-stream findings)[K
+[0m[48;2;40;67;43m[39m+    506[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m recommendations.md (head agent synthesis)[K
+[0m[48;2;40;67;43m[39m+    507[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Verified by grep: 9 generator files confirmed using default [38;2;163;190;140m`[38;2;163;190;140mgenanki.Note()[38;2;163;190;140m`[38;2;191;97;106m with no custom guid[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/final_report.md[0m
+[38;5;244m - Completed in 2.278s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho "$(date +%H:%M:%S)|Final report written" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/orchestrator_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.797s[0m
+[38;5;12m[1m [1.17][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;11mTODO:
+[39m[38;5;10m[x] [3m[38;5;244mWrite final_report.md synthesizing all 5 streams + head recommendations[23m
+[38;5;10m[x] [3m[38;5;244mTrack progress in orchestrator_nodes[23m
+[0m[ ] Add lesson to knowledge base[38;5;244m - Completed in 1.747s[0m
+[38;5;12m[1m [1.18][0m[0m
+[?25l[0m[?25l[0m[0mAdding to knowledge base: [38;5;10manki-agent Enhancement — 3 Prompt Errors, TTS Reversal, and Prompt Key Mismatch (2026-05-24)[0m (text: [38;5;12m# Anki Local API — g...[0m)
+[38;5;244m (using tool: knowledge)[0m[38;5;244m - Completed in 1.849s[0m
+[38;5;12m[1m [1.19][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mcat > /tmp/anki_local_api_lesson.md << 'EOF'
+# Anki Local API — genanki GUID Root Cause and StableNote Fix (2026-06-05)
+
+## Core Finding
+Every genanki deck generator in this project uses `genanki.Note(model=model, fields=[...])` with no custom `guid`. The default GUID is a hash of the model name + all fields. When any field changes, the GUID changes, and `importPackage` creates a duplicate instead of updating. This is the root cause of every delete→import cycle in the project.
+
+Verified by code inspection: 9 generator files across terminaciones/, compounds/, koine-pimsleur/, anki-main/languages/ all confirmed.
+
+## The Fix (8 lines)
+
+```python
+class StableNote(genanki.Note):
+    def __init__(self, *args, identity_key: str, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._identity_key = identity_key
+
+    @property
+    def guid(self):
+        return genanki.guid_for(self._identity_key)
+```
+
+Place in koine-anki/shared/stable_note.py. Replace all genanki.Note(...) calls with StableNote(..., identity_key=f"{deck_id}:{card_stable_key}").
+
+MIGRATION NOTE: First deployment after this change creates new cards (old hash-based GUIDs differ from new stable GUIDs). Delete old duplicates once, then all future deployments update in-place.
+
+## importPackage Behavior (confirmed from official Anki docs)
+- Anki matches imported notes to existing notes by GUID
+- If imported note's mod timestamp > local: fields updated in-place
+- Card scheduling (intervals, ease, due dates) is ALWAYS preserved for existing notes
+- genanki sets mod = int(time.time()) on every build, so re-imports are always "newer"
+
+## Architecture Decision: Option D (Hybrid)
+- genanki with stable GUIDs for bulk deck regeneration → importPackage
+- AnkiConnect updateNoteFields for individual card patches
+- AnkiConnect storeMediaFile for audio (base64 or path)
+- FastAPI thin wrapper (:9000) for agent-facing HTTP API
+
+## Concurrency Rule
+All writes MUST go through AnkiConnect — it serializes via Qt main thread. Direct SQLite access while Anki is running = SQLITE_BUSY crash. Never touch collection.anki2 directly while Anki is open.
+
+## AnkiConnect Key Facts
+- Port: 8765, addon ID: 2055492159
+- Actions: addNotes, updateNoteFields, findNotes, notesInfo, importPackage, storeMediaFile, multi, sync, exportPackage
+- Known bug: updateNoteFields silently fails if note is open in card browser
+- importPackage path: any absolute filesystem path (not restricted to collection.media)
+- Repo: git.sr.ht/~foosoft/anki-connect (active; GitHub mirror archived Nov 2025)
+
+## Resolved Contradictions
+1. importPackage path restriction: accepts ANY absolute path, not just collection.media (only guiImportFile has that restriction)
+2. Scheduling preservation: ALWAYS preserved for existing notes regardless of "Import learning progress" checkbox
+3. genanki GUID inputs: hash includes model name + all fields (not just fields) — irrelevant since any change = new GUID
+EOF[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.789s[0m
+[38;5;12m[1m [1.20][0m[0m
+[?25l[0m[?25l[0m[0mAdding to knowledge base: [38;5;10mAnki Local API — genanki GUID Root Cause, StableNote Fix, and Architecture Decision (2026-06-05)[0m (file: [38;5;10m/tmp/anki_local_api_lesson.md[0m)
+[38;5;244m (using tool: knowledge)[0m[38;5;244m - Completed in 1.701s[0m
+[38;5;12m[1m [1.21][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho "$(date +%H:%M:%S)|Lesson added to KB" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/orchestrator_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.807s[0m
+[38;5;12m[1m [1.22][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;11mTODO:
+[39m[38;5;10m[x] [3m[38;5;244mWrite final_report.md synthesizing all 5 streams + head recommendations[23m
+[38;5;10m[x] [3m[38;5;244mTrack progress in orchestrator_nodes[23m
+[38;5;10m[x] [3m[38;5;244mAdd lesson to knowledge base[23m[38;5;244m - Completed in 1.630s[0m
+[38;5;12m[1m [1.23][0m[0m
+[?25l[0m[38;5;141m> [0mDone. Here's what was produced:[0m[0m
+[0m[0m
+[1mFinal report:[22m [38;5;10m/Users/murivirg/work/github/anki/investigation/8f9158ec/final_report.md[0m[0m[0m
+[0m[0m
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[0m[0m
+[0m[0m
+[38;5;252m[1m## Key findings from consolidation[0m[0m
+[0m[0m
+[1mRoot cause confirmed by code inspection (not just research):[22m All 9 generator files across the project use [38;5;10mgenanki.Note(model=model, fields=[front, back])[0m with no custom GUID. The default genanki GUID hashes the model name + all fields, so any content change produces a new GUID → [38;5;10mimportPackage[0m creates a duplicate instead of updating.[0m[0m
+[0m[0m
+[1mThe fix is an 8-line class[22m ([38;5;10mStableNote[0m) that overrides the [38;5;10mguid[0m property to hash a stable identity key instead. This eliminates the delete cycle entirely. One-time migration cost: first deploy after the fix will create new cards (old vs new GUID scheme differ), delete the old ones once.[0m[0m
+[0m[0m
+[1mThree contradictions resolved:[22m[0m[0m
+1. [38;5;10mimportPackage[0m accepts any absolute path (not restricted to [38;5;10mcollection.media[0m — that's a different action)[0m[0m
+2. Scheduling is always preserved for existing notes regardless of the "Import learning progress" checkbox[0m[0m
+3. AnkiConnect git.sr.ht repo is active; only the GitHub mirror was archived in Nov 2025[0m[0m
+[0m[0m
+[1mArchitecture recommendation:[22m Option D hybrid — genanki with stable GUIDs for bulk regeneration + AnkiConnect [38;5;10mupdateNoteFields[0m for individual patches + FastAPI thin wrapper on [38;5;10m:9000[0m for the agent-facing HTTP ]9;Response completeAPI.[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 6.96 • Time: 5m 15s
+
+[0m[1G[0m[0m[?25h

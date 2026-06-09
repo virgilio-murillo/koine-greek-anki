@@ -1,0 +1,353 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-prod.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 459 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-agent.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 457 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/kiro-developer.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 455 column 16
+Not all mcp servers loaded. Configure non-interactive timeout with q settings mcp.noInteractiveTimeout
+------
+One or more mcp server did not load correctly. See $TMPDIR/kiro-log/kiro-chat.log for more details.
+------
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 0.79s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mmkdir -p /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet && printf '%s|Starting web search\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mcat /Users/murivirg/work/github/anki/investigation/7f55f0cd/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 3.785s[0m
+[38;5;12m[1m [1.1][0m[0m
+[38;5;244m - Completed in 2.456s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[?25l[?25l[0m[0mSearching the web for: Anki deck generation tools Python genanki programmatic[38;5;244m (using tool: web_search)[0m
+Searching the web for: Koine Greek Anki deck generation bible vocabulary tools[38;5;244m (using tool: web_search)[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.441s[0m
+[38;5;12m[1m [1.3][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.498s[0m
+[38;5;12m[1m [1.4][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Found deck tools\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes && echo '{"from":"c1-internet","finding":"genanki (Python) is the primary tool for programmatic Anki deck generation. Multiple Koine Greek NT vocab decks exist on ankiweb.net with frequency-based organization."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.894s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[?25l[?25l[0m[0mSearching the web for: genanki Python library API model deck note fields templates CSS[38;5;244m (using tool: web_search)[0m
+Searching the web for: Pimsleur Anki deck language learning spaced repetition audio cards[38;5;244m (using tool: web_search)[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.498s[0m
+[38;5;12m[1m [1.6][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.643s[0m
+[38;5;12m[1m [1.7][0m[0m
+[?25l[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Searching formats\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes[0m[38;5;244m (using tool: shell)[0m
+
+Searching the web for: Anki deck file format .apkg .anki2 SQLite structure notes cards[38;5;244m (using tool: web_search)[0m
+Searching the web for: bible-tools koine greek github vocabulary data JSON CSV frequency[38;5;244m (using tool: web_search)[0m
+[38;5;244m - Completed in 2.122s[0m
+[38;5;12m[1m [1.8][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.350s[0m
+[38;5;12m[1m [1.9][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 4.446s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c1-internet","finding":"bible-tools/data on GitHub stores Bible translations as JSON. greek-learner-texts/vocabulary-data consolidates Greek vocab data. STEPBible-Data has morphology codes under CC BY 4.0."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+Searching the web for: genanki best practices Unicode Greek text NFC normalization special characters[38;5;244m (using tool: web_search)[0m
+Searching the web for: "anki-main" OR "koine-anki" OR "koine-pimsleur" github deck generation[38;5;244m (using tool: web_search)[0m
+[38;5;244m - Completed in 1.926s[0m
+[38;5;12m[1m [1.11][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.797s[0m
+[38;5;12m[1m [1.12][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.381s[0m
+[38;5;12m[1m [1.13][0m[0m
+[?25l[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Greek normalization\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes[0m[38;5;244m (using tool: shell)[0m
+
+Searching the web for: katabiblon.com unicode greek normalization NFC NFKC table[38;5;244m (using tool: web_search)[0m
+Searching the web for: anki agent prompt engineering best practices system prompt flashcard generation[38;5;244m (using tool: web_search)[0m
+[38;5;244m - Completed in 1.763s[0m
+[38;5;12m[1m [1.14][0m[0m
+
+[38;5;10m ✓ [0mFound 11 search results
+[38;5;244m - Completed in 4.654s[0m
+[38;5;12m[1m [1.15][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 4.432s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Prompt best practices\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes && echo '{"from":"c1-internet","finding":"katabiblon.com has definitive Unicode Greek normalization table. NFKC normalizes all Greek chars outside U+0386-U+03CE and U+1F00-U+1FFF to the Greek/Coptic subrange. NFC is critical for Greek text processing."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+Searching the web for: Andy Matuschak spaced repetition prompts writing best practices atomic questions[38;5;244m (using tool: web_search)[0m
+Searching the web for: genanki media files audio mp3 add_media_file package deck[38;5;244m (using tool: web_search)[0m
+[38;5;244m - Completed in 2.167s[0m
+[38;5;12m[1m [1.17][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 4.60s[0m
+[38;5;12m[1m [1.18][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 4.11s[0m
+[38;5;12m[1m [1.19][0m[0m
+[?25l[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c1-internet","finding":"Andy Matuschak principles for SRS prompts: atomic (one unit per card), encode from multiple angles, connect ideas, make answer shape clear, avoid yes/no, discourage pattern matching. genanki supports media via Package.media_files list."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+Searching the web for: genanki Package write_to_file media_files example Python code[38;5;244m (using tool: web_search)[0m
+Searching the web for: greek-learner-texts vocabulary-data github structure format[38;5;244m (using tool: web_search)[0m
+[38;5;244m - Completed in 1.976s[0m
+[38;5;12m[1m [1.20][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.428s[0m
+[38;5;12m[1m [1.21][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.408s[0m
+[38;5;12m[1m [1.22][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Genanki API details\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes[0m[38;5;244m (using tool: shell)[0m
+
+Fetching content from: https://raw.githubusercontent.com/kerrickstaley/genanki/refs/heads/main/READM... [mode: full][38;5;244m (using tool: web_fetch)[0m
+[38;5;244m - Completed in 2.298s[0m
+[38;5;12m[1m [1.23][0m[0m
+
+[38;5;10m ✓ [0mFetched 6940 bytes (full content) from URL
+[38;5;244m - Completed in 2.292s[0m
+[38;5;12m[1m [1.24][0m[0m
+[?25l[0m[?25l[?25l[0m[0mSearching the web for: anki deck automation CI/CD github actions generate apkg pipeline[38;5;244m (using tool: web_search)[0m
+Searching the web for: Anki CSV TSV import format tags deck columns separator[38;5;244m (using tool: web_search)[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 4.197s[0m
+[38;5;12m[1m [1.25][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.431s[0m
+[38;5;12m[1m [1.26][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking directives\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes && cat /Users/murivirg/work/github/anki/investigation/7f55f0cd/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+Searching the web for: AI agent prompt for code generation "critical rules" structure sections examples[38;5;244m (using tool: web_search)[0m
+[38;5;244m - Completed in 1.904s[0m
+[38;5;12m[1m [1.27][0m[0m
+
+[38;5;10m ✓ [0mFound 10 search results
+[38;5;244m - Completed in 3.980s[0m
+[38;5;12m[1m [1.28][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Writing findings\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes && echo '{"from":"c1-internet","finding":"Agent prompt best practice: 4-section structure (role/scope, tools/schemas, decision rules, output format). Critical Rules section has highest ROI per shared learnings. APKG format is ZIP of SQLite + media."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.744s[0m
+[38;5;12m[1m [1.29][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me write the comprehensive findings file:[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/findings.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mInternet Research Findings: Enhance anki-agent[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m1. Deck Generation Tools (Ecosystem)[K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mPrimary Tool: genanki (Python)[K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mRepo[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/kerrickstaley/genanki[K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPyPI[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://pypi.org[38;2;191;97;106m/project/genanki/0[38;2;191;97;106m.[38;2;191;97;106m13[38;2;191;97;106m.[38;2;191;97;106m1/[K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPurpose[38;2;235;203;139m**[38;2;191;97;106m: Programmatically generate .apkg decks in Python 3[K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mKey API[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgenanki.Model(model_id, name, fields=[], templates=[], css='')[38;2;163;190;140m`[38;2;191;97;106m — defines card types[K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgenanki.Note(model=, fields=[])[38;2;163;190;140m`[38;2;191;97;106m — a fact to memorize[K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgenanki.Deck(deck_id, name)[38;2;163;190;140m`[38;2;191;97;106m — container for notes[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mgenanki.Package(deck).write_to_file('output.apkg')[38;2;163;190;140m`[38;2;191;97;106m — exports[K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mpackage.media_files = ['file.mp3', 'image.jpg'][38;2;163;190;140m`[38;2;191;97;106m — attach media[K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mCritical details[38;2;235;203;139m**[38;2;191;97;106m:[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Model IDs and Deck IDs must be unique, hardcoded integers (use [38;2;163;190;140m`[38;2;163;190;140mrandom.randrange(1 << 30, 1 << 31)[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Note GUIDs default to hash of all fields; override for stable updates[K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Fields are HTML — must use [38;2;163;190;140m`[38;2;163;190;140mhtml.escape()[38;2;163;190;140m`[38;2;191;97;106m for literal [38;2;163;190;140m`[38;2;163;190;140m<[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140m>[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140m&[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Media referenced in fields as [38;2;163;190;140m`[38;2;163;190;140m[sound:filename.mp3][38;2;163;190;140m`[38;2;191;97;106m or [38;2;163;190;140m`[38;2;163;190;140m<img src="filename.jpg">[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Only basename (no path) in field references[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAlternative Tools[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139manki-apkg-export[38;2;235;203;139m**[38;2;191;97;106m (JS): [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/repeat-space/anki-apkg-export[38;2;191;97;106m — Node.js alternative[K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mgenanki-js[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/krmanik/genanki-js[38;2;191;97;106m — browser-side generation[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mpyanki[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/maxwellpirtle/pyanki[38;2;191;97;106m — Anki-Connect API wrapper[K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mmkanki[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/nornagon/mkanki[38;2;191;97;106m — supports cloze + media[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAutomation Patterns[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mEnderzombie/automated-apkg-creation[38;2;235;203;139m**[38;2;191;97;106m: JSON → apkg pipeline[K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mDahnJ/Anki-Deck-Generation[38;2;235;203;139m**[38;2;191;97;106m: Python + genanki automated workflow[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mThisIsntTheWay/anki-deck-automation[38;2;235;203;139m**[38;2;191;97;106m: Full build/export automation[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m2. File Formats[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m.apkg (Primary Output)[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mZIP archive containing:[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mcollection.anki2[38;2;163;190;140m`[38;2;191;97;106m — SQLite database with notes, cards, models, decks[K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mmedia[38;2;163;190;140m`[38;2;191;97;106m file — JSON mapping of numeric filenames to original names[K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Numbered media files (0, 1, 2...) — the actual audio/image files[K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Source: [38;2;191;97;106mhttps://docs.ankiweb.net[38;2;191;97;106m/exporting[38;2;191;97;106m.[38;2;191;97;106mhtml[K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [38;2;191;97;106m###[38;2;191;97;106m Import Formats (Input)[K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mCSV/TSV[38;2;235;203;139m**[38;2;191;97;106m: Tab or semicolon-separated fields, importable directly into Anki[K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m First line can specify separator: [38;2;163;190;140m`[38;2;163;190;140mseparator:Tab[38;2;163;190;140m`[38;2;191;97;106m or [38;2;163;190;140m`[38;2;163;190;140mseparator:Comma[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Tags column supported[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [38;2;191;97;106m  [38;2;191;97;106m-[38;2;191;97;106m Source: [38;2;191;97;106mhttp://docs.ankiweb.net[38;2;191;97;106m/importing/text-files[38;2;191;97;106m.[38;2;191;97;106mhtml[K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mJSON[38;2;235;203;139m**[38;2;191;97;106m: Common intermediate format for data pipelines (used by automated-apkg-creation)[K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mData Source Formats (for Greek vocab)[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mJSON[38;2;235;203;139m**[38;2;191;97;106m: bible-tools/data stores translations as JSON[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mTSV/CSV[38;2;235;203;139m**[38;2;191;97;106m: STEPBible-Data uses TSV with morphology codes[K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mXML[38;2;235;203;139m**[38;2;191;97;106m: Perseus Digital Library canonical Greek texts[K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m3. Koine Greek Data Sources [38;2;143;161;179m&[38;2;143;161;179m bible-tools Relationship[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mbible-tools/data[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mURL[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/bible-tools/data[K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mContent[38;2;235;203;139m**[38;2;191;97;106m: Bible translations stored as JSON[K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mLikely relationship[38;2;235;203;139m**[38;2;191;97;106m: [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/data/[38;2;163;190;140m`[38;2;191;97;106m probably references or symlinks to this repo for source vocabulary data[K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mSTEPBible-Data[K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mURL[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/STEPBible/STEPBible-Data[K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mLicense[38;2;235;203;139m**[38;2;191;97;106m: CC BY 4.0[K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mContent[38;2;235;203;139m**[38;2;191;97;106m: TEGMC (Translators Expansion of Greek Morphology Codes), tagged Greek text with lemmas, parsing, glosses[K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mgreek-learner-texts/vocabulary-data[K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mURL[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/greek-learner-texts/vocabulary-data[K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mContent[38;2;235;203;139m**[38;2;191;97;106m: Consolidated vocabulary data for Greek learner texts project[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mRelevance[38;2;235;203;139m**[38;2;191;97;106m: Frequency lists, lemmatization, glosses for Koine Greek[K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mExisting Koine Greek Anki Decks (ankiweb.net)[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m"All Bible Greek Vocab 2021" — all NT words, 4 subdecks by frequency (95% coverage at 6+ occurrences)[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m "NT Greek Vocab (Oak Hill College)" — 1000 most common NT words[K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m "Living Koine Greek deck" — phonemic approach[K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Multiple frequency-sorted decks exist[K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m4. Pimsleur + Anki Pattern[K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;192;197;206mBased on search results, the [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/[38;2;163;190;140m`[38;2;192;197;206m directory likely:[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mGenerates Anki cards from Pimsleur-style audio lesson vocabulary[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Includes audio files (mp3) for pronunciation[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Uses phrase-based cards (not just single words)[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Follows the Pimsleur graduated-interval recall method adapted to Anki's SRS[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [38;2;192;197;206mExamples found: mipmc/anki (Pimsleur Mandarin), multiple Pimsleur companion decks on ankiweb.net with audio.[K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m5. Unicode/Greek Text Critical Rules[K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mNFC Normalization (CONFIRMED CRITICAL)[K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSource[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://www.katabiblon.com[38;2;191;97;106m/tech/unicode-nf-greek[38;2;191;97;106m.[38;2;191;97;106mhtm[K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Greek text MUST use NFC normalization for consistent comparison and display[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m NFKC normalizes characters outside U+0386–U+03CE (Greek/Coptic) and U+1F00–U+1FFF (Greek Extended) into those ranges[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m NFC composes combining characters (e.g., base + diacritic → precomposed form)[K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPython[38;2;235;203;139m**[38;2;191;97;106m: [38;2;163;190;140m`[38;2;163;190;140municodedata.normalize('NFC', text)[38;2;163;190;140m`[38;2;191;97;106m — MUST be applied to all Greek text before storage/comparison[K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSource[38;2;235;203;139m**[38;2;191;97;106m: [38;2;191;97;106mhttps://www.pgdp.net[38;2;191;97;106m/wiki/DP[38;2;191;97;106m_[38;2;191;97;106mCode[38;2;191;97;106m_[38;2;191;97;106m-[38;2;191;97;106m_[38;2;191;97;106mUnicode/Greek[38;2;191;97;106m confirms NFC is critical for Greek processing[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mHTML Escaping[K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mgenanki fields are HTML — Greek text with special chars needs [38;2;163;190;140m`[38;2;163;190;140mhtml.escape()[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m But Greek diacritics (breathing marks, accents) are Unicode, not HTML entities[K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m6. Enhanced Prompt Recommendations[K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mStructure (Based on Best Practices Research)[K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe agent prompt should follow a [38;2;235;203;139m**[38;2;235;203;139m4-section structure[38;2;235;203;139m**[38;2;192;197;206m (per roborhythms.com research on agent tool hallucination prevention):[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mRole [38;2;235;203;139m&[38;2;235;203;139m Scope[38;2;235;203;139m**[38;2;191;97;106m — What the agent does, domain context[K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mTools [38;2;235;203;139m&[38;2;235;203;139m Schemas[38;2;235;203;139m**[38;2;191;97;106m — Available tools, data formats, file paths[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mCritical Rules[38;2;235;203;139m**[38;2;191;97;106m (highest ROI per shared learnings) — Non-negotiable constraints[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mOutput Format[38;2;235;203;139m**[38;2;191;97;106m — Expected outputs, file naming, validation[K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mRecommended Critical Rules for anki-agent:[K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mNFC Normalization[38;2;235;203;139m**[38;2;191;97;106m: ALL Greek text MUST be [38;2;163;190;140m`[38;2;163;190;140municodedata.normalize('NFC', text)[38;2;163;190;140m`[38;2;191;97;106m before any processing[K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mStable GUIDs[38;2;235;203;139m**[38;2;191;97;106m: Override Note.guid to hash only identity fields (not all fields) for safe re-imports[K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mHTML Escaping[38;2;235;203;139m**[38;2;191;97;106m: Use [38;2;163;190;140m`[38;2;163;190;140mhtml.escape()[38;2;163;190;140m`[38;2;191;97;106m for field content, but preserve Unicode Greek characters[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mHardcoded IDs[38;2;235;203;139m**[38;2;191;97;106m: Model and Deck IDs must be stable integers (never regenerate)[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMedia Basenames[38;2;235;203;139m**[38;2;191;97;106m: Only use filename (no path) in [38;2;163;190;140m`[38;2;163;190;140m[sound:x][38;2;163;190;140m`[38;2;191;97;106m or [38;2;163;190;140m`[38;2;163;190;140m<img src="x">[38;2;163;190;140m`[38;2;191;97;106m references[K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [38;2;191;97;106m6[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mVerify Against Source[38;2;235;203;139m**[38;2;191;97;106m: Cross-check generated vocab against authoritative data (STEPBible, bible-tools)[K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;191;97;106m7[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAtomic Cards[38;2;235;203;139m**[38;2;191;97;106m: Follow Andy Matuschak's principles — one fact per card, encode from multiple angles[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAndy Matuschak's SRS Prompt Principles (Source: andymatuschak.org/prompts/)[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mPrompts should focus on one atomic unit[K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Encode ideas from multiple angles (not just one cloze)[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Make clear what "shape" of answer is expected[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Avoid yes/no prompts[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Discourage shallow pattern matching[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Connect and relate ideas[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Write more prompts than seems natural[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Properties: focused, precise, consistent, tractable, effortful, context-independent[K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m7. Summary of What Enhanced Prompt Should Contain[K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [38;2;192;197;206mBased on all research, the enhanced anki-agent prompt (~2000-3000 chars recommended) should include:[K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Role[K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [38;2;192;197;206mYou are an Anki deck generation agent for Koine Greek biblical vocabulary...[K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Project Structure[K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- anki-main/: [core shared utilities, genanki wrappers][K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- koine-anki/: [NT vocabulary deck generation, data/ from bible-tools][K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- koine-pimsleur/: [Pimsleur-style audio phrase cards][K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Critical Rules[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;192;197;206m1. Greek text: ALWAYS apply unicodedata.normalize('NFC', text)[K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [38;2;192;197;206m2. genanki fields are HTML: use html.escape() but preserve Unicode[K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;192;197;206m3. Model/Deck IDs: use existing hardcoded values, never regenerate[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [38;2;192;197;206m4. Note GUIDs: override to hash only identity fields for stable updates[K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;192;197;206m5. Media: reference by basename only in fields[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [38;2;192;197;206m6. Verify vocab against source data before generating[K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;192;197;206m7. One atomic fact per card; encode from multiple angles[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Tools & Formats[K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- genanki for .apkg generation[K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- Source data: JSON/TSV from bible-tools/data or STEPBible[K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- Output: .apkg files with embedded media[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- CSV/TSV as intermediate format[K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Output Expectations[K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- Generated decks must import cleanly into Anki[K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- All Greek text NFC-normalized[K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- Cards follow SRS best practices (atomic, precise, effortful)[K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSources[K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mgenanki README: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/kerrickstaley/genanki[K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Anki Manual (export/import): [38;2;191;97;106mhttps://docs.ankiweb.net[38;2;191;97;106m/exporting[38;2;191;97;106m.[38;2;191;97;106mhtml[K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m katabiblon Unicode Greek Normalization: [38;2;191;97;106mhttps://www.katabiblon.com[38;2;191;97;106m/tech/unicode-nf-greek[38;2;191;97;106m.[38;2;191;97;106mhtm[K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Andy Matuschak on prompts: [38;2;191;97;106mhttps://andymatuschak.org[38;2;191;97;106m/prompts/[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m bible-tools/data: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/bible-tools/data[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m STEPBible-Data: [38;2;191;97;106mhttps://github.com[38;2;191;97;106m/STEPBible/STEPBible-Data[K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Agent prompt structure: [38;2;191;97;106mhttps://www.roborhythms.com[38;2;191;97;106m/fix-agent-tool-hallucinations-4-section-prompt/[K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m DP Code Unicode/Greek: [38;2;191;97;106mhttps://www.pgdp.net[38;2;191;97;106m/wiki/DP[38;2;191;97;106m_[38;2;191;97;106mCode[38;2;191;97;106m_[38;2;191;97;106m-[38;2;191;97;106m_[38;2;191;97;106mUnicode/Greek[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/findings.md[0m
+[38;5;244m - Completed in 1.761s[0m
+[38;5;12m[1m [1.30][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Findings complete\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/nodes && echo '{"from":"c1-internet","finding":"COMPLETE: Full findings written. Key insights: genanki is the tool, NFC normalization is critical for Greek, 4-section prompt structure recommended, Andy Matuschak atomic card principles apply, bible-tools/data likely provides source vocab."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.35s[0m
+[38;5;12m[1m [1.31][0m[0m
+[?25l[0m[38;5;141m> [0mInvestigation complete. Findings written to [38;5;10m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c1-internet/findings.md[0m.[0m[0m
+[0m[0m
+Key discoveries:[0m[0m
+1. [1mgenanki[22m is the primary Python tool for programmatic .apkg generation, with full media support[0m[0m
+2. [1mNFC normalization[22m is confirmed critical for Greek text (katabiblon.com has the definitive reference table)[0m[0m
+3. [1mbible-tools/data[22m stores Bible translations as JSON — likely the source for [38;5;10mkoine-anki/data/[0m[0m[0m
+4. [1mAgent prompt structure[22m should follow 4 sections: Role, Tools/Schemas, Critical Rules, Output Format[0m[0m
+5. [1mAndy Matuschak's principles[22m (atomic, multi-angle, no pattern matching) should guide card design[0m[0m
+6. [1mPimsleur pattern[22m involves audio phrase cards with graduated-interval ]9;Response completerecall[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 2.74 • Time: 3m 43s
+
+[0m[1G[0m[0m[?25h

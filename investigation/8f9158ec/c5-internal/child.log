@@ -1,0 +1,452 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10maws-support-troubleshooting-mcp[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 1.02s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[?25l[0m[0mI will run the following command: [38;5;141mmkdir -p /Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal && printf '%s|Starting research\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mcat /Users/murivirg/work/github/anki/investigation/8f9158ec/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.966s[0m
+[38;5;12m[1m [1.1][0m[0m
+[38;5;244m - Completed in 1.841s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[38;5;141m> [0mNo directives yet. Let me start searching internal sources for AnkiConnect, Anki APIs, and related topics.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "query": "AnkiConnect API flashcard management automation",
+ ⋮    "domain": "ALL",
+ ⋮    "pageSize": 10
+ ⋮  }
+[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "query": "genanki anki flashcard python library deck generation",
+ ⋮    "domain": "ALL",
+ ⋮    "pageSize": 10
+ ⋮  }
+[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "query": "anki SQLite database manipulation programmatic cards",
+ ⋮    "domain": "ALL",
+ ⋮    "pageSize": 10
+ ⋮  }
+[0m[38;5;244m - Completed in 23.970s[0m
+[38;5;12m[1m [1.3][0m[0m
+[38;5;244m - Completed in 16.206s[0m
+[38;5;12m[1m [1.4][0m[0m
+[38;5;244m - Completed in 15.230s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[38;5;141m> [0mExcellent! Found a highly relevant wiki page about AnkiConnect integration. Let me share this first finding and read it in detail.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"Found wiki page PkmsToolchain describing AnkiConnect+Obsidian toolchain for programmatic flashcard sync with REST API"}' >> /Users/murivirg/work/github/anki/investigation/8f9158ec/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mprintf '%s|Reading wiki pages\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+Running tool [38;5;141mReadInternalWebsites[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "inputs": [
+ ⋮      "https://w.amazon.com/bin/view/PkmsToolchain/"
+ ⋮    ]
+ ⋮  }
+[0m[38;5;244m - Completed in 1.853s[0m
+[38;5;12m[1m [1.6][0m[0m
+[38;5;244m - Completed in 1.720s[0m
+[38;5;12m[1m [1.7][0m[0m
+[38;5;244m - Completed in 2.500s[0m
+[38;5;12m[1m [1.8][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me search for more specific information about local REST APIs, SQLite manipulation, and Python libraries for Anki.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "domain": "SAGE_HORDE",
+ ⋮    "pageSize": 10,
+ ⋮    "query": "AnkiConnect REST API local server flashcard automation python"
+ ⋮  }
+[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "domain": "ALL",
+ ⋮    "pageSize": 10,
+ ⋮    "query": "local HTTP API service SQLite file locking concurrency Python"
+ ⋮  }
+[0m[38;5;244m - Completed in 17.821s[0m
+[38;5;12m[1m [1.9][0m[0m
+[38;5;244m - Completed in 22.215s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[38;5;141m> [0mI found excellent results from the Temporalis and KiroMemory pages about SQLite concurrency with WAL mode and file locking patterns. Now let me check directives and share findings, then search for more Anki-specific content.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mcat /Users/murivirg/work/github/anki/investigation/8f9158ec/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"Found Temporalis wiki documenting SQLite WAL mode for concurrency + file locking patterns for local services. Also found Kiro Memory MCP with cross-platform file locking (fcntl/msvcrt) for JSONL data stores."}' >> /Users/murivirg/work/github/anki/investigation/8f9158ec/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mprintf '%s|Searching patterns\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+{"from":"head","to":"all","directive":"First findings received from all 5 streams. Cross-referencing now. Key insight: GUID-based idempotent update is the core solution. Focus remaining research on: (1) exact genanki GUID customization API, (2) AnkiConnect storeMediaFile batch + media sync, (3) concurrency/locking for parallel agent writes, (4) updateNoteFields known bug (browser open), (5) whether importPackage preserves scheduling."}
+{"from":"head","to":"c5-internal","directive":"Redirect: Search internal wiki/docs for any documented approach to stable GUID assignment in genanki for incremental updates. Also look for any existing local HTTP wrapper patterns over AnkiConnect."}
+{"from":"head","to":"c2-kb","directive":"Redirect: Search KB for 'ankisync2' library and 'anki official python module' - are there docs on using official anki Python package for collection manipulation? Also find any info on AnkiConnect API key auth and rate limiting."}
+{"from":"head","to":"c1-internet","directive":"Redirect: Focus on (1) genanki.Note guid parameter - how to set a deterministic guid based on stable identity fields. (2) Flask/FastAPI wrapper pattern over AnkiConnect with queueing. (3) importPackage scheduling preservation behavior."}
+{"from":"head","to":"c3-context","directive":"Redirect: Look at all deploy.py scripts across the project. Does the project use custom GUIDs or default genanki GUIDs? Check if any note has guid param set. Also look at compounds/generate_deck.py for its note creation pattern."}
+{"from":"head","to":"c4-docs","directive":"Redirect: Search web for ankisync2 library docs, 'anki official Python API collection.anki2 headless', and the exact behavior of importPackage action in AnkiConnect - does it preserve scheduling or reset it?"}
+[38;5;244m - Completed in 1.759s[0m
+[38;5;12m[1m [1.11][0m[0m
+[38;5;244m - Completed in 1.969s[0m
+[38;5;12m[1m [1.12][0m[0m
+[38;5;244m - Completed in 2.166s[0m
+[38;5;12m[1m [1.13][0m[0m
+[?25l[0m[38;5;141m> [0mI have directives to focus on: (1) stable GUID assignment in genanki for incremental updates, and (2) existing local HTTP wrapper patterns over AnkiConnect. Let me search for these specifically.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "domain": "ALL",
+ ⋮    "pageSize": 10,
+ ⋮    "query": "genanki GUID stable identifier note unique deterministic hash"
+ ⋮  }
+[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "domain": "ALL",
+ ⋮    "pageSize": 10,
+ ⋮    "query": "Flask FastAPI local HTTP wrapper API service pattern proxy"
+ ⋮  }
+[0mRunning tool [38;5;141mInternalSearch[0m with the param[38;5;244m (from mcp server: builder-mcp)[0m
+ ⋮  {
+ ⋮    "domain": "ALL",
+ ⋮    "pageSize": 10,
+ ⋮    "query": "Obsidian_to_Anki plugin note ID GUID sync update without duplicates"
+ ⋮  }
+[0m[38;5;244m - Completed in 16.582s[0m
+[38;5;12m[1m [1.14][0m[0m
+[38;5;244m - Completed in 16.629s[0m
+[38;5;12m[1m [1.15][0m[0m
+[38;5;244m - Completed in 17.567s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[38;5;141m> [0mI have enough internal source data now. Let me share important findings and compile my research into the findings file.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"Found AIOps Security Runbook with localhost-binding patterns for FastAPI/Flask/Streamlit local tools. Found swinyted wiki with FastAPI bridge pattern for native apps via local REST API. Both show how to build secure local HTTP services."}' >> /Users/murivirg/work/github/anki/investigation/8f9158ec/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"Key insight from PkmsToolchain: Obsidian_to_Anki plugin uses AnkiConnect (addon 2055492159) which starts a local REST server on port 8765. When you update Q/A blocks in Obsidian, it automatically updates the corresponding Anki card via AnkiConnect API. This proves the update-without-duplicate pattern works."}' >> /Users/murivirg/work/github/anki/investigation/8f9158ec/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mprintf '%s|Writing findings\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.18s[0m
+[38;5;12m[1m [1.17][0m[0m
+[38;5;244m - Completed in 1.870s[0m
+[38;5;12m[1m [1.18][0m[0m
+[38;5;244m - Completed in 2.68s[0m
+[38;5;12m[1m [1.19][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me write the comprehensive findings file:[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/findings.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mInternal Sources Research: Anki Programmatic Management API[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mExecutive Summary[K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAmazon internal wikis document extensive use of AnkiConnect + Obsidian toolchains for programmatic flashcard management. Key patterns found include: REST API wrappers over AnkiConnect, SQLite WAL mode for concurrency, cross-platform file locking for local data stores, and FastAPI localhost-binding patterns for local HTTP services.[K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m1. AnkiConnect Addon — REST API Architecture[K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mPkmsToolchain Wiki[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/PkmsToolchain/[38;2;208;135;112m)[38;2;192;197;206m (owner: haziq-only)[K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mHow It Works[K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAnkiConnect[38;2;235;203;139m**[38;2;191;97;106m (addon ID: [38;2;163;190;140m`[38;2;163;190;140m2055492159[38;2;163;190;140m`[38;2;191;97;106m) is an Anki plugin that starts a [38;2;235;203;139m**[38;2;235;203;139mlocal HTTP server[38;2;235;203;139m**[38;2;191;97;106m providing a REST API into Anki[K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Default port: [38;2;235;203;139m**[38;2;235;203;139m8765[38;2;235;203;139m**[38;2;191;97;106m on localhost[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Provides full CRUD operations on decks, notes, cards[K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Used in combination with [38;2;235;203;139m**[38;2;235;203;139mObsidian_to_Anki[38;2;235;203;139m**[38;2;191;97;106m plugin (github.com/Pseudonium/Obsidian_to_Anki)[K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mKey Architecture Insight[K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe Obsidian_to_Anki plugin demonstrates the [38;2;235;203;139m**[38;2;235;203;139mupdate-without-duplicate pattern[38;2;235;203;139m**[38;2;192;197;206m:[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mYou write Q/A blocks in markdown notes[K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m When you hit sync, it [38;2;235;203;139m**[38;2;235;203;139mautomatically generates OR updates[38;2;235;203;139m**[38;2;191;97;106m the corresponding Anki flashcard[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m It maintains a bidirectional connection between source note and Anki card[K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Single source of truth (markdown) drives the flashcard state[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mCapabilities Confirmed[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mCreate/update/delete notes and decks[K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Find notes by query (deck, tags, field content)[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Add media files[K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Get/set card scheduling info[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Batch operations (multi action)[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mLimitations (from wiki context)[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mRequires Anki desktop running[38;2;235;203;139m**[38;2;191;97;106m — the REST server only exists when Anki app is open[K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m AGPL-3.0 license concern noted (prohibited in Amazon corporate context per policy.amazon.com/standard/82477 — but fine for personal use)[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m No built-in authentication (localhost-only by default)[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m2. SQLite Concurrency [38;2;143;161;179m&[38;2;143;161;179m File Locking Patterns[K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m2.1 SQLite WAL Mode for Concurrent Access[K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mTemporalis Microservice Migration[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/Temporalis/features/distributed-service/deployment/microservice-migration/scope/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [38;2;192;197;206mKey finding from the Temporalis team's risk analysis:[K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Risk [38;2;192;197;206m|[38;2;192;197;206m Impact [38;2;192;197;206m|[38;2;192;197;206m Mitigation [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m------------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m SQLite concurrency [38;2;192;197;206m|[38;2;192;197;206m DRR orchestrator + DP workers write concurrently to SQLite [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mUse WAL mode[38;2;235;203;139m**[38;2;192;197;206m; SQLite handles concurrent reads well; writes are serialized but DRR write volume is low [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mApplicability to Anki:[38;2;235;203;139m**[38;2;192;197;206m Anki's collection.anki2 is a SQLite database. If multiple agents try to write simultaneously:[K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mEnable WAL mode ([38;2;163;190;140m`[38;2;163;190;140mPRAGMA journal_mode=WAL[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Concurrent reads are safe[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Writes are serialized (one writer at a time)[K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m For low write volume (typical for flashcard updates), this is sufficient[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m2.2 Cross-Platform File Locking[K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mKiro Memory MCP[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/Users/sandykol/Automations/KiroMemoryMcp/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [38;2;192;197;206mProduction-proven pattern for cross-platform file locking in Python:[K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [38;2;192;197;206mfrom contextlib import contextmanager[K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [38;2;192;197;206mimport sys[K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;192;197;206mif sys.platform == "win32":[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    import msvcrt[K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [38;2;192;197;206melse:[K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    import fcntl[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [38;2;192;197;206mLOCK_FILE = MEMORY_DIR / ".patterns.lock"[K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [38;2;192;197;206m@contextmanager[K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [38;2;192;197;206mdef file_lock():[K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    MEMORY_DIR.mkdir(parents=True, exist_ok=True)[K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    lock = open(LOCK_FILE, "w")[K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    try:[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        if sys.platform == "win32":[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;192;197;206m            msvcrt.locking(lock.fileno(), msvcrt.LK_LOCK, 1)[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        else:[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;192;197;206m            fcntl.flock(lock, fcntl.LOCK_EX)[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        yield[K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [38;2;192;197;206m    finally:[K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        try:[K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [38;2;192;197;206m            if sys.platform == "win32":[K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;192;197;206m                msvcrt.locking(lock.fileno(), msvcrt.LK_UNLCK, 1)[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [38;2;192;197;206m            else:[K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [38;2;192;197;206m                fcntl.flock(lock, fcntl.LOCK_UN)[K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;192;197;206m        finally:[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;192;197;206m            lock.close()[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mKey design decisions from this source:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mNested try/finally guarantees lock release even if unlock raises[K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m JSONL chosen over SQLite for simplicity: "human-readable, git-diffable, append-friendly, no binary dependencies"[K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m All read-modify-write operations wrapped in the lock context manager[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m2.3 Kamino MetaData Manager — Three-Tier SQLite Caching[K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mKamino MetaData Manager [38;2;208;135;112m&[38;2;208;135;112m SQLite Infrastructure[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/AWS/DMS/AWS_Database_Migration_Service/Documentation/Kamino/Training/MetaDataManagerAndSQLiteInfrastructure/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;192;197;206mRelevant architecture pattern:[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;192;197;206mTier 1: Memory → Hash tables (microseconds)[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [38;2;192;197;206m   ↓ miss[K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;192;197;206mTier 2: SQLite → on disk (milliseconds)[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;192;197;206m   ↓ miss[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [38;2;192;197;206mTier 3: Backend DB → Live query (seconds)[K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mConcurrency model uses six locks[38;2;235;203;139m**[38;2;192;197;206m for different SQLite files. Relevant for Anki if we need to manage both the collection and media separately.[K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m3. Local HTTP API Service Patterns[K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m3.1 FastAPI Bridge Pattern[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mUseful API Patterns Wiki[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/Users/swinyted/useful-api-patterns/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;192;197;206mKey pattern documented: [38;2;235;203;139m**[38;2;235;203;139m"FastAPI bridge for native apps via local REST API"[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mAvoids rewriting complex logic in another language[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Thin REST layer over existing Python functionality[K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Shared batch file / Makefile integration for starting the service[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m3.2 Localhost Security (MANDATORY for local services)[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mAIOps Team Security Runbook[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/AmazonWebServices/SalesSupport/DeveloperSupport/AWSSupport-AIOps/Runbooks/Development-Best-Practices/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSecurity best practices for local HTTP services:[K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mFastAPI / Uvicorn binding:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [38;2;192;197;206muvicorn.run(app, host="127.0.0.1", port=PORT)[K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mFlask binding:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[38;2;208;135;112mpython[K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;192;197;206mapp.run(host="127.0.0.1", port=PORT)[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mDefense-in-Depth: LocalhostOnlyMiddleware (MANDATORY for FastAPI/Starlette)[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mCORS Restriction (MANDATORY):[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mOnly allow origins from localhost[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m3.3 FastAPI vs Flask for Local Services[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mIhmSDP FastAPI ASGI[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/IhmSDP/FastAPIASGI/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Framework [38;2;192;197;206m|[38;2;192;197;206m Async [38;2;192;197;206m|[38;2;192;197;206m Performance [38;2;192;197;206m|[38;2;192;197;206m Use Case [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m-----------[38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m-------------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Flask [38;2;192;197;206m|[38;2;192;197;206m WSGI (sync) [38;2;192;197;206m|[38;2;192;197;206m Lower [38;2;192;197;206m|[38;2;192;197;206m Simple, synchronous operations [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m FastAPI [38;2;192;197;206m|[38;2;192;197;206m ASGI (async) [38;2;192;197;206m|[38;2;192;197;206m Higher [38;2;192;197;206m|[38;2;192;197;206m Concurrent requests, better for proxy pattern [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mRecommendation for Anki wrapper:[38;2;235;203;139m**[38;2;192;197;206m FastAPI is preferred because:[K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mAsync support means the API can handle multiple incoming requests while waiting for AnkiConnect responses[K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Better request validation with Pydantic models[K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Automatic OpenAPI documentation[K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m4. Card Identity [38;2;143;161;179m&[38;2;143;161;179m GUID Patterns[K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m4.1 GUID as Stable Identifier[K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mRISC GDA GUID tracking[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/RISC_GDA/AWD/sa_amelia_guid/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;192;197;206mGeneral pattern for GUID usage in Amazon systems:[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m"Globally Unique Identifier provides precise tracking capabilities across distributed systems"[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m "Serves as a stable, permanent reference for correlation, auditing, and data lineage"[K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m "Enables accurate tracking of data flow through complex multi-system architectures"[K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    176[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mApplication to Anki:[38;2;235;203;139m**[38;2;192;197;206m The same principle applies — using deterministic GUIDs based on content hash (e.g., [38;2;163;190;140m`[38;2;163;190;140mhashlib.sha256(f"{deck}::{front_field}".encode()).hexdigest()[:10][38;2;163;190;140m`[38;2;192;197;206m) enables:[K
+[0m[48;2;40;67;43m[39m+    177[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mIdempotent updates (same input → same GUID → update not create)[K
+[0m[48;2;40;67;43m[39m+    178[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Tracking card lineage across regeneration cycles[K
+[0m[48;2;40;67;43m[39m+    179[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Safe re-import without duplicates[K
+[0m[48;2;40;67;43m[39m+    180[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    181[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m4.2 Obsidian_to_Anki's Approach to Card Identity[K
+[0m[48;2;40;67;43m[39m+    182[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    183[0m:[39m[48;2;24;38;30m [38;2;192;197;206mFrom the PkmsToolchain wiki context, the Obsidian_to_Anki plugin:[K
+[0m[48;2;40;67;43m[39m+    184[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mStores Anki note IDs as metadata in the Obsidian markdown file[K
+[0m[48;2;40;67;43m[39m+    185[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m On first sync: creates note, stores returned ID[K
+[0m[48;2;40;67;43m[39m+    186[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m On subsequent syncs: uses stored ID to call [38;2;163;190;140m`[38;2;163;190;140mupdateNoteFields[38;2;163;190;140m`[38;2;191;97;106m via AnkiConnect[K
+[0m[48;2;40;67;43m[39m+    187[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m If ID is missing/invalid: treats as new note creation[K
+[0m[48;2;40;67;43m[39m+    188[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    189[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    190[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    191[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m5. Architecture Options Assessment (Internal Source Perspective)[K
+[0m[48;2;40;67;43m[39m+    192[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    193[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mOption A: Thin Wrapper over AnkiConnect (RECOMMENDED)[K
+[0m[48;2;40;67;43m[39m+    194[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    195[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mEvidence from internal sources:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    196[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mPkmsToolchain confirms this is proven and reliable[K
+[0m[48;2;40;67;43m[39m+    197[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m FastAPI bridge pattern from swinyted wiki shows how to add queueing/batching[K
+[0m[48;2;40;67;43m[39m+    198[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m AIOps runbook provides security guidance for localhost services[K
+[0m[48;2;40;67;43m[39m+    199[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    200[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mArchitecture:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    201[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    202[0m:[39m[48;2;24;38;30m [38;2;192;197;206mYour Code → FastAPI Local Service (port 5555) → AnkiConnect (port 8765) → Anki Desktop[K
+[0m[48;2;40;67;43m[39m+    203[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    204[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    205[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mPros:[38;2;235;203;139m**[38;2;192;197;206m All Anki features available, scheduling preserved, media handling built-in[K
+[0m[48;2;40;67;43m[39m+    206[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mCons:[38;2;235;203;139m**[38;2;192;197;206m Requires Anki desktop running[K
+[0m[48;2;40;67;43m[39m+    207[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    208[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mOption B: Direct SQLite Manipulation (RISKY)[K
+[0m[48;2;40;67;43m[39m+    209[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    210[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mEvidence from internal sources:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    211[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mKamino's six-lock model shows SQLite concurrency is solvable but complex[K
+[0m[48;2;40;67;43m[39m+    212[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Temporalis WAL mode mitigates concurrent read issues[K
+[0m[48;2;40;67;43m[39m+    213[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m BUT: Anki's SQLite schema is undocumented internal API, prone to breaking changes[K
+[0m[48;2;40;67;43m[39m+    214[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    215[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mRecommendation:[38;2;235;203;139m**[38;2;192;197;206m Only for read operations (analytics, export). Never for writes in production.[K
+[0m[48;2;40;67;43m[39m+    216[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    217[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mOption C: .apkg Generation + Import via AnkiConnect[K
+[0m[48;2;40;67;43m[39m+    218[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    219[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mEvidence:[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    220[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mgenanki referenced in multiple search results (Skylarli wiki, AR GenAI Champions)[K
+[0m[48;2;40;67;43m[39m+    221[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m AnkiConnect's [38;2;163;190;140m`[38;2;163;190;140mimportPackage[38;2;163;190;140m`[38;2;191;97;106m action can import .apkg files[K
+[0m[48;2;40;67;43m[39m+    222[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mCONCERN:[38;2;235;203;139m**[38;2;191;97;106m May reset scheduling data (needs verification from other agents)[K
+[0m[48;2;40;67;43m[39m+    223[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    224[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mOption D: Hybrid (BEST for the use case)[K
+[0m[48;2;40;67;43m[39m+    225[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    226[0m:[39m[48;2;24;38;30m [38;2;192;197;206mCombine:[K
+[0m[48;2;40;67;43m[39m+    227[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mgenanki with deterministic GUIDs[38;2;235;203;139m**[38;2;191;97;106m for initial deck generation[K
+[0m[48;2;40;67;43m[39m+    228[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAnkiConnect [38;2;163;190;140m`[38;2;163;190;140mupdateNoteFields[38;2;163;190;140m`[38;2;235;203;139m**[38;2;191;97;106m for incremental updates[K
+[0m[48;2;40;67;43m[39m+    229[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mFastAPI wrapper[38;2;235;203;139m**[38;2;191;97;106m for queueing and error handling[K
+[0m[48;2;40;67;43m[39m+    230[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mFile locking[38;2;235;203;139m**[38;2;191;97;106m (fcntl pattern from Kiro Memory) for concurrent agent safety[K
+[0m[48;2;40;67;43m[39m+    231[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    232[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    233[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    234[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m6. Media File Handling[K
+[0m[48;2;40;67;43m[39m+    235[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    236[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mKindle Flashcards Export Design[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/KindleEducation/Client/Flashcards/FlashcardsExportHighLevelDesign/[38;2;208;135;112m)[K
+[0m[48;2;40;67;43m[39m+    237[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    238[0m:[39m[48;2;24;38;30m [38;2;192;197;206mPattern for media in flashcards:[K
+[0m[48;2;40;67;43m[39m+    239[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mStore media files separately (S3 in their case; local [38;2;163;190;140m`[38;2;163;190;140mcollection.media/[38;2;163;190;140m`[38;2;191;97;106m for Anki)[K
+[0m[48;2;40;67;43m[39m+    240[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Reference media by filename in card content: [38;2;163;190;140m`[38;2;163;190;140m[sound:filename.mp3][38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    241[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m AnkiConnect provides [38;2;163;190;140m`[38;2;163;190;140mstoreMediaFile[38;2;163;190;140m`[38;2;191;97;106m action for programmatic media upload[K
+[0m[48;2;40;67;43m[39m+    242[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Batch upload pattern: iterate files, call storeMediaFile for each[K
+[0m[48;2;40;67;43m[39m+    243[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    244[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    245[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    246[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m7. Error Handling [38;2;143;161;179m&[38;2;143;161;179m Rollback[K
+[0m[48;2;40;67;43m[39m+    247[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    248[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mSource:[38;2;235;203;139m**[38;2;192;197;206m Temporalis microservice migration risks + Kiro Memory MCP patterns[K
+[0m[48;2;40;67;43m[39m+    249[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    250[0m:[39m[48;2;24;38;30m [38;2;192;197;206mRecommended approach:[K
+[0m[48;2;40;67;43m[39m+    251[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mWrap all operations in file lock[38;2;235;203;139m**[38;2;191;97;106m (prevents concurrent corruption)[K
+[0m[48;2;40;67;43m[39m+    252[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mUse WAL mode[38;2;235;203;139m**[38;2;191;97;106m if directly touching SQLite[K
+[0m[48;2;40;67;43m[39m+    253[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mBackup before bulk operations[38;2;235;203;139m**[38;2;191;97;106m (cp collection.anki2 collection.anki2.bak)[K
+[0m[48;2;40;67;43m[39m+    254[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mIdempotent operations[38;2;235;203;139m**[38;2;191;97;106m — design so re-running produces same result[K
+[0m[48;2;40;67;43m[39m+    255[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mVerify after write[38;2;235;203;139m**[38;2;191;97;106m — query AnkiConnect to confirm note exists/updated[K
+[0m[48;2;40;67;43m[39m+    256[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    257[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    258[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    259[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m8. Notable Internal Anki Usage[K
+[0m[48;2;40;67;43m[39m+    260[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    261[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Wiki Page [38;2;192;197;206m|[38;2;192;197;206m Author [38;2;192;197;206m|[38;2;192;197;206m Use Case [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    262[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m-----------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    263[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mSkylarli/Anki_Build_Decks[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/Skylarli/Anki_Build_Decks/[38;2;208;135;112m)[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m skylarli [38;2;192;197;206m|[38;2;192;197;206m Infrastructure build process flashcards [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    264[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mPkmsToolchain[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/PkmsToolchain/[38;2;208;135;112m)[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m haziq [38;2;192;197;206m|[38;2;192;197;206m AWS certification study with Obsidian→Anki sync [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    265[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mARGenAIChampions[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/ARGenAIChampions/ARAllTeamsAIUseOct2025/[38;2;208;135;112m)[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m cpfschw [38;2;192;197;206m|[38;2;192;197;206m LLM-generated Anki cards from paper reading sessions (TSV export) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    266[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mUsers/rawlsimo[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/Users/rawlsimo/Onboarding/[38;2;208;135;112m)[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m rawlsimo [38;2;192;197;206m|[38;2;192;197;206m Team onboarding flashcards with photos (media handling) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    267[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;208;135;112m[[38;2;208;135;112mUsers/andkai[38;2;208;135;112m][38;2;208;135;112m([38;2;208;135;112mhttps://w.amazon.com/bin/view/Users/andkai/Studying/[38;2;208;135;112m)[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m andkai [38;2;192;197;206m|[38;2;192;197;206m AWS certification prep referencing Anki [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    268[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    269[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    270[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    271[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179m9. Key Takeaways for Implementation[K
+[0m[48;2;40;67;43m[39m+    272[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    273[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAnkiConnect is the proven integration point[38;2;235;203;139m**[38;2;191;97;106m — multiple Amazon engineers use it successfully for programmatic updates[K
+[0m[48;2;40;67;43m[39m+    274[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mDeterministic GUIDs[38;2;235;203;139m**[38;2;191;97;106m are the solution to the delete→import cycle — use content-based hashing[K
+[0m[48;2;40;67;43m[39m+    275[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mFastAPI on localhost[38;2;235;203;139m**[38;2;191;97;106m is the recommended pattern for wrapping AnkiConnect with additional logic[K
+[0m[48;2;40;67;43m[39m+    276[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mFile locking with fcntl[38;2;235;203;139m**[38;2;191;97;106m is the standard pattern for preventing concurrent corruption[K
+[0m[48;2;40;67;43m[39m+    277[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mSQLite WAL mode[38;2;235;203;139m**[38;2;191;97;106m if touching the database directly (read-only recommended)[K
+[0m[48;2;40;67;43m[39m+    278[0m:[39m[48;2;24;38;30m [38;2;191;97;106m6[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMedia files[38;2;235;203;139m**[38;2;191;97;106m go through [38;2;163;190;140m`[38;2;163;190;140mstoreMediaFile[38;2;163;190;140m`[38;2;191;97;106m API, referenced by filename in HTML[K
+[0m[48;2;40;67;43m[39m+    279[0m:[39m[48;2;24;38;30m [38;2;191;97;106m7[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mThe Obsidian_to_Anki plugin[38;2;235;203;139m**[38;2;191;97;106m proves that "update in place" without scheduling loss is achievable via [38;2;163;190;140m`[38;2;163;190;140mupdateNoteFields[38;2;163;190;140m`[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/findings.md[0m
+[38;5;244m - Completed in 2.166s[0m
+[38;5;12m[1m [1.20][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Findings complete\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/8f9158ec/c5-internal/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mecho '{"from":"c5-internal","finding":"COMPLETE: Written comprehensive findings to c5-internal/findings.md. Key conclusions: (1) AnkiConnect proven via Obsidian_to_Anki for update-without-duplicate, (2) FastAPI localhost bridge is recommended pattern, (3) fcntl file locking for concurrency, (4) SQLite WAL mode for direct DB access, (5) Deterministic GUIDs from content hash enable idempotent updates."}' >> /Users/murivirg/work/github/anki/investigation/8f9158ec/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.377s[0m
+[38;5;12m[1m [1.21][0m[0m
+[38;5;244m - Completed in 2.291s[0m
+[38;5;12m[1m [1.22][0m[0m
+[?25l[0m[38;5;141m> [0mResearch complete. Here's a summary of what I found from 

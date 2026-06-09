@@ -1,0 +1,27 @@
+{
+  "job_id": "8f9158ec",
+  "description": "Research how to build a local API service for programmatically managing Anki flashcards. The goal is to eliminate manual delete->import cycles when updating decks.\n\nKey areas to investigate:\n1. AnkiConnect addon - its API capabilities, limitations, how it works (REST API exposed by Anki desktop)\n2. Direct .apkg file manipulation - the SQLite-based format, python libraries (genanki, py-anki, ankipandas)\n3. Anki's built-in sync protocol and internal Python API\n4. Concurrency concerns - file locking when multiple agents write to Anki simultaneously\n5. Architecture options for a local HTTP API that wraps Anki operations:\n   - Option A: Thin wrapper over AnkiConnect (requires Anki desktop running)\n   - Option B: Direct SQLite/collection manipulation (no Anki desktop needed but risky)\n   - Option C: .apkg generation + automated import via AnkiConnect\n   - Option D: Hybrid approach\n6. How to handle deck updates (modify existing cards vs replace entire deck)\n7. Media file handling for audio cards\n8. Python libraries: genanki, py-anki, anki (official), ankipandas - pros/cons of each\n9. Best practices for card identity (note IDs, GUIDs) to enable updates without duplicates\n10. Error handling and rollback strategies",
+  "total_seconds": 730,
+  "phases": {
+    "investigating": "10:56:37",
+    "orchestrating": "11:01:57",
+    "visualizing": "11:06:17",
+    "complete": "11:08:47"
+  },
+  "control_actions": [
+    {
+      "action": "skip_validation",
+      "target": "c5-internal"
+    },
+    {
+      "action": "skip_validation",
+      "target": "c2-kb"
+    },
+    {
+      "action": "finalize",
+      "target": null
+    }
+  ],
+  "findings_count": 39,
+  "has_report": true
+}

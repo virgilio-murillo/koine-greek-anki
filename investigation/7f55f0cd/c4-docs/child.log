@@ -1,0 +1,391 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-prod.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 459 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-agent.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 457 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/kiro-developer.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 455 column 16
+One or more mcp server did not load correctly. See $TMPDIR/kiro-log/kiro-chat.log for more details.
+------
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 0.93s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: This task asks me to investigate "Enhance anki-agent" using AWS documentation only. However, this topic is about Anki flashcard software and a local project structure - it has nothing to do with AWS services. AWS docs won't have relevant information about Anki deck generation, Greek text processing, or local project structures.
+
+I should still do my due diligence - check the local project structure to understand what's there, and note that AWS docs are not relevant to this topic. Let me first check directives, then investigate the local project, and write findings.
+
+Actually, the instructions say "Investigate using AWS DOCUMENTATION ONLY. Use aws-docs MCP tools to search and read official docs." But the topic is about a local Anki project. AWS docs won't have anything about Anki flashcards or Koine Greek study tools. I should still try a search to confirm, then write my findings noting that AWS docs don't cover this topic.
+
+Let me start by setting up the output directory and checking directives.
+[38;5;244m - Completed in 2.304s[0m
+[38;5;12m[1m [1.1][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mmkdir -p /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs && printf '%s|Starting investigation\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mcat /Users/murivirg/work/github/anki/investigation/7f55f0cd/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.956s[0m
+[38;5;12m[1m [1.2][0m[0m
+[38;5;244m - Completed in 2.86s[0m
+[38;5;12m[1m [1.3][0m[0m
+[?25l[0m[38;5;141m> [0mNo directives yet. Let me search AWS docs for anything related to Anki, flashcard generation, or spaced repetition that might be relevant.[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141msearch_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "search_phrase": "Anki flashcard deck generation automation",
+ ⋮    "search_intent": "Finding if AWS has any documentation about Anki flashcard tools or deck generation",
+ ⋮    "limit": 5
+ ⋮  }
+[0mRunning tool [38;5;141msearch_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "search_phrase": "spaced repetition system flashcard format",
+ ⋮    "search_intent": "Looking for AWS documentation about spaced repetition or flashcard formats",
+ ⋮    "limit": 5
+ ⋮  }
+[0m[38;5;244m - Completed in 3.625s[0m
+[38;5;12m[1m [1.4][0m[0m
+[38;5;244m - Completed in 3.280s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|AWS docs searched\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"AWS docs have NO content about Anki flashcards, deck generation, or spaced repetition systems - topic is outside AWS domain"}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.566s[0m
+[38;5;12m[1m [1.6][0m[0m
+[38;5;244m - Completed in 2.785s[0m
+[38;5;12m[1m [1.7][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me search for anything related to Amazon Bedrock agents (since the project uses an "anki-agent" which might be a Bedrock agent or similar AI agent pattern):[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141msearch_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "limit": 5,
+ ⋮    "search_intent": "Finding documentation about building AI agents with Amazon Bedrock, agent prompts, and prompt engineering best practices",
+ ⋮    "search_phrase": "Amazon Bedrock agent prompt engineering best practices"
+ ⋮  }
+[0mRunning tool [38;5;141msearch_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "limit": 5,
+ ⋮    "search_intent": "Finding documentation about Unicode text normalization NFC for multilingual content processing",
+ ⋮    "search_phrase": "Unicode NFC normalization text processing multilingual"
+ ⋮  }
+[0m[38;5;244m - Completed in 3.50s[0m
+[38;5;12m[1m [1.8][0m[0m
+[38;5;244m - Completed in 3.365s[0m
+[38;5;12m[1m [1.9][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading Bedrock prompts\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.37s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[38;5;141m> [0mLet me read the Bedrock prompt engineering guidelines since the project involves an agent prompt:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html",
+ ⋮    "max_length": 8000
+ ⋮  }
+[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompts.html",
+ ⋮    "max_length": 8000
+ ⋮  }
+[0m[38;5;244m - Completed in 2.572s[0m
+[38;5;12m[1m [1.11][0m[0m
+[38;5;244m - Completed in 3.258s[0m
+[38;5;12m[1m [1.12][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"Bedrock prompt engineering docs cover: instruction+context+input components, few-shot examples, RAG for reducing hallucinations, advanced prompt templates with pre-processing/orchestration/post-processing steps"}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.913s[0m
+[38;5;12m[1m [1.13][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me search for CSV/TSV data format handling and file generation patterns in AWS docs:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mRunning tool [38;5;141msearch_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "limit": 5,
+ ⋮    "search_intent": "Finding documentation about generating structured data files like CSV TSV for import into applications",
+ ⋮    "search_phrase": "generate CSV TSV structured data file automation Lambda"
+ ⋮  }
+[0mRunning tool [38;5;141msearch_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "limit": 5,
+ ⋮    "search_intent": "Finding documentation about agent instructions and system prompts for Bedrock agents",
+ ⋮    "search_phrase": "Bedrock agent instructions system prompt configuration"
+ ⋮  }
+[0m[38;5;244m - Completed in 3.338s[0m
+[38;5;12m[1m [1.14][0m[0m
+[38;5;244m - Completed in 3.475s[0m
+[38;5;12m[1m [1.15][0m[0m
+[?25l[0m[?25l[0m[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "max_length": 8000,
+ ⋮    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompts-templates.html"
+ ⋮  }
+[0m[38;5;244m - Completed in 3.302s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading prompt templates\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"Bedrock advanced prompt templates show pattern: $instruction$ placeholder + <guidelines> section with critical rules + structured XML tags for output formatting - directly applicable to anki-agent prompt design"}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.815s[0m
+[38;5;12m[1m [1.17][0m[0m
+[38;5;244m - Completed in 1.881s[0m
+[38;5;12m[1m [1.18][0m[0m
+[?25l[0m[38;5;141m> [0mLet me check directives and then search for more relevant prompt engineering patterns:[0m[0m
+[?25l[0m[0m
+[?25l[0m[0mI will run the following command: [38;5;141mcat /Users/murivirg/work/github/anki/investigation/7f55f0cd/directives.jsonl 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+Running tool [38;5;141msearch_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "limit": 5,
+ ⋮    "search_intent": "Finding best practices for writing effective agent instructions including few-shot examples and critical rules",
+ ⋮    "search_phrase": "Bedrock agent instruction writing best practices few-shot examples"
+ ⋮  }
+[0m[38;5;244m - Completed in 1.713s[0m
+[38;5;12m[1m [1.19][0m[0m
+[38;5;244m - Completed in 4.137s[0m
+[38;5;12m[1m [1.20][0m[0m
+[?25l[0m[38;5;141m> [0mLet me read the prompt engineering guidelines further for few-shot and prompt structure patterns:[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "max_length": 8000,
+ ⋮    "start_index": 8000,
+ ⋮    "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-engineering-guidelines.html"
+ ⋮  }
+[0m[38;5;244m - Completed in 2.139s[0m
+[38;5;12m[1m [1.21][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Prompt patterns found\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.183s[0m
+[38;5;12m[1m [1.22][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me search for Amazon Nova prompting best practices since that's the latest model guidance:[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "max_length": 8000,
+ ⋮    "url": "https://docs.aws.amazon.com/nova/latest/userguide/prompting.html"
+ ⋮  }
+[0m[38;5;244m - Completed in 2.336s[0m
+[38;5;12m[1m [1.23][0m[0m
+[?25l[0m[?25l[0m[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "max_length": 10000,
+ ⋮    "url": "https://docs.aws.amazon.com/nova/latest/userguide/prompting-general-tips.html"
+ ⋮  }
+[0m[38;5;244m - Completed in 2.338s[0m
+[38;5;12m[1m [1.24][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"Nova prompting best practices: 4 dimensions (Task, Role, Response Style, Instructions), task decomposition, instruction breakdown into atomic steps, avoid assumptions, structure with markdown/bullets, escaped Unicode warning relevant to Greek text"}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mprintf '%s|Nova tips extracted\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 3.46s[0m
+[38;5;12m[1m [1.25][0m[0m
+[38;5;244m - Completed in 2.469s[0m
+[38;5;12m[1m [1.26][0m[0m
+[?25l[0m[38;5;141m> [0mNow let me read the text understanding prompting best practices for more detailed guidance:[0m[0m
+[?25l[0m[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "max_length": 10000,
+ ⋮    "url": "https://docs.aws.amazon.com/nova/latest/userguide/prompting-text-understanding.html"
+ ⋮  }
+[0m[38;5;244m - Completed in 2.837s[0m
+[38;5;12m[1m [1.27][0m[0m
+[?25l[0m[?25l[?25l[0m[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "max_length": 8000,
+ ⋮    "url": "https://docs.aws.amazon.com/nova/latest/userguide/prompting-system-role.html"
+ ⋮  }
+[0mRunning tool [38;5;141mread_documentation[0m with the param[38;5;244m (from mcp server: aws-docs)[0m
+ ⋮  {
+ ⋮    "max_length": 8000,
+ ⋮    "url": "https://docs.aws.amazon.com/nova/latest/userguide/prompting-structured-output.html"
+ ⋮  }
+[0m[38;5;244m - Completed in 2.280s[0m
+[38;5;12m[1m [1.28][0m[0m
+[38;5;244m - Completed in 2.63s[0m
+[38;5;12m[1m [1.29][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"System prompt template pattern from AWS Nova docs: persona + model_instructions (bulleted steps) + response_schema (output format) + guardrails (DO NOT rules). System prompt supersedes user prompts across all turns."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mprintf '%s|Writing findings\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.382s[0m
+[38;5;12m[1m [1.30][0m[0m
+[38;5;244m - Completed in 1.713s[0m
+[38;5;12m[1m [1.31][0m[0m
+[?25l[0m[38;5;141m> [0mNow I have enough information from AWS docs. Let me write the findings file:[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/findings.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mC4-Docs Findings: AWS Documentation Investigation for anki-agent Enhancement[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSummary[K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAWS documentation has [38;2;235;203;139m**[38;2;235;203;139mno direct content[38;2;235;203;139m**[38;2;192;197;206m about Anki flashcards, deck generation, spaced repetition systems, or Koine Greek language tools. However, AWS docs provide highly relevant [38;2;235;203;139m**[38;2;235;203;139mprompt engineering best practices[38;2;235;203;139m**[38;2;192;197;206m that directly apply to enhancing the anki-agent prompt.[K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mQ1-Q4: Project-Specific Questions (Not in AWS Docs)[K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAWS documentation does not cover:[K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mAnki deck formats (.apkg, TSV, CSV for import)[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Spaced repetition algorithms[K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Koine Greek text processing[K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Bible study tools or lexicon data[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m The [38;2;163;190;140m`[38;2;163;190;140mgenanki[38;2;163;190;140m`[38;2;191;97;106m Python library or similar tools[K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [38;2;235;203;139m**[38;2;235;203;139mThese questions must be answered by other investigation agents examining the local project.[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mQ5: What Should the Enhanced Prompt Contain?[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;192;197;206mBased on AWS Bedrock and Amazon Nova prompt engineering documentation, the following patterns are directly applicable:[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mRecommended Prompt Structure (from AWS Nova System Role docs)[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSource: [38;2;192;197;206mhttps://docs.aws.amazon.com[38;2;192;197;206m/nova/latest/userguide/prompting-system-role[38;2;192;197;206m.[38;2;192;197;206mhtml[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [38;2;192;197;206mAWS[38;2;192;197;206m recommends a system prompt template with these sections:[K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;192;197;206m1. persona       — "You are {{Persona}}"[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;192;197;206m2. model_instructions — "## Model Instructions\n{{ Bulleted list }}"[K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;192;197;206m3. response_schema    — "## Response Schema\n{{ Output format }}"[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;192;197;206m4. guardrails         — "## Guardrails\n{{ DO NOT rules }}"[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mKey Principles from AWS Docs[K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFrom Amazon Nova Prompting Best Practices[K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSource: [38;2;192;197;206mhttps://docs.aws.amazon.com[38;2;192;197;206m/nova/latest/userguide/prompting[38;2;192;197;206m.[38;2;192;197;206mhtml[K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [38;2;192;197;206mDefine[38;2;192;197;206m the use case on [38;2;235;203;139m**[38;2;235;203;139m4 dimensions[38;2;235;203;139m**[38;2;192;197;206m:[K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mTask[38;2;235;203;139m**[38;2;191;97;106m — What the model should accomplish[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mRole[38;2;235;203;139m**[38;2;191;97;106m — What persona/identity to assume[K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mResponse Style[38;2;235;203;139m**[38;2;191;97;106m — Output structure/format for the consumer[K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mInstructions[38;2;235;203;139m**[38;2;191;97;106m — Step-by-step rules to follow[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFrom General Prompting Tips[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSource: [38;2;192;197;206mhttps://docs.aws.amazon.com[38;2;192;197;206m/nova/latest/userguide/prompting-general-tips[38;2;192;197;206m.[38;2;192;197;206mhtml[K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [38;2;192;197;206m-[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mTask decomposition[38;2;235;203;139m**[38;2;192;197;206m: Break complex tasks into discrete steps[K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mInstruction breakdown[38;2;235;203;139m**[38;2;191;97;106m: Use atomic, clear instructions[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAvoid assumptions[38;2;235;203;139m**[38;2;191;97;106m: Provide direct, unambiguous guidance[K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mEscaped Unicode warning[38;2;235;203;139m**[38;2;191;97;106m: Models can loop on escaped Unicode — instruct to use native characters (CRITICAL for Greek text: "Do NOT use escaped Unicode - use native characters")[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mStructure with markdown/bullets[38;2;235;203;139m**[38;2;191;97;106m: For information-dense prompts, use clear formatting[K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFrom Bedrock Advanced Prompt Templates[K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSource: [38;2;192;197;206mhttps://docs.aws.amazon.com[38;2;192;197;206m/bedrock/latest/userguide/advanced-prompts-templates[38;2;192;197;206m.[38;2;192;197;206mhtml[K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [38;2;192;197;206m-[38;2;192;197;206m Use [38;2;163;190;140m`[38;2;163;190;140m<guidelines>[38;2;163;190;140m`[38;2;192;197;206m XML tags to wrap critical rules[K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mInclude thinking/reasoning steps before actions[K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Use [38;2;163;190;140m`[38;2;163;190;140m<example>[38;2;163;190;140m`[38;2;191;97;106m tags for few-shot demonstrations[K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m System instructions supersede user instructions[K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFrom Prompt Engineering Concepts[K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSource: [38;2;192;197;206mhttps://docs.aws.amazon.com[38;2;192;197;206m/bedrock/latest/userguide/prompt-engineering-guidelines[38;2;192;197;206m.[38;2;192;197;206mhtml[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [38;2;192;197;206m-[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139mFew-shot prompting[38;2;235;203;139m**[38;2;192;197;206m: Provide labeled input/output examples to calibrate behavior[K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mPrompt template pattern[38;2;235;203;139m**[38;2;191;97;106m: instruction + context + input + examples[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mRAG for reducing hallucinations[38;2;235;203;139m**[38;2;191;97;106m: Ground responses in provided data[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [38;2;143;161;179m####[38;2;192;197;206m [38;2;143;161;179mFrom Structured Output Guidance[K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [38;2;192;197;206mSource: [38;2;192;197;206mhttps://docs.aws.amazon.com[38;2;192;197;206m/nova/latest/userguide/prompting-structured-output[38;2;192;197;206m.[38;2;192;197;206mhtml[K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [38;2;192;197;206m-[38;2;192;197;206m Define explicit [38;2;235;203;139m**[38;2;235;203;139mOutput Schema[38;2;235;203;139m**[38;2;192;197;206m for consistent format[K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mUse [38;2;163;190;140m`[38;2;163;190;140mtemperature=0[38;2;163;190;140m`[38;2;191;97;106m for deterministic structured output[K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Prefill assistant response to enforce format[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mRecommended Enhanced Prompt Architecture for anki-agent[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [38;2;192;197;206mBased on AWS documentation patterns, the enhanced ~1159 char prompt should be expanded to include:[K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m1. Persona Section[K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [38;2;192;197;206mYou are an Anki deck generation specialist for Koine Greek biblical vocabulary.[K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m2. Critical Rules / Guardrails (highest ROI per shared learnings)[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Critical Rules[K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- ALL Greek text MUST use NFC Unicode normalization[K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- DO NOT use escaped Unicode sequences — use native Greek characters[K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- Verify all lexical data against source files before output[K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;192;197;206m- Output format must be valid TSV/CSV importable by Anki[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m3. Model Instructions (atomic steps)[K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Instructions[K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;192;197;206m1. Read source vocabulary data from the specified path[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;192;197;206m2. Validate Greek text encoding (NFC normalization)[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;192;197;206m3. Generate cards with: front (Greek), back (English gloss + parsing)[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [38;2;192;197;206m4. Apply deck-specific formatting rules[K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;192;197;206m5. Output in the required import format[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m4. Response Schema[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [38;2;192;197;206m## Response Schema[K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [38;2;192;197;206mOutput as tab-separated values:[K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;192;197;206mgreek_word\tgloss\tparsing\ttags[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m5. Few-Shot Examples (per AWS recommendation)[K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [38;2;192;197;206m<example>[K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;192;197;206mInput: Generate a card for λόγος[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [38;2;192;197;206mOutput: λόγος\tword, message\tnoun, masc, nom, sg\tkoine::nouns[K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;192;197;206m</example>[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;192;197;206m```[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mLimitations of This Investigation[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mAWS docs are not authoritative[38;2;235;203;139m**[38;2;191;97;106m for Anki-specific formats, genanki library usage, or Koine Greek linguistic data[K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m The prompt engineering patterns are [38;2;235;203;139m**[38;2;235;203;139mgeneral best practices[38;2;235;203;139m**[38;2;191;97;106m — the specific content (vocabulary lists, parsing rules, deck structure) must come from examining the actual project files[K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m No AWS documentation exists about the [38;2;163;190;140m`[38;2;163;190;140mbible-tools[38;2;163;190;140m`[38;2;191;97;106m project or [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/data/[38;2;163;190;140m`[38;2;191;97;106m referenced in the investigation questions[K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mConfidence Assessment[K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Finding [38;2;192;197;206m|[38;2;192;197;206m Confidence [38;2;192;197;206m|[38;2;192;197;206m Source [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m-----------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Prompt structure pattern (persona + instructions + schema + guardrails) [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m AWS Nova docs, confirmed pattern [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Few-shot examples improve accuracy [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m AWS Bedrock prompt engineering docs [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Unicode/escaped chars cause model loops [38;2;192;197;206m|[38;2;192;197;206m HIGH [38;2;192;197;206m|[38;2;192;197;206m AWS Nova general tips [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Critical Rules section = highest ROI [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Shared learnings (seen: 7) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m NFC normalization requirement [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Shared learnings (seen: 3) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Specific Anki format details [38;2;192;197;206m|[38;2;192;197;206m NOT FOUND in AWS docs [38;2;192;197;206m|[38;2;192;197;206m Must come from project inspection [38;2;192;197;206m|[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/findings.md[0m
+[38;5;244m - Completed in 1.682s[0m
+[38;5;12m[1m [1.32][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Findings written\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141mecho '{"from":"c4-docs","finding":"FINAL: AWS docs provide prompt architecture pattern (persona+instructions+schema+guardrails) and Unicode warning for Greek text, but have NO Anki-specific content. Other agents must cover project structure and formats."}' >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/shared_findings.jsonl[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.725s[0m
+[38;5;12m[1m [1.33][0m[0m
+[38;5;244m - Completed in 1.744s[0m
+[38;5;12m[1m [1.34][0m[0m
+[?25l[0m[38;5;141m> [0mInvestigation complete. Here's what I found:[0m[0m
+[0m[0m
+[1mAWS docs have no Anki-specific content[22m, but provided highly relevant prompt engineering patterns from Amazon Bedrock and Nova documentation:[0m[0m
+[0m[0m
+1. [1mSystem prompt template[22m: persona → model_instructions → response_schema → guardrails[0m[0m
+2. [1m4 dimensions[22m: Task, Role, Response Style, Instructions[0m[0m
+3. [1mCritical for Greek text[22m: AWS Nova docs explicitly warn that escaped Unicode causes model loops — must instruct to use native characters (directly relevant to NFC normalization requirement)[0m[0m
+4. [1mFew-shot examples[22m with [38;5;10m<example>[0m tags improve accuracy[0m[0m
+5. [1mCritical Rules/Guardrails section[22m should use explicit DO/DO NOT formatting[0m[0m
+[0m[0m
+The findings are written to [38;5;10m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c4-docs/findings.md[0m. Questions 1-4 (project structure, deck tools, bible-tools relationship, formats) are outside AWS documentation scope and must be answered by agents examining the local ]9;Response completeproject.[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 3.72 • Time: 3m 46s
+
+[0m[1G[0m[0m[?25h

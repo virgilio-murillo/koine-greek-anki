@@ -1,0 +1,13 @@
+21:47:24|Starting validation
+21:47:44|Reading findings file
+21:48:02|Verifying directory structure
+21:48:22|Checking source files
+21:49:05|Checking TTS details
+21:49:50|Checking NFC and guidelines
+21:50:28|Checking lesson structure
+21:50:56|Checking data formats
+21:51:24|Checking pipeline scripts
+21:51:48|Verifying file sizes
+21:53:04|Checking pipeline details
+21:53:51|Writing validated output
+21:55:06|Validation complete

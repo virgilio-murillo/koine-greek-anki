@@ -1,0 +1,12 @@
+21:47:54|Starting validation
+21:48:12|Reading findings file
+21:48:23|Checking dir structure
+21:48:40|Verifying file counts
+21:49:05|Checking TTS details
+21:49:53|Checking pipeline claims
+21:50:51|Checking data formats
+21:51:35|Checking KB lessons
+21:52:29|Verifying vocab targets
+21:53:27|Checking card HTML
+21:53:51|Writing validated file
+21:55:31|Validation complete

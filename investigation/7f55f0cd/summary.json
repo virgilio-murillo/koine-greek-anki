@@ -1,0 +1,20 @@
+{
+  "job_id": "7f55f0cd",
+  "description": "## Investigation: Enhance anki-agent\n\n### Project Facts\n- Path: ~/work/github/anki/\n- Structure: anki-main/, koine-anki/, koine-pimsleur/\n- Current agent prompt: ~1159 chars\n\n### Questions to Answer\n1. What's in each subdirectory?\n2. What deck generation tools exist?\n3. What's the relationship to bible-tools (koine-anki/data/ is referenced)?\n4. What formats are used?\n5. What should the enhanced prompt contain?\n\n### Shared Learnings\n- Critical Rules section has highest ROI [seen: 7]\n- Verify factual claims against actual source [seen: 6]\n- Greek text must use NFC normalization [seen: 3]",
+  "total_seconds": 1022,
+  "phases": {
+    "investigating": "21:42:14",
+    "orchestrating": "21:52:29",
+    "visualizing": "21:52:39",
+    "complete": "21:59:15"
+  },
+  "control_actions": [
+    {
+      "action": "finalize",
+      "target": null
+    }
+  ],
+  "findings_count": 14,
+  "has_report": true,
+  "has_pdf": true
+}

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Report</title>
+<style>
+body { font-family: -apple-system, "Segoe UI", Helvetica Neue, sans-serif; font-size: 11pt; line-height: 1.6; color: #1a1a1a; max-width: 960px; margin: 40px auto; padding: 0 20px; background: #fff; }
+h1 { color: #232f3e; font-size: 22pt; border-bottom: 3px solid #ff9900; padding-bottom: 8px; }
+h2 { color: #0073bb; border-bottom: 2px solid #0073bb; padding-bottom: 4px; font-size: 16pt; margin-top: 2em; }
+h3 { color: #232f3e; font-size: 13pt; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 10pt; }
+th { background-color: #232f3e; color: white; padding: 8px; text-align: left; }
+td { border: 1px solid #ddd; padding: 6px 8px; }
+tr:nth-child(even) { background-color: #f8f8f8; }
+code { background: #f0f0f0; padding: 2px 5px; border-radius: 3px; font-size: 10pt; color: #c7254e; }
+pre { background: #1e1e2e; padding: 16px; border-radius: 8px; font-size: 9.5pt; white-space: pre-wrap; word-break: break-word; overflow-x: auto; }
+pre code { background: none; color: #cdd6f4; padding: 0; font-size: inherit; }
+blockquote { border-left: 4px solid #0073bb; margin: 12px 0; padding: 8px 16px; background: #f0f7fc; }
+img { max-width: 100%; height: auto; display: block; margin: 12px auto; }
+.mermaid { background: #fff; padding: 16px; border-radius: 8px; border: 1px solid #e0e0e0; margin: 16px 0; text-align: center; }
+.code-wrapper { position: relative; }
+.copy-btn { position: absolute; top: 8px; right: 8px; background: #3498db; color: #fff; border: none; border-radius: 4px; padding: 4px 10px; font-size: 8pt; cursor: pointer; opacity: 0.7; transition: opacity 0.2s; }
+.copy-btn:hover { opacity: 1; }
+.copy-btn.copied { background: #27ae60; }
+</style>
+</head>
+<body>
+<h1 id="local-api-service-for-programmatic-anki-management">Local API
+Service for Programmatic Anki Management</h1>
+<h3 id="visual-research-report-generated-2026-06-05">Visual Research
+Report — Generated 2026-06-05</h3>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p>The delete→import cycle plaguing this project has <strong>one root
+cause</strong>: all 9 deck generators create <code>genanki.Note()</code>
+objects without a custom GUID, so any field change produces a new
+hash-based GUID and Anki treats it as a brand-new card. The fix is an
+8-line <code>StableNote</code> class that ties each card’s identity to a
+stable key (deck + verb + form index) rather than content. With stable
+GUIDs, <code>importPackage</code> updates cards in-place, preserving
+review history and scheduling — no delete cycle needed. The recommended
+architecture is a thin <strong>FastAPI wrapper (port 9000) over
+AnkiConnect (port 8765)</strong>, which serializes all writes through
+Anki’s Qt thread, eliminating concurrency hazards. Direct SQLite access
+while Anki is running must never be used.</p>
+<hr />
+<h2 id="architecture-overview">Architecture Overview</h2>
+<div class="mermaid">
+graph TD
+    subgraph Agents["LLM Agents / CI Scripts"]
+        A1[koine-anki agents]
+        A2[koine-pimsleur agents]
+        A3[other generators]
+    end
+
+    subgraph API["Local Anki API :9000 (FastAPI)"]
+        R1["POST /deck/rebuild"]
+        R2["PUT /note/fields"]
+        R3["POST /media"]
+        R4["GET /notes?q=..."]
+        R5["GET /health"]
+    end
+
+    subgraph AC["AnkiConnect :8765"]
+        C1["importPackage"]
+        C2["updateNoteFields"]
+        C3["storeMediaFile"]
+        C4["findNotes / notesInfo"]
+        C5["multi (batch)"]
+    end
+
+    subgraph Anki["Anki Desktop"]
+        DB[("collection.anki2<br/>SQLite")]
+    end
+
+    A1 & A2 & A3 -->|HTTP JSON| R1 & R2 & R3 & R4
+    R1 --> C1
+    R2 --> C2
+    R3 --> C3
+    R4 --> C4
+    C1 & C2 & C3 & C4 & C5 -->|Qt main thread serialized| DB
+    R5 -->|version check| AC
+</div>
+<blockquote>
+<p><strong>Key invariant:</strong> All writes to
+<code>collection.anki2</code> must flow through AnkiConnect. It
+serializes every request through Anki’s Qt main thread, preventing
+concurrent corruption. Never write directly to the SQLite file while
+Anki is running.</p>
+</blockquote>
+<hr />
+<h2 id="root-cause-analysis">Root Cause Analysis</h2>
+<h3 id="the-guid-problem">The GUID Problem</h3>
+<p>Every deck generator in the project creates notes like this:</p>
+<pre class="python"><code># BROKEN — in all 9 generator files
+note = genanki.Note(model=model, fields=[front, back])</code></pre>
+<p>genanki’s default GUID is computed as:</p>
+<pre class="python"><code># genanki internals
+guid = guid_for(model.name, *fields)   # hash of model name + ALL field content</code></pre>
+<p>When any field changes (typo fix, HTML update, content improvement),
+the hash changes → new GUID → Anki sees a card it’s never seen →
+<strong>new duplicate card created</strong>. Old card remains. This is
+the delete cycle.</p>
+<h3 id="affected-files">Affected Files</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>File</th>
+<th>Line</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>terminaciones/gen_all_decks.py</code></td>
+<td>460</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>terminaciones/gen_practice_decks.py</code></td>
+<td>66</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>terminaciones/gen_deck_presente.py</code></td>
+<td>91</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>terminaciones/gen_deck_vol3.py</code></td>
+<td>32</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>compounds/generate_deck.py</code></td>
+<td>166</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>koine-pimsleur/src/generate_decks.py</code></td>
+<td>61</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>anki-main/languages/src/generate_deck.py</code></td>
+<td>108</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>anki-main/languages/src/generate_decks.py</code></td>
+<td>61</td>
+<td>❌ No custom GUID</td>
+</tr>
+<tr>
+<td><code>anki-main/languages/kiro-test/gen_deck_vol3.py</code></td>
+<td>32</td>
+<td>❌ No custom GUID</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="the-fix-stablenote">The Fix: StableNote</h2>
+<p>Create <code>koine-anki/shared/stable_note.py</code>:</p>
+<pre class="python"><code>import genanki
+
+class StableNote(genanki.Note):
+    &quot;&quot;&quot;Note whose GUID is derived from a stable identity key, not field content.&quot;&quot;&quot;
+    def __init__(self, *args, identity_key: str, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._identity_key = identity_key
+
+    @property
+    def guid(self):
+        return genanki.guid_for(self._identity_key)</code></pre>
+<p>Replace every <code>genanki.Note(...)</code> call:</p>
+<pre class="python"><code>from shared.stable_note import StableNote
+
+# Before:
+deck.add_note(genanki.Note(model=model, fields=[front, back]))
+
+# After — identity_key encodes deck + card position, NEVER content:
+identity = f&quot;terminaciones:{deck_id}:{verb_key}:{form_idx}&quot;
+deck.add_note(StableNote(model=model, fields=[front, back], identity_key=identity))</code></pre>
+<h3 id="identity-key-strategy-by-project">Identity Key Strategy by
+Project</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Project</th>
+<th>Recommended <code>identity_key</code> format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>terminaciones/</code></td>
+<td><code>terminaciones:{deck_id}:{verb_key}:{form_idx_in_tense}</code></td>
+</tr>
+<tr>
+<td><code>compounds/</code></td>
+<td><code>compounds:{deck_id}:{lemma}</code></td>
+</tr>
+<tr>
+<td><code>koine-pimsleur/</code></td>
+<td><code>pimsleur:{deck_id}:{lesson_num}:{card_idx}</code></td>
+</tr>
+<tr>
+<td><code>languages/</code></td>
+<td><code>languages:{deck_id}:{word_key}:{card_type}</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>One-time migration note:</strong> The first deployment after
+this change creates new cards (old hash-based GUIDs → new stable GUIDs).
+Delete the old duplicates once. Every subsequent deployment updates
+in-place.</p>
+</blockquote>
+<hr />
+<h2 id="troubleshooting-decision-tree">Troubleshooting Decision
+Tree</h2>
+<div class="mermaid">
+flowchart TD
+    START(["Card update issue?"])
+    Q1{"Duplicate cards<br/>after import?"}
+    Q2{"Anki Desktop<br/>running?"}
+    Q3{"Using custom<br/>GUID in StableNote?"}
+    Q4{"AnkiConnect<br/>reachable at :8765?"}
+    Q5{"updateNoteFields<br/>silently fails?"}
+    Q6{"Media not<br/>showing up?"}
+
+    FIX1["Apply StableNote fix<br/>to all 9 generator files"]
+    FIX2["Start Anki Desktop<br/>and enable AnkiConnect addon"]
+    FIX3["Check identity_key is<br/>stable (not content-derived)"]
+    FIX4["Close Anki card browser<br/>before batch updates"]
+    FIX5["Use absolute path<br/>in storeMediaFile"]
+    FIX6["Run deploy.py twice —<br/>card count must not increase"]
+
+    OK(["Working correctly"])
+
+    START --> Q1
+    Q1 -->|Yes| Q3
+    Q3 -->|No| FIX1
+    Q3 -->|Yes| FIX3
+    FIX1 --> FIX6
+    FIX3 --> FIX6
+    FIX6 --> OK
+
+    Q1 -->|No| Q2
+    Q2 -->|No| FIX2
+    Q2 -->|Yes| Q4
+    Q4 -->|No| FIX2
+    Q4 -->|Yes| Q5
+    Q5 -->|Yes| FIX4
+    Q5 -->|No| Q6
+    Q6 -->|Yes| FIX5
+    Q6 -->|No| OK
+</div>
+<hr />
+<h2 id="ankiconnect-api-reference">AnkiConnect API Reference</h2>
+<p>All calls use: <code>POST http://localhost:8765</code> with body
+<code>{"action": "...", "version": 6, "params": {...}}</code></p>
+<h3 id="core-actions">Core Actions</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Action</th>
+<th>Purpose</th>
+<th>Key Params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>version</code></td>
+<td>Health check</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>findNotes</code></td>
+<td>Search by Anki query</td>
+<td><code>query: str</code></td>
+</tr>
+<tr>
+<td><code>notesInfo</code></td>
+<td>Get note details</td>
+<td><code>notes: [id, ...]</code></td>
+</tr>
+<tr>
+<td><code>addNotes</code></td>
+<td>Bulk insert</td>
+<td><code>notes: [{deckName, modelName, fields, tags}]</code></td>
+</tr>
+<tr>
+<td><code>updateNoteFields</code></td>
+<td>Patch a note in-place</td>
+<td><code>note: {id, fields: dict}</code></td>
+</tr>
+<tr>
+<td><code>deleteNotes</code></td>
+<td>Delete by ID</td>
+<td><code>notes: [id, ...]</code></td>
+</tr>
+<tr>
+<td><code>importPackage</code></td>
+<td>Import .apkg file</td>
+<td><code>path: str</code> (absolute)</td>
+</tr>
+<tr>
+<td><code>storeMediaFile</code></td>
+<td>Upload audio/media</td>
+<td><code>filename, data (b64)</code> or <code>path</code></td>
+</tr>
+<tr>
+<td><code>sync</code></td>
+<td>Trigger AnkiWeb sync</td>
+<td>—</td>
+</tr>
+<tr>
+<td><code>multi</code></td>
+<td>Batch multiple actions</td>
+<td><code>actions: [{action, params}, ...]</code></td>
+</tr>
+<tr>
+<td><code>exportPackage</code></td>
+<td>Export deck as .apkg</td>
+<td><code>deck, path, includeSched</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="known-bugs-and-workarounds">Known Bugs and Workarounds</h3>
+<ul>
+<li><strong><code>updateNoteFields</code> silent failure:</strong> Fails
+if the note is open in the Anki card browser. Close the browser before
+batch updates, or verify with <code>findNotes</code> after update.</li>
+<li><strong><code>importPackage</code> path:</strong> Accepts any
+absolute path — NOT restricted to <code>collection.media</code>. The
+deprecated <code>guiImportFile</code> had that restriction;
+<code>importPackage</code> does not.</li>
+<li><strong>Scheduling on import:</strong> For cards already in the
+collection, scheduling (intervals, ease, due dates) is <strong>always
+preserved</strong> on <code>importPackage</code>. The “import learning
+progress” checkbox only affects new notes.</li>
+</ul>
+<hr />
+<h2 id="architecture-options-comparison">Architecture Options
+Comparison</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr>
+<th>Option</th>
+<th>Requires Anki</th>
+<th>Risk</th>
+<th>Delete Cycle?</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A: Thin FastAPI wrapper over AnkiConnect</strong></td>
+<td>✅ Yes</td>
+<td>Low</td>
+<td>No</td>
+<td>✅ Use for automation layer</td>
+</tr>
+<tr>
+<td><strong>B: Direct SQLite access</strong></td>
+<td>❌ No</td>
+<td><strong>SQLITE_BUSY crash</strong></td>
+<td>N/A</td>
+<td>❌ Never use</td>
+</tr>
+<tr>
+<td><strong>C: apkg + importPackage (current)</strong></td>
+<td>✅ Yes</td>
+<td>Low</td>
+<td><strong>Yes (without GUID fix)</strong></td>
+<td>✅ After GUID fix</td>
+</tr>
+<tr>
+<td><strong>D: Hybrid (Recommended)</strong></td>
+<td>✅ Yes</td>
+<td>Low</td>
+<td><strong>No (after fix)</strong></td>
+<td>✅✅ Best overall</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Option D</strong> = genanki stable GUIDs for bulk deck
+regeneration + <code>updateNoteFields</code> for individual card patches
++ <code>storeMediaFile</code> for audio, all behind a FastAPI service at
+port 9000.</p>
+<hr />
+<h2 id="fastapi-local-http-api">FastAPI Local HTTP API</h2>
+<pre class="python"><code># anki_api.py — start with: uvicorn anki_api:app --host 127.0.0.1 --port 9000
+import json, urllib.request
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+
+ANKI = &quot;http://localhost:8765&quot;
+app = FastAPI(title=&quot;Anki Local API&quot;)
+
+def anki(action: str, **params):
+    body = json.dumps({&quot;action&quot;: action, &quot;version&quot;: 6, &quot;params&quot;: params}).encode()
+    try:
+        r = urllib.request.urlopen(urllib.request.Request(ANKI, body), timeout=30)
+        res = json.loads(r.read())
+    except Exception as e:
+        raise HTTPException(502, f&quot;AnkiConnect unreachable: {e}&quot;)
+    if res.get(&quot;error&quot;):
+        raise HTTPException(400, res[&quot;error&quot;])
+    return res[&quot;result&quot;]
+
+@app.get(&quot;/health&quot;)
+def health():
+    return {&quot;ankiconnect_version&quot;: anki(&quot;version&quot;), &quot;status&quot;: &quot;ok&quot;}
+
+@app.post(&quot;/deck/rebuild&quot;)
+def rebuild_deck(deck: str):
+    import subprocess, sys
+    r = subprocess.run([sys.executable, f&quot;{deck}/deploy.py&quot;], capture_output=True, text=True)
+    if r.returncode != 0:
+        raise HTTPException(500, r.stderr)
+    return {&quot;status&quot;: &quot;ok&quot;, &quot;output&quot;: r.stdout}
+
+class FieldUpdate(BaseModel):
+    note_id: int
+    fields: dict[str, str]
+
+@app.put(&quot;/note/fields&quot;)
+def update_note(body: FieldUpdate):
+    anki(&quot;updateNoteFields&quot;, note={&quot;id&quot;: body.note_id, &quot;fields&quot;: body.fields})
+    return {&quot;updated&quot;: body.note_id}
+
+@app.get(&quot;/notes&quot;)
+def find_notes(q: str):
+    ids = anki(&quot;findNotes&quot;, query=q)
+    return anki(&quot;notesInfo&quot;, notes=ids) if ids else []
+
+class MediaFile(BaseModel):
+    filename: str
+    data_b64: str
+
+@app.post(&quot;/media&quot;)
+def store_media(body: MediaFile):
+    anki(&quot;storeMediaFile&quot;, filename=body.filename, data=body.data_b64)
+    return {&quot;stored&quot;: body.filename}</code></pre>
+<hr />
+<h2 id="deploy-flow-full-sequence">Deploy Flow: Full Sequence</h2>
+<div class="mermaid">
+sequenceDiagram
+    participant Agent as LLM Agent
+    participant API as FastAPI :9000
+    participant AC as AnkiConnect :8765
+    participant Anki as Anki Desktop
+    participant FS as Filesystem
+
+    Note over Agent,FS: Deck rebuild flow (bulk update)
+
+    Agent->>API: POST /deck/rebuild?deck=terminaciones
+    API->>FS: subprocess: python terminaciones/deploy.py
+    FS->>FS: genanki StableNote generates .apkg<br/>GUIDs = guid_for(deck_id:verb:form)
+    FS-->>API: output.apkg written to /tmp/
+
+    API->>AC: importPackage {path: "/tmp/output.apkg"}
+    AC->>Anki: Qt main thread: import
+    Anki->>Anki: Match notes by GUID
+    Note over Anki: GUID exists AND mod newer?<br/>→ update fields, preserve scheduling<br/>GUID new? → add card
+    Anki-->>AC: {result: null, error: null}
+    AC-->>API: success
+    API-->>Agent: {status: "ok"}
+
+    Note over Agent,FS: Individual card patch flow
+
+    Agent->>API: PUT /note/fields {note_id: 123, fields: {Front: "new"}}
+    API->>AC: updateNoteFields {note: {id:123, fields:{Front:"new"}}}
+    AC->>Anki: Qt main thread: update note 123
+    Anki-->>AC: success
+    AC-->>API: {result: null, error: null}
+    API-->>Agent: {updated: 123}
+
+    Note over Agent,FS: Media upload flow
+
+    Agent->>API: POST /media {filename: "audio.mp3", data_b64: "..."}
+    API->>AC: storeMediaFile {filename: "audio.mp3", data: "..."}
+    AC->>Anki: write to collection.media/
+    Anki-->>AC: success
+    AC-->>API: {result: "audio.mp3"}
+    API-->>Agent: {stored: "audio.mp3"}
+</div>
+<hr />
+<h2 id="media-file-handling">Media File Handling</h2>
+<h3 id="genanki-approach-for-.apkg-generation">genanki approach (for
+.apkg generation)</h3>
+<pre class="python"><code>pkg = genanki.Package(deck)
+pkg.media_files = [&quot;/abs/path/to/audio_word1.mp3&quot;]
+pkg.write_to_file(&quot;output.apkg&quot;)
+# In note field: [sound:audio_word1.mp3]</code></pre>
+<h3 id="ankiconnect-approach-live-media-injection">AnkiConnect approach
+(live media injection)</h3>
+<pre class="python"><code>import base64
+from pathlib import Path
+
+# From local path:
+anki_request(&quot;storeMediaFile&quot;, filename=&quot;greek_word.mp3&quot;, path=&quot;/abs/path/to/file.mp3&quot;)
+
+# From base64 (for programmatically generated audio):
+data = base64.b64encode(Path(&quot;greek_word.mp3&quot;).read_bytes()).decode()
+anki_request(&quot;storeMediaFile&quot;, filename=&quot;greek_word.mp3&quot;, data=data)</code></pre>
+<p><strong>Stable filename strategy for koine-pimsleur:</strong> Use the
+same identity key as the note GUID →
+<code>audio_pimsleur_{lesson}_{idx}.mp3</code>. Same filename =
+overwrite in Anki’s media folder → idempotent.</p>
+<hr />
+<h2 id="concurrency-model">Concurrency Model</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Safety</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multiple agents → FastAPI API</td>
+<td>✅ Safe</td>
+<td>FastAPI handles concurrent HTTP requests</td>
+</tr>
+<tr>
+<td>FastAPI → AnkiConnect</td>
+<td>✅ Safe</td>
+<td>AnkiConnect serializes through Qt main thread</td>
+</tr>
+<tr>
+<td>Multiple agents → AnkiConnect directly</td>
+<td>✅ Safe</td>
+<td>Still serialized by Qt thread</td>
+</tr>
+<tr>
+<td>Concurrent .apkg file generation</td>
+<td>✅ Safe</td>
+<td>Each to a different output file</td>
+</tr>
+<tr>
+<td>Direct SQLite while Anki running</td>
+<td>❌ SQLITE_BUSY</td>
+<td>Never do this</td>
+</tr>
+<tr>
+<td><code>anki</code> pip package while Anki open</td>
+<td>❌ SQLITE_BUSY</td>
+<td>Only use when Anki fully closed</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="error-handling-and-rollback">Error Handling and Rollback</h2>
+<h3 id="backup-before-bulk-import">Backup before bulk import</h3>
+<pre class="python"><code>anki_request(&quot;exportPackage&quot;, deck=&quot;Koiné Griego&quot;, path=&quot;/tmp/backup_before_deploy.apkg&quot;, includeSched=True)</code></pre>
+<h3 id="read-modify-write-with-rollback">Read-modify-write with
+rollback</h3>
+<pre class="python"><code>info = anki(&quot;notesInfo&quot;, notes=[note_id])[0]
+old_fields = {k: v[&quot;value&quot;] for k, v in info[&quot;fields&quot;].items()}
+try:
+    anki(&quot;updateNoteFields&quot;, note={&quot;id&quot;: note_id, &quot;fields&quot;: new_fields})
+except Exception:
+    anki(&quot;updateNoteFields&quot;, note={&quot;id&quot;: note_id, &quot;fields&quot;: old_fields})
+    raise</code></pre>
+<h3 id="git-based-rollback">Git-based rollback</h3>
+<pre class="bash"><code>git checkout HEAD~1 -- terminaciones/
+python terminaciones/deploy.py</code></pre>
+<h3 id="common-ankiconnect-error-patterns">Common AnkiConnect error
+patterns</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Error message</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"cannot create note because it is a duplicate"</code></td>
+<td>Duplicate detection triggered</td>
+<td>Use <code>updateNoteFields</code> instead</td>
+</tr>
+<tr>
+<td><code>"model was not found: X"</code></td>
+<td>Model ID mismatch</td>
+<td>Check model ID in generator</td>
+</tr>
+<tr>
+<td><code>"deck was not found"</code></td>
+<td>Deck doesn’t exist yet</td>
+<td>Create deck first</td>
+</tr>
+<tr>
+<td><code>502 AnkiConnect unreachable</code></td>
+<td>Anki Desktop not running</td>
+<td>Start Anki + verify addon <code>2055492159</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="python-library-comparison">Python Library Comparison</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Library</th>
+<th>Best for</th>
+<th>Status</th>
+<th>Caveats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>genanki</strong> ✅</td>
+<td>.apkg generation</td>
+<td>In use</td>
+<td>Override <code>guid</code> — see StableNote fix</td>
+</tr>
+<tr>
+<td><strong>AnkiConnect</strong> ✅</td>
+<td>All CRUD when Anki is open</td>
+<td>In use</td>
+<td>Anki must be running</td>
+</tr>
+<tr>
+<td><strong>anki</strong> (pip)</td>
+<td>Headless/CI when Anki is closed</td>
+<td>Optional</td>
+<td>Cannot run while Anki is open; platform-specific Rust binaries</td>
+</tr>
+<tr>
+<td><strong>ankipandas</strong></td>
+<td>Read-only analytics/auditing</td>
+<td>Not recommended</td>
+<td>Write support experimental; requires Anki closed</td>
+</tr>
+<tr>
+<td><strong>ankisync2</strong></td>
+<td>Offline .apkg read/edit</td>
+<td>Not recommended</td>
+<td>Not safe for live collection</td>
+</tr>
+<tr>
+<td><strong>apyanki</strong></td>
+<td>CLI workflows</td>
+<td>Optional</td>
+<td>Wrapper over <code>anki</code> pip package</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="action-plan">Action Plan</h2>
+<h3 id="step-1-fix-guids-30-min-today">Step 1 — Fix GUIDs (30 min) —
+TODAY</h3>
+<ol type="1">
+<li>Create <code>koine-anki/shared/stable_note.py</code> with the
+<code>StableNote</code> class above</li>
+<li>Replace all 9 <code>genanki.Note(...)</code> calls with
+<code>StableNote(..., identity_key=...)</code></li>
+<li>Run <code>deploy.py</code> twice — confirm card count does not
+increase on second run</li>
+<li>Delete the old hash-GUID duplicate cards (one-time migration)</li>
+</ol>
+<h3 id="step-2-build-fastapi-api-12-hours">Step 2 — Build FastAPI API
+(1–2 hours)</h3>
+<ol type="1">
+<li>Install: <code>pip install fastapi uvicorn</code></li>
+<li>Create <code>anki_api.py</code> (code above)</li>
+<li>Start:
+<code>uvicorn anki_api:app --host 127.0.0.1 --port 9000</code></li>
+<li>Test: <code>curl http://localhost:9000/health</code></li>
+</ol>
+<h3 id="step-3-verify-scheduling-preservation-10-min">Step 3 — Verify
+Scheduling Preservation (10 min)</h3>
+<ol type="1">
+<li>Run <code>deploy.py</code> once — import a deck</li>
+<li>In Anki, flip one card (mark it reviewed)</li>
+<li>Run <code>deploy.py</code> again with no content changes</li>
+<li>Confirm the reviewed card is still marked as reviewed</li>
+</ol>
+<h3 id="step-4-optional-headless-ci-use-case">Step 4 (Optional) —
+Headless CI Use Case</h3>
+<pre class="python"><code>from anki.collection import Collection
+
+col = Collection(&quot;/Users/murivirg/Library/Application Support/Anki2/User 1/collection.anki2&quot;)
+# perform operations
+col.close()</code></pre>
+<p>Install: <code>pip install anki</code> — <strong>only when Anki
+Desktop is completely closed.</strong></p>
+<hr />
+<h2 id="key-findings-summary">Key Findings Summary</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Area</th>
+<th>Finding</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root cause</td>
+<td>All 9 generator files missing custom GUID → duplicates on every
+update</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>Fix</td>
+<td>8-line <code>StableNote</code> class with stable
+<code>identity_key</code></td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>Scheduling preservation</td>
+<td><code>importPackage</code> always preserves scheduling for existing
+cards</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>Concurrency</td>
+<td>AnkiConnect serializes all writes via Qt main thread — safe</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>Direct SQLite</td>
+<td>Results in <code>SQLITE_BUSY</code> while Anki is running — never do
+this</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>AnkiConnect status</td>
+<td>FooSoft GitHub archived Nov 2025, but sr.ht canonical repo
+active</td>
+<td>VERIFIED</td>
+</tr>
+<tr>
+<td>Recommended arch</td>
+<td>Option D: genanki stable GUIDs + FastAPI over AnkiConnect</td>
+<td>HIGH</td>
+</tr>
+<tr>
+<td>Media handling</td>
+<td><code>storeMediaFile</code> accepts absolute path or base64
+data</td>
+<td>HIGH</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="references">References</h2>
+<ul>
+<li>AnkiConnect canonical source:
+https://git.sr.ht/~foosoft/anki-connect</li>
+<li>AnkiConnect addon ID: <code>2055492159</code></li>
+<li>genanki README (GUID docs):
+https://github.com/kerrickstaley/genanki</li>
+<li>Anki packaged deck import docs:
+https://docs.ankiweb.net/importing/packaged-decks.html</li>
+<li>Anki addon developer docs: https://addon-docs.ankiweb.net/</li>
+<li>Official anki Python package: <code>pip install anki</code></li>
+<li>Investigation stream c3-context validated.md (project code
+analysis)</li>
+<li>Investigation stream c5-internal validated.md (internal tooling
+patterns)</li>
+<li>shared_findings.jsonl (all 5 agent cross-stream findings)</li>
+</ul>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({ startOnLoad: true, theme: 'default' });
+// Add copy buttons to ALL pre blocks
+document.querySelectorAll('pre').forEach(pre => {
+  if (pre.closest('.mermaid')) return;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'code-wrapper';
+  pre.parentNode.insertBefore(wrapper, pre);
+  wrapper.appendChild(pre);
+  const btn = document.createElement('button');
+  btn.className = 'copy-btn';
+  btn.textContent = 'Copy';
+  btn.onclick = function() {
+    const code = pre.querySelector('code') || pre;
+    navigator.clipboard.writeText(code.textContent).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  };
+  wrapper.appendChild(btn);
+});
+</script>
+</body>
+</html>

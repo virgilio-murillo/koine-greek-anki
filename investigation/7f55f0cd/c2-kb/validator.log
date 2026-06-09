@@ -1,0 +1,1258 @@
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;11mWARNING: [0mMCP server '[38;5;10mkiro-investigation[0m' is already configured in agent config. Skipping duplicate from legacy mcp.json.
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-prod.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 459 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/developer-agent.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 457 column 16
+[38;5;9mError: [0mJson supplied at /Users/murivirg/.kiro/agents/kiro-developer.json is invalid: unknown field `systemPrompt`, expected one of `$schema`, `name`, `description`, `prompt`, `mcpServers`, `tools`, `toolAliases`, `allowedTools`, `resources`, `hooks`, `toolsSettings`, `includeMcpJson`, `useLegacyMcpJson`, `model`, `keyboardShortcut`, `welcomeMessage` at line 455 column 16
+One or more mcp server did not load correctly. See $TMPDIR/kiro-log/kiro-chat.log for more details.
+------
+[32mAll tools are now trusted ([0m[31m![0m[32m). Kiro will execute tools without asking for confirmation.[0m
+Agents can sometimes do unexpected things so understand the risks.
+
+Learn more at [38;5;141mhttps://kiro.dev/docs/cli/chat/security/#using-tools-trust-all-safely[0m
+
+
+[38;5;12m[1m📷 Checkpoints are enabled! (took 0.75s)
+
+[0m
+[38;5;252m[0m[?25l[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/findings.md[0m, all lines[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m9566 bytes[0m from /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/findings.md
+[38;5;244m - Completed in 1.662s[0m
+[38;5;12m[1m [1.1][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Reading findings file\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.744s[0m
+[38;5;12m[1m [1.2][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: I need to validate the claims in the findings. Let me categorize them:
+
+1. Directory structure claims (testable - check filesystem)
+2. File existence and content claims (testable - check filesystem)
+3. Pipeline tool claims (testable - check files exist and their content)
+4. Library usage claims (testable - check imports)
+5. Data format claims (testable - check file contents)
+6. Lessons learned KB claims (testable - search KB)
+7. Cross-project dependency claims (testable - check code)
+
+Let me start by verifying the directory structure and key files.
+[38;5;244m - Completed in 1.653s[0m
+[38;5;12m[1m [1.3][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking dir structure\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+Reading directory: [38;5;141m/Users/murivirg/work/github/anki[0m[38;5;244m (using tool: read, max depth: 1, max entries: 1000, excluding: defaults)[0m[38;5;244m - Completed in 2.186s[0m
+[38;5;12m[1m [1.4][0m[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki[0m [38;5;244m(25 entries)[0m
+[38;5;244m - Completed in 1.762s[0m
+[38;5;12m[1m [1.5][0m[0m
+[?25l[0m[?25l[0m[0mBatch fs_read operation with [38;5;141m4[0m operations[38;5;244m (using tool: read)[0m
+
+↱ Operation 1: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/compounds[0m
+↱ Operation 2: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/terminaciones[0m
+↱ Operation 3: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/src[0m
+↱ Operation 4: Reading directory: [38;5;141m/Users/murivirg/work/github/anki/koine-anki/data[0m
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/koine-anki/compounds[0m [38;5;244m(10 entries)[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/koine-anki/terminaciones[0m [38;5;244m(33 entries)[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/src[0m [38;5;244m(35 entries)[0m
+
+[38;5;10m ✓ [0mSuccessfully read directory [38;5;141m/Users/murivirg/work/github/anki/koine-anki/data[0m [38;5;244m(12 entries)[0m
+
+ ⋮ 
+
+[38;5;244m- [0mSummary: 4 operations processed, 4 successful, 0 failed
+[38;5;244m - Completed in 1.690s[0m
+[38;5;12m[1m [1.6][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Verifying file counts\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check MorphGNT file count (claim: 27 files)
+ls koine-anki/data/nt-morphgnt/ | wc -l
+echo "---"
+# Check lesson data file count (claim: 90 lessons in data files)
+ls koine-pimsleur/src/data/lesson_data_*.py | wc -l
+echo "---"
+# Check compounds count (claim: 290 compound word flashcards)
+python3 -c "import json; d=json.load(open('koine-anki/data/compounds_registry.json')); print(f'Registry entries: {len(d)}')" 2>/dev/null || echo "Could not parse registry"
+echo "---"
+# Check strongs_greek.xml size (claim: 2.3MB)
+ls -la koine-anki/data/strongs_greek.xml | awk '{print $5}'
+echo "---"
+# Check nt_compounds_full.json size (claim: 2.2MB)
+ls -la koine-anki/data/nt_compounds_full.json | awk '{print $5}'[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.665s[0m
+[38;5;12m[1m [1.7][0m[0m
+      27
+---
+      19
+---
+Registry entries: 290
+---
+2369537
+---
+2253137
+[38;5;244m - Completed in 1.869s[0m
+[38;5;12m[1m [1.8][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check genanki usage in deck generators
+grep -l "genanki" koine-anki/compounds/generate_deck.py koine-anki/terminaciones/gen_deck.py koine-anki/terminaciones/gen_deck_vol3.py koine-pimsleur/src/generate_decks.py 2>/dev/null
+echo "---"
+# Check gen_deck.py output format (claim: text export, not .apkg)
+head -20 koine-anki/terminaciones/gen_deck.py[0m[38;5;244m (using tool: shell)[0m
+
+koine-anki/compounds/generate_deck.py
+koine-anki/terminaciones/gen_deck_vol3.py
+koine-pimsleur/src/generate_decks.py
+---
+#!/usr/bin/env python3
+"""Generate Greek Infinitives Anki deck."""
+import importlib, sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+
+cards = []
+for i in range(1, 8):
+    mod = importlib.import_module(f"cards_cat{i}")
+    cards.extend(mod.cards)
+
+with open(os.path.join(os.path.dirname(__file__), "greek_infinitives_anki.txt"), "w", encoding="utf-8") as f:
+    for front, back in cards:
+        f.write(f"{front}\t{back}\n")
+
+print(f"Generated {len(cards)} cards to greek_infinitives_anki.txt")
+[38;5;244m - Completed in 1.630s[0m
+[38;5;12m[1m [1.9][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check TTS implementation (claims about Google Cloud TTS Chirp3-HD and Polly)
+head -60 koine-pimsleur/src/tts.py[0m[38;5;244m (using tool: shell)[0m
+
+"""TTS module — single source of truth for all voice synthesis."""
+import boto3, os, io, re, unicodedata, hashlib
+from google.cloud import texttospeech
+from pydub import AudioSegment
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.expanduser("~/.config/gcloud/koine-tts-key.json")
+
+# --- Voices ---
+M = "el-GR-Chirp3-HD-Achird"
+F = "el-GR-Chirp3-HD-Zephyr"
+FALLBACK_M = ["el-GR-Chirp3-HD-Charon", "el-GR-Chirp3-HD-Aoede", "el-GR-Chirp3-HD-Zephyr", "el-GR-Chirp3-HD-Achird"]
+FALLBACK_F = ["el-GR-Chirp3-HD-Aoede", "el-GR-Chirp3-HD-Kore", "el-GR-Chirp3-HD-Achird", "el-GR-Chirp3-HD-Zephyr"]
+
+# --- Cache ---
+CACHE = "/tmp/tts_cache"
+os.makedirs(CACHE, exist_ok=True)
+QA_REPORT = os.path.join(CACHE, "tts_qa_report.txt")
+
+# --- Clients (lazy) ---
+_polly = None
+_gtts = None
+def _get_polly():
+    global _polly
+    if not _polly: _polly = boto3.client("polly", region_name="us-east-1")
+    return _polly
+def _get_gtts():
+    global _gtts
+    if not _gtts: _gtts = texttospeech.TextToSpeechClient()
+    return _gtts
+
+# --- Helpers ---
+def to_mono(text):
+    """Convert polytonic Greek to monotonic for TTS compatibility."""
+    r = []
+    for c in unicodedata.normalize('NFD', text):
+        cat = unicodedata.category(c)
+        nm = unicodedata.name(c, '')
+        if cat.startswith('L') or cat in ('Zs','Po','Ps','Pe','Pd','Nd'):
+            r.append(c)
+        elif 'OXIA' in nm or 'TONOS' in nm or 'ACUTE' in nm:
+            r.append('\u0301')
+    return unicodedata.normalize('NFC', ''.join(r))
+
+def _greek_len(text):
+    return sum(1 for c in text if '\u0370' <= c <= '\u03FF' or '\u1F00' <= c <= '\u1FFF')
+
+def _min_dur(text):
+    n = _greek_len(text)
+    return max(400, min(n, 4) * 150 + max(0, n - 4) * 80)
+
+def _cache_path(pfx, txt, v, ex=""):
+    h = hashlib.md5(f"{txt}_{v}_{ex}".encode()).hexdigest()[:12]
+    return os.path.join(CACHE, f"{pfx}_{h}.mp3")
+
+def _synth(mono, voice, speed):
+    r = _get_gtts().synthesize_speech(
+        input=texttospeech.SynthesisInput(text=mono),
+        voice=texttospeech.VoiceSelectionParams(language_code="el-GR", name=voice),
+        audio_config=texttospeech.AudioConfig(audio_encoding=texttospeech.AudioEncoding.MP3, speaking_rate=speed))
+    data = r.audio_content
+[38;5;244m - Completed in 1.930s[0m
+[38;5;12m[1m [1.10][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check for Polly Spanish voice (claim: Mia, es-MX, neural)
+grep -n "Mia\|es-MX\|neural\|polly" koine-pimsleur/src/tts.py | head -20[0m[38;5;244m (using tool: shell)[0m
+
+20:_polly = None
+22:def _get_polly():
+23:    global _polly
+24:    if not _polly: _polly = boto3.client("polly", region_name="us-east-1")
+25:    return _polly
+65:def es(text, voice="Mia", engine="neural"):
+69:        r = _get_polly().synthesize_speech(Text=text, OutputFormat="mp3", VoiceId=voice, Engine=engine, LanguageCode="es-MX")
+[38;5;244m - Completed in 1.753s[0m
+[38;5;12m[1m [1.11][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking TTS details\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check if there's a Wavenet-B fallback (claim: Wavenet-B as fallback for short words)
+grep -n "Wavenet" koine-pimsleur/src/tts.py[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.784s[0m
+[38;5;12m[1m [1.12][0m[0m
+[38;5;244m - Completed in 1.797s[0m
+[38;5;12m[1m [1.13][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check the full tts.py for fallback mechanism (no Wavenet-B found, check what fallback is used)
+grep -n "fallback\|FALLBACK\|short\|400" koine-pimsleur/src/tts.py[0m[38;5;244m (using tool: shell)[0m
+
+11:FALLBACK_M = ["el-GR-Chirp3-HD-Charon", "el-GR-Chirp3-HD-Aoede", "el-GR-Chirp3-HD-Zephyr", "el-GR-Chirp3-HD-Achird"]
+12:FALLBACK_F = ["el-GR-Chirp3-HD-Aoede", "el-GR-Chirp3-HD-Kore", "el-GR-Chirp3-HD-Achird", "el-GR-Chirp3-HD-Zephyr"]
+49:    return max(400, min(n, 4) * 150 + max(0, n - 4) * 80)
+74:    """Synthesize Greek text via Google TTS with smart fallback."""
+83:        all_voices = [voice] + (FALLBACK_M if voice == M else FALLBACK_F)
+111:    # 2) Try 4 fallback voices
+112:    fallbacks = FALLBACK_M if voice == M else FALLBACK_F
+113:    for fb in fallbacks:
+[38;5;244m - Completed in 1.651s[0m
+[38;5;12m[1m [1.14][0m[0m
+[?25l[0m[?25l[0m[0mReading file: [38;5;141m/Users/murivirg/work/github/anki/koine-pimsleur/src/tts.py[0m, from line [38;5;141m70[0m to [38;5;141m140[0m[38;5;244m (using tool: read)[0m
+[38;5;10m ✓ [0mSuccessfully read [38;5;244m2813 bytes[0m from /Users/murivirg/work/github/anki/koine-pimsleur/src/tts.py
+[38;5;244m - Completed in 1.721s[0m
+[38;5;12m[1m [1.15][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check the to_mono function - the findings claim "Pass original polytonic text — do NOT strip to monotonic"
+# But the code clearly converts to monotonic. Let me check if the gr() function passes original or mono
+grep -n "to_mono\|polytonic\|original" koine-pimsleur/src/tts.py[0m[38;5;244m (using tool: shell)[0m
+
+32:def to_mono(text):
+33:    """Convert polytonic Greek to monotonic for TTS compatibility."""
+76:    mono = to_mono(text)
+[38;5;244m - Completed in 1.797s[0m
+[38;5;12m[1m [1.16][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Important finding: The findings claim "Pass original polytonic text — do NOT strip to monotonic" but the actual code in tts.py does the OPPOSITE - it converts polytonic to monotonic via `to_mono()` before passing to Google TTS. This is a CONTRADICTION.
+
+However, the findings also say "Never strip polytonic diacritics — Google TTS handles them correctly; stripping causes silent audio for short words". But the code explicitly strips them. Let me check if there's a lessons-learned entry about this that might explain the discrepancy - perhaps the code was updated after the lesson was learned, or the lesson is about a different context (like card display vs TTS input).
+[38;5;244m - Completed in 2.24s[0m
+[38;5;12m[1m [1.17][0m[0m
+[?25l[0m[?25l[?25l[0m[0mRunning tool [38;5;141msearch_lessons[0m with the param[38;5;244m (from mcp server: knowledge-base)[0m
+ ⋮  {
+ ⋮    "query": "polytonic Greek TTS silent audio diacritics"
+ ⋮  }
+[0mI will run the following command: [38;5;141m# Check cross-project dependency (claim: KOINE_ANKI_PATH env var or sibling detection)
+grep -rn "KOINE_ANKI_PATH\|koine-anki\|sibling" koine-pimsleur/src/ 2>/dev/null | head -20[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 4.23s[0m
+[38;5;12m[1m [1.18][0m[0m
+koine-pimsleur/src/enrich.py:5:# koine-anki repo provides NT data (compounds, morphology)
+koine-pimsleur/src/enrich.py:6:ANKI_REPO = os.environ.get('KOINE_ANKI_PATH', os.path.join(os.path.dirname(__file__), '..', '..', 'koine-anki'))
+[38;5;244m - Completed in 1.777s[0m
+[38;5;12m[1m [1.19][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking pipeline claims\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check compounds enriched data for Matthew (claim: matthew/compounds_enriched.json)
+ls koine-anki/data/matthew/
+echo "---"
+# Check lesson count in pimsleur (claim: 90 lessons, 16.7 hours, ~600 words)
+python3 -c "
+import os, sys
+sys.path.insert(0, 'koine-pimsleur/src')
+from data import LESSONS
+print(f'Total lessons: {len(LESSONS)}')
+" 2>&1 | head -5
+echo "---"
+# Check audio directory structure (claim: 3 levels × 30 lessons)
+ls koine-pimsleur/audio/ 2>/dev/null
+echo "---"
+# Count audio files
+find koine-pimsleur/audio -name "*.mp3" 2>/dev/null | wc -l[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.754s[0m
+[38;5;12m[1m [1.20][0m[0m
+compounds_enriched.json
+compounds_raw.json
+enrichment_v2_progress.json
+wiktionary_cache.json
+---
+Traceback (most recent call last):
+  File [35m"<string>"[0m, line [35m4[0m, in [35m<module>[0m
+    from data import LESSONS
+  File [35m"/Users/murivirg/work/github/anki/koine-pimsleur/src/data/__init__.py"[0m, line [35m2[0m, in [35m<module>[0m
+    from .lesson_data_01_05 import L1, L2, L3, L4, L5
+---
+level1_el_extranjero
+level2_el_discipulo
+level3_el_predicador
+README.md
+---
+      91
+[38;5;244m - Completed in 2.238s[0m
+[38;5;12m[1m [1.21][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141m# Check audio levels structure
+ls koine-pimsleur/audio/level1_el_extranjero/ 2>/dev/null | head -5
+echo "---"
+ls koine-pimsleur/audio/level1_el_extranjero/ 2>/dev/null | wc -l
+echo "---"
+ls koine-pimsleur/audio/level2_el_discipulo/ 2>/dev/null | wc -l
+echo "---"
+ls koine-pimsleur/audio/level3_el_predicador/ 2>/dev/null | wc -l[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check generate_decks.py for "4 cards/lesson" claim
+head -50 koine-pimsleur/src/generate_decks.py[0m[38;5;244m (using tool: shell)[0m
+
+01_saludos_y_bases
+02_vida_cotidiana
+03_fe_y_cultura
+README.md
+---
+       4
+---
+       3
+---
+       3
+[38;5;244m - Completed in 1.830s[0m
+[38;5;12m[1m [1.22][0m[0m
+"""Generate Anki decks — 4 cards per lesson, 10 lessons per deck, under parent deck."""
+import genanki, random, html, os, sys
+sys.path.insert(0, ".")
+from src.data import ALL_LESSONS
+
+random.seed(42)
+
+MODEL = genanki.Model(
+    1646410900000,
+    "Koiné Pimsleur",
+    fields=[{"name": "Greek"}, {"name": "Spanish"}, {"name": "Lesson"}, {"name": "Type"}],
+    templates=[{
+        "name": "Recognition",
+        "qfmt": '<div class="greek">{{Greek}}</div><div class="meta">Lección {{Lesson}} · {{Type}}</div>',
+        "afmt": '{{FrontSide}}<hr id="answer"><div class="spanish">{{Spanish}}</div>',
+    }, {
+        "name": "Production",
+        "qfmt": '<div class="spanish">{{Spanish}}</div><div class="meta">Lección {{Lesson}} · {{Type}}</div>',
+        "afmt": '{{FrontSide}}<hr id="answer"><div class="greek">{{Greek}}</div>',
+    }],
+    css=""".card{font-family:Georgia,serif;font-size:20px;text-align:center;background:#fafaf5;padding:20px}
+.greek{font-size:36px;color:#1a3a5c;margin:15px 0}
+.spanish{font-size:28px;color:#2d6a2e;margin:15px 0}
+.meta{font-size:13px;color:#999;font-style:italic}"""
+)
+
+PARENT = "Koiné Griego"
+DECK_CONFIGS = [
+    (1, 10, "L01-10 Saludos y Bases"),
+    (11, 20, "L11-20 Vida Cotidiana y Fe"),
+    (21, 30, "L21-30 Cultura y Oración"),
+]
+
+os.makedirs("decks/anki", exist_ok=True)
+h = html.escape
+
+for lo, hi, name in DECK_CONFIGS:
+    deck_name = f"{PARENT}::{name}"
+    deck_id = 1646410900000 + lo
+    deck = genanki.Deck(deck_id, deck_name)
+
+    for L in ALL_LESSONS[lo-1:hi]:
+        n = L["num"]
+        vocab = L["vocab"]
+        phrases = L["phrases"]
+        # Pick 4: first 2 vocab + first phrase + verse
+        cards = []
+        for v in vocab[:2]:
+            cards.append((v["gr"], v["es"], "vocabulario"))
+        if phrases:
+[38;5;244m - Completed in 1.694s[0m
+[38;5;12m[1m [1.23][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: The audio directory structure is different from what was claimed. The findings say "3 levels × 30 lessons" but the actual structure is:
+- level1_el_extranjero: 4 items (3 subdirs + README)
+- level2_el_discipulo: 3 items
+- level3_el_predicador: 3 items
+
+So there ARE 3 levels, but the internal structure is different - they're organized by sub-units, not individual lessons. Let me check more.
+
+Also, the generate_decks.py only generates decks for lessons 1-30 (3 configs of 10 each), not all 90. Let me verify the "4 cards/lesson" claim - looking at the code, it creates 2 vocab cards + phrase + verse = 4 items, but each item generates 2 templates (Recognition + Production), so it's actually 4 notes × 2 templates = 8 cards per lesson. Wait, let me re-read. The model has 2 templates, so each note generates 2 cards. But the claim says "4 cards/lesson" which likely means 4 notes (which produce 8 cards). Let me check the comment in the code: "4 cards per lesson" - so the code itself says 4 cards per lesson. But with 2 templates, that's 4 notes = 8 actual Anki cards. The finding says "4 cards/lesson" which matches the code's own comment.
+
+Let me also check the lesson data count more carefully.
+[38;5;244m - Completed in 1.665s[0m
+[38;5;12m[1m [1.24][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141m# Check lesson data count from __init__.py
+head -30 koine-pimsleur/src/data/__init__.py[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check MorphGNT format (claim: Space-delimited: ref POS morph-code word normalized lemma)
+head -3 koine-anki/data/nt-morphgnt/61-Mt-morphgnt.txt 2>/dev/null || head -3 koine-anki/data/nt-morphgnt/*.txt 2>/dev/null | head -10[0m[38;5;244m (using tool: shell)[0m
+
+"""Lesson data index — loads all 90 lessons into a single ordered list."""
+from .lesson_data_01_05 import L1, L2, L3, L4, L5
+from .lesson_data_06_08 import L6, L7, L8
+from .lesson_data_09_10 import L9, L10
+from .lesson_data_11_15 import L11, L12, L13, L14, L15
+from .lesson_data_16_20 import L16, L17, L18, L19, L20
+from .lesson_data_21_25 import L21, L22, L23, L24, L25
+from .lesson_data_26_30 import L26, L27, L28, L29, L30
+from .lesson_data_31_35 import L31, L32, L33, L34, L35
+from .lesson_data_36_40 import L36, L37, L38, L39, L40
+from .lesson_data_41_45 import L41, L42, L43, L44, L45
+from .lesson_data_46_50 import L46, L47, L48, L49, L50
+from .lesson_data_51_55 import L51, L52, L53, L54, L55
+from .lesson_data_56_60 import L56, L57, L58, L59, L60
+from .lesson_data_61_65 import L61, L62, L63, L64, L65
+from .lesson_data_66_70 import L66, L67, L68, L69, L70
+from .lesson_data_71_75 import L71, L72, L73, L74, L75
+from .lesson_data_76_80 import L76, L77, L78, L79, L80
+from .lesson_data_81_85 import L81, L82, L83, L84, L85
+from .lesson_data_86_90 import L86, L87, L88, L89, L90
+
+ALL_LESSONS = [
+    L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,
+    L11,L12,L13,L14,L15,L16,L17,L18,L19,L20,
+    L21,L22,L23,L24,L25,L26,L27,L28,L29,L30,
+    L31,L32,L33,L34,L35,L36,L37,L38,L39,L40,
+    L41,L42,L43,L44,L45,L46,L47,L48,L49,L50,
+    L51,L52,L53,L54,L55,L56,L57,L58,L59,L60,
+    L61,L62,L63,L64,L65,L66,L67,L68,L69,L70,
+    L71,L72,L73,L74,L75,L76,L77,L78,L79,L80,
+[38;5;244m - Completed in 1.617s[0m
+[38;5;12m[1m [1.25][0m[0m
+010101 N- ----NSF- Βίβλος Βίβλος βίβλος βίβλος
+010101 N- ----GSF- γενέσεως γενέσεως γενέσεως γένεσις
+010101 N- ----GSM- Ἰησοῦ Ἰησοῦ Ἰησοῦ Ἰησοῦς
+[38;5;244m - Completed in 2.40s[0m
+[38;5;12m[1m [1.26][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: The MorphGNT format claim says: "Space-delimited: ref POS morph-code word normalized lemma"
+Actual data: `010101 N- ----NSF- Βίβλος Βίβλος βίβλος βίβλος`
+
+That's: ref(010101) POS(N-) morph-code(----NSF-) word(Βίβλος) normalized(Βίβλος) lemma(βίβλος) ... wait, there are 7 fields? Let me count:
+1. 010101 - reference
+2. N- - POS
+3. ----NSF- - morph code
+4. Βίβλος - word
+5. Βίβλος - normalized
+6. βίβλος - lemma (lowercase)
+7. βίβλος - another form?
+
+Wait, looking at line 2: `010101 N- ----GSF- γενέσεως γενέσεως γενέσεως γένεσις`
+1. 010101 - ref
+2. N- - POS
+3. ----GSF- - morph
+4. γενέσεως - word
+5. γενέσεως - normalized
+6. γενέσεως - ?
+7. γένεσις - lemma
+
+So it's actually 7 fields, not 6 as claimed. The claim says "ref POS morph-code word normalized lemma" (6 fields). But there appear to be 7 space-separated tokens. Let me look more carefully...
+
+Actually wait - looking at line 1: `010101 N- ----NSF- Βίβλος Βίβλος βίβλος βίβλος`
+The standard MorphGNT format is: book-chapter-verse, part-of-speech, parsing-code, text, word, normalized, lemma
+
+So it's 7 columns. The findings say 6 columns. That's slightly inaccurate. But wait, maybe some of those are the same field with different representations. Let me check the actual MorphGNT documentation format.
+
+Actually, looking at the example in the findings: `010101 N- ----NSF- Βίβλος Βίβλος βίβλος βίβλος` - that's 7 tokens. The claim says the format is `ref POS morph-code word normalized lemma` which is 6 fields. So the claim is slightly off - there are 7 fields, not 6. But this could also be that the example in the findings is wrong (showing 7 fields) while the description says 6. Let me count again carefully:
+
+`010101 N- ----NSF- Βίβλος Βίβλος βίβλος βίβλος`
+Splitting by space: ['010101', 'N-', '----NSF-', 'Βίβλος', 'Βίβλος', 'βίβλος', 'βίβλος']
+
+That's 7 fields. The standard MorphGNT format from James Tauber's project has these columns:
+1. bcv (book-chapter-verse)
+2. part of speech
+3. parsing code
+4. text (as it appears)
+5. word (without punctuation)
+6. normalized
+7. lemma
+
+So the findings' description of "ref POS morph-code word normalized lemma" is missing one field (the "text" field). The example in the findings shows the correct data but the description is slightly incomplete. I'll mark this as partially confirmed.
+
+Now let me check the other claims.
+[38;5;244m - Completed in 1.873s[0m
+[38;5;12m[1m [1.27][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking data formats\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check frequency list format (claim: [{rank, lemma, count, pos}])
+python3 -c "import json; d=json.load(open('koine-anki/data/nt_vocabulary_frequency.json')); print(d[0])" 2>/dev/null
+echo "---"
+# Check nt_top600.json format
+python3 -c "import json; d=json.load(open('koine-anki/data/nt_top600.json')); print(d[0]); print(f'Count: {len(d)}')" 2>/dev/null
+echo "---"
+# Check compounds_registry format (claim: {lemma: {source_book, deck, date_added}})
+python3 -c "import json; d=json.load(open('koine-anki/data/compounds_registry.json')); k=list(d.keys())[0]; print(f'{k}: {d[k]}')" 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.759s[0m
+[38;5;12m[1m [1.28][0m[0m
+{'lemma': 'ὁ', 'count': 19769, 'pos': 'RA', 'pct': 14.3718}
+---
+{'rank': 1, 'lemma': 'ὁ', 'count': 19769, 'pos': 'article'}
+Count: 600
+---
+διαβλέπω: {'source_book': 'matthew', 'deck': 'matthew_compounds', 'date_added': '2026-04-03'}
+[38;5;244m - Completed in 1.804s[0m
+[38;5;12m[1m [1.29][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Interesting findings:
+1. `nt_vocabulary_frequency.json` format is `{lemma, count, pos, pct}` - NOT `{rank, lemma, count, pos}` as claimed. It has `pct` instead of `rank`.
+2. `nt_top600.json` format IS `{rank, lemma, count, pos}` as claimed. Count is 600 - confirmed.
+3. `compounds_registry.json` format is `{lemma: {source_book, deck, date_added}}` - confirmed.
+
+So the frequency list format claim is partially wrong - the main frequency file doesn't have `rank` but has `pct` instead. The top600 file does have `rank`.
+[38;5;244m - Completed in 1.602s[0m
+[38;5;12m[1m [1.30][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141m# Check enriched compounds format (claim about fields)
+python3 -c "
+import json
+d=json.load(open('koine-anki/data/matthew/compounds_enriched.json'))
+print(list(d[0].keys()))
+" 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check enrich_compounds.py for SUFFIX_DB and ROOT_CHANGES
+grep -c "SUFFIX_DB\|ROOT_CHANGES" koine-anki/compounds/enrich_compounds.py
+echo "---"
+# Check SUFFIX_DB entries (claim: -τός, -σις, -μα, -ία, -μός, -ή, -ικός, -ιος, -ών, -τής, -εια)
+grep "SUFFIX_DB" koine-anki/compounds/enrich_compounds.py | head -3
+echo "---"
+# Count ROOT_CHANGES entries (claim: 45 words)
+python3 -c "
+import sys
+sys.path.insert(0, 'koine-anki/compounds')
+# Read the file and extract ROOT_CHANGES
+with open('koine-anki/compounds/enrich_compounds.py') as f:
+    content = f.read()
+# Find ROOT_CHANGES dict
+import re
+m = re.search(r'ROOT_CHANGES\s*=\s*\{([^}]+)\}', content, re.DOTALL)
+if m:
+    entries = [l for l in m.group(1).split('\n') if ':' in l and not l.strip().startswith('#')]
+    print(f'ROOT_CHANGES entries: {len(entries)}')
+" 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+['lemma', 'components', 'meaning_es', 'mnemonic_es', 'first_ref', 'pos', 'strongs_number', 'strongs_derivation', 'strongs_definition', 'cognates', 'cognates_by_part', 'greek_verses']
+[38;5;244m - Completed in 1.745s[0m
+[38;5;12m[1m [1.31][0m[0m
+8
+---
+SUFFIX_DB = {
+    if suf and suf in SUFFIX_DB:
+        card["suffix"] = SUFFIX_DB[suf]["label"]
+---
+ROOT_CHANGES entries: 45
+[38;5;244m - Completed in 1.637s[0m
+[38;5;12m[1m [1.32][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: The enriched compounds format from matthew/compounds_enriched.json has these keys:
+`['lemma', 'components', 'meaning_es', 'mnemonic_es', 'first_ref', 'pos', 'strongs_number', 'strongs_derivation', 'strongs_definition', 'cognates', 'cognates_by_part', 'greek_verses']`
+
+The findings claim it has: `{lemma, components[], meaning_es, mnemonic_es, strongs_number, strongs_derivation, strongs_definition, suffix, suffix_type_es, suffix_explanation_es, root_note_es, cognates_by_part, verses[]}`
+
+Differences:
+- Actual has `first_ref`, `pos`, `cognates`, `greek_verses` 
+- Findings claim `suffix`, `suffix_type_es`, `suffix_explanation_es`, `root_note_es`, `verses[]`
+- Missing from actual: suffix, suffix_type_es, suffix_explanation_es, root_note_es
+- Missing from findings: first_ref, pos, cognates, greek_verses
+
+So the enriched format claim is PARTIALLY WRONG. The actual file doesn't have suffix/root_note fields - those might be added by the enrich_compounds.py step but aren't in the matthew enriched file. Let me check if there's a different enriched file that has those fields.
+
+ROOT_CHANGES: 45 entries - CONFIRMED.
+
+[38;5;244m - Completed in 1.775s[0m
+[38;5;12m[1m [1.33][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141m# Check SUFFIX_DB keys
+python3 -c "
+with open('koine-anki/compounds/enrich_compounds.py') as f:
+    content = f.read()
+import re
+m = re.search(r'SUFFIX_DB\s*=\s*\{(.+?)\n\}', content, re.DOTALL)
+if m:
+    keys = re.findall(r'\"([^\"]+)\":\s*\{', m.group(1))
+    print(f'SUFFIX_DB keys ({len(keys)}): {keys}')
+" 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check notes directory for claimed docs
+ls koine-anki/notes/ 2>/dev/null
+echo "==="
+ls koine-pimsleur/notes/ 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+SUFFIX_DB keys (11): ['τός', 'σις', 'μα', 'ία', 'εια', 'μός', 'ή', 'ικός', 'ιος', 'ών', 'τής']
+[38;5;244m - Completed in 1.679s[0m
+[38;5;12m[1m [1.34][0m[0m
+card-quality-standards.md
+compounds-pipeline.md
+koine-greek-anki-guidelines.md
+===
+curriculum_level1a.md
+curriculum_level1b.md
+curriculum_level2_3.md
+curriculum_overview.md
+lessons-learned-koine.md
+lessons-learned-replication.md
+pimsleur-project.md
+[38;5;244m - Completed in 1.744s[0m
+[38;5;12m[1m [1.35][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking KB lessons\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+Running tool [38;5;141msearch_lessons[0m with the param[38;5;244m (from mcp server: knowledge-base)[0m
+ ⋮  {
+ ⋮    "query": "Koine Greek morphology Anki flashcard design"
+ ⋮  }
+[0m[38;5;244m - Completed in 1.791s[0m
+[38;5;12m[1m [1.36][0m[0m
+[38;5;244m - Completed in 3.265s[0m
+[38;5;12m[1m [1.37][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check the total audio duration claim (16.7 hours)
+# Count mp3 files per level
+find koine-pimsleur/audio/level1_el_extranjero -name "*.mp3" | wc -l
+echo "---"
+find koine-pimsleur/audio/level2_el_discipulo -name "*.mp3" | wc -l
+echo "---"
+find koine-pimsleur/audio/level3_el_predicador -name "*.mp3" | wc -l
+echo "---"
+# Check lesson data structure (claim: {num, intro_es, dialogue, vocab[{gr, es}], phrases[{gr, es}], verse{gr, explain_es}, closing_es})
+python3 -c "
+import sys, importlib.util
+spec = importlib.util.spec_from_file_location('ld', 'koine-pimsleur/src/data/lesson_data_01_05.py')
+mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(mod)
+print(list(mod.L1.keys()))
+" 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+      31
+---
+      30
+---
+      30
+---
+[38;5;244m - Completed in 1.820s[0m
+[38;5;12m[1m [1.38][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Try reading lesson data structure differently
+python3 << 'EOF'
+import ast, re
+with open('koine-pimsleur/src/data/lesson_data_01_05.py') as f:
+    content = f.read()
+# Find L1 dict
+m = re.search(r'^L1\s*=\s*\{', content, re.MULTILINE)
+if m:
+    # Get just the first few lines to see keys
+    start = m.start()
+    lines = content[start:start+500].split('\n')[:15]
+    for l in lines:
+        print(l)
+EOF[0m[38;5;244m (using tool: shell)[0m
+
+L1 = {
+    "num": 1, "intro_es": "Μάθημα ἕν. Lección uno de griego koiné. Imagina que caminas por un sendero polvoriento hacia Jerusalén. Es el siglo primero. Te encuentras con dos personas que se saludan. Escucha.",
+    "dialogue": [(M,"Χαῖρε!"),(F,"Εἰρήνη σοι."),(M,"Εἰρήνη σοι. Πόθεν εἶ;"),(F,"ἐγώ εἰμι ἀπὸ Γαλιλαίας.")],
+    "context_es": "No te preocupes si no entendiste todo. Al final de esta lección podrás saludar y responder en griego koiné.",
+    "vocab": [
+        {"gr":"χαῖρε","es":"hol
+[38;5;244m - Completed in 1.805s[0m
+[38;5;12m[1m [1.39][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Get all keys from L1
+python3 << 'EOF'
+import re
+with open('koine-pimsleur/src/data/lesson_data_01_05.py') as f:
+    content = f.read()
+# Find L1 = { ... } and L2 = { to delimit
+m1 = re.search(r'^L1\s*=\s*\{', content, re.MULTILINE)
+m2 = re.search(r'^L2\s*=\s*\{', content, re.MULTILINE)
+if m1 and m2:
+    l1_text = content[m1.start():m2.start()]
+    # Find all top-level keys
+    keys = re.findall(r'^\s+"(\w+)":', l1_text, re.MULTILINE)
+    print(f"L1 keys: {keys}")
+EOF[0m[38;5;244m (using tool: shell)[0m
+
+L1 keys: ['num', 'dialogue', 'context_es', 'vocab', 'phrases', 'recon', 'verse', 'closing_es']
+[38;5;244m - Completed in 1.696s[0m
+[38;5;12m[1m [1.40][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: The lesson data structure claim says: `{num, intro_es, dialogue, vocab[{gr, es}], phrases[{gr, es}], verse{gr, explain_es}, closing_es}`
+
+Actual keys: `['num', 'dialogue', 'context_es', 'vocab', 'phrases', 'recon', 'verse', 'closing_es']`
+
+Differences:
+- Findings claim `intro_es` - but looking at the raw content, there IS an `intro_es` key (I can see it in the raw text). The regex might have missed it because it's on the same line as `num`.
+- Actual has `context_es` and `recon` which are not mentioned in findings
+- The findings don't mention `context_es` or `recon`
+
+Wait, looking at the raw text again: `"num": 1, "intro_es": "..."` - so `intro_es` IS there, just on the same line as `num`. The regex only found keys at the start of lines. So the actual keys are: num, intro_es, dialogue, context_es, vocab, phrases, recon, verse, closing_es.
+
+The findings claim: num, intro_es, dialogue, vocab, phrases, verse, closing_es (7 keys)
+Actual: num, intro_es, dialogue, context_es, vocab, phrases, recon, verse, closing_es (9 keys)
+
+Missing from findings: context_es, recon. The findings are incomplete but not wrong about what they do list.
+
+Now let me also verify the audio level structure. The findings say "3 levels × 30 lessons" and we have:
+- level1: 31 mp3s
+- level2: 30 mp3s  
+- level3: 30 mp3s
+Total: 91 mp3s
+
+That's roughly 30 per level (level1 has 31 which might include an intro or bonus). So "3 levels × 30 lessons" is essentially confirmed.
+
+Now let me check the "16.7 hours" and "~600 words" claims. I can't easily verify total audio duration without ffprobe, but let me check the ~600 words claim against nt_top600.json which has exactly 600 entries.
+
+Let me also verify the vocabulary targets claim: "310 NT words = 80% coverage, 600 NT words = ~90% coverage, 882 words = 90% per Lanier 2015". The KB lesson says "317 = 80%" (from jktauber.com) and "882 = 90% per Lanier 2015" and "600 words = ~85-87% NT token coverage (NOT 90%)". So the findings claim "600 = ~90%" but the KB says "600 = ~85-87% (NOT 90%)". This is a discrepancy.
+
+Also the findings say "310 NT words = 80%" but the KB says "317 = 80%". Minor discrepancy.
+
+Let me also check the "strongs_greek.xml — 5516 entries" claim.
+[38;5;244m - Completed in 1.733s[0m
+[38;5;12m[1m [1.41][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Verifying vocab targets\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check Strong's entry count (claim: 5516 entries)
+grep -c "<entry " koine-anki/data/strongs_greek.xml 2>/dev/null || grep -c "<w " koine-anki/data/strongs_greek.xml 2>/dev/null
+echo "---"
+# Check the anki-main/languages directory (claim: Combined Anki deck + Pimsleur audio course)
+ls anki-main/languages/ | head -10
+echo "---"
+# Check anki-main/SAW (claim: AWS Solutions Architect Workshop .apkg decks)
+ls anki-main/SAW/[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.287s[0m
+[38;5;12m[1m [1.42][0m[0m
+5624
+---
+audio
+cert.pem
+data
+decks
+investigation
+key.pem
+kiro-notes
+kiro-test
+notes
+old
+---
+SAW__Workshop.apkg
+SAW_Topics4-9.apkg
+[38;5;244m - Completed in 6.20s[0m
+[38;5;12m[1m [1.43][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check if gen_deck.py uses genanki (claim: all use genanki - but gen_deck.py writes text)
+grep "genanki\|import" koine-anki/terminaciones/gen_deck.py
+echo "==="
+# Check the README for pimsleur to verify 16.7 hours / ~600 words / ~90% claims
+cat koine-pimsleur/README.md[0m[38;5;244m (using tool: shell)[0m
+
+import importlib, sys, os
+    mod = importlib.import_module(f"cards_cat{i}")
+===
+# Koine Greek — Pimsleur Audio Course
+
+90 audio lessons (16.7 hours) teaching ~600 Koine Greek words covering ~90% of the NT text, using the Pimsleur method (anticipation, graduated interval recall) set in 1st century Palestine.
+
+## Levels
+
+| Level | Lessons | Hours | Words | NT Coverage |
+|---|---|---|---|---|
+| 1 — Ὁ Ξένος | 1-30 | ~5.5 | ~200 | ~75% |
+| 2 — Ὁ Μαθητής | 31-60 | ~5.5 | ~400 | ~85% |
+| 3 — Ὁ Κήρυξ | 61-90 | ~5.7 | ~600 | ~90% |
+
+## Usage
+
+```bash
+source venv/bin/activate
+
+# Generate a single lesson
+python -m src.generate --lesson 5
+
+# Generate a range
+python -m src.generate --range 1 10
+
+# Generate all
+python -m src.generate --all
+
+# Enrich lesson scripts with LLM (uses koine-anki data)
+python src/enrich.py kiro-test/lesson_01_script.json
+
+# Generate Anki decks from lessons
+python src/generate_decks.py
+
+# Serve audio to phone
+python serve_audio.py
+```
+
+## Dependencies
+
+- **koine-anki** (sibling repo) — provides NT corpus, Strong's dictionary, and morphology data for enriching lesson scripts. Set `KOINE_ANKI_PATH` env var or place repos as siblings.
+
+## Tech Stack
+
+- **Spanish narration**: Amazon Polly (Mia, es-MX, neural)
+- **Greek speech**: Google Cloud TTS (Chirp3-HD + Wavenet-B fallback)
+- **Audio assembly**: Python (pydub + ffmpeg)
+- **Anki generation**: genanki
+- **LLM enrichment**: Amazon Bedrock (Claude)
+
+## Setup
+
+```bash
+python3 -m venv venv && source venv/bin/activate
+pip install genanki py-sblgnt google-cloud-texttospeech boto3 pydub
+brew install ffmpeg
+```
+
+## Project Structure
+
+```
+├── audio/              90 lesson MP3s organized by level
+├── src/
+│   ├── engine.py           Audio generation engine
+│   ├── tts.py              TTS module (Polly + Google)
+│   ├── generate.py         Lesson generator
+│   ├── render.py           MP3 renderer
+│   ├── script_builder.py   Script generator
+│   ├── enrich.py           LLM enrichment (uses koine-anki data)
+│   ├── generate_decks.py   Anki deck generator from lessons
+│   └── data/               Lesson content (90 lessons)
+├── decks/              Generated outputs (.apkg, .mp3)
+├── notes/              Curriculum and lessons learned
+└── serve_audio.py      HTTP server for phone playback
+```
+[38;5;244m - Completed in 12.472s[0m
+[38;5;12m[1m [1.44][0m[0m
+[?25l[0m[?25l[0m[0m[38;5;12mI'll share my reasoning process[0m[38;5;244m (using tool: thinking)[0m: Key findings from README:
+1. "16.7 hours" - CONFIRMED (README says 16.7 hours)
+2. "~600 words" - CONFIRMED (README says ~600)
+3. "~90% NT coverage" - CONFIRMED (README says ~90%)
+4. "Wavenet-B fallback" - CONFIRMED in README ("Chirp3-HD + Wavenet-B fallback") even though the code doesn't show Wavenet-B explicitly. The README mentions it but the code uses Chirp3-HD voices as fallbacks. This is a discrepancy between README and code.
+5. gen_deck.py does NOT use genanki - it just uses importlib and writes text. The findings claim "All use genanki library" but gen_deck.py doesn't.
+
+Now let me also check the vocabulary targets discrepancy. The findings say "310 NT words = 80% coverage" but the KB lesson says "317 = 80%". The README says Level 1 (~200 words) = ~75%, Level 3 (~600 words) = ~90%. The KB lesson says "600 = ~85-87% (NOT 90%)". There's a discrepancy between the README and the KB lesson about whether 600 words = 90% or 85-87%.
+
+Let me also check the Strong's count. The findings say 5516 entries but I found 5624 `<entry` tags. Let me verify.
+
+Also need to check the `es_rvr.json` claim (Spanish Bible RVR60) and the `nt_vocabulary_frequency.json` claim about format.
+
+Let me also check if there's a `languages/` subdirectory with src/ scripts, data/, audio/ as claimed.
+[38;5;244m - Completed in 5.308s[0m
+[38;5;12m[1m [1.45][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141m# Check Strong's more carefully
+python3 -c "
+import xml.etree.ElementTree as ET
+tree = ET.parse('koine-anki/data/strongs_greek.xml')
+root = tree.getroot()
+entries = root.findall('.//{http://www.bibletechnologies.net/2006/OSIS/namespace}entry') or root.findall('.//entry')
+print(f'Entries with namespace: {len(entries)}')
+# Try without namespace
+all_tags = set()
+for elem in root.iter():
+    all_tags.add(elem.tag)
+print(f'All tags: {sorted(all_tags)[:10]}')
+" 2>/dev/null || echo "XML parse failed"
+echo "---"
+# Simple grep count
+grep -c '<entry' koine-anki/data/strongs_greek.xml[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check anki-main/languages structure (claim: src/ scripts, data/, audio/)
+ls anki-main/languages/ 2>/dev/null[0m[38;5;244m (using tool: shell)[0m
+
+Entries with namespace: 5624
+All tags: ['entries', 'entry', 'greek', 'kjv_def', 'latin', 'prologue', 'pronunciation', 'strongs', 'strongs_def', 'strongs_derivation']
+---
+5624
+[38;5;244m - Completed in 3.794s[0m
+[38;5;12m[1m [1.46][0m[0m
+audio
+cert.pem
+data
+decks
+investigation
+key.pem
+kiro-notes
+kiro-test
+notes
+old
+README.md
+serve_audio.py
+src
+venv
+[38;5;244m - Completed in 2.629s[0m
+[38;5;12m[1m [1.47][0m[0m
+[?25l[0m[?25l[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Checking card HTML\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+I will run the following command: [38;5;141m# Check card HTML structure in generate_deck.py (claim about front/back structure)
+grep -A5 "front\|Front\|qfmt\|afmt" koine-anki/compounds/generate_deck.py | head -30[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 1.792s[0m
+[38;5;12m[1m [1.48][0m[0m
+# Model with Front/Back fields
+model = genanki.Model(
+    MODEL_ID,
+    "Greek Compounds + Cognates",
+    fields=[
+        {"name": "Front"},
+        {"name": "Back"},
+    ],
+    templates=[{
+        "name": "Card 1",
+        "qfmt": "{{Front}}",
+        "afmt": '{{FrontSide}}<hr id="answer">{{Back}}',
+    }],
+    css="""
+.card { font-family: 'Georgia', 'Times New Roman', serif; font-size: 18px; text-align: left; color: #333; background: #fafaf5; padding: 20px; line-height: 1.6; }
+.word { font-size: 36px; color: #1a3a5c; text-align: center; margin: 10px 0; }
+.meaning { font-size: 22px; color: #2d6a2e; text-align: center; margin: 5px 0 15px 0; }
+--
+    front = f'<div class="word">{h(c["lemma"])}</div><div class="ref" style="margin-top:8px">¿De qué se compone esta palabra?</div>'
+    back = build_back(c)
+    note = genanki.Note(model=model, fields=[front, back])
+    deck.add_note(note)
+
+output = "decks/matthew_compounds.apkg"
+genanki.Package(deck).write_to_file(output)
+print(f"Generated {len(cards)} cards → {output}")
+[38;5;244m - Completed in 2.355s[0m
+[38;5;12m[1m [1.49][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Check the build_back function for card structure claims
+grep -A50 "def build_back" koine-anki/compounds/generate_deck.py | head -60[0m[38;5;244m (using tool: shell)[0m
+
+def build_back(c):
+    parts = []
+
+    # Word + meaning + ref
+    parts.append(f'<div class="word">{h(c["lemma"])}</div>')
+    parts.append(f'<div class="meaning">{h(c["meaning_es"])}</div>')
+    ref = c.get("first_ref", "")
+    snum = c.get("strongs_number", "")
+    parts.append(f'<div class="ref">{h(ref)}{" · " + h(snum) if snum else ""}</div>')
+
+    # Strong's derivation
+    sd = c.get("strongs_derivation", "")
+    sdef = c.get("strongs_definition", "")
+    if sd or sdef:
+        combined = f"{sd} — {sdef}" if sd and sdef else sd or sdef
+        combined = " ".join(combined.split())
+        parts.append(f'<div class="strongs">Strong\'s: {h(combined)}</div>')
+
+    # Components
+    parts.append('<div class="section"><div class="section-title">📦 Componentes</div>')
+    for comp in c["components"]:
+        g = comp["greek"]
+        m = comp["meaning_es"]
+        parts.append(f'<div class="comp-box">')
+        parts.append(f'<span class="comp-greek">{h(g)}</span> — <span class="comp-meaning">{h(m)}</span>')
+        csnum = comp.get("strongs_number", "")
+        if csnum:
+            parts.append(f' <span style="color:#aaa;font-size:12px">({h(csnum)})</span>')
+        cdef = comp.get("strongs_definition", "")
+        if cdef:
+            cdef_clean = " ".join(cdef.split())[:200]
+            parts.append(f'<div class="comp-detail">{h(cdef_clean)}</div>')
+        parts.append('</div>')
+    parts.append('</div>')
+
+    # Suffix explanation
+    if "suffix" in c:
+        parts.append(f'<div class="suffix-box">')
+        parts.append(f'<div class="section-title">🔤 Sufijo: {h(c["suffix"])} ({h(c["suffix_type_es"])})</div>')
+        parts.append(f'{h(c["suffix_explanation_es"])}')
+        parts.append('</div>')
+
+    # Root change note
+    if "root_note_es" in c:
+        parts.append(f'<div class="root-box">')
+        parts.append(f'<div class="section-title">🔀 Cambio de raíz</div>')
+        parts.append(f'{h(c["root_note_es"])}')
+        parts.append('</div>')
+
+    # Mnemonic
+    parts.append(f'<div class="mnemonic">')
+[38;5;244m - Completed in 2.419s[0m
+[38;5;12m[1m [1.50][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Continue reading build_back
+grep -A80 "def build_back" koine-anki/compounds/generate_deck.py | tail -30[0m[38;5;244m (using tool: shell)[0m
+
+    parts.append(f'<div class="section-title">💡 Mnemotecnia</div>')
+    parts.append(f'{h(c["mnemonic_es"])}')
+    parts.append('</div>')
+
+    # Cognates by part
+    cbp = c.get("cognates_by_part", {})
+    if cbp:
+        flags = {"es": "🇪🇸", "en": "🇬🇧", "fr": "🇫🇷"}
+        parts.append('<div class="cognates"><div class="section-title">🌍 Cognados</div>')
+        for greek_word, data in cbp.items():
+            has_any = any(data.get(l) for l in ("es", "en", "fr"))
+            if not has_any:
+                continue
+            meaning = data.get("meaning", "")
+            parts.append(f'<div class="cognate-part">')
+            parts.append(f'<span class="cognate-part-title">{h(greek_word)}</span>')
+            if meaning:
+                parts.append(f' <span class="cognate-part-meaning">({h(meaning)})</span>')
+            for lang in ("es", "en", "fr"):
+                words = data.get(lang, [])
+                if words:
+                    # Bold the word part before the parenthesis
+                    formatted = []
+                    for w in words:
+                        if "(" in w:
+                            word_part = w[:w.index("(")].strip()
+                            rest = w[w.index("("):]
+                            formatted.append(f'<span class="cog-word">{h(word_part)}</span> {h(rest)}')
+                        else:
+                            formatted.append(f'<span class="cog-word">{h(w)}</span>')
+[38;5;244m - Completed in 2.569s[0m
+[38;5;12m[1m [1.51][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141m# Get the rest of build_back (verses section)
+grep -A100 "def build_back" koine-anki/compounds/generate_deck.py | grep -A10 "verse\|Vers"[0m[38;5;244m (using tool: shell)[0m
+
+    # Greek verses
+    gv = c.get("greek_verses", [])
+    if gv:
+        parts.append('<div class="verses"><div class="section-title">📖 Versículos en Griego</div>')
+        for v in gv:
+            # Bold the target word forms in the verse text
+            text = h(v["text"])
+            rvr = v.get("rvr60", "")
+            parts.append(f'<div class="verse"><span class="verse-ref">{h(v["ref"])}</span><br>'
+                         f'<span class="verse-text">{text}</span>')
+            if rvr:
+                parts.append(f'<div class="verse-es">{h(rvr)}</div>')
+            parts.append('</div>')
+        parts.append('</div>')
+
+    return "\n".join(parts)
+[38;5;244m - Completed in 2.678s[0m
+[38;5;12m[1m [1.52][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Writing validated file\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 2.713s[0m
+[38;5;12m[1m [1.53][0m[0m
+[?25l[0m[38;5;141m> [0mNow I have enough data to write the validated findings file.[0m[0m
+[?25l[0m[0mI'll create the following file: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/validated.md[0m[38;5;244m (using tool: write)[0m
+
+[48;2;40;67;43m[39m+      1[0m:[39m[48;2;24;38;30m [38;2;143;161;179m#[38;2;192;197;206m [38;2;143;161;179mValidated Findings: Enhance anki-agent[K
+[0m[48;2;40;67;43m[39m+      2[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      3[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mValidation Summary[K
+[0m[48;2;40;67;43m[39m+      4[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+      5[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Section [38;2;192;197;206m|[38;2;192;197;206m Status [38;2;192;197;206m|[38;2;192;197;206m Notes [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+      6[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m---------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+      7[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Directory Structure [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED (minor gaps) [38;2;192;197;206m|[38;2;192;197;206m All 3 subdirs exist as described [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+      8[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Deck Generation Tools [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED (1 error) [38;2;192;197;206m|[38;2;192;197;206m gen_deck.py does NOT use genanki [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+      9[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Data Layer (koine-anki/data/) [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED (minor inaccuracies) [38;2;192;197;206m|[38;2;192;197;206m File sizes/counts slightly off [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     10[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Formats [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED (partial errors) [38;2;192;197;206m|[38;2;192;197;206m MorphGNT has 7 fields not 6; frequency format differs [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     11[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m TTS Rules [38;2;192;197;206m|[38;2;192;197;206m CONTRADICTED (code vs KB) [38;2;192;197;206m|[38;2;192;197;206m Code strips polytonic; KB says don't strip [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     12[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Vocabulary Targets [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED (minor discrepancy) [38;2;192;197;206m|[38;2;192;197;206m 600=~90% per README, KB says 85-87% [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     13[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m KB Lessons Exist [38;2;192;197;206m|[38;2;192;197;206m CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m All cited KB entries found [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     14[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     15[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     16[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     17[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 1: Directory Structure[K
+[0m[48;2;40;67;43m[39m+     18[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     19[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140manki-main/[38;2;163;190;140m`[38;2;143;161;179m — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     20[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140mlanguages/[38;2;163;190;140m`[38;2;191;97;106m exists with [38;2;163;190;140m`[38;2;163;190;140msrc/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mdata/[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140maudio/[38;2;163;190;140m`[38;2;191;97;106m subdirs[K
+[0m[48;2;40;67;43m[39m+     21[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mSAW/[38;2;163;190;140m`[38;2;191;97;106m exists with [38;2;163;190;140m`[38;2;163;190;140m.apkg[38;2;163;190;140m`[38;2;191;97;106m decks (SAW__Workshop.apkg, SAW_Topics4-9.apkg)[K
+[0m[48;2;40;67;43m[39m+     22[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mDVA-C02_Questions.txt[38;2;163;190;140m`[38;2;191;97;106m exists (57,994 bytes)[K
+[0m[48;2;40;67;43m[39m+     23[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     24[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-anki/[38;2;163;190;140m`[38;2;143;161;179m — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     25[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140mcompounds/[38;2;163;190;140m`[38;2;191;97;106m exists with all 5 pipeline scripts[K
+[0m[48;2;40;67;43m[39m+     26[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mterminaciones/[38;2;163;190;140m`[38;2;191;97;106m exists with gen_deck.py, gen_deck_vol3.py, cards_cat1-7.py, cards_vol3_cat1-7.py[K
+[0m[48;2;40;67;43m[39m+     27[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mdata/[38;2;163;190;140m`[38;2;191;97;106m exists with all claimed files[K
+[0m[48;2;40;67;43m[39m+     28[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mdecks/[38;2;163;190;140m`[38;2;191;97;106m exists[K
+[0m[48;2;40;67;43m[39m+     29[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mnotes/[38;2;163;190;140m`[38;2;191;97;106m exists with: compounds-pipeline.md, koine-greek-anki-guidelines.md, card-quality-standards.md[K
+[0m[48;2;40;67;43m[39m+     30[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     31[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/[38;2;163;190;140m`[38;2;143;161;179m — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     32[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140msrc/[38;2;163;190;140m`[38;2;191;97;106m exists with engine.py, tts.py, generate.py, render.py, script_builder.py, enrich.py, generate_decks.py[K
+[0m[48;2;40;67;43m[39m+     33[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140msrc/data/[38;2;163;190;140m`[38;2;191;97;106m has 19 lesson data files covering lessons 1-90[K
+[0m[48;2;40;67;43m[39m+     34[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140maudio/[38;2;163;190;140m`[38;2;191;97;106m has 3 levels (level1_el_extranjero, level2_el_discipulo, level3_el_predicador)[K
+[0m[48;2;40;67;43m[39m+     35[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mdecks/[38;2;163;190;140m`[38;2;191;97;106m exists[K
+[0m[48;2;40;67;43m[39m+     36[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mnotes/[38;2;163;190;140m`[38;2;191;97;106m exists with: curriculum_overview.md, lessons-learned-koine.md, lessons-learned-replication.md, + others[K
+[0m[48;2;40;67;43m[39m+     37[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     38[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     39[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     40[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 2: Deck Generation Tools[K
+[0m[48;2;40;67;43m[39m+     41[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     42[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mTool Table — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED with 1 error[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     43[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     44[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Claim [38;2;192;197;206m|[38;2;192;197;206m Status [38;2;192;197;206m|[38;2;192;197;206m Evidence [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     45[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     46[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgenerate_deck.py[38;2;163;190;140m`[38;2;192;197;206m uses genanki → .apkg [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mimport genanki[38;2;163;190;140m`[38;2;192;197;206m found; outputs [38;2;163;190;140m`[38;2;163;190;140mdecks/matthew_compounds.apkg[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     47[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgen_deck.py[38;2;163;190;140m`[38;2;192;197;206m → text export [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Writes to [38;2;163;190;140m`[38;2;163;190;140mgreek_infinitives_anki.txt[38;2;163;190;140m`[38;2;192;197;206m (tab-separated) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     48[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgen_deck_vol3.py[38;2;163;190;140m`[38;2;192;197;206m uses genanki → .apkg [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mimport genanki[38;2;163;190;140m`[38;2;192;197;206m found [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     49[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgenerate_decks.py[38;2;163;190;140m`[38;2;192;197;206m uses genanki → .apkg [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mimport genanki[38;2;163;190;140m`[38;2;192;197;206m found; "4 cards per lesson" in docstring [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     50[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;235;203;139m**[38;2;235;203;139m"All use genanki library"[38;2;235;203;139m**[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ❌ CONTRADICTED [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mgen_deck.py[38;2;163;190;140m`[38;2;192;197;206m does NOT use genanki — it only uses [38;2;163;190;140m`[38;2;163;190;140mimportlib[38;2;163;190;140m`[38;2;192;197;206m and writes plain text [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     51[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     52[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mCompounds Pipeline (5 steps) — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     53[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140mextract_compounds.py[38;2;163;190;140m`[38;2;191;97;106m — exists (2,900 bytes)[K
+[0m[48;2;40;67;43m[39m+     54[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mfetch_strongs.py[38;2;163;190;140m`[38;2;191;97;106m — exists (4,187 bytes)[K
+[0m[48;2;40;67;43m[39m+     55[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140menrich_compounds.py[38;2;163;190;140m`[38;2;191;97;106m — exists (12,916 bytes), contains SUFFIX_DB and ROOT_CHANGES[K
+[0m[48;2;40;67;43m[39m+     56[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mimprove_mnemonics.py[38;2;163;190;140m`[38;2;191;97;106m — exists (18,022 bytes)[K
+[0m[48;2;40;67;43m[39m+     57[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mgenerate_deck.py[38;2;163;190;140m`[38;2;191;97;106m — exists (8,067 bytes)[K
+[0m[48;2;40;67;43m[39m+     58[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     59[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAnti-Duplication System — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     60[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140mcompounds_registry.json[38;2;163;190;140m`[38;2;191;97;106m exists with 290 entries[K
+[0m[48;2;40;67;43m[39m+     61[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Format: [38;2;163;190;140m`[38;2;163;190;140m{lemma: {source_book, deck, date_added}}[38;2;163;190;140m`[38;2;191;97;106m — verified (e.g., [38;2;163;190;140m`[38;2;163;190;140m"διαβλέπω": {"source_book": "matthew", "deck": "matthew_compounds", "date_added": "2026-04-03"}[38;2;163;190;140m`[38;2;191;97;106m)[K
+[0m[48;2;40;67;43m[39m+     62[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     63[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m"290 compound word flashcards" — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     64[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Registry has exactly 290 entries[K
+[0m[48;2;40;67;43m[39m+     65[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     66[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     67[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     68[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 3: Data Layer (koine-anki/data/)[K
+[0m[48;2;40;67;43m[39m+     69[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     70[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m File [38;2;192;197;206m|[38;2;192;197;206m Claim [38;2;192;197;206m|[38;2;192;197;206m Status [38;2;192;197;206m|[38;2;192;197;206m Evidence [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     71[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m------[38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     72[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnt-morphgnt/[38;2;163;190;140m`[38;2;192;197;206m (27 files) [38;2;192;197;206m|[38;2;192;197;206m 27 NT books [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mls | wc -l[38;2;163;190;140m`[38;2;192;197;206m = 27 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     73[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mstrongs_greek.xml[38;2;163;190;140m`[38;2;192;197;206m (2.3MB, 5516 entries) [38;2;192;197;206m|[38;2;192;197;206m Size + count [38;2;192;197;206m|[38;2;192;197;206m ⚠️ PARTIALLY CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Size = 2.37MB ✅; Entries = [38;2;235;203;139m**[38;2;235;203;139m5624[38;2;235;203;139m**[38;2;192;197;206m not 5516 ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     74[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnt_vocabulary_frequency.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140m[{rank, lemma, count, pos}][38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m ⚠️ PARTIALLY CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Actual format: [38;2;163;190;140m`[38;2;163;190;140m{lemma, count, pos, pct}[38;2;163;190;140m`[38;2;192;197;206m — has [38;2;163;190;140m`[38;2;163;190;140mpct[38;2;163;190;140m`[38;2;192;197;206m not [38;2;163;190;140m`[38;2;163;190;140mrank[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     75[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnt_top600.json[38;2;163;190;140m`[38;2;192;197;206m (top 600) [38;2;192;197;206m|[38;2;192;197;206m Same format, top 600 [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Format: [38;2;163;190;140m`[38;2;163;190;140m{rank, lemma, count, pos}[38;2;163;190;140m`[38;2;192;197;206m, count = 600 [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     76[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mcompounds_registry.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Anti-duplication registry [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m 290 entries, correct format [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     77[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnt_compounds_full.json[38;2;163;190;140m`[38;2;192;197;206m (2.2MB) [38;2;192;197;206m|[38;2;192;197;206m Full compound data [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Size = 2.25MB [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     78[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mmatthew/compounds_enriched.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Enriched card data [38;2;192;197;206m|[38;2;192;197;206m ⚠️ PARTIALLY CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Exists but keys differ from claim (see below) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     79[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mes_rvr.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Spanish Bible (RVR60) [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Exists (4.03MB) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     80[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mmorphology_reference.md[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Suffix/prefix tables [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Exists (12.8KB) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     81[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mmorphology_context.md[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Extended morphology [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Exists (22.7KB) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     82[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mnt_grammar_stats.json[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Grammar statistics [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Exists (4.1KB) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     83[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mpronunciation.csv[38;2;163;190;140m`[38;2;192;197;206m [38;2;192;197;206m|[38;2;192;197;206m Pronunciation guide [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Exists (1.0KB) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+     84[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     85[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mmatthew/compounds_enriched.json[38;2;163;190;140m`[38;2;143;161;179m format discrepancy:[K
+[0m[48;2;40;67;43m[39m+     86[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mClaimed keys[38;2;235;203;139m**[38;2;191;97;106m: lemma, components[], meaning_es, mnemonic_es, strongs_number, strongs_derivation, strongs_definition, suffix, suffix_type_es, suffix_explanation_es, root_note_es, cognates_by_part, verses[][K
+[0m[48;2;40;67;43m[39m+     87[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mActual keys[38;2;235;203;139m**[38;2;191;97;106m: [38;2;163;190;140m`[38;2;163;190;140m['lemma', 'components', 'meaning_es', 'mnemonic_es', 'first_ref', 'pos', 'strongs_number', 'strongs_derivation', 'strongs_definition', 'cognates', 'cognates_by_part', 'greek_verses'][38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     88[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMissing from actual[38;2;235;203;139m**[38;2;191;97;106m: suffix, suffix_type_es, suffix_explanation_es, root_note_es (these are added by [38;2;163;190;140m`[38;2;163;190;140menrich_compounds.py[38;2;163;190;140m`[38;2;191;97;106m but not present in the stored file)[K
+[0m[48;2;40;67;43m[39m+     89[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMissing from claim[38;2;235;203;139m**[38;2;191;97;106m: first_ref, pos, cognates, greek_verses[K
+[0m[48;2;40;67;43m[39m+     90[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     91[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mCross-project dependency — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     92[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140mkoine-pimsleur/src/enrich.py[38;2;163;190;140m`[38;2;191;97;106m line 6: [38;2;163;190;140m`[38;2;163;190;140mANKI_REPO = os.environ.get('KOINE_ANKI_PATH', os.path.join(os.path.dirname(__file__), '..', '..', 'koine-anki'))[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+     93[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     94[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+     95[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     96[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 4: Formats[K
+[0m[48;2;40;67;43m[39m+     97[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+     98[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mMorphGNT Format — [38;2;235;203;139m**[38;2;235;203;139mPARTIALLY CONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+     99[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mClaim: "Space-delimited: [38;2;163;190;140m`[38;2;163;190;140mref POS morph-code word normalized lemma[38;2;163;190;140m`[38;2;191;97;106m" (6 fields)[K
+[0m[48;2;40;67;43m[39m+    100[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Actual: [38;2;235;203;139m**[38;2;235;203;139m7 fields[38;2;235;203;139m**[38;2;191;97;106m — [38;2;163;190;140m`[38;2;163;190;140mref POS morph-code text word normalized lemma[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    101[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Example: [38;2;163;190;140m`[38;2;163;190;140m010101 N- ----NSF- Βίβλος Βίβλος βίβλος βίβλος[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    102[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m The claim's own example shows 7 tokens but describes only 6. Standard MorphGNT has: bcv, pos, parsing, text, word, normalized, lemma.[K
+[0m[48;2;40;67;43m[39m+    103[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    104[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mFrequency list format — [38;2;235;203;139m**[38;2;235;203;139mPARTIALLY CONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    105[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnt_vocabulary_frequency.json[38;2;163;190;140m`[38;2;191;97;106m: actual format is [38;2;163;190;140m`[38;2;163;190;140m{lemma, count, pos, pct}[38;2;163;190;140m`[38;2;191;97;106m (no [38;2;163;190;140m`[38;2;163;190;140mrank[38;2;163;190;140m`[38;2;191;97;106m field)[K
+[0m[48;2;40;67;43m[39m+    106[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mnt_top600.json[38;2;163;190;140m`[38;2;191;97;106m: format IS [38;2;163;190;140m`[38;2;163;190;140m{rank, lemma, count, pos}[38;2;163;190;140m`[38;2;191;97;106m as claimed[K
+[0m[48;2;40;67;43m[39m+    107[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    108[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mLesson data format — [38;2;235;203;139m**[38;2;235;203;139mPARTIALLY CONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    109[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106mClaimed: [38;2;163;190;140m`[38;2;163;190;140m{num, intro_es, dialogue, vocab[{gr, es}], phrases[{gr, es}], verse{gr, explain_es}, closing_es}[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    110[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Actual keys: [38;2;163;190;140m`[38;2;163;190;140mnum, intro_es, dialogue, context_es, vocab, phrases, recon, verse, closing_es[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    111[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Missing from claim: [38;2;163;190;140m`[38;2;163;190;140mcontext_es[38;2;163;190;140m`[38;2;191;97;106m, [38;2;163;190;140m`[38;2;163;190;140mrecon[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    112[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m The claimed keys that ARE present are correct in structure[K
+[0m[48;2;40;67;43m[39m+    113[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    114[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mCard HTML Structure — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    115[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Front: Greek word (36px) + "¿De qué se compone esta palabra?"[K
+[0m[48;2;40;67;43m[39m+    116[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ Back structure: Word → Meaning (green) → Ref + Strong's → Components → Suffix box → Root-change box → Mnemonic → Cognates → Verses[K
+[0m[48;2;40;67;43m[39m+    117[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Verified from [38;2;163;190;140m`[38;2;163;190;140mgenerate_deck.py[38;2;163;190;140m`[38;2;191;97;106m [38;2;163;190;140m`[38;2;163;190;140mbuild_back()[38;2;163;190;140m`[38;2;191;97;106m function[K
+[0m[48;2;40;67;43m[39m+    118[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    119[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    120[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    121[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 5: TTS Rules[K
+[0m[48;2;40;67;43m[39m+    122[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    123[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mGoogle Cloud TTS Chirp3-HD (el-GR) — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    124[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Code uses [38;2;163;190;140m`[38;2;163;190;140mel-GR-Chirp3-HD-Achird[38;2;163;190;140m`[38;2;191;97;106m (M) and [38;2;163;190;140m`[38;2;163;190;140mel-GR-Chirp3-HD-Zephyr[38;2;163;190;140m`[38;2;191;97;106m (F)[K
+[0m[48;2;40;67;43m[39m+    125[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    126[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mWavenet-B as fallback — [38;2;235;203;139m**[38;2;235;203;139mCONTRADICTED in code, CONFIRMED in README[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    127[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m❌ Code ([38;2;163;190;140m`[38;2;163;190;140mtts.py[38;2;163;190;140m`[38;2;191;97;106m) uses only Chirp3-HD voices as fallbacks: Charon, Aoede, Zephyr, Kore, Achird[K
+[0m[48;2;40;67;43m[39m+    128[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ README states "Chirp3-HD + Wavenet-B fallback"[K
+[0m[48;2;40;67;43m[39m+    129[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mVerdict[38;2;235;203;139m**[38;2;191;97;106m: README is outdated or aspirational; actual code does NOT use Wavenet-B[K
+[0m[48;2;40;67;43m[39m+    130[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    131[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAmazon Polly (Mia, es-MX, neural) — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    132[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140mtts.py[38;2;163;190;140m`[38;2;191;97;106m line 65: [38;2;163;190;140m`[38;2;163;190;140mdef es(text, voice="Mia", engine="neural")[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    133[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ [38;2;163;190;140m`[38;2;163;190;140mtts.py[38;2;163;190;140m`[38;2;191;97;106m line 69: [38;2;163;190;140m`[38;2;163;190;140mLanguageCode="es-MX"[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    134[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    135[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179m"Pass original polytonic text — do NOT strip to monotonic" — [38;2;235;203;139m**[38;2;235;203;139mCONTRADICTED by current code[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    136[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m❌ [38;2;163;190;140m`[38;2;163;190;140mtts.py[38;2;163;190;140m`[38;2;191;97;106m line 76: [38;2;163;190;140m`[38;2;163;190;140mmono = to_mono(text)[38;2;163;190;140m`[38;2;191;97;106m — code DOES strip polytonic to monotonic[K
+[0m[48;2;40;67;43m[39m+    137[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m ✅ KB lesson confirms this is a KNOWN BUG: "The to_mono() stripping was unnecessary and harmful for short words"[K
+[0m[48;2;40;67;43m[39m+    138[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mVerdict[38;2;235;203;139m**[38;2;191;97;106m: The finding states the CORRECT recommendation (from KB), but the code has NOT been fixed. The finding is a prescriptive rule, not a description of current behavior.[K
+[0m[48;2;40;67;43m[39m+    139[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    140[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mShort word threshold ([38;2;143;161;179m<[38;2;143;161;179m 400ms = TTS failure) — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    141[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ [38;2;163;190;140m`[38;2;163;190;140mtts.py[38;2;163;190;140m`[38;2;191;97;106m line 49: [38;2;163;190;140m`[38;2;163;190;140mreturn max(400, min(n, 4) * 150 + max(0, n - 4) * 80)[38;2;163;190;140m`[38;2;191;97;106m — 400ms minimum duration[K
+[0m[48;2;40;67;43m[39m+    142[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    143[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    144[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    145[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 6: Vocabulary Targets[K
+[0m[48;2;40;67;43m[39m+    146[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    147[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Claim [38;2;192;197;206m|[38;2;192;197;206m Status [38;2;192;197;206m|[38;2;192;197;206m Evidence [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    148[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    149[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 310 NT words = 80% coverage [38;2;192;197;206m|[38;2;192;197;206m ⚠️ UNVERIFIED [38;2;192;197;206m|[38;2;192;197;206m KB says "317 = 80%" (jktauber.com). Minor discrepancy (310 vs 317) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    150[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 600 NT words = ~90% coverage [38;2;192;197;206m|[38;2;192;197;206m ⚠️ CONFLICTING [38;2;192;197;206m|[38;2;192;197;206m README says ~90% ✅; KB lesson says "85-87% (NOT 90%)" ❌ [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    151[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 882 words = 90% per Lanier 2015 [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m KB lesson confirms: "882 = 90% per Lanier 2015" [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    152[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Source: jktauber.com frequency data [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m KB cites jktauber.com [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    153[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    154[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    155[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    156[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 7: KB Lessons Cited[K
+[0m[48;2;40;67;43m[39m+    157[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    158[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Cited Lesson [38;2;192;197;206m|[38;2;192;197;206m Status [38;2;192;197;206m|[38;2;192;197;206m Evidence [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    159[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m--------------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    160[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m "Koine Greek morphology for Anki flashcard design" [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Found in KB with matching content [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    161[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m "Pimsleur Method for Ancient Language Audio Courses" [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Found in KB with matching content [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    162[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m "Google Cloud TTS silent audio from polytonic Greek" [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Found in KB with matching content [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    163[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m "Koine Greek vs Modern Greek: Contamination Prevention" [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Found in KB with matching content [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    164[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m "Audio-First Language Curriculum Design: Koine Greek" [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Found in KB with matching content [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    165[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    166[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    167[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    168[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 8: Morphology [38;2;143;161;179m&[38;2;143;161;179m Anti-Contamination Rules[K
+[0m[48;2;40;67;43m[39m+    169[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    170[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mSUFFIX_DB entries — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    171[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ 11 entries: τός, σις, μα, ία, εια, μός, ή, ικός, ιος, ών, τής[K
+[0m[48;2;40;67;43m[39m+    172[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m Matches claim exactly (claim lists: -τός, -σις, -μα, -ία, -μός, -ή, -ικός, -ιος, -ών, -τής, -εια)[K
+[0m[48;2;40;67;43m[39m+    173[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    174[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mROOT_CHANGES (45 words) — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[K
+[0m[48;2;40;67;43m[39m+    175[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ Exactly 45 entries found in [38;2;163;190;140m`[38;2;163;190;140menrich_compounds.py[38;2;163;190;140m`[K
+[0m[48;2;40;67;43m[39m+    176[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    177[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAblaut mappings — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[38;2;143;161;179m (from KB)[K
+[0m[48;2;40;67;43m[39m+    178[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ KB confirms: βάλλω→βολ-, τίθημι→θε-/θη-, ἵστημι→στα-, στέλλω→στολ-[K
+[0m[48;2;40;67;43m[39m+    179[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    180[0m:[39m[48;2;24;38;30m [38;2;143;161;179m###[38;2;192;197;206m [38;2;143;161;179mAnti-contamination checklist — [38;2;235;203;139m**[38;2;235;203;139mCONFIRMED[38;2;235;203;139m**[38;2;143;161;179m (from KB)[K
+[0m[48;2;40;67;43m[39m+    181[0m:[39m[48;2;24;38;30m [38;2;191;97;106m-[38;2;191;97;106m [38;2;191;97;106m✅ KB "Koine Greek vs Modern Greek" lesson confirms all items: no δεν/μην, no θα, no να+subjunctive replacing infinitive, no σε+accusative for dative, no post-Koine vocabulary[K
+[0m[48;2;40;67;43m[39m+    182[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    183[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    184[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    185[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mSection 9: Pimsleur Course Details[K
+[0m[48;2;40;67;43m[39m+    186[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    187[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m Claim [38;2;192;197;206m|[38;2;192;197;206m Status [38;2;192;197;206m|[38;2;192;197;206m Evidence [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    188[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m-------[38;2;192;197;206m|[38;2;192;197;206m--------[38;2;192;197;206m|[38;2;192;197;206m----------[38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    189[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 90 lessons [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m [38;2;163;190;140m`[38;2;163;190;140mdata/__init__.py[38;2;163;190;140m`[38;2;192;197;206m imports L1-L90; ALL_LESSONS has 90 entries [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    190[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 16.7 hours [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m README states "16.7 hours" [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    191[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m ~600 words [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m README states "~600 Koine Greek words" [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    192[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m ~90% NT coverage [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED (per README) [38;2;192;197;206m|[38;2;192;197;206m README states "~90% of the NT text" [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    193[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 3 levels × 30 lessons [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Audio: 31+30+30 = 91 MP3s across 3 level dirs [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    194[0m:[39m[48;2;24;38;30m [38;2;192;197;206m|[38;2;192;197;206m 4 cards/lesson in generate_decks.py [38;2;192;197;206m|[38;2;192;197;206m ✅ CONFIRMED [38;2;192;197;206m|[38;2;192;197;206m Docstring: "4 cards per lesson" (2 vocab + 1 phrase + 1 verse, each with recognition+production templates) [38;2;192;197;206m|[K
+[0m[48;2;40;67;43m[39m+    195[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    196[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    197[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    198[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mCritical Errors Found[K
+[0m[48;2;40;67;43m[39m+    199[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    200[0m:[39m[48;2;24;38;30m [38;2;191;97;106m1[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139m"All use genanki"[38;2;235;203;139m**[38;2;191;97;106m — FALSE. [38;2;163;190;140m`[38;2;163;190;140mgen_deck.py[38;2;163;190;140m`[38;2;191;97;106m (terminaciones Vol. 2) writes plain text, not .apkg.[K
+[0m[48;2;40;67;43m[39m+    201[0m:[39m[48;2;24;38;30m [38;2;191;97;106m2[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mStrong's entries = 5516[38;2;235;203;139m**[38;2;191;97;106m — FALSE. Actual count = 5624.[K
+[0m[48;2;40;67;43m[39m+    202[0m:[39m[48;2;24;38;30m [38;2;191;97;106m3[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139m"Pass original polytonic text"[38;2;235;203;139m**[38;2;191;97;106m — CONTRADICTED by current code (code strips to monotonic). This is a known bug per KB but the code hasn't been fixed.[K
+[0m[48;2;40;67;43m[39m+    203[0m:[39m[48;2;24;38;30m [38;2;191;97;106m4[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mWavenet-B fallback[38;2;235;203;139m**[38;2;191;97;106m — NOT in code. Only Chirp3-HD voices used as fallbacks. README mentions it but code doesn't implement it.[K
+[0m[48;2;40;67;43m[39m+    204[0m:[39m[48;2;24;38;30m [38;2;191;97;106m5[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mMorphGNT = 6 fields[38;2;235;203;139m**[38;2;191;97;106m — FALSE. Actual format has 7 space-delimited fields.[K
+[0m[48;2;40;67;43m[39m+    205[0m:[39m[48;2;24;38;30m [38;2;191;97;106m6[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mnt_vocabulary_frequency.json format[38;2;235;203;139m**[38;2;191;97;106m — WRONG. Has [38;2;163;190;140m`[38;2;163;190;140m{lemma, count, pos, pct}[38;2;163;190;140m`[38;2;191;97;106m not [38;2;163;190;140m`[38;2;163;190;140m{rank, lemma, count, pos}[38;2;163;190;140m`[38;2;191;97;106m.[K
+[0m[48;2;40;67;43m[39m+    206[0m:[39m[48;2;24;38;30m [38;2;191;97;106m7[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139m600 words = ~90% NT[38;2;235;203;139m**[38;2;191;97;106m — CONFLICTING. README says ~90%, KB lesson says 85-87%.[K
+[0m[48;2;40;67;43m[39m+    207[0m:[39m[48;2;24;38;30m [38;2;191;97;106m8[38;2;191;97;106m.[38;2;191;97;106m [38;2;235;203;139m**[38;2;235;203;139mmatthew/compounds_enriched.json fields[38;2;235;203;139m**[38;2;191;97;106m — PARTIALLY WRONG. Missing fields (suffix, root_note) and has unlisted fields (first_ref, pos, cognates, greek_verses).[K
+[0m[48;2;40;67;43m[39m+    208[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    209[0m:[39m[48;2;24;38;30m [38;2;192;197;206m---[K
+[0m[48;2;40;67;43m[39m+    210[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    211[0m:[39m[48;2;24;38;30m [38;2;143;161;179m##[38;2;192;197;206m [38;2;143;161;179mOverall Assessment[K
+[0m[48;2;40;67;43m[39m+    212[0m:[39m[48;2;24;38;30m [K
+[0m[48;2;40;67;43m[39m+    213[0m:[39m[48;2;24;38;30m [38;2;192;197;206mThe findings are [38;2;235;203;139m**[38;2;235;203;139msubstantially correct[38;2;235;203;139m**[38;2;192;197;206m (~85% accurate) with good coverage of the project structure, tools, and knowledge base. The errors are mostly minor (off-by-one counts, incomplete field lists, format details). The most significant issue is the TTS polytonic claim which describes the [38;2;180;142;173m*[38;2;180;142;173mdesired[38;2;180;142;173m*[38;2;192;197;206m behavior (from KB lessons learned) rather than the [38;2;180;142;173m*[38;2;180;142;173mactual[38;2;180;142;173m*[38;2;192;197;206m code behavior — this is important context for the enhanced prompt since it represents a known unfixed bug.[K
+[0m[K
+Creating: [38;5;141m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/validated.md[0m
+[38;5;244m - Completed in 8.961s[0m
+[38;5;12m[1m [1.54][0m[0m
+[?25l[0m[?25l[0m[0mI will run the following command: [38;5;141mprintf '%s|Validation complete\n' "$(date +%H:%M:%S)" >> /Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/val_nodes[0m[38;5;244m (using tool: shell)[0m
+
+[38;5;244m - Completed in 10.312s[0m
+[38;5;12m[1m [1.55][0m[0m
+[?25l[0m[38;5;141m> [0mValidation complete. Written to [38;5;10m/Users/murivirg/work/github/anki/investigation/7f55f0cd/c2-kb/validated.md[0m.[0m[0m
+[0m[0m
+[1mSummary[22m: The findings are ~85% accurate. 8 specific errors identified:[0m[0m
+- 3 factual errors (Strong's count, MorphGNT field count, frequency format)[0m[0m
+- 2 contradictions with code (polytonic stripping, Wavenet-B fallback)[0m[0m
+- 1 false claim ("all use genanki")[0m[0m
+- 2 incomplete/conflicting claims (enriched JSON fields, 600-word coverage %)[0m[0m
+[0m[0m
+The most impactful finding: the TTS polytonic rule describes the [3mrecommended[23m fix from KB lessons learned, not the current code behavior — the [38;5;10mto_mono()[0m bug persists in [38;5;10mtts.py[0m]9;Response complete.[0m[0m[38;5;12m[1m✓ Created checkpoint 1
+
+[0m[0m
+[38;5;8m
+ ▸ Credits: 7.13 • Time: 7m 43s
+
+[0m[1G[0m[0m[?25h

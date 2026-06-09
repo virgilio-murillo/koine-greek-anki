@@ -1,0 +1,14 @@
+21:46:34|Starting validation
+21:46:55|Reading findings file
+21:47:14|Verifying genanki API
+21:47:48|Checking apkg format
+21:48:09|Verifying project structure
+21:48:26|Checking GitHub repos
+21:49:02|Verifying ID patterns
+21:49:25|Checking CSV import format
+21:49:37|Verifying Anki docs format
+21:49:48|Checking katabiblon NFC
+21:50:08|Verifying alt tools exist
+21:50:24|Checking pyanki mkanki
+21:50:41|Checking Matuschak principles
+21:51:36|Checking genanki ID docs

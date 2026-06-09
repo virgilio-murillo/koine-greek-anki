@@ -1,0 +1,7 @@
+21:46:24|Starting validation
+21:46:47|Reading findings file
+21:47:01|Validating AWS docs
+21:47:20|Checking Bedrock docs
+21:47:40|Checking prompt size
+21:49:09|Writing validation report
+21:49:52|Validation complete
